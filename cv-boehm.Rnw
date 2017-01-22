@@ -13,6 +13,7 @@
 \usepackage{boehm}
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 
 % Place name at left
 {\huge \name}

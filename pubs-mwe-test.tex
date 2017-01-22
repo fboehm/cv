@@ -1,0 +1,15 @@
+\documentclass[letterpaper]{article}
+\usepackage[backend=biber, 
+            sorting=ynt,
+            hyperref=true,
+            defernumbers=true,
+            %style=alphabetic,
+            maxbibnames=99
+            ]{biblatex}\bibliography{boehm.bib}
+\addbibresource{boehm.bib}
+\begin{document}
+\cite{wells2016how}
+\nocite{*}
+\printbibliography[title={Articles},
+                   type=article]
+\end{document}
