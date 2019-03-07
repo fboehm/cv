@@ -37,3 +37,5 @@ cv.Rproj
 cv-boehm.synctex.gz
 cv-boehm.run.xml
 cv-boehm.pdf
+cv-boehm.fdb_latexmk
+cv-boehm.fls
