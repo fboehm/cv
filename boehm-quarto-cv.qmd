@@ -22,6 +22,7 @@ bibliography:
   submitted: parsing-bib-files/boehm-unpublished.bib
   book: parsing-bib-files/boehm-book.bib
   misc: parsing-bib-files/boehm-misc.bib
+  proceedings: parsing-bib-files/boehm-inproceedings.bib
 validate-yaml: false
 csl: apa-cv.csl
 ---
@@ -52,6 +53,14 @@ csl: apa-cv.csl
 
 ::: {#refs-software}
 :::
+
+# Conference Proceedings
+
+::: {#refs-proceedings}
+:::
+
+
+
 
 # Other Publications
 
