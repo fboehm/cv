@@ -1,0 +1,60 @@
+---
+title: "CV"
+format:
+    quarto-cv-pdf: default
+author: Frederick Boehm
+date: last-modified
+phone: 715-252-3929
+address: "419 Waymarket DR · Ann Arbor, MI 48103 · USA"
+email: frederick.boehm@gmail.com
+fontsize: 11pt
+github: fboehm # github account
+orcid: 0000-0002-1644-5931 # orcid identifier
+#osf: ymqui # osf five character id
+#twitter: twitter # twitter handle
+web: fboehm.us
+fontawesome: yes
+nocite: '@*'
+bibliography: 
+  peer: parsing-bib-files/boehm-article.bib
+  collection: parsing-bib-files/boehm-incollection.bib
+  software: parsing-bib-files/boehm-software.bib
+  submitted: parsing-bib-files/boehm-unpublished.bib
+  book: parsing-bib-files/boehm-book.bib
+  misc: parsing-bib-files/boehm-misc.bib
+validate-yaml: false
+csl: apa-cv.csl
+---
+
+
+
+# Submitted Manuscripts
+
+::: {#refs-submitted}
+:::
+
+# Journal Articles
+
+::: {#refs-peer}
+:::
+
+# Book
+
+::: {#refs-book}
+:::
+
+# Book Chapters
+
+::: {#refs-collection}
+:::
+
+# Software
+
+::: {#refs-software}
+:::
+
+# Other Publications
+
+::: {#refs-misc}
+:::
+
