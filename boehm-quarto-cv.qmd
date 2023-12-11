@@ -1,5 +1,7 @@
 ---
 title: "CV"
+filters:
+  - bold-my-name.lua
 format:
     quarto-cv-pdf: default
 author: Frederick Boehm
@@ -24,7 +26,7 @@ bibliography:
   misc: parsing-bib-files/boehm-misc.bib
   proceedings: parsing-bib-files/boehm-inproceedings.bib
 validate-yaml: false
-csl: apa-cv.csl
+csl: chicago-fullnote-bibliography-boehm.csl
 ---
 
 
