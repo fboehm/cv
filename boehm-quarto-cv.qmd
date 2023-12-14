@@ -7,7 +7,7 @@ format:
 author: Frederick Boehm
 date: last-modified
 phone: 715-252-3929
-address: "419 Waymarket DR · Ann Arbor, MI 48103 · USA"
+address: "University of Michigan · 419 Waymarket DR · Ann Arbor, MI 48103 · USA"
 email: frederick.boehm@gmail.com
 fontsize: 11pt
 github: fboehm # github account
@@ -28,6 +28,31 @@ bibliography:
 validate-yaml: false
 csl: chicago-fullnote-bibliography-boehm.csl
 ---
+
+
+# Education
+
+University of Michigan, Ann Arbor, Michigan, USA
+Department of Internal Medicine, Postdoctoral Research Fellow (Supported by NIH T32 appointment), 2023 to present  
+Department of Biostatistics, Postdoctoral Research Fellow, 2021 to 2023  
+
+University of Massachusetts Medical School, Worcester, Massachusetts, USA
+Department of Microbiology & Physiological Systems, Postdoctoral Research Fellow, 2019 to 2021
+
+University of Wisconsin-Madison, Madison, Wisconsin, USA
+Department of Statistics, Ph.D., 2011 to 2019  
+Molecular and Environmental Toxicology Center, Postdoctoral Research Fellow, 2012 to 2014  
+
+University of Washington, Seattle, Washington, USA
+Department of Biostatistics, Postdoctoral Research Fellow, 2007 to 2009
+
+University of Wisconsin-Madison, Madison, Wisconsin, USA  
+School of Medicine and Public Health, M.D., 2003 to 2007  
+Department of Population Health Sciences, M.S., 2003 to 2007  
+
+University of Wisconsin-Madison, Madison, Wisconsin, USA
+College of Letters and Science, B.S. with Honors in Chemistry, Mathematics, and Biochemistry, 1996 to 2001  
+
 
 
 
@@ -68,4 +93,106 @@ csl: chicago-fullnote-bibliography-boehm.csl
 
 ::: {#refs-misc}
 :::
+
+
+# Teaching Experience
+
+Formal Courses
+The College Classroom: Teaching Inclusively
+Title: Instructor
+Term: Fall 2017
+Institution: CIRTL Network
+Course: The College Classroom: How to teach inclusively for educating a diverse nation
+Title: Co-facilitator
+Term: Spring 2017
+Institution: University of Wisconsin-Madison
+Course: Statistics 371: Introductory statistics for biologists
+Title: Lecturer student assistant (Instructor of record)
+Term: Fall 2016
+Institution: University of Wisconsin-Madison
+Course: Statistics 679: Data science
+Title: Guest lecturer on topic models
+Term: Fall 2016
+Institution: University of Wisconsin-Madison
+Course: Statistics 679: Data science
+Title: Teaching assistant
+Term: Fall 2016
+Institution: University of Wisconsin-Madison
+Course: Statistics 224 & 324: Introductory statistics for engineers
+Title: Lecturer student assistant (Instructor of record)
+Term: Spring 2014, Fall 2014, Spring 2015, Fall 2015, Spring 2016
+Institution: University of Wisconsin-Madison
+Course: Statistics 301 & 371: Introductory statistics
+Title: Lecturer student assistant (Instructor of record)
+Term: Summer 2015
+Institution: University of Wisconsin-Madison
+Course: Biostatistics 518: Introduction to biostatistics
+Title: Teaching assistant
+Frederick Boehm 6
+Term: Winter 2010
+Institution: University of Washington
+Course: Biostatistics 517: Introduction to biostatistics
+Title: Teaching assistant
+Term: Fall 2009
+Institution: University of Washington
+Course: Biostatistics 511
+Title: Teaching assistant
+Term: Summer 2008
+Institution: University of Washington
+Course: Chemistry 3B: Introductory organic chemistry
+Title: Graduate student instructor
+Term: Fall 2001
+Institution: University of California-Berkeley
+
+
+## Short Courses & Workshops
+
+Engaging students in the teaching of statistics (twice)
+Title: Instructor
+Dates: July 2020 to August 2020 & March 2018 to April 2018
+Institution: Center for the Integration of Research, Teaching and Learning Network (https://cirtl.net/)
+
+
+Short Course: Data analysis with topic models for communications researchers (twice)
+Title: Instructor
+Dates: October 2016 & July 2016  
+Institution: University of Wisconsin-Madison  
+
+
+Data Carpentry Workshop
+Title: Instructor
+Dates: June 19-20, 2017
+Website: https://uw-madison-aci.github.io/2017-06-19-uwmadison-dc/
+
+Short course: Topic modeling for non-statisticians
+Title: Instructor
+Dates: October 2013
+Institution: University of Wisconsin-Madison
+
+Short course: Statistical computing with R
+Title: Instructor
+Dates: June & July 2013; June & July 2012
+Institution: University of Wisconsin-Madison  
+
+
+# Mentoring Experience
+
+Research mentor to Robert Turner, Undergraduate researcher  
+Project: Topic Modeling of Tweets to Detect Events  
+Dates: May 2015 to May 2016  
+Next position: Software Engineer at Epic Systems
+
+
+Research mentor to Jinyu Xia, Undergraduate researcher  
+Project: Tweet Sentiments Associate with Stock Market Trends  
+Dates: September 2015 to August 2016  
+Next Position: Graduate student at University of Washington (Department of Statistics)  
+
+
+# Awards & Honors
+
+
+
+
+# Talks and Presentations
 
