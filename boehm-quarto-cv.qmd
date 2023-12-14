@@ -97,7 +97,8 @@ College of Letters and Science, B.S. with Honors in Chemistry, Mathematics, and 
 
 # Teaching Experience
 
-Formal Courses
+## Formal Courses
+
 The College Classroom: Teaching Inclusively
 Title: Instructor
 Term: Fall 2017
@@ -173,6 +174,9 @@ Short course: Statistical computing with R
 Title: Instructor
 Dates: June & July 2013; June & July 2012
 Institution: University of Wisconsin-Madison  
+
+## Training in Teaching  
+
 
 
 # Mentoring Experience
