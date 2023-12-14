@@ -1,0 +1,35 @@
+---
+title: "uncentered"
+format: html
+engine: knitr
+---
+
+
+```{css echo=FALSE}
+.column {
+text-align: center;
+}
+```
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+content
+
+x
+
+content
+:::
+
+::: {.column width="50%"}
+
+y
+
+content
+
+y
+:::
+
+::::
