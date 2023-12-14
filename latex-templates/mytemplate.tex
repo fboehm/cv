@@ -1,0 +1,20 @@
+% custom-template.tex
+
+\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$,$endif$$if(handout)$$if(beamer)$handout$,$endif$$endif$$if(classoptions)$$classoptions$$endif$]{$documentclass$}
+
+% Add additional LaTeX packages if needed
+
+% Define the appearance of level 2 headings
+\titleformat{\subsection}[block]{\normalfont\large\bfseries\scshape}{\thesubsection}{1em}{}
+
+\begin{document}
+$if(title)$
+  \maketitle
+$endif$
+$if(abstract)$
+  \begin{abstract}
+  $abstract$
+  \end{abstract}
+$endif$
+$body$
+\end{document}

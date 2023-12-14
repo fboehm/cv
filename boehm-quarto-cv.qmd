@@ -3,7 +3,8 @@ title: "CV"
 filters:
   - bold-my-name.lua
 format:
-    quarto-cv-pdf: default
+    quarto-cv-pdf: 
+    template: latex-templates/mytemplate.tex
 author: Frederick Boehm
 date: last-modified
 phone: 715-252-3929
