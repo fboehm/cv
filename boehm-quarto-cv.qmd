@@ -159,9 +159,9 @@ Dates: October 2016 & July 2016
 Institution: University of Wisconsin-Madison  
 
 
-Data Carpentry Workshop
+Data Carpentry Workshop (twice)
 Title: Instructor
-Dates: June 19-20, 2017
+Dates: June 19-20, 2017 (Madison, Wisconsin) & Sept 15-16, 2018 (Rolla, Missouri)  
 Website: https://uw-madison-aci.github.io/2017-06-19-uwmadison-dc/
 
 Short course: Topic modeling for non-statisticians
