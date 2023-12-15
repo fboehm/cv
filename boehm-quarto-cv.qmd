@@ -4,7 +4,8 @@ filters:
   - bold-my-name.lua
 format:
     quarto-cv-pdf: 
-    template: latex-templates/mytemplate.tex
+      template: latex-templates/mytemplate.tex
+      keep-tex: true
 author: Frederick Boehm
 date: last-modified
 phone: 715-252-3929
@@ -44,24 +45,24 @@ engine: knitr
 
 ::: {.column width="70%"}
 
-**University of Michigan**  
+### University of Michigan
 Postdoctoral Research Fellow, Department of Internal Medicine (NIH T32 training grant)  
 Postdoctoral Research Fellow, Department of Biostatistics  
 
-**University of Massachusetts Medical School**  
+### University of Massachusetts Medical School
 Postdoctoral Research Fellow, Department of Microbiology & Physiological Systems  
 
-**University of Wisconsin-Madison**  
+### University of Wisconsin-Madison
 Postdoctoral Research Fellow, Department of Biostatistics and Medical Informatics  
 Ph.D., Department of Statistics  
 Postdoctoral Research Fellow, Molecular and Environmental Toxicology Center  
 Assistant Researcher, Value-Added Research Center   
 
 
-**University of Washington**  
+### University of Washington
 Postdoctoral Research Fellow, Department of Biostatistics  
 
-**University of Wisconsin-Madison**  
+### University of Wisconsin-Madison
 M.D., School of Medicine and Public Health  
 M.S., Department of Population Health Sciences  
 B.S., with Honors in Chemistry, Mathematics, and Biochemistry, College of Letters and Science  
