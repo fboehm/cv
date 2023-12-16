@@ -1,0 +1,34 @@
+---
+author: 'Jane Doe, PhD'
+title: 'Title'
+affiliation: 
+  - 'Affiliation1'
+  - 'Affiliation2'
+address: 'Address'
+email: 'email@fake.ca'
+format: cv-pdf
+---
+
+# Education
+
+# Awards
+
+# Publications
+
+## Peer-reviewed journal articles
+
+## Conferences
+
+### Oral presentations
+
+### Poster presentations
+
+# Software Development
+
+# Research Interests
+
+# Professional Development
+
+# Affiliations
+
+# References

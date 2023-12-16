@@ -3,8 +3,7 @@ title: "CV"
 filters:
   - bold-my-name.lua
 format:
-    quarto-cv-pdf: 
-      template: latex-templates/mytemplate.tex
+    pdf: 
       keep-tex: true
 author: Frederick Boehm
 date: last-modified
