@@ -1,0 +1,23 @@
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage[none]{hyphenat}
+\usepackage{orcidlink}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{ifthen}
+\usepackage{academicons}
+
+% Use correct color for Google Scholar
+\definecolor{googleblue}{HTML}{4285F4}
+\newcommand{\MYhref}[3][googleblue]{\href{#2}{\color{#1}{#3}}}
+
+% Utility functions for margin notes
+\usepackage{marginnote}
+\newcommand{\leftnote}[1]{\reversemarginpar\marginnote{#1}}
+\newcommand{\rightnote}[1]{\normalmarginpar\marginnote{#1}}

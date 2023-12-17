@@ -1,0 +1,37 @@
+title: Personal CV
+author: Matt Warkentin
+version: 0.0.1
+contributes:
+  format:
+    common:
+      engine: knitr
+      toc: false
+      number-sections: false
+      execute:
+        eval: true
+        echo: false
+        warning: false
+        error: false
+      lang: en
+      link-citations: true
+      colorlinks: true
+      linkcolor: blue
+      citecolor: blue
+      urlcolor: blue
+      filecolor: blue
+    pdf:
+      section-rules: false
+      fontawesome: true
+      updated: true
+      pdf-engine: lualatex
+      documentclass: article
+      mainfont: Arial
+      fontsize: 12pt
+      linestretch: 1.25
+      geometry:
+        - 'margin=2cm'
+        - 'footskip=0.3in'
+      template-partials:
+        - 'partials/title.tex'
+        - 'partials/before-body.tex'
+      include-in-header: config/header.tex
