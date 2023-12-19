@@ -41,7 +41,7 @@ engine: knitr
 ::: {.column width="70%"}
 
 ### University of Michigan
-Postdoctoral Research Fellow, Department of Internal Medicine (NIH T32 training grant)  
+Postdoctoral Research Fellow, Department of Internal Medicine (NIH T32HL007853 training grant)  
 Postdoctoral Research Fellow, Department of Biostatistics  
 
 ### University of Massachusetts Medical School

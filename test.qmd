@@ -1,0 +1,98 @@
+---
+filters:
+  - bold-my-name.lua
+format:
+    pdf: default
+    cv-pdf: 
+        email: frederick.boehm@gmail.com
+        phone: 715-252-3929
+        github: fboehm
+        web: https://fboehm.us
+        orcid: 0000-0002-1644-5931
+        scholar: k7PBnv4AAAAJ
+        section-rules: true
+        updated: false
+author: Frederick Boehm
+fontsize: 11pt
+nocite: '@*'
+bibliography: 
+  peer: parsing-bib-files/boehm-article.bib
+  collection: parsing-bib-files/boehm-incollection.bib
+  software: parsing-bib-files/boehm-software.bib
+  submitted: parsing-bib-files/boehm-unpublished.bib
+  book: parsing-bib-files/boehm-book.bib
+  misc: parsing-bib-files/boehm-misc.bib
+  proceedings: parsing-bib-files/boehm-inproceedings.bib
+validate-yaml: false
+csl: chicago-fullnote-bibliography-boehm.csl
+engine: knitr
+---
+
+
+
+
+
+
+# Education
+
+
+
+:::: {layout-ncol="3"}
+
+::: {.column width="70%" data-latex=""}
+
+University of Michigan
+Postdoctoral Research Fellow, Department of Internal Medicine (NIH T32HL007853 training grant)  
+Postdoctoral Research Fellow, Department of Biostatistics  
+
+University of Massachusetts Medical School
+Postdoctoral Research Fellow, Department of Microbiology & Physiological Systems  
+
+University of Wisconsin-Madison
+Postdoctoral Research Fellow, Department of Biostatistics and Medical Informatics  
+Ph.D., Department of Statistics  
+Postdoctoral Research Fellow, Molecular and Environmental Toxicology Center  
+Assistant Researcher, Value-Added Research Center   
+
+
+University of Washington
+Postdoctoral Research Fellow, Department of Biostatistics  
+
+University of Wisconsin-Madison
+M.D., School of Medicine and Public Health  
+M.S., Department of Population Health Sciences  
+B.S., with Honors in Chemistry, Mathematics, and Biochemistry, College of Letters and Science  
+:::
+
+::: {.column width="10%" data-latex=""}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="20%" data-latex=""}
+Ann Arbor, Michigan, USA    
+2023 to present    
+2021 to 2023    
+
+Worcester, Massachusetts, USA    
+2019 to 2021  
+
+Madison, Wisconsin, USA    
+2019  
+2011 to 2019  
+2012 to 2014    
+2011  
+
+
+Seattle, Washington, USA  
+2007 to 2009  
+
+Madison, Wisconsin, USA  
+2003 to 2007  
+2003 to 2007  
+1996 to 2001  
+
+:::
+
+::::
+
+
