@@ -3,8 +3,8 @@ title: "CV"
 filters:
   - bold-my-name.lua
 format:
-    pdf: 
-      keep-tex: true
+    quarto-cv-pdf: default
+    html: default
 author: Frederick Boehm
 date: last-modified
 phone: 715-252-3929
@@ -36,67 +36,40 @@ engine: knitr
 
 
 
-# Education
 
 
 
-:::: {.columns}
-
-::: {.column width="70%"}
-
-### University of Michigan
-Postdoctoral Research Fellow, Department of Internal Medicine (NIH T32 training grant)  
-Postdoctoral Research Fellow, Department of Biostatistics  
-
-### University of Massachusetts Medical School
-Postdoctoral Research Fellow, Department of Microbiology & Physiological Systems  
-
-### University of Wisconsin-Madison
-Postdoctoral Research Fellow, Department of Biostatistics and Medical Informatics  
-Ph.D., Department of Statistics  
-Postdoctoral Research Fellow, Molecular and Environmental Toxicology Center  
-Assistant Researcher, Value-Added Research Center   
+[red]{style="color: red;"}
+The color of this word is [red]{style="color: red;"}. 
+And [this line has a yellow background]{style="background-color: yellow"}.
 
 
-### University of Washington
-Postdoctoral Research Fellow, Department of Biostatistics  
+**University of Michigan** \hfill\ [Ann Arbor, Michigan, USA]{style="float:right"}    
+Postdoctoral Research Fellow, Department of Internal Medicine (NIH T32 training grant) \hfill\ [2023 to present]{style="float:right"} 
+Postdoctoral Research Fellow, Department of Biostatistics \hfill\ [2021 to 2023]{style="float:right"}
 
-### University of Wisconsin-Madison
-M.D., School of Medicine and Public Health  
-M.S., Department of Population Health Sciences  
-B.S., with Honors in Chemistry, Mathematics, and Biochemistry, College of Letters and Science  
-:::
+**University of Massachusetts Medical School** \hfill\ [Worcester, Massachusetts, USA]{style="float:right"}    
+Postdoctoral Research Fellow, Department of Microbiology & Physiological Systems \hfill\ [2019 to 2021]{style="float:right"}   
 
-::: {.column width="10%"}
-<!-- empty column to create gap -->
-:::
-
-::: {.column width="20%"}
-Ann Arbor, Michigan, USA    
-2023 to present    
-2021 to 2023    
-
-Worcester, Massachusetts, USA    
-2019 to 2021  
-
-Madison, Wisconsin, USA    
-2019  
-2011 to 2019  
-2012 to 2014    
-2011  
+**University of Wisconsin-Madison** \hfill\ [Madison, Wisconsin, USA]{style="float:right"}  
+Postdoctoral Research Fellow, Department of Biostatistics and Medical Informatics \hfill\ [2019]{style="float:right"}  
+Ph.D., Department of Statistics \hfill\ [2011 to 2019]{style="float:right"}  
+Postdoctoral Research Fellow, Molecular and Environmental Toxicology Center \hfill\ [2012 to 2014]{style="float:right"}  
+Assistant Researcher, Value-Added Research Center \hfill\ [2011]{style="float:right"}  
 
 
-Seattle, Washington, USA  
-2007 to 2009  
+**University of Washington** \hfill\ [Seattle, Washington, USA]{style="float:right"}  
+Postdoctoral Research Fellow, Department of Biostatistics \hfill\ [2007 to 2009]{style="float:right"}   
 
-Madison, Wisconsin, USA  
-2003 to 2007  
-2003 to 2007  
-1996 to 2001  
+**University of Wisconsin-Madison** \hfill\ [Madison, Wisconsin, USA]{style="float:right"}  
+M.D., School of Medicine and Public Health \hfill\ [2003 to 2007]{style="float:right"}   
+M.S., Department of Population Health Sciences \hfill\ [2003 to 2007]{style="float:right"}   
+B.S., with Honors in Chemistry, Mathematics, and Biochemistry, College of Letters and Science \hfill\ [1996 to 2001]{style="float:right"}  
 
-:::
 
-::::
+
+[Written Works]{.smallcaps} 
+---
 
 
 # Submitted Manuscripts

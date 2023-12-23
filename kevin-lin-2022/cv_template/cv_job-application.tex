@@ -1,0 +1,524 @@
+%-------------------------
+% Resume in Latex
+% Author : Shubhi Rani
+% License : MIT
+% Source: https://www.overleaf.com/project/63161c930acb26243fa8d558
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{geometry}
+\geometry{footskip=1cm}
+
+
+%\pagestyle{fancy}
+%\fancyhf{} % clear all header and footer fields
+%\fancyfoot{}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}
+
+
+\pagestyle{fancy} 
+\fancyfoot[C]{Kevin Z. Lin (CV), Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{.75in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[4]{
+\vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {#3} &{ #4} \\
+    \end{tabular*}
+    }
+
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2
+         \end{tabular*}
+   \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      {#3} &{ #4} 
+        \end{tabular*}
+     }
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\usepackage{mdframed}
+\newenvironment{block}
+{	\begin{center}
+   	\begin{mdframed}[backgroundcolor=col0,
+   	topline=false,bottomline=false,rightline=false,leftline=false]
+}
+{
+   	\end{mdframed} 
+   	\end{center}
+}
+
+\definecolor{col0}{rgb}{0.9,0.9,0.9} %gray/beige
+
+\usepackage{natbib}
+\usepackage{bibentry}
+\bibliographystyle{apalike}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\nobibliography{bib-cv}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Kevin Z. Lin} (Professor in single-cell genomics and statistics)}
+  \end{tabular*}
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  Website: \href{https://linnykos.github.io/}{\texttt{https://linnykos.github.io/}} & Mobile : (zzz) zzz-zzzz  \\
+Email : \href{mailto:kevinl1@wharton.upenn.edu}{\texttt{kevinL1@wharton.upenn.edu}}  \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+
+%\vspace{.5em}
+%\begin{block}
+%\begin{center}
+%\textbf{Research goal}:  Developing data integration statistical methods to aggregate information from different modalities, with a proclivity towards matrix factorization or networks ideas, in order to investigate biological mechanisms (e.g., epigenetic priming in neurogenesis or therapy resistance in cancer systems respectively) at single-cell resolution.
+%\end{center}
+%\end{block}
+
+\section{Employment}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Washington}{Seattle, UW}
+      {Tenure-track professor in School of Public Health's Biostatistics}{August 2023 - Present}
+  
+    \resumeSubheading
+      {University of Pennsylvania}{Philadelphia, PA}
+      {Post-doctoral researcher in Wharton's Statistics \& Data Science}{2020 - 2023}
+Advisor: Nancy Zhang
+	    
+   \resumeSubHeadingListEnd
+
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Carnegie Mellon University}{Pittsburgh, PA}
+      {Ph.D. in Dietrich's Statistics \& Data Science, Masters in Machine Learning}{2014 - 2020}
+Thesis advisors: Kathryn Roeder and Jing Lei\\
+Thesis title: ``High-dimensional statistical methods to model heterogeneity in genomic data''
+	    
+	      \resumeSubheading
+        {Princeton University}{Princeton, NJ}
+      {B.S.E. in Operations Research \& Financial Engineering}{2010 - 2014}
+Advisors: Han Liu and Robert Vanderbei\\
+% Undergraduate title: ``Stochastic optimization applied on gasoline certificate model with various regulatory structures''
+    Certificates in ``Statistics and Machine Learning'' and ``Applications of Computing'', graduated with Honors\\
+         
+
+  \resumeSubHeadingListEnd
+
+%%%%%%
+
+\section{Preprints}
+
+
+\begin{enumerate}
+
+\item \bibentry{lin2022esvd}\quad
+\\{\color{blue}\texttt{Link}}: \href{https://linnykos.github.io/papers/cohort\_eSVD.pdf}{https://linnykos.github.io/papers/cohort\_eSVD.pdf}
+
+\item \bibentry{lin2022spectral}\quad
+\\{\color{blue}\texttt{Link}}: \href{https://linnykos.github.io/papers/dynamicSBM.pdf}{https://linnykos.github.io/papers/dynamicSBM.pdf}
+
+\item \bibentry{chen2023integration}\quad
+\\{\color{blue}\texttt{bioRxiv}}: \href{https://www.biorxiv.org/content/10.1101/2023.01.12.523851v2}{2023.01.12.523851}
+
+\item \bibentry{lin2022quantifying}\quad
+\\{\color{blue}\texttt{bioRxiv}}: \href{https://www.biorxiv.org/content/10.1101/2022.10.07.511320v1}{2022.10.07.511320}
+
+
+
+\end{enumerate}
+
+\section{Publications (Reverse chronological order)}
+Note: $(*)$ denotes equal-contribution first authorship.
+
+\begin{enumerate}
+
+\item \bibentry{guan2023destin}\quad
+\\{\color{blue}\texttt{DOI}}: \href{https://www.frontiersin.org/articles/10.3389/fgene.2023.1089936/full}{10.3389/fgene.2023.1089936}, {\color{blue}\texttt{bioRxiv}}: \href{https://www.biorxiv.org/content/10.1101/2022.11.04.515202v1}{2022.11.04.515202}
+
+\item \bibentry{lei2020bias}\quad
+\\{\color{blue}\texttt{DOI}}: \href{https://www.tandfonline.com/doi/abs/10.1080/01621459.2022.2054817}{10.1080/01621459.2022.2054817}, {\color{blue}\texttt{Arxiv}}: 2003.08222
+
+\item \bibentry{field2022controlled}\quad
+\\{\color{blue}\texttt{DOI}}: \href{https://dl.acm.org/doi/10.1145/3485447.3512134}{10.1145/3485447.3512134}, {\color{blue}\texttt{Arxiv}}: 2101.00078
+
+\item \bibentry{lin2020exponential}\quad
+\\{\color{blue}\texttt{DOI}}: \href{https://www.tandfonline.com/doi/abs/10.1080/01621459.2021.1886106}{10.1080/01621459.2021.1886106}, {\color{blue}\texttt{Pubmed}}: 34354320
+
+\item \bibentry{lin2020covariance}\quad
+\\{\color{blue}\texttt{DOI}}: \href{https://www.tandfonline.com/doi/abs/10.1080/01621459.2020.1738234?journalCode=uasa20}{10.1080/01621459.2020.1738234}, {\color{blue}\texttt{Pubmed}}: 33731968
+
+\item \bibentry{hyun2018post}\quad
+\\{\color{blue}\texttt{DOI}}: \href{https://onlinelibrary.wiley.com/doi/abs/10.1111/biom.13422}{10.1111/biom.13422}, {\color{blue}\texttt{Pubmed}}: 33434289
+
+\item \bibentry{wang2021statistically}\quad
+\\{\color{blue}\texttt{DOI}}: \href{https://dl.acm.org/doi/abs/10.5555/3546258.3546506}{10.5555/3546258.3546506}, {\color{blue}\texttt{Arxiv}}: 1906.11364
+
+\item \bibentry{lei2020discussion}\quad
+\\{\color{blue}\texttt{DOI}}: \href{https://academic.oup.com/biomet/article-abstract/107/2/285/5837741}{10.1093/biomet/asaa009}
+
+\item \bibentry{an2018genome}\quad
+\\{\color{blue}\texttt{DOI}}: \href{https://www.science.org/doi/10.1126/science.aat6576}{10.1126/science.aat6576},  {\color{blue}\texttt{Pubmed}}: 30545852
+
+\item \bibentry{lin2017sharp}\quad
+\\{\color{blue}\texttt{DOI}}: \href{https://dl.acm.org/doi/10.5555/3295222.3295432}{10.5555/3295222.3295432}, {\color{blue}\texttt{Arxiv}}: 1606.06746
+
+\item \bibentry{vanderbei2016revisiting}\quad
+\\{\color{blue}\texttt{DOI}}: \href{https://link.springer.com/article/10.1007/s12532-016-0105-y}{10.1007/s12532-016-0105-y}
+
+\end{enumerate}
+
+\section{Articles}
+
+\begin{enumerate}
+\item \bibentry{lin2017we}\quad
+\\{\color{blue}\texttt{DOI}}: \href{https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1740-9713.2017.01073.x}{10.1111/j.1740-9713.2017.01073.x}
+
+\end{enumerate}
+
+
+%%%%%%%%%%%%
+ 
+\section{Teaching Experience}
+  \resumeSubHeadingListStart
+ 
+ \resumeSubheading
+{36-750: Statistical Computing}{Carnegie Mellon University (CMU)}
+{Guest lecturer for Alexander Reinhart}{Fall 2016, Fall 2017, Fall 2018, Fall 2019, Fall 2020}
+{\it For PhD students, with lecture ``Coding practices: Using R packages and GitHub to develop sustainable codebases.'' (1 lecture per semester)}
+
+\resumeSubheading
+{36-469: Statistical Genomics and High Dimensional Inference}{CMU}
+{Co-instructor with Kathryn Roeder}{Spring 2020}
+{ \it For upper-level undergraduates \& Master students}
+
+
+\resumeSubheading
+{36-490: Undergraduate Research}{CMU}
+{Data science initiative project fellow under Rebecca Nugent and Peter Freeman}{Spring 2019}
+{\it For upper-level undergraduates}
+
+\resumeSubheading
+{36-350: Statistical Computing}{CMU}
+{Instructor}{Summer 2018}
+ {\it For entry-level undergraduates}
+
+\resumeSubheading
+{36-350: Statistical Computing}{CMU}
+{Assistant instructor with Ryan J. Tibshirani}{Spring 2018}
+{ \it For entry-level undergraduates}
+
+\resumeSubheading
+{36-350: Statistical Computing}{CMU}
+{Teaching assistant under Peter Freeman}{Fall 2017}
+{ \it For entry-level undergraduates}
+
+\resumeSubheading
+{36-350: Statistical Computing}{CMU}
+{Teaching assistant under Ryan J. Tibshirani}{Fall 2016, Fall 2015}
+{ \it For entry-level undergraduates}
+
+\resumeSubheading
+{36-217: Probability Theory and Random Processes}{CMU}
+{Teaching assistant under Alessandro Rinaldo}{Spring 2015}
+{ \it For entry-level undergraduates}
+
+\resumeSubheading
+{46-921 \& 46-923: Financial Data Analysis I and II}{CMU}
+{Teaching assistant under Chad Schafer}{Spring 2014}
+{ \it For Master business students}
+
+\resumeSubheading
+{ORF 350: Analysis of Big Data}{Princeton University}
+{Course designer with Han Liu}{Spring 2014, Spring 2013, Spring 2012}
+{ \it For upper-level undergraduates}
+
+
+ \resumeSubHeadingListEnd    
+ 
+ %%%%%%%%%%%%
+ 
+\section{Mentoring Experience}
+
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+{Taewan Kim}{University of Chicago}
+{Masters in Statistics}{Summer 2020-Present}
+{ \it Working on: Dependency diagnostic: Visually understanding pairwise variable relationships for single-cell RNA-seq data}
+
+\resumeSubheading
+{Julie Kim, Sophia Wen, Jae Won Yoon, Wanhe Zhao}{CMU}
+{Senior undergraduates in Statistics \& Data Science}{Spring 2019}
+{ \it Title: Utilizing infant EEG brain patterns to predict childhood ADHD}
+
+\resumeSubheading
+{Grace Cao, Steve Kim, Eric Shi, Theo Yannekis}{CMU}
+{Senior undergraduates in Statistics \& Data Science}{Spring 2019}
+{ \it Title: Do streamlined books improve young students' reading comprehension?}
+
+\resumeSubheading
+{Amy Tian}{Princeton}
+{Senior undergraduate in Operations Research \& Financial Engineering}{Spring 2017}
+{ \it Title: A high-dimensional visualization system with applications to portfolio selection}
+
+
+\resumeSubheading
+{Mark Aksen}{Princeton}
+{Senior undergraduate in Mathematics}{Spring 2017}
+{ \it Title: A study of functional connectivity for schizophrenia using a Gaussian graphical model}
+
+\resumeSubheading
+{Felix Xiao}{Princeton}
+{Senior undergraduate in Operations Research \& Financial Engineering}{Spring 2016}
+{ \it Title: Approaches to brain parcellation using energy statistics and graph partitioning}
+
+
+
+   \resumeSubHeadingListEnd    
+ 
+ %%%%%%%%%%
+ 
+\section{Honors and Awards}
+
+  \resumeSubHeadingListStart
+  \resumeSubheading
+{Wikimedia Foundation Research Award of the Year}{Virtual}
+ {For paper ``Controlled analyses of social biases in Wikipedia bios''}{2023}
+
+
+    \resumeSubheading
+    {PhD TAs of the year}{Carnegie Mellon University}
+    {For the Spring 2020 semester}{May 2020}
+    {\it 1 of 2 total recipients}
+    
+\resumeSubheading
+{Honorable mention in student paper competition}{American Statistical Association}
+{For paper ``Dependency diagnostic: Visually understanding pairwise variable }{January 2018}
+relationships''\\
+{\it For ASA section: Statistical Computing and Statistical Graphics}
+
+\resumeSubheading
+{Winner of Statistical excellence for early-career writing}{Significance magazine}
+{For article ``We, the millennials: The statistical significance of political }{June 2017}
+significance"\\
+ {\it Competition held jointly with the Young Statisticians Section of Royal Statistical Society}
+
+\resumeSubheading
+{Teaching assistant excellence award recipient}{Carnegie Mellon University}
+{For article 36-350: ``Statistical Computing'' in Fall 2017}{May 2017}
+{\it 1 of 5 total recipients}
+
+\resumeSubheading
+{Award recipient of Kenneth H. Condit Prize}{Princeton University}
+{For excellence in service to department}{May 2014}
+
+ \resumeSubHeadingListEnd    
+ 
+%%%%%%
+
+\section{Talks and posters}
+\textbf{Invited talks}:
+  \resumeSubHeadingListStart
+  
+    
+       \resumeSubheading    
+  {UCLA Department of Statistics: Seminar Series}{(Remote)}
+    {Exponential-family embedding for single-cell data with applications to developmental}{2021}
+     trajectories
+    
+\resumeSubheading    
+{Joint Statistical Meetings}{(Remote)}
+{Exponential-family embedding with application to cell developmental trajectories }{2020}
+for single-cell data\\
+{\it For session: Analysis of single-cell RNA-seq data}\\
+{\it Delivered jointly with Kathryn Roeder}
+   
+       \resumeSubheading    
+  {StatScale Seminar}{(Remote)}
+    {Time-varying stochastic block models, with application for dynamics of }{2021}
+    gene co-expression networks
+    
+ \resumeSubHeadingListEnd    
+ 
+ \vspace{1em}
+ \textbf{Talks}:
+   \resumeSubHeadingListStart
+   
+   \resumeSubheading
+    {Joint Statistical Meetings}{Washington DC}
+    {Tilted-CCA: Quantifying common and distinct information in multiomic single-cell data}{2022}
+{\it For session: Novel approaches for omics and multi-omics analysis}
+    
+        \resumeSubheading    
+  {Symposium on Data Science and Statistics}{Pittsburgh, PA}
+    {Spectral clustering for multi-layer stochastic block models: Analysis of }{2022}
+    dynamic heterophilic networks\\
+{\it For session: Time analyses}
+    
+\resumeSubheading    
+{Joint Statistical Meetings}{(Remote)}
+{Time-varying stochastic block models via kernel smoothing, with application to }{2020}    
+RNA-seq data\\
+{\it For session: Statistical methods in gene expression data analysis I}
+
+\resumeSubheading    
+{Joint Statistical Meetings}{Denver, Colorado}
+{Exponential-family embedding with application to cell developmental trajectories}{2019}  
+ for single-cell data\\
+{\it For session: Statistical methods for single-cell genomics}     
+
+\resumeSubheading    
+{Joint Statistical Meetings}{Vancouver, Canada}
+{Dependency diagnostic: Visually understanding pairwise variable relationships}{2018}      
+{\it For session: A mixed bag of graphical delights}  
+
+\resumeSubheading    
+{Joint Statistical Meetings}{Baltimore, MD}
+{Hypothesis testing for simultaneous variable clustering and correlation network estimation}{2017}   
+{\it For session: Selected topics on hypothesis testing and statistical inference}  
+
+\resumeSubheading    
+{Joint Statistical Meetings}{Chicago, IL}
+{Longitudinal Gaussian graphical model for autism risk gene detection}{2016}   
+{\it For session: Network and graphical models for analysis of genomic data}  
+
+\resumeSubheading    
+{Modeling and Optimization: Theory and Applications}{Bethlehem, PA}
+{Optimization for compressed sensing: New insights and alternatives}{2014}
+{\it For session: Algorithms for big data}               
+ \resumeSubHeadingListEnd    
+    
+ \vspace{1em}     
+ \textbf{Posters}:        
+     \resumeSubHeadingListStart  
+\resumeSubheading    
+{American Society of Human Genetics}{(Remote)}
+{Exponential-family embedding with application to cell developmental trajectories}{2020}
+ for single-cell data
+
+\resumeSubheading    
+{Conference on Neural Information Processing Systems}{Long Beach, CA}
+{A sharp error analysis for the fused lasso, with application to approximate }{2017}   
+changepoint screening
+
+
+\resumeSubheading    
+{American Society of Human Genetics}{Baltimore, MD}
+{Gaussian graphical model integrating microarray and sequencing data for autism}{2015}              
+risk gene detection
+ \resumeSubHeadingListEnd
+ 
+    
+    
+%%%%%%%%%%%%
+
+\section{Professional Service}
+ 
+ 
+ \begin{itemize}
+\item Certified by \href{https://www.cmu.edu/health-services/health-education-and-resources/index.html#:~:text=MHFA}{Mental Health First Aid USA} (Fall 2020)
+\item Certified by CMU's Eberly Center's \href{https://www.cmu.edu/teaching/graduatestudentsupport/futurefacultyprogram.html}{Future Faculty Program}, which included two observed lectures in two different semesters (Fall 2019 to Summer 2020)
+\item Certified with Gatekeeper certificate by the \href{https://qprinstitute.com/}{QPR}'s (Question, Persuade, Refer) suicide prevention program (February 2020)
+\item Founder and organizer for ``Statistical Inference'' reading group for PhD students in the Statistics \& Data Science department (2017-2018)
+\item Founding member of Carnegie Mellon University's Statistics and Data Science department's Wellness Network (2018-2020)
+\item Association member of American Statistical Association, and American Society of Human Genetics
+\item Reviewer for:
+\begin{itemize}
+\item Annals of Applied Statistics
+\item Annals of Statistics
+\item Bayesian Analysis
+\item Biometrics
+\item Biometrika
+\item Electronic Journal of Statistics
+\item IEEE Transactions of Network Science and Engineering
+\item Journal of Molecular Biology
+\item Journal of American Statistical Association
+\item Nature Neuroscience
+\item PLOS Genetics
+\item Statistical Sinica
+\item Statistics and Probability Letters
+\item Statistics in Medicine
+\item Technometrics
+\end{itemize}
+\end{itemize}
+
+%%%%%%%%%%%%
+
+%\section{Acknowledgments in:}
+%
+%\begin{block}
+%\begin{center}
+%A substantial portion of my research is collaborative, so I enjoy providing feedback to my collaborator on their research projects. These are the papers I am acknowledged in.
+%\end{center}
+%\end{block}
+% 
+% \begin{itemize}
+%\item \bibentry{wang2021constructing}
+%\item \bibentry{chouhan2021availability}
+%\item \bibentry{peng2021integration}
+%\item \bibentry{ali2019generalized}
+%\end{itemize}
+
+%%%%%%%%%%%%
+
+\end{document}
