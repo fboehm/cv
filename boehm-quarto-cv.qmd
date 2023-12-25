@@ -1,16 +1,27 @@
 ---
 title: "CV"
-filters:
-  - bold-my-name.lua
+subparagraph: yes
+geometry:
+  - top=20mm
+  - left=20mm
+  - right=20mm
+  - bottom=20mm
+  - heightrounded
 format:
-    quarto-cv-pdf: default
-    html: default
-author: Frederick Boehm
+    quarto-cv-pdf: 
+        include-in-header: 
+            - text: |
+                \usepackage{titlesec}
+                \titleformat{\section}{\bfseries\Large\scshape}{\thesection}{}{}
+                \titleformat{\subsection}{\bfseries\scshape}{\thesubsection}{0em}{}
+        keep-tex: true
+        pdf-engine: lualatex
+author: Frederick J. Boehm
 date: last-modified
 phone: 715-252-3929
-address: "University of Michigan · 419 Waymarket DR · Ann Arbor, MI 48103 · USA"
+address: "University of Michigan · 419 Waymarket DR · Ann Arbor, Michigan 48103 · USA"
 email: frederick.boehm@gmail.com
-fontsize: 11pt
+fontsize: 12pt
 github: fboehm # github account
 orcid: 0000-0002-1644-5931 # orcid identifier
 #osf: ymqui # osf five character id
@@ -36,12 +47,9 @@ engine: knitr
 
 
 
+# Education and Training
 
-
-
-[red]{style="color: red;"}
-The color of this word is [red]{style="color: red;"}. 
-And [this line has a yellow background]{style="background-color: yellow"}.
+\hrule
 
 
 **University of Michigan** \hfill\ [Ann Arbor, Michigan, USA]{style="float:right"}    
@@ -64,40 +72,40 @@ Postdoctoral Research Fellow, Department of Biostatistics \hfill\ [2007 to 2009]
 **University of Wisconsin-Madison** \hfill\ [Madison, Wisconsin, USA]{style="float:right"}  
 M.D., School of Medicine and Public Health \hfill\ [2003 to 2007]{style="float:right"}   
 M.S., Department of Population Health Sciences \hfill\ [2003 to 2007]{style="float:right"}   
-B.S., with Honors in Chemistry, Mathematics, and Biochemistry, College of Letters and Science \hfill\ [1996 to 2001]{style="float:right"}  
+B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill\ [1996 to 2001]{style="float:right"}  
 
 
 
-[Written Works]{.smallcaps} 
----
+# Written Works 
 
+\hrule
 
-# Submitted Manuscripts
+## Submitted Manuscripts {.blue}
 
 ::: {#refs-submitted}
 :::
 
-# Journal Articles
+## Journal Articles {.smallcaps}
 
 ::: {#refs-peer}
 :::
 
-# Book
+## Book {.blue .smallcaps}
 
 ::: {#refs-book}
 :::
 
-# Book Chapters
+## Book Chapters
 
 ::: {#refs-collection}
 :::
 
-# Software
+## Software
 
 ::: {#refs-software}
 :::
 
-# Conference Proceedings
+## Conference Proceedings
 
 ::: {#refs-proceedings}
 :::
@@ -105,7 +113,7 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry, College of Letter
 
 
 
-# Other Publications
+## Other Publications
 
 ::: {#refs-misc}
 :::
@@ -113,83 +121,50 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry, College of Letter
 
 # Teaching Experience
 
+\hrule
+
 ## Formal Courses
 
-The College Classroom: Teaching Inclusively
-Title: Instructor
-Term: Fall 2017
-Institution: CIRTL Network
-Course: The College Classroom: How to teach inclusively for educating a diverse nation
-Title: Co-facilitator
-Term: Spring 2017
-Institution: University of Wisconsin-Madison
-Course: Statistics 371: Introductory statistics for biologists
-Title: Lecturer student assistant (Instructor of record)
-Term: Fall 2016
-Institution: University of Wisconsin-Madison
-Course: Statistics 679: Data science
-Title: Guest lecturer on topic models
-Term: Fall 2016
-Institution: University of Wisconsin-Madison
-Course: Statistics 679: Data science
-Title: Teaching assistant
-Term: Fall 2016
-Institution: University of Wisconsin-Madison
-Course: Statistics 224 & 324: Introductory statistics for engineers
-Title: Lecturer student assistant (Instructor of record)
-Term: Spring 2014, Fall 2014, Spring 2015, Fall 2015, Spring 2016
-Institution: University of Wisconsin-Madison
-Course: Statistics 301 & 371: Introductory statistics
-Title: Lecturer student assistant (Instructor of record)
-Term: Summer 2015
-Institution: University of Wisconsin-Madison
-Course: Biostatistics 518: Introduction to biostatistics
-Title: Teaching assistant
-Frederick Boehm 6
-Term: Winter 2010
-Institution: University of Washington
-Course: Biostatistics 517: Introduction to biostatistics
-Title: Teaching assistant
-Term: Fall 2009
-Institution: University of Washington
-Course: Biostatistics 511
-Title: Teaching assistant
-Term: Summer 2008
-Institution: University of Washington
-Course: Chemistry 3B: Introductory organic chemistry
-Title: Graduate student instructor
-Term: Fall 2001
-Institution: University of California-Berkeley
+How to teach inclusively for educating a diverse nation  \hfill Spring 2017 (University of Wisconsin-Madison) & Fall 2017 (CIRTL Network)  
+Role: Co-facilitator
+
+Introductory statistics for biologists  \hfill Fall 2016 (University of Wisconsin-Madison)  
+Role: Instructor  
+
+Special Topics: Data Science  \hfill Fall 2016 (University of Wisconsin-Madison)  
+Roles: Guest lecturer on topic models; Teaching assistant
+
+Introductory statistics for engineers  \hfill Spring 2014, Fall 2014, Spring 2015, Summer 2015, Fall 2015, Spring 2016 (University of Wisconsin-Madison)  
+Role: Instructor
+
+Introduction to Biostatistics  \hfill Fall 2009 & Winter 2010 (University of Washington)  
+Role: Teaching assistant
+
+Introductory organic chemistry \hfill Fall 2001 (University of California-Berkeley)  
+Role: Teaching assistant
+
+
 
 
 ## Short Courses & Workshops
 
-Engaging students in the teaching of statistics (twice)
-Title: Instructor
-Dates: July 2020 to August 2020 & March 2018 to April 2018
-Institution: Center for the Integration of Research, Teaching and Learning Network (https://cirtl.net/)
+Engaging students in the teaching of statistics \hfill March 2018 & July 2020 (CIRTL Network)  
+Role: Instructor  
 
 
-Short Course: Data analysis with topic models for communications researchers (twice)
-Title: Instructor
-Dates: October 2016 & July 2016  
-Institution: University of Wisconsin-Madison  
+Data analysis with topic models for communications researchers \hfill July 2016 & October 2016 (University of Wisconsin-Madison)  
+Role: Instructor  
 
-
-Data Carpentry Workshop (twice)
-Title: Instructor
-Dates: June 19-20, 2017 (Madison, Wisconsin) & Sept 15-16, 2018 (Rolla, Missouri)  
+Data Carpentry Workshop \hfill June 2017 & September 2018 (University of Wisconsin-Madison & Missouri S&T)  
+Role: Instructor  
 Website: https://uw-madison-aci.github.io/2017-06-19-uwmadison-dc/
 
-Short course: Topic modeling for non-statisticians
-Title: Instructor
-Dates: October 2013
-Institution: University of Wisconsin-Madison
+Topic modeling for non-statisticians \hfill October 2013 (University of Wisconsin-Madison)  
+Role: Instructor
 
-Short course: Statistical computing with R
-Title: Instructor
-Dates: June & July 2013; June & July 2012
-Institution: University of Wisconsin-Madison  
+Statistical computing with R \hfill June 2012 & June 2013 (University of Wisconsin-Madison)  
+Role: Instructor
+
 
 ## Training in Teaching  
 

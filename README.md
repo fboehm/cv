@@ -38,8 +38,12 @@ entity).
 
 - [ ] add a link to my CV on my website
 - [ ] add a link to my CV on my github
-- [ ] Fix the appearance of "submitted manuscripts" text in pdf (right now, the words "Presented at the " appear in the citation. I believe that they are hard coded from the template)
+- [ ] Fix the appearance of "submitted manuscripts" text in pdf (right now, the words "Presented at the " appear in the citation. I believe that they are hard coded from the template) - actually, need to fix bib file for unpublished!
 - [ ] Proofread carefully before sharing the new one
 - [ ] bold my name in listed pubs
+- [ ] update bib file (and partitioned bib files) to include dois, hyperlinks, etc
+    - [ ] maybe export my zotero library to a bib file, then use that as the master bib file
+- [ ] add horizontal rules to separate sections
 
+- [ ] fix bib files
 

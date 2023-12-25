@@ -1,0 +1,57 @@
+---
+title: "CV"
+subparagraph: yes
+format:
+    quarto-cv-pdf: 
+        include-in-header: 
+            - text: |
+                \usepackage{titlesec}
+                \titleformat{\subsection}{\scshape\large\bfseries}{\thesubsection}{1em}{}
+        keep-tex: true
+        pdf-engine: lualatex
+author: Frederick J. Boehm
+date: last-modified
+phone: 715-252-3929
+address: "University of Michigan · 419 Waymarket DR · Ann Arbor, Michigan 48103 · USA"
+email: frederick.boehm@gmail.com
+fontsize: 12pt
+github: fboehm # github account
+orcid: 0000-0002-1644-5931 # orcid identifier
+#osf: ymqui # osf five character id
+#twitter: twitter # twitter handle
+web: fboehm.us
+fontawesome: yes
+nocite: '@*'
+bibliography: 
+  peer: parsing-bib-files/boehm-article.bib
+  collection: parsing-bib-files/boehm-incollection.bib
+  software: parsing-bib-files/boehm-software.bib
+  submitted: parsing-bib-files/boehm-unpublished.bib
+  book: parsing-bib-files/boehm-book.bib
+  misc: parsing-bib-files/boehm-misc.bib
+  proceedings: parsing-bib-files/boehm-inproceedings.bib
+validate-yaml: false
+csl: chicago-fullnote-bibliography.csl
+engine: knitr
+---
+
+
+
+
+
+
+
+
+# Submitted Manuscripts
+
+
+kjkljkjlkjkl
+
+## Submitted Manuscripts 
+
+hjgkhjgkhjgk
+
+## Submitted Manuscripts 
+
+## Submitted Manuscripts 
+
