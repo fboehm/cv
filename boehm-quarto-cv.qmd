@@ -6,14 +6,13 @@ geometry:
   - left=20mm
   - right=20mm
   - bottom=20mm
-  - heightrounded
 format:
     quarto-cv-pdf: 
         include-in-header: 
             - text: |
                 \usepackage{titlesec}
-                \titleformat{\section}{\bfseries\Large\scshape}{\thesection}{}{}
-                \titleformat{\subsection}{\bfseries\scshape}{\thesubsection}{0em}{}
+                \titleformat{\section}{\bfseries\Large}{\thesection}{}{}
+                \titleformat{\subsection}{\itshape}{\thesubsection}{}{}
         keep-tex: true
         pdf-engine: lualatex
 author: Frederick J. Boehm
@@ -80,17 +79,20 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill\ [1996 to 2
 
 \hrule
 
-## Submitted Manuscripts {.blue}
+## Submitted Manuscripts 
 
 ::: {#refs-submitted}
 :::
 
-## Journal Articles {.smallcaps}
+## Journal Articles 
+
+
+### Journal articles, too
 
 ::: {#refs-peer}
 :::
 
-## Book {.blue .smallcaps}
+## Book  
 
 ::: {#refs-book}
 :::
