@@ -1,0 +1,25 @@
+# data.yaml
+people:
+  - name: Robert Turner
+    title: undergraduate researcher
+    project: Topic Modeling of Tweets to Detect Social Media Events
+    start: 2015-05-01
+    end: 2016-05-01
+    next_role: Software Engineer at Epic Systems
+    description: >
+      Robert worked on a project to detect social media events using topic modeling
+      of tweets. He performed topic modeling of tweets in distinct time windows to
+      detect social media events.
+      He also developed strategies to visualize results.
+  - name: Jinyu Xia
+    title: undergraduate researcher
+    project: Tweet Sentiments and Stock Market Index Trends 
+    start: 2015-09-01
+    end: 2016-08-01
+    next_role: Statistics graduate student at University of Washington
+    description: >
+      Jinyu analyzed daily closing prices of the Dow Jones Industrial Average and 
+      the S&P 500 Index and the sentiment of tweets about the stock market.
+      She found that daily tweet sentiment score is correlated with the daily closing
+      prices of the Dow Jones Industrial Average and the S&P 500 Index.
+      
