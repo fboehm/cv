@@ -8,11 +8,6 @@ geometry:
   - bottom=20mm
 format:
     quarto-cv-pdf: 
-        include-in-header: 
-            - text: |
-                \usepackage{titlesec}
-                \titleformat{\section}{\bfseries\Large}{\thesection}{}{}
-                \titleformat{\subsection}{\itshape}{\thesubsection}{}{}
         keep-tex: true
         pdf-engine: lualatex
 author: Frederick J. Boehm
@@ -38,7 +33,7 @@ bibliography:
   proceedings: parsing-bib-files/boehm-inproceedings.bib
 validate-yaml: false
 csl: chicago-fullnote-bibliography-boehm.csl
-engine: knitr
+engine: jupyter
 ---
 
 
@@ -50,8 +45,11 @@ engine: knitr
 
 \hrule
 
+I need to do something about the nbsp... buyt only if I want html otuput
 
-**University of Michigan** \hfill\ [Ann Arbor, Michigan, USA]{style="float:right"}    
+
+
+**University of Michigan** \hfill\nbsp [Ann Arbor, Michigan, USA]{style="float:right"}    
 Postdoctoral Research Fellow, Department of Internal Medicine (NIH T32 training grant) \hfill\ [2023 to present]{style="float:right"} 
 Postdoctoral Research Fellow, Department of Biostatistics \hfill\ [2021 to 2023]{style="float:right"}
 
@@ -178,7 +176,7 @@ Role: Instructor \hfill University of Wisconsin-Madison
 
 # Mentoring Experience
 
-```{python}
+```{python} 
 import yaml
 
 # Read YAML file
@@ -187,7 +185,10 @@ with open("data/mentoring.yaml", "r") as file:
 
 # Select elements
 first_person_name = data['people'][0]['name']
+```
 
+```{python} 
+#| eval: false
 from datetime import datetime
 
 # Input date as a string
@@ -206,9 +207,9 @@ print(formatted_date)
 
 
 
-Research mentor to `python data['people'][0]['name']`, `python data['people'][0]['title']` \hfill `python datetime.strptime(data['people][0]['start'], "%Y-%m-%d").strftime("%B %Y")` to `python data['people'][0]['end']`  
-Project: `python data['people'][0]['project']`  
-Next position: `python data['people'][0]['next_role']`  
+Research mentor to `{python} data['people'][0]['name']`, `{python} data['people'][0]['title']` \hfill `{python} datetime.strptime(data['people][0]['start'], "%Y-%m-%d").strftime("%B %Y")` to `{python} data['people'][0]['end']`  
+Project: `{python} data['people'][0]['project']`  
+Next position: `{python} data['people'][0]['next_role']`  
 
 
 Research mentor to Jinyu Xia, Undergraduate researcher  

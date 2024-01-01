@@ -60,6 +60,46 @@
 
 
 
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{241,243,245}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
 \usepackage{longtable,booktabs}
 \usepackage{graphicx,grffile}
 \makeatletter
@@ -80,10 +120,6 @@
 \usepackage{titlesec}
 \titleformat{\section}{\bfseries\Large}{\thesection}{}{}
 \titleformat{\subsection}{\itshape}{\thesubsection}{}{}
-\makeatletter
-\makeatother
-\makeatletter
-\makeatother
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
@@ -120,18 +156,10 @@
 \newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
 \makeatother
 \makeatletter
+\makeatother
+\makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
-\makeatother
-\makeatletter
-\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
-\makeatother
-\makeatletter
-\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
-\makeatother
-\makeatletter
-\makeatother
-\makeatletter
 \makeatother
 
 % Now begins the stuff that I added.
@@ -227,8 +255,7 @@
 
 
 
-\hypertarget{education-and-training}{%
-\section{Education and Training}\label{education-and-training}}
+\section{Education and Training}\label{education-and-training}
 
 \hrule
 
@@ -262,17 +289,15 @@ M.S., Department of Population Health Sciences \hfill~{2003 to 2007}\\
 B.S., with Honors in Chemistry, Mathematics, and Biochemistry
 \hfill~{1996 to 2001}
 
-\hypertarget{written-works}{%
-\section{Written Works}\label{written-works}}
+\section{Written Works}\label{written-works}
 
 \hrule
 
-\hypertarget{submitted-manuscripts}{%
-\subsection{Submitted Manuscripts}\label{submitted-manuscripts}}
+\subsection{Submitted Manuscripts}\label{submitted-manuscripts}
 
-\hypertarget{refs-submitted}{}
+\phantomsection\label{refs-submitted}
 \begin{CSLReferences}{1}{0}
-\leavevmode\vadjust pre{\hypertarget{ref-kurtz2024}{}}%
+\bibitem[\citeproctext]{ref-kurtz2024}
 \textsc{Kurtz}, Sherry L., Richard \textsc{Baker}, Frederick
 \textsc{Boehm}, Chelsea \textsc{Lehman}, Lara \textsc{Mittereder}, Hamda
 \textsc{Khan}, Amy \textsc{Rossi}, et al. Presented at the Multiple
@@ -281,34 +306,32 @@ tuberculosis in genetically diverse mice, n.d.
 
 \end{CSLReferences}
 
-\hypertarget{journal-articles}{%
-\subsection{Journal Articles}\label{journal-articles}}
+\subsection{Journal Articles}\label{journal-articles}
 
-\hypertarget{journal-articles-too}{%
-\subsubsection{Journal articles, too}\label{journal-articles-too}}
+\subsubsection{Journal articles, too}\label{journal-articles-too}
 
-\hypertarget{refs-peer}{}
+\phantomsection\label{refs-peer}
 \begin{CSLReferences}{1}{0}
-\leavevmode\vadjust pre{\hypertarget{ref-boehm2022statistical}{}}%
+\bibitem[\citeproctext]{ref-boehm2022statistical}
 \textsc{Boehm}, Frederick J, and Xiang \textsc{Zhou}. {``Statistical
 Methods for Mendelian Randomization in Genome-Wide Association Studies:
 A Review.''} \emph{Computational and Structural Biotechnology Journal},
 2022.
 
-\leavevmode\vadjust pre{\hypertarget{ref-smith2022host}{}}%
+\bibitem[\citeproctext]{ref-smith2022host}
 \textsc{Smith}, Clare M, Richard E \textsc{Baker}, Megan K
 \textsc{Proulx}, Bibhuti B \textsc{Mishra}, Jarukit E \textsc{Long}, Sae
 Woong \textsc{Park}, Ha-Na \textsc{Lee}, et al. {``Host-Pathogen Genetic
 Interactions Underlie Tuberculosis Susceptibility in Genetically Diverse
 Mice.''} \emph{Elife} 11 (2022): e74419.
 
-\leavevmode\vadjust pre{\hypertarget{ref-boehm2020happening}{}}%
+\bibitem[\citeproctext]{ref-boehm2020happening}
 \textsc{Boehm}, Frederick J, and Bret M \textsc{Hanlon}. {``What Is
 Happening on Twitter? A Framework for Student Research Projects with
 Tweets.''} \emph{Journal of Statistics and Data Science Education},
 2021, S95--102. \url{https://doi.org/10.1080/10691898.2020.1848486}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-rodriguez2020genetic}{}}%
+\bibitem[\citeproctext]{ref-rodriguez2020genetic}
 \textsc{Rodriguez-Gil}, Jorge L, Dawn E \textsc{Watkins-Chow}, Laura L
 \textsc{Baxter}, Gene \textsc{Elliot}, Ursula L \textsc{Harper}, Stephen
 M \textsc{Wincovitch}, Julia C \textsc{Wedel}, et al. {``Genetic
@@ -316,26 +339,26 @@ Background Modifies Phenotypic Severity and Longevity in a Mouse Model
 of Niemann-Pick Disease Type C1.''} \emph{Disease Models\\
 \& Mechanisms} 13, no. 3 (2020).
 
-\leavevmode\vadjust pre{\hypertarget{ref-boehm2018test}{}}%
+\bibitem[\citeproctext]{ref-boehm2018test}
 \textsc{Boehm}, Frederick J., Elissa J. \textsc{Chesler}, Brian S.
 \textsc{Yandell}, and Karl W. \textsc{Broman}. {``Testing Pleiotropy Vs.
 Separate QTL in Multiparental Populations.''} \emph{G3}, 2019.
 \url{https://doi.org/10.1534/g3.119.400098}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-boehm2019qtl2pleio}{}}%
+\bibitem[\citeproctext]{ref-boehm2019qtl2pleio}
 \textsc{Boehm}, Frederick, Brian \textsc{Yandell}, and Karl W
 \textsc{Broman}. {``Qtl2pleio: Testing Pleiotropy Vs. Separate QTL in
 Multiparental Populations.''} \emph{Journal of Open Source Software} 4,
 no. 38 (2019): 1435. \url{https://doi.org/10.21105/joss.01435}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-kemis2019genetic}{}}%
+\bibitem[\citeproctext]{ref-kemis2019genetic}
 \textsc{Kemis}, Julia H, Vanessa \textsc{Linke}, Kelsey L
 \textsc{Barrett}, Frederick J \textsc{Boehm}, Lindsay L
 \textsc{Traeger}, Mark P \textsc{Keller}, Mary E \textsc{Rabaglia}, et
 al. {``Genetic Determinants of Gut Microbiota Composition and Bile Acid
 Profiles in Mice.''} \emph{PLoS Genetics} 15, no. 8 (2019): e1008073.
 
-\leavevmode\vadjust pre{\hypertarget{ref-wells2016how}{}}%
+\bibitem[\citeproctext]{ref-wells2016how}
 \textsc{Wells}, Chris, Dhavan V. \textsc{Shah}, Jon C.
 \textsc{Pevehouse}, JungHwan \textsc{Yang}, Ayellet \textsc{Pelled},
 Frederick \textsc{Boehm}, Josephine \textsc{Lukito}, Shreenita
@@ -344,20 +367,20 @@ Coverage to the Nomination: Hybrid Media Campaigning.''} \emph{Political
 Communication} 33, no. 4 (2016): 669--76.
 \url{https://doi.org/10.1080/10584609.2016.1224416}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-tauchman2015stable}{}}%
+\bibitem[\citeproctext]{ref-tauchman2015stable}
 \textsc{Tauchman}, Eric C, Frederick J \textsc{Boehm}, and Jennifer G
 \textsc{DeLuca}. {``Stable Kinetochore-Microtubule Attachment Is
 Sufficient to Silence the Spindle Assembly Checkpoint in Human Cells.''}
 \emph{Nature Communications} 6 (2015).
 
-\leavevmode\vadjust pre{\hypertarget{ref-costello2014community}{}}%
+\bibitem[\citeproctext]{ref-costello2014community}
 \textsc{Costello}, James C, Laura M \textsc{Heiser}, Elisabeth
 \textsc{Georgii}, Mehmet \textsc{Gönen}, Michael P \textsc{Menden},
 Nicholas J \textsc{Wang}, Mukesh \textsc{Bansal}, et al. {``A Community
 Effort to Assess and Improve Drug Sensitivity Prediction Algorithms.''}
 \emph{Nature Biotechnology} 32, no. 12 (2014): 1202--12.
 
-\leavevmode\vadjust pre{\hypertarget{ref-dove2014strategy}{}}%
+\bibitem[\citeproctext]{ref-dove2014strategy}
 \textsc{Dove}, William F, Alexandra \textsc{Shedlovsky}, Linda
 \textsc{Clipson}, James M \textsc{Amos-Landgraf}, Richard B
 \textsc{Halberg}, Kathleen J \textsc{Krentz}, Frederick J
@@ -366,7 +389,7 @@ Thomas M \textsc{Keane}. {``A Strategy to Identify Dominant Point Mutant
 Modifiers of a Quantitative Trait.''} \emph{G3: Genes\textbar{}
 Genomes\textbar{} Genetics} 4, no. 6 (2014): 1113--21.
 
-\leavevmode\vadjust pre{\hypertarget{ref-fawzi2010economic}{}}%
+\bibitem[\citeproctext]{ref-fawzi2010economic}
 \textsc{Fawzi}, MC Smith, W \textsc{Lambert}, F \textsc{Boehm}, JL
 \textsc{Finkelstein}, JM \textsc{Singler}, F \textsc{Léandre}, P
 \textsc{Nevil}, et al. {``Economic Risk Factors for HIV Infection Among
@@ -374,7 +397,7 @@ Women in Rural Haiti: Implications for HIV Prevention Policies and
 Programs in Resource-Poor Settings.''} \emph{Journal of Women's Health}
 19, no. 5 (2010): 885--92.
 
-\leavevmode\vadjust pre{\hypertarget{ref-laurie2010quality}{}}%
+\bibitem[\citeproctext]{ref-laurie2010quality}
 \textsc{Laurie}, Cathy C, Kimberly F \textsc{Doheny}, Daniel B
 \textsc{Mirel}, Elizabeth W \textsc{Pugh}, Laura J \textsc{Bierut},
 Tushar \textsc{Bhangale}, Frederick \textsc{Boehm}, et al. {``Quality
@@ -382,7 +405,7 @@ Control and Quality Assurance in Genotypic Data for Genome-Wide
 Association Studies.''} \emph{Genetic Epidemiology} 34, no. 6 (2010):
 591--602.
 
-\leavevmode\vadjust pre{\hypertarget{ref-gestwicki2002cell}{}}%
+\bibitem[\citeproctext]{ref-gestwicki2002cell}
 \textsc{Gestwicki}, Jason E, Laura E \textsc{Strong}, Christopher W
 \textsc{Cairo}, Frederick J \textsc{Boehm}, and Laura L
 \textsc{Kiessling}. {``Cell Aggregation by Scaffolded Receptor
@@ -391,24 +414,22 @@ Clusters.''} \emph{Chemistry\\
 
 \end{CSLReferences}
 
-\hypertarget{book}{%
-\subsection{Book}\label{book}}
+\subsection{Book}\label{book}
 
-\hypertarget{refs-book}{}
+\phantomsection\label{refs-book}
 \begin{CSLReferences}{1}{0}
-\leavevmode\vadjust pre{\hypertarget{ref-moorthy2009pathophysiology}{}}%
+\bibitem[\citeproctext]{ref-moorthy2009pathophysiology}
 \textsc{Moorthy}, A Vishnu, Bryan Neil \textsc{Becker}, Frederick J
 \textsc{Boehm III}, and Arjang \textsc{Djamali}. \emph{Pathophysiology
 of Kidney Disease and Hypertension}. Saunders/Elsevier, 2009.
 
 \end{CSLReferences}
 
-\hypertarget{book-chapters}{%
-\subsection{Book Chapters}\label{book-chapters}}
+\subsection{Book Chapters}\label{book-chapters}
 
-\hypertarget{refs-collection}{}
+\phantomsection\label{refs-collection}
 \begin{CSLReferences}{1}{0}
-\leavevmode\vadjust pre{\hypertarget{ref-pelled2018}{}}%
+\bibitem[\citeproctext]{ref-pelled2018}
 \textsc{Pelled}, Ayellet, Josephine \textsc{Lukito}, Frederick
 \textsc{Boehm}, JungHwan \textsc{Yang}, and Dhavan \textsc{Shah}.
 {``{`Little Marco,'} {`Lyin' Ted,'} {`Crooked Hillary,'} and the
@@ -417,7 +438,7 @@ of Kidney Disease and Hypertension}. Saunders/Elsevier, 2009.
 Communication}, edited by Natalie \textsc{Stroud} and Shannon
 \textsc{McGregor}, 176--96. Routledge, 2018.
 
-\leavevmode\vadjust pre{\hypertarget{ref-boehm2009metabolic}{}}%
+\bibitem[\citeproctext]{ref-boehm2009metabolic}
 \textsc{Boehm}, Frederick, Kelly \textsc{Traeger}, and Arjang
 \textsc{Djamali}. {``Metabolic Acidosis and Approach to Acid-Base
 Disorders.''} In \emph{Pathophysiology of Kidney Disease and
@@ -425,14 +446,14 @@ Hypertension}, edited by Vishnu \textsc{Moorthy}, Bryan \textsc{Becker},
 Frederick \textsc{Boehm}, and Arjang \textsc{Djamali}, 79--88.
 Saunders/Elsevier, 2009.
 
-\leavevmode\vadjust pre{\hypertarget{ref-moorthy2009urinalysis}{}}%
+\bibitem[\citeproctext]{ref-moorthy2009urinalysis}
 \textsc{Moorthy}, Vishnu, and Frederick \textsc{Boehm}. {``Urinalysis
 and an Approach to Kidney Diseases.''} In \emph{Pathophysiology of
 Kidney Disease and Hypertension}, edited by Vishnu \textsc{Moorthy},
 Bryan \textsc{Becker}, Frederick \textsc{Boehm}, and Arjang
 \textsc{Djamali}, 121--30. Saunders/Elsevier, 2009.
 
-\leavevmode\vadjust pre{\hypertarget{ref-traeger2009acid}{}}%
+\bibitem[\citeproctext]{ref-traeger2009acid}
 \textsc{Traeger}, Kelly, Frederick \textsc{Boehm}, and Arjang
 \textsc{Djamali}. {``Acid-Base Homeostasis and Metabolic Alkalosis.''}
 In \emph{Pathophysiology of Kidney Disease and Hypertension}, edited by
@@ -442,27 +463,25 @@ Vishnu \textsc{Moorthy}, Bryan \textsc{Becker}, Frederick
 
 \end{CSLReferences}
 
-\hypertarget{software}{%
-\subsection{Software}\label{software}}
+\subsection{Software}\label{software}
 
-\hypertarget{refs-software}{}
+\phantomsection\label{refs-software}
 \begin{CSLReferences}{1}{0}
-\leavevmode\vadjust pre{\hypertarget{ref-qtl2pleio}{}}%
+\bibitem[\citeproctext]{ref-qtl2pleio}
 \textsc{Boehm}, Frederick. {``Qtl2pleio {R} Package,''} June 4, 2018.
 \url{https://github.com/fboehm/qtl2pleio}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-gemma2}{}}%
+\bibitem[\citeproctext]{ref-gemma2}
 ---------. {``Gemma2 {R} Package,''} March 15, 2018.
 \url{https://github.com/fboehm/gemma2}.
 
 \end{CSLReferences}
 
-\hypertarget{conference-proceedings}{%
-\subsection{Conference Proceedings}\label{conference-proceedings}}
+\subsection{Conference Proceedings}\label{conference-proceedings}
 
-\hypertarget{refs-proceedings}{}
+\phantomsection\label{refs-proceedings}
 \begin{CSLReferences}{1}{0}
-\leavevmode\vadjust pre{\hypertarget{ref-mark2011p2}{}}%
+\bibitem[\citeproctext]{ref-mark2011p2}
 \textsc{Mark}, J, L \textsc{Wesler}, C \textsc{Oswald}, F
 \textsc{Léandre}, P \textsc{Nevil}, D \textsc{Bertrand}, J
 \textsc{Bertrand}, F \textsc{Boehm}, and MC Smith \textsc{Fawzi}.
@@ -470,7 +489,7 @@ Vishnu \textsc{Moorthy}, Bryan \textsc{Becker}, Frederick
 Women in Rural Haiti.''} In \emph{Sexually Transmitted Infections},
 87:A263--63. Suppl 1. BMJ Publishing Group Ltd, 2011.
 
-\leavevmode\vadjust pre{\hypertarget{ref-marchani2009contrasting}{}}%
+\bibitem[\citeproctext]{ref-marchani2009contrasting}
 \textsc{Marchani}, Elizabeth E, Yanming \textsc{Di}, Yoonha
 \textsc{Choi}, Charles \textsc{Cheung}, Ming \textsc{Su}, Frederick
 \textsc{Boehm}, Elizabeth A \textsc{Thompson}, and Ellen M
@@ -479,7 +498,7 @@ Association Studies, and Linkage Analyses Using the Framingham Heart
 Study Data.''} In \emph{BMC Proceedings}, 3:S102. Suppl 7. BioMed
 Central Ltd, 2009.
 
-\leavevmode\vadjust pre{\hypertarget{ref-gestwicki2001mechanistic}{}}%
+\bibitem[\citeproctext]{ref-gestwicki2001mechanistic}
 \textsc{Gestwicki}, JE, CW \textsc{Cairo}, FJ \textsc{Boehm}, and LL
 \textsc{Kiessling}. {``Mechanistic Origins of the Valency Effect:
 Multivalent Ligand Binding Studied by Surface Plasmon Resonance and
@@ -487,7 +506,7 @@ Isothermal Titration Calorimetry.''} In \emph{ABSTRACTS OF PAPERS OF THE
 AMERICAN CHEMICAL SOCIETY}, 221:U56--56. American Chemical Society,
 2001.
 
-\leavevmode\vadjust pre{\hypertarget{ref-fasella2000synthesis}{}}%
+\bibitem[\citeproctext]{ref-fasella2000synthesis}
 \textsc{Fasella}, E, FJ \textsc{Boehm}, and LL \textsc{Kiessling}.
 {``Synthesis of Galactosyl-Alpha (1-3)-Galactosyl Epitopes for Use in
 Immunological Studies.''} In \emph{ABSTRACTS OF PAPERS OF THE AMERICAN
@@ -495,90 +514,111 @@ CHEMICAL SOCIETY}, 219:U108--8. American Chemical Society, 2000.
 
 \end{CSLReferences}
 
-\hypertarget{other-publications}{%
-\subsection{Other Publications}\label{other-publications}}
+\subsection{Other Publications}\label{other-publications}
 
-\hypertarget{refs-misc}{}
+\phantomsection\label{refs-misc}
 \begin{CSLReferences}{1}{0}
-\leavevmode\vadjust pre{\hypertarget{ref-derose2014victorian}{}}%
+\bibitem[\citeproctext]{ref-derose2014victorian}
 \textsc{DeRose}, Catherine, Carrie \textsc{Roy}, and Fred
 \textsc{Boehm}. {``Victorian Eyes: Literary, Statistical, and Artistic
 Perspectives on Victorian Novels -- and Dickens's Unfinished Murder
 Mystery.''} \emph{Significance}. The Royal Statistical Society, 2014.
 
-\leavevmode\vadjust pre{\hypertarget{ref-boehm1997lone}{}}%
+\bibitem[\citeproctext]{ref-boehm1997lone}
 \textsc{Boehm}, Fred. {``The Lone Male Wolf of the Sandhill Wildlife
 Area.''} \emph{International Wolf}, 1997.
 
 \end{CSLReferences}
 
-\hypertarget{teaching-experience}{%
-\section{Teaching Experience}\label{teaching-experience}}
+\section{Teaching Experience}\label{teaching-experience}
 
 \hrule
 
-\hypertarget{formal-courses}{%
-\subsection{Formal Courses}\label{formal-courses}}
+\subsection{Formal Courses}\label{formal-courses}
 
 How to teach inclusively for educating a diverse nation \hfill Spring
-2017 (University of Wisconsin-Madison) \& Fall 2017 (CIRTL Network)\\
-Role: Co-facilitator
+2017 \& Fall 2017 Role: Co-facilitator \hfill University of
+Wisconsin-Madison \& CIRTL Network
 
-Introductory statistics for biologists \hfill Fall 2016 (University of
-Wisconsin-Madison)\\
-Role: Instructor
+Introductory statistics for biologists \hfill Fall 2016 Role: Instructor
+\hfill University of Wisconsin-Madison
 
-Special Topics: Data Science \hfill Fall 2016 (University of
-Wisconsin-Madison)\\
+Special Topics: Data Science \hfill Fall 2016\\
 Roles: Guest lecturer on topic models; Teaching assistant
+\hfill University of Wisconsin-Madison
 
 Introductory statistics for engineers \hfill Spring 2014, Fall 2014,
-Spring 2015, Summer 2015, Fall 2015, Spring 2016 (University of
-Wisconsin-Madison)\\
-Role: Instructor
+Spring 2015, Summer 2015, Fall 2015, Spring 2016 Role: Instructor
+\hfill University of Wisconsin-Madison
 
-Introduction to Biostatistics \hfill Fall 2009 \& Winter 2010
-(University of Washington)\\
-Role: Teaching assistant
+Introduction to Biostatistics \hfill Fall 2009 \& Winter 2010 Role:
+Teaching assistant \hfill University of Washington
 
-Introductory organic chemistry \hfill Fall 2001 (University of
-California-Berkeley)\\
-Role: Teaching assistant
+Introductory organic chemistry \hfill Fall 2001 Role: Teaching assistant
+\hfill University of California, Berkeley
 
-\hypertarget{short-courses-workshops}{%
-\subsection{Short Courses \& Workshops}\label{short-courses-workshops}}
+\subsection{Short Courses \& Workshops}\label{short-courses-workshops}
 
 Engaging students in the teaching of statistics \hfill March 2018 \&
-July 2020 (CIRTL Network)\\
-Role: Instructor
+July 2020 Role: Instructor \hfill CIRTL Network
 
 Data analysis with topic models for communications researchers
-\hfill July 2016 \& October 2016 (University of Wisconsin-Madison)\\
-Role: Instructor
+\hfill July 2016 \& October 2016 Role: Instructor \hfill University of
+Wisconsin-Madison
 
 Data Carpentry Workshop \hfill June 2017 \& September 2018 (University
 of Wisconsin-Madison \& Missouri S\&T)\\
-Role: Instructor\\
-Website: https://uw-madison-aci.github.io/2017-06-19-uwmadison-dc/
+Role: Instructor \hfill University of Wisconsin-Madison \& Missouri S\&T
+University Website:
+https://uw-madison-aci.github.io/2017-06-19-uwmadison-dc/ \&
+https://yeemey.github.io/2018-09-15-und-mbdh/
 
-Topic modeling for non-statisticians \hfill October 2013 (University of
-Wisconsin-Madison)\\
-Role: Instructor
+Topic modeling for non-statisticians \hfill October 2013 Role:
+Instructor \hfill University of Wisconsin-Madison
 
-Statistical computing with R \hfill June 2012 \& June 2013 (University
-of Wisconsin-Madison)\\
-Role: Instructor
+Statistical computing with R \hfill June 2012 \& June 2013 Role:
+Instructor \hfill University of Wisconsin-Madison
 
-\hypertarget{training-in-teaching}{%
-\subsection{Training in Teaching}\label{training-in-teaching}}
+\subsection{Training in Teaching}\label{training-in-teaching}
 
-\hypertarget{mentoring-experience}{%
-\section{Mentoring Experience}\label{mentoring-experience}}
+\section{Mentoring Experience}\label{mentoring-experience}
 
-Research mentor to Robert Turner, Undergraduate researcher\\
-Project: Topic Modeling of Tweets to Detect Events\\
-Dates: May 2015 to May 2016\\
-Next position: Software Engineer at Epic Systems
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ yaml}
+
+\CommentTok{\# Read YAML file}
+\ControlFlowTok{with} \BuiltInTok{open}\NormalTok{(}\StringTok{"data/mentoring.yaml"}\NormalTok{, }\StringTok{"r"}\NormalTok{) }\ImportTok{as} \BuiltInTok{file}\NormalTok{:}
+\NormalTok{    data }\OperatorTok{=}\NormalTok{ yaml.safe\_load(}\BuiltInTok{file}\NormalTok{)}
+
+\CommentTok{\# Select elements}
+\NormalTok{first\_person\_name }\OperatorTok{=}\NormalTok{ data[}\StringTok{\textquotesingle{}people\textquotesingle{}}\NormalTok{][}\DecValTok{0}\NormalTok{][}\StringTok{\textquotesingle{}name\textquotesingle{}}\NormalTok{]}
+
+\ImportTok{from}\NormalTok{ datetime }\ImportTok{import}\NormalTok{ datetime}
+
+\CommentTok{\# Input date as a string}
+\NormalTok{date\_string }\OperatorTok{=} \StringTok{"2015{-}05{-}01"}
+
+\CommentTok{\# Parse the string into a datetime object}
+\NormalTok{date\_object }\OperatorTok{=}\NormalTok{ datetime.strptime(date\_string, }\StringTok{"\%Y{-}\%m{-}}\SpecialCharTok{\%d}\StringTok{"}\NormalTok{)}
+
+\CommentTok{\# Format the date as "Month Year"}
+\NormalTok{formatted\_date }\OperatorTok{=}\NormalTok{ date\_object.strftime(}\StringTok{"\%B \%Y"}\NormalTok{)}
+
+\BuiltInTok{print}\NormalTok{(formatted\_date)}
+\end{Highlighting}
+\end{Shaded}
+
+Research mentor to
+\texttt{\{python\}\ data{[}\textquotesingle{}people\textquotesingle{}{]}{[}0{]}{[}\textquotesingle{}name\textquotesingle{}{]}},
+\texttt{\{python\}\ data{[}\textquotesingle{}people\textquotesingle{}{]}{[}0{]}{[}\textquotesingle{}title\textquotesingle{}{]}}
+\hfill \texttt{\{python\}\ datetime.strptime(data{[}\textquotesingle{}people{]}{[}0{]}{[}\textquotesingle{}start\textquotesingle{}{]},\ "\%Y-\%m-\%d").strftime("\%B\ \%Y")}
+to
+\texttt{\{python\}\ data{[}\textquotesingle{}people\textquotesingle{}{]}{[}0{]}{[}\textquotesingle{}end\textquotesingle{}{]}}\\
+Project:
+\texttt{\{python\}\ data{[}\textquotesingle{}people\textquotesingle{}{]}{[}0{]}{[}\textquotesingle{}project\textquotesingle{}{]}}\\
+Next position:
+\texttt{\{python\}\ data{[}\textquotesingle{}people\textquotesingle{}{]}{[}0{]}{[}\textquotesingle{}next\_role\textquotesingle{}{]}}
 
 Research mentor to Jinyu Xia, Undergraduate researcher\\
 Project: Tweet Sentiments Associate with Stock Market Trends\\
@@ -586,22 +626,16 @@ Dates: September 2015 to August 2016\\
 Next Position: Graduate student at University of Washington (Department
 of Statistics)
 
-\hypertarget{awards-honors}{%
-\section{Awards \& Honors}\label{awards-honors}}
+\section{Awards \& Honors}\label{awards-honors}
 
-\hypertarget{talks-and-presentations}{%
-\section{Talks and Presentations}\label{talks-and-presentations}}
+\section{Talks and Presentations}\label{talks-and-presentations}
 
-\hypertarget{service}{%
-\section{Service}\label{service}}
+\section{Service}\label{service}
 
-\hypertarget{university-service}{%
-\subsection{University Service}\label{university-service}}
+\subsection{University Service}\label{university-service}
 
-\hypertarget{community-service}{%
-\subsection{Community Service}\label{community-service}}
+\subsection{Community Service}\label{community-service}
 
-\hypertarget{professional-service}{%
-\subsection{Professional Service}\label{professional-service}}
+\subsection{Professional Service}\label{professional-service}
 
 \end{document}
