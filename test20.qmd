@@ -1,0 +1,43 @@
+---
+format: pdf
+---
+
+
+```{python} 
+import yaml
+
+# Read YAML file
+with open("data/mentoring.yaml", "r") as file:
+    data = yaml.safe_load(file)
+
+# Select elements
+first_person_name = data['people'][0]['name']
+```
+
+```{python} 
+#| eval: true
+from datetime import datetime
+
+# Input date as a string
+date_string = "2015-05-01"
+
+# Parse the string into a datetime object
+date_object = datetime.strptime(date_string, "%Y-%m-%d")
+
+# Format the date as "Month Year"
+formatted_date = date_object.strftime("%B %Y")
+
+print(formatted_date)
+
+```
+
+
+the formatted date is `{python} formatted_date`.
+
+
+```{python}
+x = 5
+```
+
+The answer is `{python} x`
+

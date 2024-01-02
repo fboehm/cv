@@ -45,31 +45,27 @@ engine: jupyter
 
 \hrule
 
-I need to do something about the nbsp... buyt only if I want html otuput
+**University of Michigan** \hfill Ann Arbor, Michigan, USA  
+Postdoctoral Research Fellow, Department of Internal Medicine (NIH T32 training grant) \hfill 2023 to present  
+Postdoctoral Research Fellow, Department of Biostatistics \hfill 2021 to 2023  
+
+**University of Massachusetts Medical School** \hfill Worcester, Massachusetts, USA  
+Postdoctoral Research Fellow, Department of Microbiology & Physiological Systems \hfill 2019 to 2021  
+
+**University of Wisconsin-Madison** \hfill Madison, Wisconsin, USA  
+Postdoctoral Research Fellow, Department of Biostatistics and Medical Informatics \hfill 2019     
+Ph.D., Department of Statistics \hfill 2011 to 2019  
+Postdoctoral Research Fellow, Molecular and Environmental Toxicology Center \hfill 2012 to 2014  
+Assistant Researcher, Value-Added Research Center \hfill 2011  
 
 
+**University of Washington** \hfill Seattle, Washington, USA   
+Postdoctoral Research Fellow, Department of Biostatistics \hfill 2007 to 2009   
 
-**University of Michigan** \hfill\nbsp [Ann Arbor, Michigan, USA]{style="float:right"}    
-Postdoctoral Research Fellow, Department of Internal Medicine (NIH T32 training grant) \hfill\ [2023 to present]{style="float:right"} 
-Postdoctoral Research Fellow, Department of Biostatistics \hfill\ [2021 to 2023]{style="float:right"}
-
-**University of Massachusetts Medical School** \hfill\ [Worcester, Massachusetts, USA]{style="float:right"}    
-Postdoctoral Research Fellow, Department of Microbiology & Physiological Systems \hfill\ [2019 to 2021]{style="float:right"}   
-
-**University of Wisconsin-Madison** \hfill\ [Madison, Wisconsin, USA]{style="float:right"}  
-Postdoctoral Research Fellow, Department of Biostatistics and Medical Informatics \hfill\ [2019]{style="float:right"}  
-Ph.D., Department of Statistics \hfill\ [2011 to 2019]{style="float:right"}  
-Postdoctoral Research Fellow, Molecular and Environmental Toxicology Center \hfill\ [2012 to 2014]{style="float:right"}  
-Assistant Researcher, Value-Added Research Center \hfill\ [2011]{style="float:right"}  
-
-
-**University of Washington** \hfill\ [Seattle, Washington, USA]{style="float:right"}  
-Postdoctoral Research Fellow, Department of Biostatistics \hfill\ [2007 to 2009]{style="float:right"}   
-
-**University of Wisconsin-Madison** \hfill\ [Madison, Wisconsin, USA]{style="float:right"}  
-M.D., School of Medicine and Public Health \hfill\ [2003 to 2007]{style="float:right"}   
-M.S., Department of Population Health Sciences \hfill\ [2003 to 2007]{style="float:right"}   
-B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill\ [1996 to 2001]{style="float:right"}  
+**University of Wisconsin-Madison** \hfill Madison, Wisconsin, USA  
+M.D., School of Medicine and Public Health \hfill 2003 to 2007  
+M.S., Department of Population Health Sciences \hfill 2003 to 2007  
+B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 2001  
 
 
 
@@ -176,6 +172,8 @@ Role: Instructor \hfill University of Wisconsin-Madison
 
 # Mentoring Experience
 
+\hrule
+
 ```{python} 
 import yaml
 
@@ -188,7 +186,7 @@ first_person_name = data['people'][0]['name']
 ```
 
 ```{python} 
-#| eval: false
+#| eval: true
 from datetime import datetime
 
 # Input date as a string

@@ -117,9 +117,10 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{0}
 % TODO: Add custom LaTeX header directives here
-\usepackage{titlesec}
-\titleformat{\section}{\bfseries\Large}{\thesection}{}{}
-\titleformat{\subsection}{\itshape}{\thesubsection}{}{}
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
@@ -156,10 +157,18 @@
 \newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
 \makeatother
 \makeatletter
-\makeatother
-\makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
 \makeatother
 
 % Now begins the stuff that I added.
@@ -255,49 +264,56 @@
 
 
 
-\section{Education and Training}\label{education-and-training}
+\hypertarget{education-and-training}{%
+\section{Education and Training}\label{education-and-training}}
 
 \hrule
 
-\textbf{University of Michigan} \hfill~{Ann Arbor, Michigan, USA}\\
+I need to do something about the nbsp\ldots{} buyt only if I want html
+otuput
+
+\textbf{University of Michigan} \hfill Ann Arbor, Michigan, USA\\
 Postdoctoral Research Fellow, Department of Internal Medicine (NIH T32
-training grant) \hfill~{2023 to present} Postdoctoral Research Fellow,
-Department of Biostatistics \hfill~{2021 to 2023}
+training grant) \hfill 2023 to present\\
+Postdoctoral Research Fellow, Department of Biostatistics \hfill 2021 to
+2023
 
-\textbf{University of Massachusetts Medical School} \hfill~{Worcester,
-Massachusetts, USA}\\
+\textbf{University of Massachusetts Medical School} \hfill Worcester,
+Massachusetts, USA\\
 Postdoctoral Research Fellow, Department of Microbiology \&
-Physiological Systems \hfill~{2019 to 2021}
+Physiological Systems \hfill 2019 to 2021
 
-\textbf{University of Wisconsin-Madison} \hfill~{Madison, Wisconsin,
-USA}\\
+\textbf{University of Wisconsin-Madison} \hfill Madison, Wisconsin,
+USA\\
 Postdoctoral Research Fellow, Department of Biostatistics and Medical
-Informatics \hfill~{2019}\\
-Ph.D., Department of Statistics \hfill~{2011 to 2019}\\
+Informatics \hfill 2019\\
+Ph.D., Department of Statistics \hfill 2011 to 2019\\
 Postdoctoral Research Fellow, Molecular and Environmental Toxicology
-Center \hfill~{2012 to 2014}\\
-Assistant Researcher, Value-Added Research Center \hfill~{2011}
+Center \hfill 2012 to 2014\\
+Assistant Researcher, Value-Added Research Center \hfill 2011
 
-\textbf{University of Washington} \hfill~{Seattle, Washington, USA}\\
-Postdoctoral Research Fellow, Department of Biostatistics \hfill~{2007
-to 2009}
+\textbf{University of Washington} \hfill Seattle, Washington, USA\\
+Postdoctoral Research Fellow, Department of Biostatistics \hfill 2007 to
+2009
 
-\textbf{University of Wisconsin-Madison} \hfill~{Madison, Wisconsin,
-USA}\\
-M.D., School of Medicine and Public Health \hfill~{2003 to 2007}\\
-M.S., Department of Population Health Sciences \hfill~{2003 to 2007}\\
+\textbf{University of Wisconsin-Madison} \hfill Madison, Wisconsin,
+USA\\
+M.D., School of Medicine and Public Health \hfill 2003 to 2007\\
+M.S., Department of Population Health Sciences \hfill 2003 to 2007\\
 B.S., with Honors in Chemistry, Mathematics, and Biochemistry
-\hfill~{1996 to 2001}
+\hfill 1996 to 2001
 
-\section{Written Works}\label{written-works}
+\hypertarget{written-works}{%
+\section{Written Works}\label{written-works}}
 
 \hrule
 
-\subsection{Submitted Manuscripts}\label{submitted-manuscripts}
+\hypertarget{submitted-manuscripts}{%
+\subsection{Submitted Manuscripts}\label{submitted-manuscripts}}
 
-\phantomsection\label{refs-submitted}
+\hypertarget{refs-submitted}{}
 \begin{CSLReferences}{1}{0}
-\bibitem[\citeproctext]{ref-kurtz2024}
+\leavevmode\vadjust pre{\hypertarget{ref-kurtz2024}{}}%
 \textsc{Kurtz}, Sherry L., Richard \textsc{Baker}, Frederick
 \textsc{Boehm}, Chelsea \textsc{Lehman}, Lara \textsc{Mittereder}, Hamda
 \textsc{Khan}, Amy \textsc{Rossi}, et al. Presented at the Multiple
@@ -306,32 +322,34 @@ tuberculosis in genetically diverse mice, n.d.
 
 \end{CSLReferences}
 
-\subsection{Journal Articles}\label{journal-articles}
+\hypertarget{journal-articles}{%
+\subsection{Journal Articles}\label{journal-articles}}
 
-\subsubsection{Journal articles, too}\label{journal-articles-too}
+\hypertarget{journal-articles-too}{%
+\subsubsection{Journal articles, too}\label{journal-articles-too}}
 
-\phantomsection\label{refs-peer}
+\hypertarget{refs-peer}{}
 \begin{CSLReferences}{1}{0}
-\bibitem[\citeproctext]{ref-boehm2022statistical}
+\leavevmode\vadjust pre{\hypertarget{ref-boehm2022statistical}{}}%
 \textsc{Boehm}, Frederick J, and Xiang \textsc{Zhou}. {``Statistical
 Methods for Mendelian Randomization in Genome-Wide Association Studies:
 A Review.''} \emph{Computational and Structural Biotechnology Journal},
 2022.
 
-\bibitem[\citeproctext]{ref-smith2022host}
+\leavevmode\vadjust pre{\hypertarget{ref-smith2022host}{}}%
 \textsc{Smith}, Clare M, Richard E \textsc{Baker}, Megan K
 \textsc{Proulx}, Bibhuti B \textsc{Mishra}, Jarukit E \textsc{Long}, Sae
 Woong \textsc{Park}, Ha-Na \textsc{Lee}, et al. {``Host-Pathogen Genetic
 Interactions Underlie Tuberculosis Susceptibility in Genetically Diverse
 Mice.''} \emph{Elife} 11 (2022): e74419.
 
-\bibitem[\citeproctext]{ref-boehm2020happening}
+\leavevmode\vadjust pre{\hypertarget{ref-boehm2020happening}{}}%
 \textsc{Boehm}, Frederick J, and Bret M \textsc{Hanlon}. {``What Is
 Happening on Twitter? A Framework for Student Research Projects with
 Tweets.''} \emph{Journal of Statistics and Data Science Education},
 2021, S95--102. \url{https://doi.org/10.1080/10691898.2020.1848486}.
 
-\bibitem[\citeproctext]{ref-rodriguez2020genetic}
+\leavevmode\vadjust pre{\hypertarget{ref-rodriguez2020genetic}{}}%
 \textsc{Rodriguez-Gil}, Jorge L, Dawn E \textsc{Watkins-Chow}, Laura L
 \textsc{Baxter}, Gene \textsc{Elliot}, Ursula L \textsc{Harper}, Stephen
 M \textsc{Wincovitch}, Julia C \textsc{Wedel}, et al. {``Genetic
@@ -339,26 +357,26 @@ Background Modifies Phenotypic Severity and Longevity in a Mouse Model
 of Niemann-Pick Disease Type C1.''} \emph{Disease Models\\
 \& Mechanisms} 13, no. 3 (2020).
 
-\bibitem[\citeproctext]{ref-boehm2018test}
+\leavevmode\vadjust pre{\hypertarget{ref-boehm2018test}{}}%
 \textsc{Boehm}, Frederick J., Elissa J. \textsc{Chesler}, Brian S.
 \textsc{Yandell}, and Karl W. \textsc{Broman}. {``Testing Pleiotropy Vs.
 Separate QTL in Multiparental Populations.''} \emph{G3}, 2019.
 \url{https://doi.org/10.1534/g3.119.400098}.
 
-\bibitem[\citeproctext]{ref-boehm2019qtl2pleio}
+\leavevmode\vadjust pre{\hypertarget{ref-boehm2019qtl2pleio}{}}%
 \textsc{Boehm}, Frederick, Brian \textsc{Yandell}, and Karl W
 \textsc{Broman}. {``Qtl2pleio: Testing Pleiotropy Vs. Separate QTL in
 Multiparental Populations.''} \emph{Journal of Open Source Software} 4,
 no. 38 (2019): 1435. \url{https://doi.org/10.21105/joss.01435}.
 
-\bibitem[\citeproctext]{ref-kemis2019genetic}
+\leavevmode\vadjust pre{\hypertarget{ref-kemis2019genetic}{}}%
 \textsc{Kemis}, Julia H, Vanessa \textsc{Linke}, Kelsey L
 \textsc{Barrett}, Frederick J \textsc{Boehm}, Lindsay L
 \textsc{Traeger}, Mark P \textsc{Keller}, Mary E \textsc{Rabaglia}, et
 al. {``Genetic Determinants of Gut Microbiota Composition and Bile Acid
 Profiles in Mice.''} \emph{PLoS Genetics} 15, no. 8 (2019): e1008073.
 
-\bibitem[\citeproctext]{ref-wells2016how}
+\leavevmode\vadjust pre{\hypertarget{ref-wells2016how}{}}%
 \textsc{Wells}, Chris, Dhavan V. \textsc{Shah}, Jon C.
 \textsc{Pevehouse}, JungHwan \textsc{Yang}, Ayellet \textsc{Pelled},
 Frederick \textsc{Boehm}, Josephine \textsc{Lukito}, Shreenita
@@ -367,20 +385,20 @@ Coverage to the Nomination: Hybrid Media Campaigning.''} \emph{Political
 Communication} 33, no. 4 (2016): 669--76.
 \url{https://doi.org/10.1080/10584609.2016.1224416}.
 
-\bibitem[\citeproctext]{ref-tauchman2015stable}
+\leavevmode\vadjust pre{\hypertarget{ref-tauchman2015stable}{}}%
 \textsc{Tauchman}, Eric C, Frederick J \textsc{Boehm}, and Jennifer G
 \textsc{DeLuca}. {``Stable Kinetochore-Microtubule Attachment Is
 Sufficient to Silence the Spindle Assembly Checkpoint in Human Cells.''}
 \emph{Nature Communications} 6 (2015).
 
-\bibitem[\citeproctext]{ref-costello2014community}
+\leavevmode\vadjust pre{\hypertarget{ref-costello2014community}{}}%
 \textsc{Costello}, James C, Laura M \textsc{Heiser}, Elisabeth
 \textsc{Georgii}, Mehmet \textsc{Gönen}, Michael P \textsc{Menden},
 Nicholas J \textsc{Wang}, Mukesh \textsc{Bansal}, et al. {``A Community
 Effort to Assess and Improve Drug Sensitivity Prediction Algorithms.''}
 \emph{Nature Biotechnology} 32, no. 12 (2014): 1202--12.
 
-\bibitem[\citeproctext]{ref-dove2014strategy}
+\leavevmode\vadjust pre{\hypertarget{ref-dove2014strategy}{}}%
 \textsc{Dove}, William F, Alexandra \textsc{Shedlovsky}, Linda
 \textsc{Clipson}, James M \textsc{Amos-Landgraf}, Richard B
 \textsc{Halberg}, Kathleen J \textsc{Krentz}, Frederick J
@@ -389,7 +407,7 @@ Thomas M \textsc{Keane}. {``A Strategy to Identify Dominant Point Mutant
 Modifiers of a Quantitative Trait.''} \emph{G3: Genes\textbar{}
 Genomes\textbar{} Genetics} 4, no. 6 (2014): 1113--21.
 
-\bibitem[\citeproctext]{ref-fawzi2010economic}
+\leavevmode\vadjust pre{\hypertarget{ref-fawzi2010economic}{}}%
 \textsc{Fawzi}, MC Smith, W \textsc{Lambert}, F \textsc{Boehm}, JL
 \textsc{Finkelstein}, JM \textsc{Singler}, F \textsc{Léandre}, P
 \textsc{Nevil}, et al. {``Economic Risk Factors for HIV Infection Among
@@ -397,7 +415,7 @@ Women in Rural Haiti: Implications for HIV Prevention Policies and
 Programs in Resource-Poor Settings.''} \emph{Journal of Women's Health}
 19, no. 5 (2010): 885--92.
 
-\bibitem[\citeproctext]{ref-laurie2010quality}
+\leavevmode\vadjust pre{\hypertarget{ref-laurie2010quality}{}}%
 \textsc{Laurie}, Cathy C, Kimberly F \textsc{Doheny}, Daniel B
 \textsc{Mirel}, Elizabeth W \textsc{Pugh}, Laura J \textsc{Bierut},
 Tushar \textsc{Bhangale}, Frederick \textsc{Boehm}, et al. {``Quality
@@ -405,7 +423,7 @@ Control and Quality Assurance in Genotypic Data for Genome-Wide
 Association Studies.''} \emph{Genetic Epidemiology} 34, no. 6 (2010):
 591--602.
 
-\bibitem[\citeproctext]{ref-gestwicki2002cell}
+\leavevmode\vadjust pre{\hypertarget{ref-gestwicki2002cell}{}}%
 \textsc{Gestwicki}, Jason E, Laura E \textsc{Strong}, Christopher W
 \textsc{Cairo}, Frederick J \textsc{Boehm}, and Laura L
 \textsc{Kiessling}. {``Cell Aggregation by Scaffolded Receptor
@@ -414,22 +432,24 @@ Clusters.''} \emph{Chemistry\\
 
 \end{CSLReferences}
 
-\subsection{Book}\label{book}
+\hypertarget{book}{%
+\subsection{Book}\label{book}}
 
-\phantomsection\label{refs-book}
+\hypertarget{refs-book}{}
 \begin{CSLReferences}{1}{0}
-\bibitem[\citeproctext]{ref-moorthy2009pathophysiology}
+\leavevmode\vadjust pre{\hypertarget{ref-moorthy2009pathophysiology}{}}%
 \textsc{Moorthy}, A Vishnu, Bryan Neil \textsc{Becker}, Frederick J
 \textsc{Boehm III}, and Arjang \textsc{Djamali}. \emph{Pathophysiology
 of Kidney Disease and Hypertension}. Saunders/Elsevier, 2009.
 
 \end{CSLReferences}
 
-\subsection{Book Chapters}\label{book-chapters}
+\hypertarget{book-chapters}{%
+\subsection{Book Chapters}\label{book-chapters}}
 
-\phantomsection\label{refs-collection}
+\hypertarget{refs-collection}{}
 \begin{CSLReferences}{1}{0}
-\bibitem[\citeproctext]{ref-pelled2018}
+\leavevmode\vadjust pre{\hypertarget{ref-pelled2018}{}}%
 \textsc{Pelled}, Ayellet, Josephine \textsc{Lukito}, Frederick
 \textsc{Boehm}, JungHwan \textsc{Yang}, and Dhavan \textsc{Shah}.
 {``{`Little Marco,'} {`Lyin' Ted,'} {`Crooked Hillary,'} and the
@@ -438,7 +458,7 @@ of Kidney Disease and Hypertension}. Saunders/Elsevier, 2009.
 Communication}, edited by Natalie \textsc{Stroud} and Shannon
 \textsc{McGregor}, 176--96. Routledge, 2018.
 
-\bibitem[\citeproctext]{ref-boehm2009metabolic}
+\leavevmode\vadjust pre{\hypertarget{ref-boehm2009metabolic}{}}%
 \textsc{Boehm}, Frederick, Kelly \textsc{Traeger}, and Arjang
 \textsc{Djamali}. {``Metabolic Acidosis and Approach to Acid-Base
 Disorders.''} In \emph{Pathophysiology of Kidney Disease and
@@ -446,14 +466,14 @@ Hypertension}, edited by Vishnu \textsc{Moorthy}, Bryan \textsc{Becker},
 Frederick \textsc{Boehm}, and Arjang \textsc{Djamali}, 79--88.
 Saunders/Elsevier, 2009.
 
-\bibitem[\citeproctext]{ref-moorthy2009urinalysis}
+\leavevmode\vadjust pre{\hypertarget{ref-moorthy2009urinalysis}{}}%
 \textsc{Moorthy}, Vishnu, and Frederick \textsc{Boehm}. {``Urinalysis
 and an Approach to Kidney Diseases.''} In \emph{Pathophysiology of
 Kidney Disease and Hypertension}, edited by Vishnu \textsc{Moorthy},
 Bryan \textsc{Becker}, Frederick \textsc{Boehm}, and Arjang
 \textsc{Djamali}, 121--30. Saunders/Elsevier, 2009.
 
-\bibitem[\citeproctext]{ref-traeger2009acid}
+\leavevmode\vadjust pre{\hypertarget{ref-traeger2009acid}{}}%
 \textsc{Traeger}, Kelly, Frederick \textsc{Boehm}, and Arjang
 \textsc{Djamali}. {``Acid-Base Homeostasis and Metabolic Alkalosis.''}
 In \emph{Pathophysiology of Kidney Disease and Hypertension}, edited by
@@ -463,25 +483,27 @@ Vishnu \textsc{Moorthy}, Bryan \textsc{Becker}, Frederick
 
 \end{CSLReferences}
 
-\subsection{Software}\label{software}
+\hypertarget{software}{%
+\subsection{Software}\label{software}}
 
-\phantomsection\label{refs-software}
+\hypertarget{refs-software}{}
 \begin{CSLReferences}{1}{0}
-\bibitem[\citeproctext]{ref-qtl2pleio}
+\leavevmode\vadjust pre{\hypertarget{ref-qtl2pleio}{}}%
 \textsc{Boehm}, Frederick. {``Qtl2pleio {R} Package,''} June 4, 2018.
 \url{https://github.com/fboehm/qtl2pleio}.
 
-\bibitem[\citeproctext]{ref-gemma2}
+\leavevmode\vadjust pre{\hypertarget{ref-gemma2}{}}%
 ---------. {``Gemma2 {R} Package,''} March 15, 2018.
 \url{https://github.com/fboehm/gemma2}.
 
 \end{CSLReferences}
 
-\subsection{Conference Proceedings}\label{conference-proceedings}
+\hypertarget{conference-proceedings}{%
+\subsection{Conference Proceedings}\label{conference-proceedings}}
 
-\phantomsection\label{refs-proceedings}
+\hypertarget{refs-proceedings}{}
 \begin{CSLReferences}{1}{0}
-\bibitem[\citeproctext]{ref-mark2011p2}
+\leavevmode\vadjust pre{\hypertarget{ref-mark2011p2}{}}%
 \textsc{Mark}, J, L \textsc{Wesler}, C \textsc{Oswald}, F
 \textsc{Léandre}, P \textsc{Nevil}, D \textsc{Bertrand}, J
 \textsc{Bertrand}, F \textsc{Boehm}, and MC Smith \textsc{Fawzi}.
@@ -489,7 +511,7 @@ Vishnu \textsc{Moorthy}, Bryan \textsc{Becker}, Frederick
 Women in Rural Haiti.''} In \emph{Sexually Transmitted Infections},
 87:A263--63. Suppl 1. BMJ Publishing Group Ltd, 2011.
 
-\bibitem[\citeproctext]{ref-marchani2009contrasting}
+\leavevmode\vadjust pre{\hypertarget{ref-marchani2009contrasting}{}}%
 \textsc{Marchani}, Elizabeth E, Yanming \textsc{Di}, Yoonha
 \textsc{Choi}, Charles \textsc{Cheung}, Ming \textsc{Su}, Frederick
 \textsc{Boehm}, Elizabeth A \textsc{Thompson}, and Ellen M
@@ -498,7 +520,7 @@ Association Studies, and Linkage Analyses Using the Framingham Heart
 Study Data.''} In \emph{BMC Proceedings}, 3:S102. Suppl 7. BioMed
 Central Ltd, 2009.
 
-\bibitem[\citeproctext]{ref-gestwicki2001mechanistic}
+\leavevmode\vadjust pre{\hypertarget{ref-gestwicki2001mechanistic}{}}%
 \textsc{Gestwicki}, JE, CW \textsc{Cairo}, FJ \textsc{Boehm}, and LL
 \textsc{Kiessling}. {``Mechanistic Origins of the Valency Effect:
 Multivalent Ligand Binding Studied by Surface Plasmon Resonance and
@@ -506,7 +528,7 @@ Isothermal Titration Calorimetry.''} In \emph{ABSTRACTS OF PAPERS OF THE
 AMERICAN CHEMICAL SOCIETY}, 221:U56--56. American Chemical Society,
 2001.
 
-\bibitem[\citeproctext]{ref-fasella2000synthesis}
+\leavevmode\vadjust pre{\hypertarget{ref-fasella2000synthesis}{}}%
 \textsc{Fasella}, E, FJ \textsc{Boehm}, and LL \textsc{Kiessling}.
 {``Synthesis of Galactosyl-Alpha (1-3)-Galactosyl Epitopes for Use in
 Immunological Studies.''} In \emph{ABSTRACTS OF PAPERS OF THE AMERICAN
@@ -514,27 +536,30 @@ CHEMICAL SOCIETY}, 219:U108--8. American Chemical Society, 2000.
 
 \end{CSLReferences}
 
-\subsection{Other Publications}\label{other-publications}
+\hypertarget{other-publications}{%
+\subsection{Other Publications}\label{other-publications}}
 
-\phantomsection\label{refs-misc}
+\hypertarget{refs-misc}{}
 \begin{CSLReferences}{1}{0}
-\bibitem[\citeproctext]{ref-derose2014victorian}
+\leavevmode\vadjust pre{\hypertarget{ref-derose2014victorian}{}}%
 \textsc{DeRose}, Catherine, Carrie \textsc{Roy}, and Fred
 \textsc{Boehm}. {``Victorian Eyes: Literary, Statistical, and Artistic
 Perspectives on Victorian Novels -- and Dickens's Unfinished Murder
 Mystery.''} \emph{Significance}. The Royal Statistical Society, 2014.
 
-\bibitem[\citeproctext]{ref-boehm1997lone}
+\leavevmode\vadjust pre{\hypertarget{ref-boehm1997lone}{}}%
 \textsc{Boehm}, Fred. {``The Lone Male Wolf of the Sandhill Wildlife
 Area.''} \emph{International Wolf}, 1997.
 
 \end{CSLReferences}
 
-\section{Teaching Experience}\label{teaching-experience}
+\hypertarget{teaching-experience}{%
+\section{Teaching Experience}\label{teaching-experience}}
 
 \hrule
 
-\subsection{Formal Courses}\label{formal-courses}
+\hypertarget{formal-courses}{%
+\subsection{Formal Courses}\label{formal-courses}}
 
 How to teach inclusively for educating a diverse nation \hfill Spring
 2017 \& Fall 2017 Role: Co-facilitator \hfill University of
@@ -557,7 +582,8 @@ Teaching assistant \hfill University of Washington
 Introductory organic chemistry \hfill Fall 2001 Role: Teaching assistant
 \hfill University of California, Berkeley
 
-\subsection{Short Courses \& Workshops}\label{short-courses-workshops}
+\hypertarget{short-courses-workshops}{%
+\subsection{Short Courses \& Workshops}\label{short-courses-workshops}}
 
 Engaging students in the teaching of statistics \hfill March 2018 \&
 July 2020 Role: Instructor \hfill CIRTL Network
@@ -579,9 +605,11 @@ Instructor \hfill University of Wisconsin-Madison
 Statistical computing with R \hfill June 2012 \& June 2013 Role:
 Instructor \hfill University of Wisconsin-Madison
 
-\subsection{Training in Teaching}\label{training-in-teaching}
+\hypertarget{training-in-teaching}{%
+\subsection{Training in Teaching}\label{training-in-teaching}}
 
-\section{Mentoring Experience}\label{mentoring-experience}
+\hypertarget{mentoring-experience}{%
+\section{Mentoring Experience}\label{mentoring-experience}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -593,7 +621,11 @@ Instructor \hfill University of Wisconsin-Madison
 
 \CommentTok{\# Select elements}
 \NormalTok{first\_person\_name }\OperatorTok{=}\NormalTok{ data[}\StringTok{\textquotesingle{}people\textquotesingle{}}\NormalTok{][}\DecValTok{0}\NormalTok{][}\StringTok{\textquotesingle{}name\textquotesingle{}}\NormalTok{]}
+\end{Highlighting}
+\end{Shaded}
 
+\begin{Shaded}
+\begin{Highlighting}[]
 \ImportTok{from}\NormalTok{ datetime }\ImportTok{import}\NormalTok{ datetime}
 
 \CommentTok{\# Input date as a string}
@@ -626,16 +658,22 @@ Dates: September 2015 to August 2016\\
 Next Position: Graduate student at University of Washington (Department
 of Statistics)
 
-\section{Awards \& Honors}\label{awards-honors}
+\hypertarget{awards-honors}{%
+\section{Awards \& Honors}\label{awards-honors}}
 
-\section{Talks and Presentations}\label{talks-and-presentations}
+\hypertarget{talks-and-presentations}{%
+\section{Talks and Presentations}\label{talks-and-presentations}}
 
-\section{Service}\label{service}
+\hypertarget{service}{%
+\section{Service}\label{service}}
 
-\subsection{University Service}\label{university-service}
+\hypertarget{university-service}{%
+\subsection{University Service}\label{university-service}}
 
-\subsection{Community Service}\label{community-service}
+\hypertarget{community-service}{%
+\subsection{Community Service}\label{community-service}}
 
-\subsection{Professional Service}\label{professional-service}
+\hypertarget{professional-service}{%
+\subsection{Professional Service}\label{professional-service}}
 
 \end{document}
