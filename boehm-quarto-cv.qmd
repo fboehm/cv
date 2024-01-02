@@ -1,5 +1,4 @@
 ---
-title: "CV"
 subparagraph: yes
 geometry:
   - top=20mm

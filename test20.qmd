@@ -15,7 +15,6 @@ first_person_name = data['people'][0]['name']
 ```
 
 ```{python} 
-#| eval: true
 from datetime import datetime
 
 # Input date as a string
@@ -32,8 +31,7 @@ print(formatted_date)
 ```
 
 
-the formatted date is `{python} formatted_date`.
-
+inline: `{python} formatted_date`
 
 ```{python}
 x = 5
