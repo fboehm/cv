@@ -1,5 +1,23 @@
 # README.md
 
+## To-do for new cv
+
+- [ ] add a yaml for every section's data
+- [ ] check formatting of text in pdf output
+    - [ ] fix dates with python date package
+- [ ] hide / echo: false for all code chunks
+- [ ] make note about need for *two* section headers at top to get one to show up in pdf... i'm guessing that this is a quarto-cv extension issue
+- [ ] fix / change extension code so that CV is in footer instead of "education adn training"
+- [ ] Find way to use the multiple bib files... can I use lua with my current qmd? 
+- [ ] revise overall bib file to include dois, hyperlinks, etc
+- [ ] modify (perhaps bold) my name in the outputted pdf in the publications sections
+
+
+
+
+
+## Old stuff
+
 if working in RStudio, be sure to compile by using Makefile, rather than by using button to compile PDF.
 
 ## quarto cv
