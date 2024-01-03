@@ -40,7 +40,9 @@ engine: jupyter
 
 
 
-# Education and Training
+# Education and Training   
+
+# Education and Training  
 
 \hrule
 
@@ -74,44 +76,30 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 
 ## Submitted Manuscripts 
 
-::: {#refs-submitted}
-:::
 
 ## Journal Articles 
 
 
 ### Journal articles, too
 
-::: {#refs-peer}
-:::
 
 ## Book  
 
-::: {#refs-book}
-:::
 
 ## Book Chapters
 
-::: {#refs-collection}
-:::
 
 ## Software
 
-::: {#refs-software}
-:::
 
 ## Conference Proceedings
 
-::: {#refs-proceedings}
-:::
 
 
 
 
 ## Other Publications
 
-::: {#refs-misc}
-:::
 
 
 # Teaching Experience
@@ -185,9 +173,19 @@ first_person_name = data['people'][0]['name']
 ```
 
 ```{python} 
+import yaml
+
+# Read YAML file
+with open("data/mentoring.yaml", "r") as file:
+    data = yaml.safe_load(file)
+
+# Select elements
+first_person_name = data['people'][0]['name']
+```
+
+```{python} 
 #| eval: true
 from datetime import datetime
-
 # Input date as a string
 date_string = "2015-05-01"
 
@@ -201,12 +199,21 @@ print(formatted_date)
 
 ```
 
+```{python}
+for i in range(1, 2):
+  print("Research mentor to `{python} data['people'][", i - 1, "]['name']`")
+```
 
 
 
-Research mentor to `{python} data['people'][0]['name']`, `{python} data['people'][0]['title']` \hfill `{python} datetime.strptime(data['people][0]['start'], "%Y-%m-%d").strftime("%B %Y")` to `{python} data['people'][0]['end']`  
-Project: `{python} data['people'][0]['project']`  
-Next position: `{python} data['people'][0]['next_role']`  
+```{python}
+from IPython.display import display, Markdown
+
+for person in data['people']:
+    display(Markdown(f"Research mentor to {person['name']}, {person['title']} \hfill {person['start']} to {person['end']}   \nProject: {person['project']}   \nNext position: {person['next_role']}"))
+```
+
+
 
 
 Research mentor to Jinyu Xia, Undergraduate researcher  

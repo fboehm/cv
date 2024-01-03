@@ -49,35 +49,16 @@ print(formatted_date)
 ```
 
 ```{python}
-for i in range(1, 2):
-  print("Research mentor to `{python} data['people'][", i - 1, "]['name']`")
+for person in data['people']:
+    print(f"My name is: {person['name']}\n\n")
 ```
 
+```{python}
+from IPython.display import display, Markdown
 
+for person in data['people']:
+    display(Markdown(f"My name is: {person['name']}"))
+```
 
-Research mentor to `{python} data['people'][0]['name']`, `{python} data['people'][0]['title']` \hfill `{python} datetime.strptime(data['people][0]['start'], "%Y-%m-%d").strftime("%B %Y")` to `{python} data['people'][0]['end']`  
-Project: `{python} data['people'][0]['project']`  
-Next position: `{python} data['people'][0]['next_role']`  
-
-
-Research mentor to Jinyu Xia, Undergraduate researcher  
-Project: Tweet Sentiments Associate with Stock Market Trends  
-Dates: September 2015 to August 2016  
-Next Position: Graduate student at University of Washington (Department of Statistics)  
-
-
-# Awards & Honors
-
-
-
-
-# Talks and Presentations
-
-# Service
-
-## University Service
-
-## Community Service
-
-## Professional Service
-
+**code wrapping in quarto pdf output** see: https://github.com/quarto-dev/quarto-cli/discussions/4121
+Of course, for the cv pdf, I probably just want to hide code!!
