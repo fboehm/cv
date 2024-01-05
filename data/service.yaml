@@ -1,0 +1,101 @@
+service:
+  - title: 'Co-coordinator'
+    organization: 'University of Wisconsin-Madison Computational Methods in Mass Communications Research Group'
+    date: 2016-09
+    end_date: 2016-12
+    service_type: university
+    description: >
+      * Coordinated weekly meetings
+  - title: 'Coordinator'
+    venue: 'University of Wisconsin-Madison WISCIENCE Graduate Student Book Group'
+    date: 2015-06
+    end_date: 2016-05
+    service_type: university
+    description: >
+      *
+  - title: 'Organizer'
+    organization: 'University of Wisconsin-Madison Data, Humanities, and Art (DH + A) Symposium'
+    event_date: 2013-11-08
+    date: 2013-09
+    end_date: 2013-11
+    service_type: university
+    description: >
+      *
+  - title: 'Moderator'
+    organization: 'University of Wisconsin-Madison Undergraduate Research Symposium'
+    date: 2013-04-18
+    service_type: university
+    description: >
+      *
+  - title: 'Member'
+    organization: 'University of Wisconsin-Madison Graduate Student Peer Mentor Award Review Committee'
+    date: 2013-04 
+    service_type: university
+    description: >
+      *
+  - organization: 'University of Wisconsin-Madison Graduate School Vilas Travel Grant Review Committee'
+    title: 'Member'
+    date: 2012-10
+    end_date: 2012-11
+    description: >
+      *
+  - title: 'Member'
+    venue: 'University of Wisconsin-Madison Computation and Informatics in Biology and Medicine Training Program Retreat'
+    date: 2016-10-07
+    presentation_type: poster
+    location: Madison, Wisconsin, United States of America
+    description: >
+      *
+  - title: 'Data Analysis with Topic Models for Communications Researchers'
+    venue: Association for Education in Journalism and Mass Communication Annual Meeting
+    date: 2016-08-06
+    location: Minneapolis, Minnesota, United States of America
+    presentation_type: poster
+    url: https://figshare.com/articles/Data_Analysis_with_Topic_Models_for_Communications_Researchers/3545462
+    description: >
+      *
+  - title: 'Event Detection with Social Media Data'
+    venue: UseR! 2016 Meeting
+    date: 2016-06-30
+    location: Stanford, California, United States of America
+    url: https://figshare.com/articles/Event_Detection_with_Social_Media_Data/3545477
+    presentation_type: talk
+    description: >
+      *
+  - title: 'Event Detection with Topic Modeling of Tweets'
+    venue: University of Wisconsin-Madison WARF Discovery Challenge Symposium
+    date: 2016-04-06
+    location: Madison, Wisconsin, United States of America
+    presentation_type: poster
+    url: https://figshare.com/articles/Event_Detection_with_Topic_Modeling_of_Tweets/3545468
+    description: >
+      *
+  - title: 'Post-GWAS characterization of breast cancer-associated SNPs'
+    venue: University of Wisconsin-Madison Department of Statistics Student Seminar
+    date: 2012-11-28
+    location: Madison, Wisconsin, United States of America
+    presentation_type: talk
+    description: >
+      *
+  - title: 'Identification of Expression Quantitative Trait Loci among breast cancer-associated SNPs'
+    venue: University of Wisconsin-Madison Computation and Informatics in Biology and Medicine Retreat
+    date: 2012-10-12
+    location: Madison, Wisconsin, United States of America
+    presentation_type: poster
+    description: >
+      *
+  - title: Identification of Expression Quantitative Trait Loci among breast cancer-associated SNPs
+    venue: University of Wisconsin-Madison Molecular and Environmental Toxicology Center Seminar
+    date: 2012-09-20  
+    location: Madison, Wisconsin, United States of America
+    presentation_type: talk
+    description: >
+      *
+  - title: 'Identification of Expression Quantitative Trait Loci among breast cancer-associated SNPs'
+    venue: University of Wisconsin-Madison Molecular and Environmental Toxicology Center Retreat
+    date: 2012-05-22
+    location: Madison, Wisconsin, United States of America
+    presentation_type: poster
+    description: >
+      *
+  

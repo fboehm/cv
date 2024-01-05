@@ -1,0 +1,105 @@
+presentations:
+  - title: 'Testing pleiotropy vs. separate QTL in multiparental populations'
+    venue: 'International Mammalian Genome Conference'
+    date: 2018-11-11
+    location: Rio Mar, Puerto Rico, United States of America
+    presentation_type: poster
+    url: https://github.com/fboehm/imgc2018poster
+    description: >
+      *
+  - title: 'Testing pleiotropy vs. separate QTL in multiparental populations'
+    venue: 'University of Wisconsin-Madison Computation and Informatics in Biology and Medicine Training Program Retreat'
+    date: 2018-10-26
+    location: Madison, Wisconsin, United States of America
+    presentation_type: poster
+    description: >
+      *
+  - title: 'Distinguishing pleiotropy from separate QTL in multiparental populations'
+    venue: 'Joint Statistical Meetings'
+    date: 2018-07-30
+    location: Vancouver, British Columbia, Canada
+    presentation_type: talk
+    description: >
+      *
+  - title: 'Distinguishing pleiotropy from separate QTL in multiparental populations'
+    venue: 'Complex Trait Community Meeting'
+    date: 2018-06-20
+    location: Glasgow, Scotland, United Kingdom
+    presentation_type: talk
+    description: >
+      *
+  - title: 'Event Detection with Topic Modeling of Tweets'
+    venue: "Society for Political Methodology's Annual Summer Conference (PolMeth XXXIV)"
+    date: 2017-07-13 
+    location: Madison, Wisconsin, United States of America
+    presentation_type: poster
+    description: >
+      *
+  - title: 'Pleiotropy vs. Close Linkage in the Diversity Outbred Mouse Population'
+    venue: 'The Jackson Laboratory Systems Genetics Short Course'
+    date: 2016-10-22
+    location: Bar Harbor, Maine, United States of America
+    presentation_type: poster
+    url: https://figshare.com/articles/Pleiotropy_vs_Close_Linkage_in_the_Diversity_Outbred_Mouse_Population/4284338
+    description: >
+      *
+  - title: 'Pleiotropy vs. Close Linkage in the Diversity Outbred Mouse Population'
+    venue: 'University of Wisconsin-Madison Computation and Informatics in Biology and Medicine Training Program Retreat'
+    date: 2016-10-07
+    presentation_type: poster
+    location: Madison, Wisconsin, United States of America
+    description: >
+      *
+  - title: 'Data Analysis with Topic Models for Communications Researchers'
+    venue: Association for Education in Journalism and Mass Communication Annual Meeting
+    date: 2016-08-06
+    location: Minneapolis, Minnesota, United States of America
+    presentation_type: poster
+    url: https://figshare.com/articles/Data_Analysis_with_Topic_Models_for_Communications_Researchers/3545462
+    description: >
+      *
+  - title: 'Event Detection with Social Media Data'
+    venue: UseR! 2016 Meeting
+    date: 2016-06-30
+    location: Stanford, California, United States of America
+    url: https://figshare.com/articles/Event_Detection_with_Social_Media_Data/3545477
+    presentation_type: talk
+    description: >
+      *
+  - title: 'Event Detection with Topic Modeling of Tweets'
+    venue: University of Wisconsin-Madison WARF Discovery Challenge Symposium
+    date: 2016-04-06
+    location: Madison, Wisconsin, United States of America
+    presentation_type: poster
+    url: https://figshare.com/articles/Event_Detection_with_Topic_Modeling_of_Tweets/3545468
+    description: >
+      *
+  - title: 'Post-GWAS characterization of breast cancer-associated SNPs'
+    venue: University of Wisconsin-Madison Department of Statistics Student Seminar
+    date: 2012-11-28
+    location: Madison, Wisconsin, United States of America
+    presentation_type: talk
+    description: >
+      *
+  - title: 'Identification of Expression Quantitative Trait Loci among breast cancer-associated SNPs'
+    venue: University of Wisconsin-Madison Computation and Informatics in Biology and Medicine Retreat
+    date: 2012-10-12
+    location: Madison, Wisconsin, United States of America
+    presentation_type: poster
+    description: >
+      *
+  - title: Identification of Expression Quantitative Trait Loci among breast cancer-associated SNPs
+    venue: University of Wisconsin-Madison Molecular and Environmental Toxicology Center Seminar
+    date: 2012-09-20  
+    location: Madison, Wisconsin, United States of America
+    presentation_type: talk
+    description: >
+      *
+  - title: 'Identification of Expression Quantitative Trait Loci among breast cancer-associated SNPs'
+    venue: University of Wisconsin-Madison Molecular and Environmental Toxicology Center Retreat
+    date: 2012-05-22
+    location: Madison, Wisconsin, United States of America
+    presentation_type: poster
+    description: >
+      *
+  

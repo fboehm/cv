@@ -230,6 +230,13 @@ Training - \apstylekinda\today}
 
 
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ yaml}
+\ImportTok{from}\NormalTok{ IPython.display }\ImportTok{import}\NormalTok{ display, Markdown, display\_latex}
+\end{Highlighting}
+\end{Shaded}
+
 \section{Education and Training}\label{education-and-training}
 
 \hrule
@@ -292,49 +299,90 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry
 \subsection{Formal Courses}\label{formal-courses}
 
 How to teach inclusively for educating a diverse nation \hfill Spring
-2017 \& Fall 2017 Role: Co-facilitator \hfill University of
-Wisconsin-Madison \& CIRTL Network
+2017 \& Fall 2017\\
+Role: Co-facilitator \hfill University of Wisconsin-Madison \& CIRTL
+Network
 
-Introductory statistics for biologists \hfill Fall 2016 Role: Instructor
-\hfill University of Wisconsin-Madison
+Introductory statistics for biologists \hfill Fall 2016\\
+Role: Instructor \hfill University of Wisconsin-Madison
 
 Special Topics: Data Science \hfill Fall 2016\\
 Roles: Guest lecturer on topic models; Teaching assistant
 \hfill University of Wisconsin-Madison
 
 Introductory statistics for engineers \hfill Spring 2014, Fall 2014,
-Spring 2015, Summer 2015, Fall 2015, Spring 2016 Role: Instructor
-\hfill University of Wisconsin-Madison
+Spring 2015, Summer 2015, Fall 2015, Spring 2016\\
+Role: Instructor \hfill University of Wisconsin-Madison
 
-Introduction to Biostatistics \hfill Fall 2009 \& Winter 2010 Role:
-Teaching assistant \hfill University of Washington
+Introduction to Biostatistics \hfill Fall 2009 \& Winter 2010\\
+Role: Teaching assistant \hfill University of Washington
 
-Introductory organic chemistry \hfill Fall 2001 Role: Teaching assistant
-\hfill University of California, Berkeley
+Introductory organic chemistry \hfill Fall 2001\\
+Role: Teaching assistant \hfill University of California, Berkeley
 
 \subsection{Short Courses \& Workshops}\label{short-courses-workshops}
 
 Engaging students in the teaching of statistics \hfill March 2018 \&
-July 2020 Role: Instructor \hfill CIRTL Network
+July 2020\\
+Role: Instructor \hfill CIRTL Network
 
 Data analysis with topic models for communications researchers
-\hfill July 2016 \& October 2016 Role: Instructor \hfill University of
-Wisconsin-Madison
+\hfill July 2016 \& October 2016\\
+Role: Instructor \hfill University of Wisconsin-Madison
 
 Data Carpentry Workshop \hfill June 2017 \& September 2018 (University
 of Wisconsin-Madison \& Missouri S\&T)\\
 Role: Instructor \hfill University of Wisconsin-Madison \& Missouri S\&T
-University Website:
-https://uw-madison-aci.github.io/2017-06-19-uwmadison-dc/ \&
+University\\
+Website: https://uw-madison-aci.github.io/2017-06-19-uwmadison-dc/ \&
 https://yeemey.github.io/2018-09-15-und-mbdh/
 
-Topic modeling for non-statisticians \hfill October 2013 Role:
-Instructor \hfill University of Wisconsin-Madison
+Topic modeling for non-statisticians \hfill October 2013\\
+Role: Instructor \hfill University of Wisconsin-Madison
 
-Statistical computing with R \hfill June 2012 \& June 2013 Role:
-Instructor \hfill University of Wisconsin-Madison
+Statistical computing with R \hfill June 2012 \& June 2013\\
+Role: Instructor \hfill University of Wisconsin-Madison
 
 \subsection{Training in Teaching}\label{training-in-teaching}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Read YAML file}
+\ControlFlowTok{with} \BuiltInTok{open}\NormalTok{(}\StringTok{"data/teacher{-}training.yaml"}\NormalTok{, }\StringTok{"r"}\NormalTok{) }\ImportTok{as} \BuiltInTok{file}\NormalTok{:}
+\NormalTok{    data }\OperatorTok{=}\NormalTok{ yaml.safe\_load(}\BuiltInTok{file}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ControlFlowTok{for}\NormalTok{ course }\KeywordTok{in}\NormalTok{ data[}\StringTok{\textquotesingle{}courses\textquotesingle{}}\NormalTok{]:}
+\NormalTok{    display(Markdown(}\SpecialStringTok{f"}\SpecialCharTok{\{}\NormalTok{course[}\StringTok{\textquotesingle{}title\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{ \textbackslash{}hfill }\SpecialCharTok{\{}\NormalTok{course[}\StringTok{\textquotesingle{}term\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{   }\CharTok{\textbackslash{}n}\SpecialCharTok{\{}\NormalTok{course[}\StringTok{\textquotesingle{}institution\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{   "}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+Expeditions in Learning: Exploring How Students Learn with Writing
+Across the Curriculum \hfill Spring 2016\\
+University of Wisconsin-Madison Delta Program
+
+Diversity in the College Classroom \hfill Fall 2015\\
+University of Wisconsin-Madison Delta Program
+
+Research Mentor Training \hfill Summer 2015 \& Summer 2012\\
+University of Wisconsin-Madison Delta Program
+
+An Introduction to Evidence-Based Undergraduate STEM Teaching
+\hfill Fall 2014\\
+CIRTL Network
+
+The College Classroom \hfill Summer 2014\\
+University of Wisconsin-Madison Delta Program
+
+Instructional Materials Development: Integrating Statistics into STEM
+courses \hfill Spring 2014\\
+University of Wisconsin-Madison Delta Program
+
+Teaching Statistics in the Classroom \hfill Spring 2013\\
+University of Wisconsin-Madison Delta Program
 
 \section{Mentoring Experience}\label{mentoring-experience}
 
@@ -342,21 +390,6 @@ Instructor \hfill University of Wisconsin-Madison
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\ImportTok{import}\NormalTok{ yaml}
-
-\CommentTok{\# Read YAML file}
-\ControlFlowTok{with} \BuiltInTok{open}\NormalTok{(}\StringTok{"data/mentoring.yaml"}\NormalTok{, }\StringTok{"r"}\NormalTok{) }\ImportTok{as} \BuiltInTok{file}\NormalTok{:}
-\NormalTok{    data }\OperatorTok{=}\NormalTok{ yaml.safe\_load(}\BuiltInTok{file}\NormalTok{)}
-
-\CommentTok{\# Select elements}
-\NormalTok{first\_person\_name }\OperatorTok{=}\NormalTok{ data[}\StringTok{\textquotesingle{}people\textquotesingle{}}\NormalTok{][}\DecValTok{0}\NormalTok{][}\StringTok{\textquotesingle{}name\textquotesingle{}}\NormalTok{]}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\ImportTok{import}\NormalTok{ yaml}
-
 \CommentTok{\# Read YAML file}
 \ControlFlowTok{with} \BuiltInTok{open}\NormalTok{(}\StringTok{"data/mentoring.yaml"}\NormalTok{, }\StringTok{"r"}\NormalTok{) }\ImportTok{as} \BuiltInTok{file}\NormalTok{:}
 \NormalTok{    data }\OperatorTok{=}\NormalTok{ yaml.safe\_load(}\BuiltInTok{file}\NormalTok{)}
@@ -384,19 +417,6 @@ Instructor \hfill University of Wisconsin-Madison
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\ControlFlowTok{for}\NormalTok{ i }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{):}
-  \BuiltInTok{print}\NormalTok{(}\StringTok{"Research mentor to \textasciigrave{}}\SpecialCharTok{\{python\}}\StringTok{ data[\textquotesingle{}people\textquotesingle{}]["}\NormalTok{, i }\OperatorTok{{-}} \DecValTok{1}\NormalTok{, }\StringTok{"][\textquotesingle{}name\textquotesingle{}]\textasciigrave{}"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-Research mentor to `{python} data['people'][ 0 ]['name']`
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\ImportTok{from}\NormalTok{ IPython.display }\ImportTok{import}\NormalTok{ display, Markdown}
-
 \ControlFlowTok{for}\NormalTok{ person }\KeywordTok{in}\NormalTok{ data[}\StringTok{\textquotesingle{}people\textquotesingle{}}\NormalTok{]:}
 \NormalTok{    display(Markdown(}\SpecialStringTok{f"Research mentor to }\SpecialCharTok{\{}\NormalTok{person[}\StringTok{\textquotesingle{}name\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{, }\SpecialCharTok{\{}\NormalTok{person[}\StringTok{\textquotesingle{}title\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{ \textbackslash{}hfill }\SpecialCharTok{\{}\NormalTok{person[}\StringTok{\textquotesingle{}start\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{ to }\SpecialCharTok{\{}\NormalTok{person[}\StringTok{\textquotesingle{}end\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{   }\CharTok{\textbackslash{}n}\SpecialStringTok{Project: }\SpecialCharTok{\{}\NormalTok{person[}\StringTok{\textquotesingle{}project\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{   }\CharTok{\textbackslash{}n}\SpecialStringTok{Next position: }\SpecialCharTok{\{}\NormalTok{person[}\StringTok{\textquotesingle{}next\_role\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{"}\NormalTok{))}
 \end{Highlighting}
@@ -412,13 +432,57 @@ to 2016-08-01\\
 Project: Tweet Sentiments and Stock Market Index Trends\\
 Next position: Statistics graduate student at University of Washington
 
-Research mentor to Jinyu Xia, Undergraduate researcher\\
-Project: Tweet Sentiments Associate with Stock Market Trends\\
-Dates: September 2015 to August 2016\\
-Next Position: Graduate student at University of Washington (Department
-of Statistics)
-
 \section{Awards \& Honors}\label{awards-honors}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Read YAML file}
+\ControlFlowTok{with} \BuiltInTok{open}\NormalTok{(}\StringTok{"data/awards.yaml"}\NormalTok{, }\StringTok{"r"}\NormalTok{) }\ImportTok{as} \BuiltInTok{file}\NormalTok{:}
+\NormalTok{    data }\OperatorTok{=}\NormalTok{ yaml.safe\_load(}\BuiltInTok{file}\NormalTok{)}
+\NormalTok{sorted\_awards }\OperatorTok{=} \BuiltInTok{sorted}\NormalTok{(data.get(}\StringTok{"awards"}\NormalTok{, []), key}\OperatorTok{=}\KeywordTok{lambda}\NormalTok{ x: x.get(}\StringTok{"year"}\NormalTok{, }\DecValTok{0}\NormalTok{), reverse}\OperatorTok{=}\VariableTok{True}\NormalTok{)}
+\NormalTok{markdown\_output }\OperatorTok{=} \StringTok{""}
+\ControlFlowTok{for}\NormalTok{ award }\KeywordTok{in}\NormalTok{ sorted\_awards:}
+\NormalTok{    year }\OperatorTok{=}\NormalTok{ award.get(}\StringTok{"year"}\NormalTok{)}
+\NormalTok{    end\_year }\OperatorTok{=}\NormalTok{ award.get(}\StringTok{"end\_year"}\NormalTok{)}
+    \ControlFlowTok{if}\NormalTok{ end\_year }\KeywordTok{is} \KeywordTok{not} \VariableTok{None}\NormalTok{:}
+\NormalTok{        year }\OperatorTok{=} \SpecialStringTok{f"}\SpecialCharTok{\{}\NormalTok{year}\SpecialCharTok{\}}\SpecialStringTok{ to }\SpecialCharTok{\{}\NormalTok{end\_year}\SpecialCharTok{\}}\SpecialStringTok{"}
+\NormalTok{    markdown\_output }\OperatorTok{+=} \SpecialStringTok{f"}\CharTok{\textbackslash{}\textbackslash{}}\SpecialStringTok{footnotesize }\SpecialCharTok{\{}\NormalTok{award[}\StringTok{\textquotesingle{}title\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{, }\SpecialCharTok{\{}\NormalTok{award[}\StringTok{\textquotesingle{}institution\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{ \textbackslash{}hfill }\SpecialCharTok{\{}\NormalTok{year}\SpecialCharTok{\}}\SpecialStringTok{  }\CharTok{\textbackslash{}n}\SpecialStringTok{"}
+\NormalTok{display(Markdown(markdown\_output))}
+\end{Highlighting}
+\end{Shaded}
+
+\footnotesize Best Poster Award, International Mammalian Genome
+Conference \hfill 2018\\
+\footnotesize Conference Travel Scholarship, International Mammalian
+Genome Conference \hfill 2018\\
+\footnotesize Integrating Research Ethics and Scholarship Fellowship,
+University of Wisconsin-Madison \hfill 2013\\
+\footnotesize New Arts Venture Challenge Award (for Victorian Eyes art
+exhibition), University of Wisconsin-Madison \hfill 2013\\
+\footnotesize Medical Student Research Training Fellowship, Howard
+Hughes Medical Institute \hfill 2006\\
+\footnotesize Medical Student Summer Research Stipend, University of
+Wisconsin-Madison Department of Family Medicine \hfill 2004\\
+\footnotesize Graduate Research Fellowship, National Science Foundation
+\hfill 2001\\
+\footnotesize Meyerhoff Undergraduate Excellence Award, University of
+Wisconsin-Madison \hfill 2001\\
+\footnotesize University Book Store Award for Outstanding Undergraduate
+Thesis, University of Wisconsin-Madison \hfill 2001\\
+\footnotesize Edward Panek Memorial Scholarship, University of
+Wisconsin-Madison Department of Chemistry \hfill 2000\\
+\footnotesize Elected as Member, The Phi Beta Kappa Society
+\hfill 1999\\
+\footnotesize Wisconsin Idea Fellowship (for the Salvation Army Learning
+Center), University of Wisconsin-Madison \hfill 1999\\
+\footnotesize Dean's List, University of Wisconsin-Madison \hfill 1998
+to 2001\\
+\footnotesize Summer Research Scholarship, University of
+Wisconsin-Madison Department of Chemistry \hfill 1998\\
+\footnotesize College of Letters \& Science Honors Program Member,
+University of Wisconsin-Madison \hfill 1996 to 2001\\
+\footnotesize Wisconsin Academic Excellence Scholarship, University of
+Wisconsin-Madison \hfill 1996 to 2000
 
 \section{Talks and Presentations}\label{talks-and-presentations}
 

@@ -8,6 +8,7 @@ geometry:
 format:
     quarto-cv-pdf: 
         keep-tex: true
+        keep-md: true
         pdf-engine: lualatex
 author: Frederick J. Boehm
 date: last-modified
@@ -35,7 +36,11 @@ csl: chicago-fullnote-bibliography-boehm.csl
 engine: jupyter
 ---
 
+```{python} 
+import yaml
+from IPython.display import display, Markdown, display_latex
 
+```
 
 
 
@@ -108,72 +113,70 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 
 ## Formal Courses
 
-How to teach inclusively for educating a diverse nation  \hfill Spring 2017 & Fall 2017
-Role: Co-facilitator \hfill University of Wisconsin-Madison & CIRTL Network  
+How to teach inclusively for educating a diverse nation  \hfill Spring 2017 & Fall 2017  
+Role: Co-facilitator \hfill University of Wisconsin-Madison & CIRTL Network    
 
 
-Introductory statistics for biologists  \hfill Fall 2016 
-Role: Instructor  \hfill University of Wisconsin-Madison
+Introductory statistics for biologists  \hfill Fall 2016   
+Role: Instructor  \hfill University of Wisconsin-Madison  
 
 Special Topics: Data Science  \hfill Fall 2016   
-Roles: Guest lecturer on topic models; Teaching assistant \hfill University of Wisconsin-Madison
+Roles: Guest lecturer on topic models; Teaching assistant \hfill University of Wisconsin-Madison  
 
-Introductory statistics for engineers  \hfill Spring 2014, Fall 2014, Spring 2015, Summer 2015, Fall 2015, Spring 2016 
-Role: Instructor \hfill University of Wisconsin-Madison
+Introductory statistics for engineers  \hfill Spring 2014, Fall 2014, Spring 2015, Summer 2015, Fall 2015, Spring 2016   
+Role: Instructor \hfill University of Wisconsin-Madison  
 
-Introduction to Biostatistics  \hfill Fall 2009 & Winter 2010 
-Role: Teaching assistant \hfill University of Washington
+Introduction to Biostatistics  \hfill Fall 2009 & Winter 2010   
+Role: Teaching assistant \hfill University of Washington  
 
-Introductory organic chemistry \hfill Fall 2001 
-Role: Teaching assistant \hfill University of California, Berkeley
+Introductory organic chemistry \hfill Fall 2001   
+Role: Teaching assistant \hfill University of California, Berkeley  
 
 
 
 
 ## Short Courses & Workshops
 
-Engaging students in the teaching of statistics \hfill March 2018 & July 2020 
-Role: Instructor  \hfill CIRTL Network
+Engaging students in the teaching of statistics \hfill March 2018 & July 2020   
+Role: Instructor  \hfill CIRTL Network  
 
 
-Data analysis with topic models for communications researchers \hfill July 2016 & October 2016
-Role: Instructor  \hfill University of Wisconsin-Madison
+Data analysis with topic models for communications researchers \hfill July 2016 & October 2016  
+Role: Instructor  \hfill University of Wisconsin-Madison  
 
 
-Data Carpentry Workshop \hfill June 2017 & September 2018 (University of Wisconsin-Madison & Missouri S&T)  
-Role: Instructor  \hfill University of Wisconsin-Madison & Missouri S&T University
-Website: https://uw-madison-aci.github.io/2017-06-19-uwmadison-dc/ & https://yeemey.github.io/2018-09-15-und-mbdh/
+Data Carpentry Workshop \hfill June 2017 & September 2018 (University of Wisconsin-Madison & Missouri S&T)    
+Role: Instructor  \hfill University of Wisconsin-Madison & Missouri S&T University  
+Website: https://uw-madison-aci.github.io/2017-06-19-uwmadison-dc/ & https://yeemey.github.io/2018-09-15-und-mbdh/  
 
-Topic modeling for non-statisticians \hfill October 2013 
-Role: Instructor \hfill University of Wisconsin-Madison
+Topic modeling for non-statisticians \hfill October 2013   
+Role: Instructor \hfill University of Wisconsin-Madison  
 
-Statistical computing with R \hfill June 2012 & June 2013 
-Role: Instructor \hfill University of Wisconsin-Madison
+Statistical computing with R \hfill June 2012 & June 2013   
+Role: Instructor \hfill University of Wisconsin-Madison  
 
 
 ## Training in Teaching  
 
+```{python}
 
+# Read YAML file
+with open("data/teacher-training.yaml", "r") as file:
+    data = yaml.safe_load(file)
+```
 
+```{python}
+for course in data['courses']:
+    display(Markdown(f"{course['title']} \hfill {course['term']}   \n{course['institution']}   "))
+```
 
 
 # Mentoring Experience
 
 \hrule
 
-```{python} 
-import yaml
-
-# Read YAML file
-with open("data/mentoring.yaml", "r") as file:
-    data = yaml.safe_load(file)
-
-# Select elements
-first_person_name = data['people'][0]['name']
-```
 
 ```{python} 
-import yaml
 
 # Read YAML file
 with open("data/mentoring.yaml", "r") as file:
@@ -199,16 +202,10 @@ print(formatted_date)
 
 ```
 
-```{python}
-for i in range(1, 2):
-  print("Research mentor to `{python} data['people'][", i - 1, "]['name']`")
-```
 
 
 
 ```{python}
-from IPython.display import display, Markdown
-
 for person in data['people']:
     display(Markdown(f"Research mentor to {person['name']}, {person['title']} \hfill {person['start']} to {person['end']}   \nProject: {person['project']}   \nNext position: {person['next_role']}"))
 ```
@@ -216,22 +213,78 @@ for person in data['people']:
 
 
 
-Research mentor to Jinyu Xia, Undergraduate researcher  
-Project: Tweet Sentiments Associate with Stock Market Trends  
-Dates: September 2015 to August 2016  
-Next Position: Graduate student at University of Washington (Department of Statistics)  
-
-
 # Awards & Honors
 
 
 
+```{python}
+# Read YAML file
+with open("data/awards.yaml", "r") as file:
+    data = yaml.safe_load(file)
+sorted_awards = sorted(data.get("awards", []), key=lambda x: x.get("year", 0), reverse=True)
+markdown_output = ""
+for award in sorted_awards:
+    year = award.get("year")
+    end_year = award.get("end_year")
+    if end_year is not None:
+        year = f"{year} to {end_year}"
+    markdown_output += f"\\footnotesize {award['title']}, {award['institution']} \hfill {year}  \n"
+display(Markdown(markdown_output))
+```
 
-# Talks and Presentations
+
+
+# Presentations
+
+```{python}
+# Read YAML file
+with open("data/presentations.yaml", "r") as file:
+    data = yaml.safe_load(file)
+sorted_presentations = sorted(data.get("presentations", []), key=lambda x: x.get("date"), reverse=True)
+
+markdown_output_talks = ""
+markdown_output_posters = ""
+
+for presentation in sorted_presentations:
+    foo = ""
+    date_str = presentation.get("date")
+    date_obj = datetime.strptime(date_str, "%Y-%m-%d")
+    date_formatted = date_obj.strftime("%B %d, %Y")
+    url = presentation.get("url")
+    if url is not None:
+        foo = f"\\footnotesize [{presentation['title']}]({url}) \hfill {date_formatted}  \n{presentation['venue']} \hfill {presentation['location']}  \n"
+    else:
+        foo = f"\\footnotesize {presentation['title']} \hfill {date_formatted}  \n{presentation['venue']} \hfill {presentation['location']}  \n"
+    if presentation.get("type") == "talk":
+        markdown_output_talks += foo
+    elif presentation.get("type") == "poster":
+        markdown_output_posters += foo
+```      
+      
+
+
+## Slide Presentations
+
+```{python}
+display(Markdown(markdown_output_talks))
+```
+
+
+
+## Poster Presentations
+
+```{python}
+display(Markdown(markdown_output_posters))
+```
+
+
 
 # Service
 
 ## University Service
+
+
+
 
 ## Community Service
 
