@@ -1,29 +1,31 @@
 service:
   - title: 'Co-coordinator'
     organization: 'University of Wisconsin-Madison Computational Methods in Mass Communications Research Group'
-    date: 2016-09
-    end_date: 2016-12
+    date: '2016-09'
+    end_date: '2016-12'
     service_type: university
     description: >
       * Coordinated weekly meetings
   - title: 'Coordinator'
     venue: 'University of Wisconsin-Madison WISCIENCE Graduate Student Book Group'
-    date: 2015-06
-    end_date: 2016-05
+    date: '2015-06'
+    end_date: '2016-05'
     service_type: university
     description: >
       *
   - title: 'Organizer'
     organization: 'University of Wisconsin-Madison Data, Humanities, and Art (DH + A) Symposium'
-    event_date: 2013-11-08
-    date: 2013-09
-    end_date: 2013-11
+    event_date: '2013-11-08'
+    date: '2013-09'
+    end_date: '2013-11'
     service_type: university
     description: >
       *
   - title: 'Moderator'
     organization: 'University of Wisconsin-Madison Undergraduate Research Symposium'
-    date: 2013-04-18
+    date: 
+      - '2013-04-18'
+      - '2012-04-19'
     service_type: university
     description: >
       *
@@ -37,65 +39,113 @@ service:
     title: 'Member'
     date: 2012-10
     end_date: 2012-11
+    service_type: university
     description: >
       *
   - title: 'Member'
-    venue: 'University of Wisconsin-Madison Computation and Informatics in Biology and Medicine Training Program Retreat'
-    date: 2016-10-07
-    presentation_type: poster
-    location: Madison, Wisconsin, United States of America
+    organization: 'University of Wisconsin-Madison Statistics Department Social Committee'
+    date: 2012-01
+    end_date: 2014-05
+    service_type: university
     description: >
       *
-  - title: 'Data Analysis with Topic Models for Communications Researchers'
-    venue: Association for Education in Journalism and Mass Communication Annual Meeting
-    date: 2016-08-06
-    location: Minneapolis, Minnesota, United States of America
-    presentation_type: poster
-    url: https://figshare.com/articles/Data_Analysis_with_Topic_Models_for_Communications_Researchers/3545462
+  - title: 'Coach'
+    organization: 'Westborough Mathcounts Team'
+    date: 2020-09
+    end_date: 2022-04
+    service_type: community
     description: >
       *
-  - title: 'Event Detection with Social Media Data'
-    venue: UseR! 2016 Meeting
-    date: 2016-06-30
-    location: Stanford, California, United States of America
-    url: https://figshare.com/articles/Event_Detection_with_Social_Media_Data/3545477
-    presentation_type: talk
+  - title: 'Coach'
+    organization: 'Madison Science Olympiad Team'
+    date: 2013-11
+    end_date: 2014-03
+    service_type: community
     description: >
       *
-  - title: 'Event Detection with Topic Modeling of Tweets'
-    venue: University of Wisconsin-Madison WARF Discovery Challenge Symposium
-    date: 2016-04-06
-    location: Madison, Wisconsin, United States of America
-    presentation_type: poster
-    url: https://figshare.com/articles/Event_Detection_with_Topic_Modeling_of_Tweets/3545468
+  - title: 'Assistant coach'
+    organization: 'Madison Mathcounts Team'
+    date: 2012-09
+    end_date: 2013-05
+    service_type: community
     description: >
       *
-  - title: 'Post-GWAS characterization of breast cancer-associated SNPs'
-    venue: University of Wisconsin-Madison Department of Statistics Student Seminar
-    date: 2012-11-28
-    location: Madison, Wisconsin, United States of America
-    presentation_type: talk
+  - title: 'Volunteer'
+    organization: 'MEDIC'
+    date: 2003-09
+    end_date: 2005-05
+    service_type: community
     description: >
       *
-  - title: 'Identification of Expression Quantitative Trait Loci among breast cancer-associated SNPs'
-    venue: University of Wisconsin-Madison Computation and Informatics in Biology and Medicine Retreat
-    date: 2012-10-12
-    location: Madison, Wisconsin, United States of America
-    presentation_type: poster
+  - title: 'Founding director'
+    organization: 'Salvation Army Learning Center'
+    date: 1998-09
+    end_date: 2000-05
+    service_type: community
     description: >
       *
-  - title: Identification of Expression Quantitative Trait Loci among breast cancer-associated SNPs
-    venue: University of Wisconsin-Madison Molecular and Environmental Toxicology Center Seminar
-    date: 2012-09-20  
-    location: Madison, Wisconsin, United States of America
-    presentation_type: talk
+  - title: 'Cub Scouts Den Leader'
+    organization: 'Boy Scouts of America'
+    date: 1998-09
+    end_date: 2000-06
+    service_type: community
     description: >
       *
-  - title: 'Identification of Expression Quantitative Trait Loci among breast cancer-associated SNPs'
-    venue: University of Wisconsin-Madison Molecular and Environmental Toxicology Center Retreat
-    date: 2012-05-22
-    location: Madison, Wisconsin, United States of America
-    presentation_type: poster
+  - title: 'Associate Editor'
+    organization: 'Journal of Open Source Software'
+    date: 2020-06
+    current: true
+    service_type: professional
+    description: >
+      *
+  - title: 'Peer Reviewer'
+    organization: 
+      - 'Journal of Open Source Software'
+      - 'European Journal of Epidemiology'
+      - 'The R Journal'
+      - 'ROpenSci'
+      - 'Genetics'
+      - 'G3'
+      - 'PLoS Computational Biology'
+      - 'BMC Cancer'
+      - 'Journal of Statistics and Data Science Education'
+    date: 2019-01
+    current: true
+    service_type: professional
+    description: >
+      *
+  - title: 'Member'
+    organization: 'Genetics Society of America Early Career Researchers Leadership Program'
+    date: 2020-02
+    end_date: 2022-02
+    service_type: professional
+    description: >
+      *
+  - title: 'Trainee'
+    organization: 'Genetics Society of America Peer Review Training Program'
+    date: 2018-03
+    end_date: 2020-03
+    url: http://genestogenomes.org/learning-to-peer-review-program-update/
+    service_type: professional
+    description: >
+      *
+  - title: 'Participant'
+    organization: 'American Statistical Association's Workshop on Communicating with the Media and the Public'
+    date: 2016-11
+    service_type: professional
+    description: >
+      *
+  - title: 'Instructor'
+    organization: 'The Carpentries'
+    date: 2017-05
+    current: true
+    service_type: professional
+    description: >
+      *
+  - title: 'Participant'
+    organization: 'Software Carpentry Instructor Training'
+    date: 2016-10
+    service_type: professional
     description: >
       *
   

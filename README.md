@@ -1,5 +1,11 @@
 # README.md
 
+
+- [ ] Fix qmd cv file to accommodate multiple dates in service yaml file (since one entry has two date values)
+
+
+
+
 ## To-do for new cv
 
 - [ ] add a yaml for every section's data
