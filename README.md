@@ -1,5 +1,12 @@
 # README.md
 
+- [ ] convert bib file to yaml with pandoc?
+- [ ] manually curate the bib file produced from zotero export
+- [ ] ensure that all dois are used
+- [ ] maybe look at csl file to see if I can copy effects of a csl with python & markdown
+- [ ] if doi, then hyperlink title
+
+
 
 - [ ] Fix qmd cv file to accommodate multiple dates in service yaml file (since one entry has two date values)
 
