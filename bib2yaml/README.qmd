@@ -1,0 +1,18 @@
+---
+title: "Untitled"
+format: gfm
+---
+
+## Goal
+
+Goal is to read a bib file with my published works & convert it to yaml for subsequent use in my cv.
+
+I don't need to create one file for each type of publication, I think...
+
+## Using pandoc
+
+
+pandoc pubs.bib -s -f biblatex -t markdown > pubs.yaml
+
+https://kevcaz.insileco.io/notes/biblio/bib2yaml_pandoc/
+

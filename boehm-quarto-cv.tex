@@ -37,46 +37,6 @@
 
 
 
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{241,243,245}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
-\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
 \usepackage{longtable,booktabs}
 \usepackage{graphicx,grffile}
 \makeatletter
@@ -230,13 +190,6 @@ Training - \apstylekinda\today}
 
 
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\ImportTok{import}\NormalTok{ yaml}
-\ImportTok{from}\NormalTok{ IPython.display }\ImportTok{import}\NormalTok{ display, Markdown, display\_latex}
-\end{Highlighting}
-\end{Shaded}
-
 \section{Education and Training}\label{education-and-training}
 
 \hrule
@@ -345,21 +298,6 @@ Role: Instructor \hfill University of Wisconsin-Madison
 
 \subsection{Training in Teaching}\label{training-in-teaching}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Read YAML file}
-\ControlFlowTok{with} \BuiltInTok{open}\NormalTok{(}\StringTok{"data/teacher{-}training.yaml"}\NormalTok{, }\StringTok{"r"}\NormalTok{) }\ImportTok{as} \BuiltInTok{file}\NormalTok{:}
-\NormalTok{    data }\OperatorTok{=}\NormalTok{ yaml.safe\_load(}\BuiltInTok{file}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\ControlFlowTok{for}\NormalTok{ course }\KeywordTok{in}\NormalTok{ data[}\StringTok{\textquotesingle{}courses\textquotesingle{}}\NormalTok{]:}
-\NormalTok{    display(Markdown(}\SpecialStringTok{f"}\SpecialCharTok{\{}\NormalTok{course[}\StringTok{\textquotesingle{}title\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{ \textbackslash{}hfill }\SpecialCharTok{\{}\NormalTok{course[}\StringTok{\textquotesingle{}term\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{   }\CharTok{\textbackslash{}n}\SpecialCharTok{\{}\NormalTok{course[}\StringTok{\textquotesingle{}institution\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{   "}\NormalTok{))}
-\end{Highlighting}
-\end{Shaded}
-
 Expeditions in Learning: Exploring How Students Learn with Writing
 Across the Curriculum \hfill Spring 2016\\
 University of Wisconsin-Madison Delta Program
@@ -388,40 +326,6 @@ University of Wisconsin-Madison Delta Program
 
 \hrule
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Read YAML file}
-\ControlFlowTok{with} \BuiltInTok{open}\NormalTok{(}\StringTok{"data/mentoring.yaml"}\NormalTok{, }\StringTok{"r"}\NormalTok{) }\ImportTok{as} \BuiltInTok{file}\NormalTok{:}
-\NormalTok{    data }\OperatorTok{=}\NormalTok{ yaml.safe\_load(}\BuiltInTok{file}\NormalTok{)}
-
-\CommentTok{\# Select elements}
-\NormalTok{first\_person\_name }\OperatorTok{=}\NormalTok{ data[}\StringTok{\textquotesingle{}people\textquotesingle{}}\NormalTok{][}\DecValTok{0}\NormalTok{][}\StringTok{\textquotesingle{}name\textquotesingle{}}\NormalTok{]}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\ImportTok{from}\NormalTok{ datetime }\ImportTok{import}\NormalTok{ datetime}
-\CommentTok{\# Input date as a string}
-\NormalTok{date\_string }\OperatorTok{=} \StringTok{"2015{-}05{-}01"}
-
-\CommentTok{\# Parse the string into a datetime object}
-\NormalTok{date\_object }\OperatorTok{=}\NormalTok{ datetime.strptime(date\_string, }\StringTok{"\%Y{-}\%m{-}}\SpecialCharTok{\%d}\StringTok{"}\NormalTok{)}
-
-\CommentTok{\# Format the date as "Month Year"}
-\NormalTok{formatted\_date }\OperatorTok{=}\NormalTok{ date\_object.strftime(}\StringTok{"\%B \%Y"}\NormalTok{)}
-
-\BuiltInTok{print}\NormalTok{(formatted\_date)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\ControlFlowTok{for}\NormalTok{ person }\KeywordTok{in}\NormalTok{ data[}\StringTok{\textquotesingle{}people\textquotesingle{}}\NormalTok{]:}
-\NormalTok{    display(Markdown(}\SpecialStringTok{f"Research mentor to }\SpecialCharTok{\{}\NormalTok{person[}\StringTok{\textquotesingle{}name\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{, }\SpecialCharTok{\{}\NormalTok{person[}\StringTok{\textquotesingle{}title\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{ \textbackslash{}hfill }\SpecialCharTok{\{}\NormalTok{person[}\StringTok{\textquotesingle{}start\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{ to }\SpecialCharTok{\{}\NormalTok{person[}\StringTok{\textquotesingle{}end\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{   }\CharTok{\textbackslash{}n}\SpecialStringTok{Project: }\SpecialCharTok{\{}\NormalTok{person[}\StringTok{\textquotesingle{}project\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{   }\CharTok{\textbackslash{}n}\SpecialStringTok{Next position: }\SpecialCharTok{\{}\NormalTok{person[}\StringTok{\textquotesingle{}next\_role\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{"}\NormalTok{))}
-\end{Highlighting}
-\end{Shaded}
-
 Research mentor to Robert Turner, undergraduate researcher
 \hfill 2015-05-01 to 2016-05-01\\
 Project: Topic Modeling of Tweets to Detect Social Media Events\\
@@ -433,23 +337,6 @@ Project: Tweet Sentiments and Stock Market Index Trends\\
 Next position: Statistics graduate student at University of Washington
 
 \section{Awards \& Honors}\label{awards-honors}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Read YAML file}
-\ControlFlowTok{with} \BuiltInTok{open}\NormalTok{(}\StringTok{"data/awards.yaml"}\NormalTok{, }\StringTok{"r"}\NormalTok{) }\ImportTok{as} \BuiltInTok{file}\NormalTok{:}
-\NormalTok{    data }\OperatorTok{=}\NormalTok{ yaml.safe\_load(}\BuiltInTok{file}\NormalTok{)}
-\NormalTok{sorted\_awards }\OperatorTok{=} \BuiltInTok{sorted}\NormalTok{(data.get(}\StringTok{"awards"}\NormalTok{, []), key}\OperatorTok{=}\KeywordTok{lambda}\NormalTok{ x: x.get(}\StringTok{"year"}\NormalTok{, }\DecValTok{0}\NormalTok{), reverse}\OperatorTok{=}\VariableTok{True}\NormalTok{)}
-\NormalTok{markdown\_output }\OperatorTok{=} \StringTok{""}
-\ControlFlowTok{for}\NormalTok{ award }\KeywordTok{in}\NormalTok{ sorted\_awards:}
-\NormalTok{    year }\OperatorTok{=}\NormalTok{ award.get(}\StringTok{"year"}\NormalTok{)}
-\NormalTok{    end\_year }\OperatorTok{=}\NormalTok{ award.get(}\StringTok{"end\_year"}\NormalTok{)}
-    \ControlFlowTok{if}\NormalTok{ end\_year }\KeywordTok{is} \KeywordTok{not} \VariableTok{None}\NormalTok{:}
-\NormalTok{        year }\OperatorTok{=} \SpecialStringTok{f"}\SpecialCharTok{\{}\NormalTok{year}\SpecialCharTok{\}}\SpecialStringTok{ to }\SpecialCharTok{\{}\NormalTok{end\_year}\SpecialCharTok{\}}\SpecialStringTok{"}
-\NormalTok{    markdown\_output }\OperatorTok{+=} \SpecialStringTok{f"}\CharTok{\textbackslash{}\textbackslash{}}\SpecialStringTok{footnotesize }\SpecialCharTok{\{}\NormalTok{award[}\StringTok{\textquotesingle{}title\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{, }\SpecialCharTok{\{}\NormalTok{award[}\StringTok{\textquotesingle{}institution\textquotesingle{}}\NormalTok{]}\SpecialCharTok{\}}\SpecialStringTok{ \textbackslash{}hfill }\SpecialCharTok{\{}\NormalTok{year}\SpecialCharTok{\}}\SpecialStringTok{  }\CharTok{\textbackslash{}n}\SpecialStringTok{"}
-\NormalTok{display(Markdown(markdown\_output))}
-\end{Highlighting}
-\end{Shaded}
 
 \footnotesize Best Poster Award, International Mammalian Genome
 Conference \hfill 2018\\
@@ -484,14 +371,133 @@ University of Wisconsin-Madison \hfill 1996 to 2001\\
 \footnotesize Wisconsin Academic Excellence Scholarship, University of
 Wisconsin-Madison \hfill 1996 to 2000
 
-\section{Talks and Presentations}\label{talks-and-presentations}
+\section{Presentations}\label{presentations}
+
+\subsection{Slide Presentations}\label{slide-presentations}
+
+\footnotesize Distinguishing pleiotropy from separate QTL in
+multiparental populations \hfill July 30, 2018\\
+Joint Statistical Meetings \hfill Vancouver, British Columbia, Canada\\
+\footnotesize Distinguishing pleiotropy from separate QTL in
+multiparental populations \hfill June 20, 2018\\
+Complex Trait Community Meeting \hfill Glasgow, Scotland, United
+Kingdom\\
+\footnotesize \href{https://figshare.com/articles/Event_Detection_with_Social_Media_Data/3545477}{Event
+Detection with Social Media Data} \hfill June 30, 2016\\
+UseR! 2016 Meeting \hfill Stanford, California, United States of
+America\\
+\footnotesize Post-GWAS characterization of breast cancer-associated
+SNPs \hfill November 28, 2012\\
+University of Wisconsin-Madison Department of Statistics Student Seminar
+\hfill Madison, Wisconsin, United States of America\\
+\footnotesize Identification of Expression Quantitative Trait Loci among
+breast cancer-associated SNPs \hfill September 20, 2012\\
+University of Wisconsin-Madison Molecular and Environmental Toxicology
+Center Seminar \hfill Madison, Wisconsin, United States of America
+
+\subsection{Poster Presentations}\label{poster-presentations}
+
+\footnotesize \href{https://github.com/fboehm/imgc2018poster}{Testing
+pleiotropy vs.~separate QTL in multiparental populations}
+\hfill November 11, 2018\\
+International Mammalian Genome Conference \hfill Rio Mar, Puerto Rico,
+United States of America\\
+\footnotesize Testing pleiotropy vs.~separate QTL in multiparental
+populations \hfill October 26, 2018\\
+University of Wisconsin-Madison Computation and Informatics in Biology
+and Medicine Training Program Retreat \hfill Madison, Wisconsin, United
+States of America\\
+\footnotesize Event Detection with Topic Modeling of Tweets \hfill July
+13, 2017\\
+Society for Political Methodology's Annual Summer Conference (PolMeth
+XXXIV) \hfill Madison, Wisconsin, United States of America\\
+\footnotesize \href{https://figshare.com/articles/Pleiotropy_vs_Close_Linkage_in_the_Diversity_Outbred_Mouse_Population/4284338}{Pleiotropy
+vs.~Close Linkage in the Diversity Outbred Mouse Population}
+\hfill October 22, 2016\\
+The Jackson Laboratory Systems Genetics Short Course \hfill Bar Harbor,
+Maine, United States of America\\
+\footnotesize Pleiotropy vs.~Close Linkage in the Diversity Outbred
+Mouse Population \hfill October 07, 2016\\
+University of Wisconsin-Madison Computation and Informatics in Biology
+and Medicine Training Program Retreat \hfill Madison, Wisconsin, United
+States of America\\
+\footnotesize \href{https://figshare.com/articles/Data_Analysis_with_Topic_Models_for_Communications_Researchers/3545462}{Data
+Analysis with Topic Models for Communications Researchers} \hfill August
+06, 2016\\
+Association for Education in Journalism and Mass Communication Annual
+Meeting \hfill Minneapolis, Minnesota, United States of America\\
+\footnotesize \href{https://figshare.com/articles/Event_Detection_with_Topic_Modeling_of_Tweets/3545468}{Event
+Detection with Topic Modeling of Tweets} \hfill April 06, 2016\\
+University of Wisconsin-Madison WARF Discovery Challenge Symposium
+\hfill Madison, Wisconsin, United States of America\\
+\footnotesize Identification of Expression Quantitative Trait Loci among
+breast cancer-associated SNPs \hfill October 12, 2012\\
+University of Wisconsin-Madison Computation and Informatics in Biology
+and Medicine Retreat \hfill Madison, Wisconsin, United States of
+America\\
+\footnotesize Identification of Expression Quantitative Trait Loci among
+breast cancer-associated SNPs \hfill May 22, 2012\\
+University of Wisconsin-Madison Molecular and Environmental Toxicology
+Center Retreat \hfill Madison, Wisconsin, United States of America
 
 \section{Service}\label{service}
 
 \subsection{University Service}\label{university-service}
 
+\footnotesize Co-coordinator, University of Wisconsin-Madison
+Computational Methods in Mass Communications Research Group
+\hfill September 2016 to December 2016\\
+\footnotesize Coordinator, University of Wisconsin-Madison WISCIENCE
+Graduate Student Book Group \hfill June 2015 to May 2016\\
+\footnotesize Organizer, University of Wisconsin-Madison Data,
+Humanities, and Art (DH + A) Symposium \hfill September 2013 to November
+2013\\
+\footnotesize Moderator, University of Wisconsin-Madison Undergraduate
+Research Symposium \hfill April 2013, April 2012\\
+\footnotesize Member, University of Wisconsin-Madison Graduate Student
+Peer Mentor Award Review Committee \hfill April 2013\\
+\footnotesize Member, University of Wisconsin-Madison Graduate School
+Vilas Travel Grant Review Committee \hfill October 2012 to November
+2012\\
+\footnotesize Member, University of Wisconsin-Madison Statistics
+Department Social Committee \hfill January 2012 to May 2014
+
 \subsection{Community Service}\label{community-service}
 
+\footnotesize Coach, Westborough Mathcounts Team \hfill September 2020
+to April 2022\\
+\footnotesize \href{https://www.prescientist.org/}{Penpal}, Letters to a
+Pre-Scientist \hfill September 2018 to present\\
+\footnotesize Coach, Madison Science Olympiad Team \hfill November 2013
+to March 2014\\
+\footnotesize Assistant coach, Madison Mathcounts Team \hfill September
+2012 to May 2013\\
+\footnotesize \href{https://www.med.wisc.edu/education/medic/}{Volunteer},
+MEDiC \hfill September 2003 to May 2005\\
+\footnotesize Founding director, Salvation Army Learning Center
+\hfill September 1998 to May 2000\\
+\footnotesize Cub Scouts Den Leader, Boy Scouts of America
+\hfill September 1998 to June 2000
+
 \subsection{Professional Service}\label{professional-service}
+
+\footnotesize \href{https://joss.theoj.org/about}{Associate Editor},
+Journal of Open Source Software \hfill June 2020 to present\\
+\footnotesize \href{https://genetics-gsa.org/career-development/early-career-leadership/}{Member},
+Genetics Society of America Early Career Researchers Leadership Program
+\hfill February 2020 to February 2022\\
+\footnotesize Peer Reviewer, Journal of Open Source Software, European
+Journal of Epidemiology, The R Journal, ROpenSci, Genetics, G3, PLoS
+Computational Biology, BMC Cancer, Journal of Statistics and Data
+Science Education \hfill January 2019 to present\\
+\footnotesize \href{http://genestogenomes.org/learning-to-peer-review-program-update/}{Trainee},
+Genetics Society of America Peer Review Training Program \hfill March
+2018 to March 2020\\
+\footnotesize \href{https://carpentries.org/instructors/}{Instructor},
+The Carpentries \hfill May 2017 to present\\
+\footnotesize Participant, American Statistical Association's Workshop
+on Communicating with the Media and the Public \hfill November 2016\\
+\footnotesize Participant, Software Carpentry Instructor Training
+\hfill October 2016
 
 \end{document}

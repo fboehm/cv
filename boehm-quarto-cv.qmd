@@ -1,5 +1,7 @@
 ---
 subparagraph: yes
+execute:
+  echo: false
 geometry:
   - top=20mm
   - left=20mm
@@ -229,6 +231,7 @@ display(Markdown(markdown_output))
 # Read YAML file
 with open("data/presentations.yaml", "r") as file:
     data = yaml.safe_load(file)
+
 sorted_presentations = sorted(data.get("presentations", []), key=lambda x: x.get("date"), reverse=True)
 
 markdown_output_talks = ""
@@ -244,9 +247,9 @@ for presentation in sorted_presentations:
         foo = f"\\footnotesize [{presentation['title']}]({url}) \hfill {date_formatted}  \n{presentation['venue']} \hfill {presentation['location']}  \n"
     else:
         foo = f"\\footnotesize {presentation['title']} \hfill {date_formatted}  \n{presentation['venue']} \hfill {presentation['location']}  \n"
-    if presentation.get("type") == "talk":
+    if presentation.get("presentation_type") == "talk":
         markdown_output_talks += foo
-    elif presentation.get("type") == "poster":
+    elif presentation.get("presentation_type") == "poster":
         markdown_output_posters += foo
 ```      
       
@@ -275,7 +278,7 @@ display(Markdown(markdown_output_posters))
 # Read YAML file
 with open("data/service.yaml", "r") as file:
     data = yaml.safe_load(file)
-sorted_service = sorted(data.get("service", []), key=lambda x: x.get("date"), reverse=True)
+sorted_service = sorted(data.get("service", []), key=lambda x: max(x.get("date")), reverse=True)
 
 markdown_output_university = ""
 markdown_output_community = ""
@@ -284,26 +287,25 @@ markdown_output_professional = ""
 
 for service in sorted_service:
     foo = ""
-    date_str = service.get("date", [])
     # Accessing and formatting the dates as "Month Year"
-    dates = service.get("dates", [])
-
+    dates = service.get("date", [])
     formatted_dates = []
     for date_str in dates:
-        date_obj = datetime.strptime(date_str, "%Y-%m-%d")
+        date_obj = datetime.strptime(date_str, "%Y-%m")
         formatted_date = date_obj.strftime("%B %Y")
+        # handle end_date
+        end_date_str =  service.get("end_date")
+        if end_date_str is not None:
+            end_date_obj = datetime.strptime(end_date_str, "%Y-%m")
+            end_date_formatted = end_date_obj.strftime("%B %Y")
+            formatted_date = f"{formatted_date} to {end_date_formatted}"
+        # handle current values
+        if service.get("current") == 'true':
+            formatted_date = f"{formatted_date} to present"
         formatted_dates.append(formatted_date)
 
     fd = ", ".join(formatted_dates)
-    # handle end_date
-    end_date_str =  service.get("end_date")
-    if end_date_str is not None:
-        end_date_obj = datetime.strptime(end_date_str, "%Y-%m-%d")
-        end_date_formatted = end_date_obj.strftime("%B %Y")
-        date_formatted = f"{date_formatted} to {end_date_formatted}"
-    # handle current values
-    if service.get("current") == 'true':
-        date_formatted = f"{date_formatted} to present"
+    
     # handle those entries with multiple orgs
     organizations = service.get("organization", [])
     org_output = ", ".join(organizations)
