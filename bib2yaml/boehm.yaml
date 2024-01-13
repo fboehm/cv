@@ -1,5 +1,3 @@
----
-nocite: "[@*]"
 references:
 - abstract: The outcome of an encounter with Mycobacterium tuberculosis
     (Mtb) depends on the pathogen's ability to adapt to the variable
@@ -76,7 +74,7 @@ references:
     given: Christopher M
   container-title: eLife
   doi: 10.7554/eLife.74419
-  id: smith_host-pathogen_2022
+  key: smith_host-pathogen_2022
   issn: 2050-084X
   issued: 2022-02-03
   keyword: /unread
@@ -635,7 +633,7 @@ references:
     perspectives on victorian novels -- and dickens's unfinished murder
     mystery"
   title-short: Victorian eyes
-  type: article-journal
+  type: other
   url: "https://academic.oup.com/jrssig/article/11/2/40/7028988"
   volume: 11
 - abstract: "AbstractGenome‐wide scans of nucleotide variation in human
@@ -938,7 +936,7 @@ references:
   issued: 1997
   page: 7-9
   title: The lone male wolf of the sandhill wildlife area
-  type: article-journal
+  type: other
   volume: 7
 - author:
   - family: Fasella
@@ -984,7 +982,7 @@ references:
   id: qtl2pleio
   issued: 2020-07-01
   title: qtl2pleio r package
-  type: book
+  type: software
   url: "https://github.com/fboehm/qtl2pleio"
   version: 1.3.0
 - author:
@@ -993,7 +991,7 @@ references:
   id: gemma2
   issued: 2019-10-01
   title: gemma2 r package
-  type: book
+  type: software
   url: "https://github.com/fboehm/gemma2"
   version: 0.1.1
 - author:
@@ -1023,5 +1021,4 @@ references:
   title: Multiple genetic loci influence vaccine-induced protection
     against mycobacterium tuberculosis in genetically diverse mice
   type: manuscript
----
 

@@ -1,0 +1,25 @@
+
+```{python}
+#| eval: false
+formatted_bibliography = format_bibliography(BibliographyData(entries=dict((entry.key, entry) for entry in type_entries)))
+
+# Print the formatted sub-bibliography with bold names for "Boehm"
+for entry in formatted_bibliography:
+    formatted_entry = entry.text.render_as('text')
+    if 'author' in entry.fields and 'Boehm' in entry.fields['author']:
+        # Make the last and first names bold for "Boehm"
+        formatted_entry = formatted_entry.replace("Boehm", "**Boehm**", 1)
+    print(formatted_entry)
+
+
+```
+
+
+```{python}
+# subset entries by type
+type_entries = [entry for entry in data.entries.values() if entry.type == ref_type]
+
+# Process the references
+references = processor.process_bibliography(data)
+print(references)
+```

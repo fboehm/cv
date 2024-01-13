@@ -1,0 +1,87 @@
+---
+subparagraph: yes
+execute:
+  echo: false
+geometry:
+  - top=20mm
+  - left=20mm
+  - right=20mm
+  - bottom=20mm
+format:
+    quarto-cv-pdf: 
+        keep-tex: true
+        keep-md: true
+        pdf-engine: lualatex
+author: Frederick J. Boehm
+date: last-modified
+phone: 715-252-3929
+address: "University of Michigan · 419 Waymarket DR · Ann Arbor, Michigan 48103 · USA"
+email: frederick.boehm@gmail.com
+fontsize: 12pt
+github: fboehm # github account
+orcid: 0000-0002-1644-5931 # orcid identifier
+#osf: ymqui # osf five character id
+#twitter: twitter # twitter handle
+web: fboehm.us
+fontawesome: yes
+nocite: '@*'
+bibliography: 
+  peer: parsing-bib-files/boehm-article.bib
+  collection: parsing-bib-files/boehm-incollection.bib
+  software: parsing-bib-files/boehm-software.bib
+  submitted: parsing-bib-files/boehm-unpublished.bib
+  book: parsing-bib-files/boehm-book.bib
+  misc: parsing-bib-files/boehm-misc.bib
+  proceedings: parsing-bib-files/boehm-inproceedings.bib
+validate-yaml: false
+csl: chicago-fullnote-bibliography-boehm.csl
+engine: jupyter
+---
+
+
+```{python}
+import citeproc
+from citeproc.source.json import CiteProcJSON
+from citeproc_styles import get_style_filepath
+from yaml import load, Loader
+
+# Load CSL file
+with open('csl_files/chicago-author-date-16th-edition.csl', 'r') as csl_file:
+    csl = csl_file.read()
+from citeproc.source.bibtex import BibTeX
+bib_source = BibTeX('boehm-1.bib')
+style = citeproc.CitationStylesStyle(get_style_filepath('apa'))
+
+# Create citation processor
+citation_style = CitationStylesBibliography(style, CiteProcJSON(CiteProcJSON(csl)))
+
+# Sort references in reverse chronological order
+references.sort(key=lambda x: x['issued']['date-parts'][0], reverse=True)
+
+# Add references to the citation processor
+for reference in references:
+    citation = citeproc.Citation([citeproc.CitationItem(reference['id'])])
+    citation_style.register(citation)
+
+# Print the formatted bibliography
+bibliography = citation_style.bibliography()
+for entry in bibliography:
+    print(entry.render(style))
+
+
+```
+
+
+
+```{python}
+# Import the citeproc-py classes we'll use below.
+from citeproc import CitationStylesStyle, CitationStylesBibliography
+from citeproc import Citation, CitationItem
+from citeproc import formatter
+from citeproc.source.json import CiteProcJSON
+
+bib_source = CiteProcJSON(references)
+bib_style = CitationStylesStyle('harvard1', validate=False)
+bibliography = CitationStylesBibliography(bib_style, bib_source, formatter.html)
+
+

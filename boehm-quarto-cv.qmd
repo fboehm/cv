@@ -77,11 +77,113 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 
 
 ```{python}
+#| eval: false
+from pybtex import style
+from pybtex.database import BibliographyData, Entry
+from pybtex.style.formatting import BaseStyle
+from pybtex.richtext import Text, Tag
+
+class MyStyle(BaseStyle):
+    def format_article(self, entry):
+        return Text('Article ', Tag('em', entry.fields['title']))
+```
+
+
+```{python}
+#| eval: false
+from citeproc import (Citation, CitationItem, CitationStylesBibliography,
+                      CitationStylesStyle, formatter)
+from citeproc.source.json import CiteProcJSON
+from citeproc_styles import get_style_filepath
+
+csl_data = json.loads("...")
+source = CiteProcJSON(csl_data)
+
+style_path = get_style_filepath('apa')
+style = CitationStylesStyle(style_path)
+
+bib = CitationStylesBibliography(style, source, formatter.plain)
+bib.register(Citation([CitationItem('data_id')]))
+print(''.join(bib.bibliography()[0]))
 # Read YAML file with pubs
 with open("data/boehm.yaml", "r") as file:
     data = yaml.safe_load(file)
+# Load the CSL file
+style = citeproc.load_style('apa.csl')
+
+# Create a citeproc processor
+processor = citeproc.Citeproc(style)
+
 ```
 
+
+```{python}
+#| eval: false
+import citeproc
+from citeproc.source.json import CiteProcJSON
+from citeproc_styles import get_style_filepath
+from yaml import load, Loader
+
+# Load CSL file
+with open('csl_files/chicago-annotated-bibliography.csl', 'r') as csl_file:
+    csl = csl_file.read()
+
+# Load YAML file with references
+#with open('your_references.yaml', 'r') as yaml_file:
+#    references = load(yaml_file, Loader=Loader)
+
+# Initialize citation style
+style = citeproc.CitationStylesStyle(get_style_filepath('apa'))
+
+# Create citation processor
+citation_style = citeproc.CitationStylesBibliography(style, citeproc.CiteProcJSON(CiteProcJSON(csl)))
+
+# Sort references in reverse chronological order
+data.sort(key=lambda x: x['issued']['date-parts'][0], reverse=True)
+
+# Add references to the citation processor
+for reference in data:
+    citation = citeproc.Citation([citeproc.CitationItem(reference['id'])])
+    citation_style.register(citation)
+
+# Print the formatted bibliography
+bibliography = citation_style.bibliography()
+for entry in bibliography:
+    print(entry.render(style))
+```
+
+```{python}
+import citeproc
+from citeproc.source.json import CiteProcJSON
+from citeproc_styles import get_style_filepath
+from yaml import load, Loader
+
+# Load CSL file
+with open('csl_files/chicago-author-date-16th-edition.csl', 'r') as csl_file:
+    csl = csl_file.read()
+
+# Load YAML file with references
+with open('data/boehm.yaml', 'r') as yaml_file:
+    references = load(yaml_file, Loader=Loader)
+
+# Initialize citation style
+style = citeproc.CitationStylesStyle(get_style_filepath('apa'))
+
+# Create citation processor
+citation_style = citeproc.CitationStylesBibliography(style, citeproc.CiteProcJSON(CiteProcJSON(csl)))
+
+# Sort references in reverse chronological order
+references.sort(key=lambda x: x['issued']['date-parts'][0], reverse=True)
+
+# Add references to the citation processor
+for reference in references:
+    citation = citeproc.Citation([citeproc.CitationItem(reference['id'])])
+    citation_style.register(citation)
+
+# Print the formatted bibliography
+bibliography = citation_style.bibliography()
+for entry in bibliography:
+    print(entry.render(style))```
 
 
 # Written Works 
@@ -90,29 +192,89 @@ with open("data/boehm.yaml", "r") as file:
 
 ## Submitted Manuscripts 
 
+```{python}
+# define ref_type to subset bib entries
+ref_type = "manuscript"
+```
+
+
+{{< include print-bib-entries.qmd >}}
+
 
 ## Journal Articles 
 
 
-### Journal articles, too
+```{python}
+# define ref_type to subset bib entries
+ref_type = "article-journal"
+```
+
+
+{{< include print-bib-entries.qmd >}}
 
 
 ## Book  
 
 
+```{python}
+# define ref_type to subset bib entries
+ref_type = "book"
+```
+
+
+{{< include print-bib-entries.qmd >}}
+
+
 ## Book Chapters
+
+```{python}
+# define ref_type to subset bib entries
+ref_type = "chapter"
+```
+
+
+{{< include print-bib-entries.qmd >}}
+
+
 
 
 ## Software
+
+```{python}
+# define ref_type to subset bib entries
+ref_type = "software"
+```
+
+
+{{< include print-bib-entries.qmd >}}
+
+
 
 
 ## Conference Proceedings
 
 
+```{python}
+# define ref_type to subset bib entries
+ref_type = "paper-conference"
+```
+
+
+{{< include print-bib-entries.qmd >}}
+
 
 
 
 ## Other Publications
+
+
+```{python}
+# define ref_type to subset bib entries
+ref_type = "other"
+```
+
+
+{{< include print-bib-entries.qmd >}}
 
 
 
