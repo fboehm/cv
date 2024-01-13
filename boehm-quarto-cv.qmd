@@ -76,6 +76,13 @@ M.S., Department of Population Health Sciences \hfill 2003 to 2007
 B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 2001  
 
 
+```{python}
+# Read YAML file with pubs
+with open("data/boehm.yaml", "r") as file:
+    data = yaml.safe_load(file)
+```
+
+
 
 # Written Works 
 
