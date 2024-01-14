@@ -25,63 +25,43 @@ orcid: 0000-0002-1644-5931 # orcid identifier
 web: fboehm.us
 fontawesome: yes
 nocite: '@*'
-bibliography: 
-  peer: parsing-bib-files/boehm-article.bib
-  collection: parsing-bib-files/boehm-incollection.bib
-  software: parsing-bib-files/boehm-software.bib
-  submitted: parsing-bib-files/boehm-unpublished.bib
-  book: parsing-bib-files/boehm-book.bib
-  misc: parsing-bib-files/boehm-misc.bib
-  proceedings: parsing-bib-files/boehm-inproceedings.bib
 validate-yaml: false
-csl: chicago-fullnote-bibliography-boehm.csl
 engine: jupyter
 ---
 
 
 ```{python}
-import citeproc
-from citeproc.source.json import CiteProcJSON
-from citeproc_styles import get_style_filepath
-from yaml import load, Loader
+import yaml
+from IPython.display import display, Markdown, display_latex
 
-# Load CSL file
-with open('csl_files/chicago-author-date-16th-edition.csl', 'r') as csl_file:
-    csl = csl_file.read()
-from citeproc.source.bibtex import BibTeX
-bib_source = BibTeX('boehm-1.bib')
-style = citeproc.CitationStylesStyle(get_style_filepath('apa'))
+with open("data/boehm-fixed.yaml", "r") as file:
+    data = yaml.safe_load(file)
 
-# Create citation processor
-citation_style = CitationStylesBibliography(style, CiteProcJSON(CiteProcJSON(csl)))
+n_references = len(data['references'])
 
-# Sort references in reverse chronological order
-references.sort(key=lambda x: x['issued']['date-parts'][0], reverse=True)
+for ref_number in range(n_references):
+    ref = data['references'][ref_number]
+    author_yaml = ref['author']
+    author = ''
+    for i in range(len(author_yaml)):
+        if i == 0:
+            author = author_yaml[i]
+        elif i == len(author_yaml) - 1:
+            author = author + ' and ' + author_yaml[i]
+        else:
+            author = author + ', ' + author_yaml[i]
+    display(Markdown(f"{author}"))
 
-# Add references to the citation processor
-for reference in references:
-    citation = citeproc.Citation([citeproc.CitationItem(reference['id'])])
-    citation_style.register(citation)
+    title = ref['title']
+    journal = ref['container-title']
+    # Apply formatting & styling based on your requirements
+    formatted_value = f"**{value}**" if key == 'important_key' else value
 
-# Print the formatted bibliography
-bibliography = citation_style.bibliography()
-for entry in bibliography:
-    print(entry.render(style))
+    # Print the formatted content as Markdown
+    print(f"## {key}\n\n{formatted_value}\n\n")
 
-
+# Replace 'your_yaml_file.yaml' with the actual path to your YAML file
+print_yaml_as_markdown('bib2yaml/boehm.yaml')
 ```
-
-
-
-```{python}
-# Import the citeproc-py classes we'll use below.
-from citeproc import CitationStylesStyle, CitationStylesBibliography
-from citeproc import Citation, CitationItem
-from citeproc import formatter
-from citeproc.source.json import CiteProcJSON
-
-bib_source = CiteProcJSON(references)
-bib_style = CitationStylesStyle('harvard1', validate=False)
-bibliography = CitationStylesBibliography(bib_style, bib_source, formatter.html)
 
 

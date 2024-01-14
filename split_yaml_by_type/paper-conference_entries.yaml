@@ -1,0 +1,63 @@
+- author:
+  - family: Mark
+    given: J
+  - family: Wesler
+    given: L
+  - family: Oswald
+    given: C
+  - family: "L\xE9andre"
+    given: F
+  - family: Nevil
+    given: P
+  - family: Bertrand
+    given: D
+  - family: Bertrand
+    given: J
+  - family: Boehm
+    given: F
+  - family: Fawzi
+    given: MC Smith
+  container-title: Sexually Transmitted Infections
+  id: mark2011p2
+  issued: 2011
+  page: A263
+  publisher: BMJ Publishing Group Ltd
+  title: P2-S9. 07 economic risk factors for syphilis infection among pregnant women
+    in rural haiti
+  type: paper-conference
+  volume: 87
+- author:
+  - family: Fasella
+    given: E
+  - family: Boehm
+    given: FJ
+  - family: Kiessling
+    given: LL
+  container-title: ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY
+  id: fasella2000synthesis
+  issued: 2000
+  page: U108-U108
+  publisher: AMER CHEMICAL SOC 1155 16TH ST, NW, WASHINGTON, DC 20036 USA
+  title: Synthesis of galactosyl-alpha (1-3)-galactosyl epitopes for use in immunological
+    studies.
+  type: paper-conference
+  volume: 219
+- author:
+  - family: Gestwicki
+    given: JE
+  - family: Cairo
+    given: CW
+  - family: Boehm
+    given: FJ
+  - family: Kiessling
+    given: LL
+  container-title: ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY
+  id: gestwicki2001mechanistic
+  issued: 2001
+  page: U56-U56
+  publisher: AMER CHEMICAL SOC 1155 16TH ST, NW, WASHINGTON, DC 20036 USA
+  title: 'Mechanistic origins of the valency effect: Multivalent ligand binding studied
+    by surface plasmon resonance and isothermal titration calorimetry.'
+  title-short: Mechanistic origins of the valency effect
+  type: paper-conference
+  volume: 221

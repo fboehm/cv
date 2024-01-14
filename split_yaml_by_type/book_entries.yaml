@@ -1,0 +1,32 @@
+- author:
+  - family: Moorthy
+    given: A Vishnu
+  - family: Becker
+    given: Bryan Neil
+  - family: Boehm III
+    given: Frederick J
+  - family: Djamali
+    given: Arjang
+  id: moorthy2009pathophysiology
+  issued: 2009
+  publisher: Saunders/Elsevier
+  title: Pathophysiology of kidney disease and hypertension
+  type: book
+- author:
+  - family: Boehm
+    given: Frederick
+  id: qtl2pleio
+  issued: 2020-07-01
+  title: qtl2pleio r package
+  type: book
+  url: https://github.com/fboehm/qtl2pleio
+  version: 1.3.0
+- author:
+  - family: Boehm
+    given: Frederick
+  id: gemma2
+  issued: 2019-10-01
+  title: gemma2 r package
+  type: book
+  url: https://github.com/fboehm/gemma2
+  version: 0.1.1

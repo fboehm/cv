@@ -1,5 +1,9 @@
 # README.md
 
+- [ ] continue working with try-bib.qmd to get the bib yaml processing done as needed.
+
+
+
 - [ ] convert bib file to yaml with pandoc?
 - [ ] manually curate the bib file produced from zotero export
 - [ ] ensure that all dois are used

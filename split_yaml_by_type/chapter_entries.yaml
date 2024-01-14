@@ -1,0 +1,100 @@
+- accessed: 2024-01-07
+  author:
+  - family: Pelled
+    given: Ayellet
+  - family: Lukito
+    given: Josephine
+  - family: Boehm
+    given: Fred
+  - family: Yang
+    given: JungHwan
+  - family: Shah
+    given: Dhavan
+  container-title: Digital discussions
+  doi: 10.4324/9781351209434-10
+  edition: 1
+  editor:
+  - family: Stroud
+    given: Natalie Jomini
+  - family: McGregor
+    given: Shannon C.
+  id: stroud_little_2018
+  isbn: 978-1-351-20943-4
+  issued: 2018-11-09
+  keyword: /unread
+  language: en-US
+  page: 176-196
+  publisher: Routledge
+  title: '"Little marco," "lyin'' ted," "crooked hillary," and the "biased" media'
+  type: chapter
+  url: https://www.taylorfrancis.com/books/9781351209427/chapters/10.4324/9781351209434-10
+- author:
+  - family: Moorthy
+    given: Vishnu
+  - family: Boehm
+    given: Frederick
+  chapter-number: 10
+  container-title: Pathophysiology of kidney disease and hypertension
+  editor:
+  - family: Moorthy
+    given: Vishnu
+  - family: Becker
+    given: Bryan
+  - family: Boehm
+    given: Frederick
+  - family: Djamali
+    given: Arjang
+  id: moorthy2009urinalysis
+  issued: 2009
+  page: 121-130
+  publisher: Saunders/Elsevier
+  title: Urinalysis and an approach to kidney diseases
+  type: chapter
+- author:
+  - family: Traeger
+    given: Kelly
+  - family: Boehm
+    given: Frederick
+  - family: Djamali
+    given: Arjang
+  chapter-number: 6
+  container-title: Pathophysiology of kidney disease and hypertension
+  editor:
+  - family: Moorthy
+    given: Vishnu
+  - family: Becker
+    given: Bryan
+  - family: Boehm
+    given: Frederick
+  - family: Djamali
+    given: Arjang
+  id: traeger2009acid
+  issued: 2009
+  page: 63-78
+  publisher: Saunders/Elsevier
+  title: Acid-base homeostasis and metabolic alkalosis
+  type: chapter
+- author:
+  - family: Boehm
+    given: Frederick
+  - family: Traeger
+    given: Kelly
+  - family: Djamali
+    given: Arjang
+  chapter-number: 7
+  container-title: Pathophysiology of kidney disease and hypertension
+  editor:
+  - family: Moorthy
+    given: Vishnu
+  - family: Becker
+    given: Bryan
+  - family: Boehm
+    given: Frederick
+  - family: Djamali
+    given: Arjang
+  id: boehm2009metabolic
+  issued: 2009
+  page: 79-88
+  publisher: Saunders/Elsevier
+  title: Metabolic acidosis and approach to acid-base disorders
+  type: chapter

@@ -1,0 +1,36 @@
+- abstract: Abstract Visualisations are usually statistics made to look pretty. Here,
+    the artists take over -- but the statistics of read and unread novels are the
+    inspiration. Catherine DeRose, Carrie Roy and Fred Boehm walk the blurry line
+    between art and representing data.
+  accessed: 2024-01-07
+  author:
+  - family: DeRose
+    given: Catherine
+  - family: Roy
+    given: Carrie
+  - family: Boehm
+    given: Fred
+  container-title: Significance
+  doi: 10.1111/j.1740-9713.2014.00740.x
+  id: derose_victorian_2014
+  issn: 1740-9705, 1740-9713
+  issued: 2014-04-01
+  keyword: /unread
+  language: en-US
+  number: 2
+  page: 40-43
+  title: 'Victorian eyes: Literary, statistical, and artistic perspectives on victorian
+    novels -- and dickens''s unfinished murder mystery'
+  title-short: Victorian eyes
+  url: https://academic.oup.com/jrssig/article/11/2/40/7028988
+  volume: 11
+- author:
+  - family: Boehm
+    given: Fred
+  container-title: International Wolf
+  id: boehm1997lone
+  issued: 1997
+  number: 3
+  page: 7-9
+  title: The lone male wolf of the sandhill wildlife area
+  volume: 7
