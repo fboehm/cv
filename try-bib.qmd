@@ -10,7 +10,6 @@ geometry:
 format:
     quarto-cv-pdf: 
         keep-tex: true
-        keep-md: true
         pdf-engine: lualatex
 author: Frederick J. Boehm
 date: last-modified
