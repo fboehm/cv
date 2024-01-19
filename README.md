@@ -1,5 +1,19 @@
 # README.md
 
+
+## January 17, 2024
+
+
+- [ ] fix issue with authors for the Costello, et al. Nature biotech piece
+
+- [ ] fix formatting for different types of publications
+    - [ ] fix text size in pdf output ("\\footnotesize")
+- [ ] check keys for every type value
+- [ ] maybe fix date issue: I arbitrarily add info to get a date from the yaml entry "issued". Maybe I actually want to make a new key, like "issued_formatted_for_sorting". then, when I go to print the item, I can use the original "issued" value!
+
+
+## Older
+
 - [ ] continue working with try-bib.qmd to get the bib yaml processing done as needed.
 
 

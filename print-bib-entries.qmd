@@ -16,10 +16,15 @@ for entry in formatted_bibliography:
 
 
 ```{python}
+#| eval: false
 # subset entries by type
 type_entries = [entry for entry in data.entries.values() if entry.type == ref_type]
 
 # Process the references
 references = processor.process_bibliography(data)
 print(references)
+```
+
+```{python}
+
 ```

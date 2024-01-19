@@ -1,66 +1,105 @@
----
-subparagraph: yes
-execute:
-  echo: false
-geometry:
-  - top=20mm
-  - left=20mm
-  - right=20mm
-  - bottom=20mm
-format:
-    quarto-cv-pdf: 
-        keep-tex: true
-        pdf-engine: lualatex
-author: Frederick J. Boehm
-date: last-modified
-phone: 715-252-3929
-address: "University of Michigan · 419 Waymarket DR · Ann Arbor, Michigan 48103 · USA"
-email: frederick.boehm@gmail.com
-fontsize: 12pt
-github: fboehm # github account
-orcid: 0000-0002-1644-5931 # orcid identifier
-#osf: ymqui # osf five character id
-#twitter: twitter # twitter handle
-web: fboehm.us
-fontawesome: yes
-nocite: '@*'
-validate-yaml: false
-engine: jupyter
----
-
 
 ```{python}
+# we define ref_type in the main qmd file
 import yaml
 from IPython.display import display, Markdown, display_latex
 
-with open("data/boehm-fixed.yaml", "r") as file:
-    data = yaml.safe_load(file)
+from datetime import datetime, date
 
-n_references = len(data['references'])
+def date_constructor(loader, node):
+    value = loader.construct_scalar(node)
+    
+    # Adjust the format string based on your date format
+    if isinstance(value, int):
+        return date(value, 1, 1)
+    elif '-' in value:
+        if len(value) == 7:
+            return datetime.strptime(value + '-01', '%Y-%m-%d').date()
+        elif len(value) == 10:
+            return datetime.strptime(value, '%Y-%m-%d').date()
+    
+    raise ValueError(f"Invalid date format: {value}")
+
+
+yaml.add_constructor('tag:yaml.org,2002:date', date_constructor, yaml.SafeLoader)
+
+
+
+
+with open("data/boehm-fixed.yaml", "r") as file:
+    data = yaml.load(file, Loader=yaml.SafeLoader)
+
+n_references = len(data["references"])
+bibs = data["references"]
+
+# Convert integer years and year-month to datetime.date objects
+#for article in bibs:
+#    if isinstance(article['issued'], int):
+#        article['issued'] = date(article['issued'], 1, 1)
+#    elif len(article['issued']) == 6:
+#        article['issued'] = datetime.strptime(article['issued'], '%Y-%m').date()
+#sorted_bibs = sorted(bibs, key=lambda x: x['issued'] if isinstance(x['issued'], date) else datetime.strptime(str(x['issued']), '%Y-%m-%d').date(), reverse=True)
+# Replace 'issued' values with datetime.date objects
+for article in bibs:
+    if isinstance(article['issued'], int):
+        article['issued'] = date(article['issued'], 1, 1)
+    if isinstance(article['issued'], str):
+        if len(article['issued']) == 7:
+            article['issued'] = datetime.strptime(article['issued'] + '-01', '%Y-%m-%d').date()
+        elif len(article['issued']) == 10:
+            article['issued'] = datetime.strptime(article['issued'], '%Y-%m-%d').date()
+
+
+
+sorted_bibs = sorted(bibs, key=lambda x: x['issued'] if isinstance(x['issued'], date) else datetime.strptime(str(x['issued']) + '-01', '%Y-%m-%d').date(), reverse=True)
+
+
 
 for ref_number in range(n_references):
-    ref = data['references'][ref_number]
-    author_yaml = ref['author']
-    author = ''
-    for i in range(len(author_yaml)):
-        if i == 0:
-            author = author_yaml[i]
-        elif i == len(author_yaml) - 1:
-            author = author + ' and ' + author_yaml[i]
-        else:
-            author = author + ', ' + author_yaml[i]
-    display(Markdown(f"{author}"))
-
-    title = ref['title']
-    journal = ref['container-title']
-    # Apply formatting & styling based on your requirements
-    formatted_value = f"**{value}**" if key == 'important_key' else value
-
-    # Print the formatted content as Markdown
-    print(f"## {key}\n\n{formatted_value}\n\n")
-
-# Replace 'your_yaml_file.yaml' with the actual path to your YAML file
-print_yaml_as_markdown('bib2yaml/boehm.yaml')
+    ref = sorted_bibs[ref_number]
+    if (ref["type"] == ref_type): 
+        title = ref["title"]
+        # organize authors for printing
+        author_yaml = ref["author"]
+        n_authors = len(author_yaml)
+        for i in range(n_authors):
+            author_value = author_yaml[i]
+            if "literal" in author_value:
+                full_name = author_value["literal"]
+            else:
+                author_last = author_value["family"]
+                author_first = author_value["given"]
+                if author_last == "Boehm":
+                    author_last = "**Boehm**"
+                    author_first = "**{}**".format(author_first)
+                author = author_first + " " + author_last
+            if i == 0:
+                authors = author
+            elif i == n_authors - 1:
+                authors = authors + ", and " + author
+            else:
+                authors = authors + ", " + author
+            # ie, if the citation is of the type we want to print right now, here
+        if ref_type == "article-journal":  # need to have correct keys for each type!!
+            # organize other info for printing
+            date = ref["issued"]
+            doi = ref["doi"]
+            journal = ref["container-title"]
+            #volume = ref["volume"]
+            page = ref["page"]
+            formatted_text = f"\\footnotesize{authors} ({date}). {title}. *{journal}* {page}."
+            # Print the formatted content as Markdown
+            display(Markdown(formatted_text))
+        if ref_type == "manuscript":
+            date = "submitted"
+            formatted_text = f"\\footnotesize{authors} ({date}). {title}."
+        if ref_type == "thesis":
+            date = ref["issued"]
+            formatted_text = f"\\footnotesize{authors} ({date}). {title}."
+        if ref_type == "book":
+            date = ref["issued"]
+            authors = authors + ", editors"
+            formatted_text = f"\\footnotesize{authors} ({date}). *{title}*."
 ```
 
 

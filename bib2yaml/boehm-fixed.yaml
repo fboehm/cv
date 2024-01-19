@@ -1,4 +1,12 @@
 references:
+- author: 
+  - family: "Boehm, III"
+    given: Frederick J.
+  title: "Testing pleiotropy vs. separate QTL in multiparental populations"
+  issued: 2019
+  type: thesis
+  id: boehm_thesis
+
 - abstract: The outcome of an encounter with Mycobacterium tuberculosis
     (Mtb) depends on the pathogen's ability to adapt to the variable
     immune pressures exerted by the host. Understanding this interplay
@@ -595,8 +603,7 @@ references:
     given: David J
   - family: Keane
     given: Thomas M
-  container-title: G3
-    Genes`\textbar`{=latex}Genomes`\textbar`{=latex}Genetics
+  container-title: "G3: Genes, Genomes, Genetics"
   doi: 10.1534/g3.114.010595
   id: dove_strategy_2014
   issn: 2160-1836
@@ -616,6 +623,7 @@ references:
     and Fred Boehm walk the blurry line between art and representing
     data.
   accessed: 2024-01-07
+  type: other
   author:
   - family: DeRose
     given: Catherine
@@ -933,6 +941,7 @@ references:
   - family: Boehm
     given: Fred
   container-title: International Wolf
+  type: other
   id: boehm1997lone
   issued: 1997
   number: 3
@@ -1021,6 +1030,7 @@ references:
   id: kurtz2024
   title: Multiple genetic loci influence vaccine-induced protection
     against mycobacterium tuberculosis in genetically diverse mice
+  issued: 2024
   type: manuscript
 - author:
   - family: Moorthy

@@ -10,7 +10,6 @@ geometry:
 format:
     quarto-cv-pdf: 
         keep-tex: true
-        keep-md: true
         pdf-engine: lualatex
 author: Frederick J. Boehm
 date: last-modified
@@ -24,24 +23,13 @@ orcid: 0000-0002-1644-5931 # orcid identifier
 #twitter: twitter # twitter handle
 web: fboehm.us
 fontawesome: yes
-nocite: '@*'
-bibliography: 
-  peer: parsing-bib-files/boehm-article.bib
-  collection: parsing-bib-files/boehm-incollection.bib
-  software: parsing-bib-files/boehm-software.bib
-  submitted: parsing-bib-files/boehm-unpublished.bib
-  book: parsing-bib-files/boehm-book.bib
-  misc: parsing-bib-files/boehm-misc.bib
-  proceedings: parsing-bib-files/boehm-inproceedings.bib
 validate-yaml: false
-csl: chicago-fullnote-bibliography-boehm.csl
 engine: jupyter
 ---
 
 ```{python} 
 import yaml
 from IPython.display import display, Markdown, display_latex
-
 ```
 
 
@@ -92,7 +80,7 @@ ref_type = "manuscript"
 ```
 
 
-{{< include print-bib-entries.qmd >}}
+{{< include try-bib.qmd >}}
 
 
 ## Journal Articles 
@@ -104,10 +92,10 @@ ref_type = "article-journal"
 ```
 
 
-{{< include print-bib-entries.qmd >}}
+{{< include try-bib.qmd >}}
 
 
-## Book  
+## Edited Book  
 
 
 ```{python}
@@ -116,7 +104,7 @@ ref_type = "book"
 ```
 
 
-{{< include print-bib-entries.qmd >}}
+{{< include try-bib.qmd >}}
 
 
 ## Book Chapters
@@ -127,7 +115,7 @@ ref_type = "chapter"
 ```
 
 
-{{< include print-bib-entries.qmd >}}
+{{< include try-bib.qmd >}}
 
 
 
@@ -140,7 +128,7 @@ ref_type = "software"
 ```
 
 
-{{< include print-bib-entries.qmd >}}
+{{< include try-bib.qmd >}}
 
 
 
@@ -154,9 +142,13 @@ ref_type = "paper-conference"
 ```
 
 
-{{< include print-bib-entries.qmd >}}
+{{< include try-bib.qmd >}}
 
+## Ph.D. Thesis
 
+```{python}
+ref_type = "thesis"
+```
 
 
 ## Other Publications
@@ -168,7 +160,7 @@ ref_type = "other"
 ```
 
 
-{{< include print-bib-entries.qmd >}}
+{{< include try-bib.qmd >}}
 
 
 
