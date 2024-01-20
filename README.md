@@ -1,6 +1,44 @@
 # README.md
 
 
+## January 20
+
+- [ ] Consider adding a link to google scholar  
+- [ ] Link to Publons?  
+- [ ] link to mybibliography ncbi??
+
+- [ ] Fix spacing before & after sections & subsections, etc
+- [ ] Fix my bolding in bib entries where I'm first author
+
+- [ ] Fix spacing in "Teaching Experience" section - I leave too much space between two consecutive courses, for example
+- [ ] Fix date formatting in Mentoring Experience section. Need something like May 2015 to May 2016
+
+- [ ] Add hyperlinks? to training in teaching section???
+
+- [ ] Can I add hyperlinks to verify accomplishments or show materials? Maybe awards?
+
+- [ ] look through github repositories & figshare, zenodo, etc, to find materials and info for recent presentatiosn
+    - [ ] need to add useR! 2016 presentation and slides
+
+
+
+- [ ] Consider moving location to new line (ie, for presentations, etc)
+- [ ] consider italicizing or doing something to break up monotony of entries in some sections, like Community Service. Maybe italicize date???
+
+- [ ] maybe organize better the peer reviewer item in Professional Service
+    - [ ] maybe one journal per line??? Fix G3 name
+
+- [ ] Maybe use one font size throughout all regular text??
+
+Right now, for example, education section differs in size from Written Works
+
+- [ ] USA or United States of America
+
+
+
+
+
+
 ## January 17, 2024
 
 

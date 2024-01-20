@@ -30,6 +30,7 @@ engine: jupyter
 ```{python} 
 import yaml
 from IPython.display import display, Markdown, display_latex
+from datetime import datetime
 ```
 
 
@@ -243,10 +244,6 @@ with open("data/mentoring.yaml", "r") as file:
 first_person_name = data['people'][0]['name']
 ```
 
-```{python} 
-from datetime import datetime
-
-```
 
 
 

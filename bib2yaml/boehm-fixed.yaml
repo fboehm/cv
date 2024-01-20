@@ -992,7 +992,7 @@ references:
   id: qtl2pleio
   issued: 2020-07-01
   title: qtl2pleio r package
-  type: book
+  type: software
   url: "https://github.com/fboehm/qtl2pleio"
   version: 1.3.0
 - author:
@@ -1001,7 +1001,7 @@ references:
   id: gemma2
   issued: 2019-10-01
   title: gemma2 r package
-  type: book
+  type: software
   url: "https://github.com/fboehm/gemma2"
   version: 0.1.1
 - author:
