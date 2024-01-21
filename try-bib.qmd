@@ -51,12 +51,12 @@ sorted_bibs = sorted(bibs, key=lambda x: x['issued_formatted'], reverse=True)
 def render_with_hyperlink(value, url = None):
     if url is None:
         url = value
-    markdown_text = f"\\footnotesize [{value}]({url})"
+    markdown_text = f"[{value}]({url})"
     return markdown_text
 
 # define a function for taking a bunch of names, in yaml, and producing a single string for printing
 
-def assemble_names_from_yaml(names_yaml, my_name = "Boehm"):
+def assemble_names_from_yaml(names_yaml, my_name = ["Boehm", "Boehm, III", "Boehm III"]):
     # Function body
     n_names = len(names_yaml)
     for i in range(n_names):
@@ -66,14 +66,17 @@ def assemble_names_from_yaml(names_yaml, my_name = "Boehm"):
         else:
             name_last = name_value["family"]
             name_first = name_value["given"]
-            if name_last == my_name:
-                name_last = "**{}**".format(name_last)
-                name_first = "**{}**".format(name_first)
+            if name_last in my_name:
+                name_last = "{}**".format(name_last)
+                name_first = " **{}".format(name_first)
             name = name_first + " " + name_last
         if i == 0:
             names = name
         elif i == n_names - 1:
-            names = names + ", and " + name
+            if n_names == 2:
+                names = names + " and " + name
+            else:
+                names = names + ", and " + name
         else:
             names = names + ", " + name
     # Code goes here
@@ -91,6 +94,12 @@ for ref_number in range(n_references):
         if "editor" in ref:
             editor_yaml = ref["editor"]
             editors = assemble_names_from_yaml(editor_yaml)
+        if ref_type == "paper-conference":
+            date = ref["issued"]
+            publisher = ref["publisher"]
+            proceedings = ref["container-title"]
+            formatted_text = f"{authors} ({date}). {title}. In *{proceedings}*, {publisher}."
+
             # ie, if the citation is of the type we want to print right now, here
         if ref_type == "article-journal":  # need to have correct keys for each type!!
             # organize other info for printing. 
@@ -108,26 +117,34 @@ for ref_number in range(n_references):
             else:
                 volume_issue = ""
             page = ref["page"]
-            formatted_text = f"\\footnotesize {authors} ({date}). {title}. *{journal}* {volume_issue}:{page}. " + render_with_hyperlink("https://doi.org/" + doi) + f"\\footnotesize ."
+            formatted_text = f"{authors} ({date}). {title}. *{journal}* {volume_issue}:{page}. " + render_with_hyperlink("https://doi.org/" + doi) + f"."
             # Print the formatted content as Markdown
+        if ref_type == "software":
+            date = ref["issued"]
+            url = ref["url"]
+            formatted_text = f"{authors} ({date}). {title}. " + render_with_hyperlink(url) + f"."
         if ref_type == "manuscript":
             date = "submitted"
-            formatted_text = f"\\footnotesize {authors} ({date}). {title}."
+            formatted_text = f"{authors} ({date}). {title}."
         if ref_type == "thesis":
             date = ref["issued"]
-            formatted_text = f"\\footnotesize {authors} ({date}). {title}."
+            formatted_text = f"{authors} ({date}). {title}."
         if ref_type == "book":
             date = ref["issued"]
             authors = authors + ", editors"
             publisher = ref["publisher"]
-            formatted_text = f"\\footnotesize {authors} ({date}). *{title}*. {publisher}."
+            formatted_text = f" {authors} ({date}). *{title}*. {publisher}."
         if ref_type == "chapter":
             date = ref["issued"]
             book_title = ref["container-title"]
             pages = ref["page"]
             publisher = ref["publisher"]
             editors = editors + ", editors"
-            formatted_text = f"\\footnotesize {authors} ({date}). {title}. In {editors} *{book_title}*. {publisher}."
+            formatted_text = f"{authors} ({date}). {title}. In {editors} *{book_title}*. {publisher}."
+        if ref_type == "other":
+            date = ref["issued"]
+            journal = ref["container-title"]
+            formatted_text = f"{authors} ({date}). {title}. *{journal}*."
         display(Markdown(formatted_text)) # display an entry only if it is the type we want
 
 ```

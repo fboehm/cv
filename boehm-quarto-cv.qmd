@@ -10,13 +10,14 @@ geometry:
 format:
     quarto-cv-pdf: 
         keep-tex: true
+        keep-md: true
         pdf-engine: lualatex
 author: Frederick J. Boehm
 date: last-modified
 phone: 715-252-3929
 address: "University of Michigan · 419 Waymarket DR · Ann Arbor, Michigan 48103 · USA"
 email: frederick.boehm@gmail.com
-fontsize: 12pt
+fontsize: 10pt
 github: fboehm # github account
 orcid: 0000-0002-1644-5931 # orcid identifier
 #osf: ymqui # osf five character id
@@ -75,13 +76,15 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 
 ## Submitted Manuscripts 
 
+
 ```{python}
 # define ref_type to subset bib entries
 ref_type = "manuscript"
 ```
 
-
 {{< include try-bib.qmd >}}
+
+
 
 
 ## Journal Articles 
@@ -99,6 +102,8 @@ ref_type = "article-journal"
 ## Edited Book  
 
 
+
+
 ```{python}
 # define ref_type to subset bib entries
 ref_type = "book"
@@ -110,6 +115,7 @@ ref_type = "book"
 
 ## Book Chapters
 
+
 ```{python}
 # define ref_type to subset bib entries
 ref_type = "chapter"
@@ -120,8 +126,9 @@ ref_type = "chapter"
 
 
 
-
 ## Software
+
+
 
 ```{python}
 # define ref_type to subset bib entries
@@ -137,22 +144,30 @@ ref_type = "software"
 ## Conference Proceedings
 
 
+
+
 ```{python}
 # define ref_type to subset bib entries
 ref_type = "paper-conference"
 ```
 
-
 {{< include try-bib.qmd >}}
 
 ## Ph.D. Thesis
+
+
 
 ```{python}
 ref_type = "thesis"
 ```
 
+{{< include try-bib.qmd >}}
+
+
 
 ## Other Publications
+
+
 
 
 ```{python}
