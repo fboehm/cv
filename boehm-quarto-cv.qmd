@@ -12,7 +12,7 @@ format:
         keep-tex: true
         keep-md: true
         pdf-engine: lualatex
-author: Frederick J. Boehm
+author: Frederick Joseph Boehm, III
 date: last-modified
 phone: 715-252-3929
 address: "University of Michigan · 419 Waymarket DR · Ann Arbor, Michigan 48103 · USA"
