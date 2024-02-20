@@ -209,4 +209,12 @@ service:
     service_type: professional
     description: >
       *
+  - title: 'Participant'  
+    organization: 
+        - 'ENAR Fostering Diversity in Biostatistics Virtual Workshop'
+    date: 
+        - '2021-03'
+    service_type: professional
+    description: >
+      *
   
