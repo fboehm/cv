@@ -12,7 +12,7 @@ format:
     keep-tex: true
     keep-md: true
     pdf-engine: lualatex
-author: Frederick J. Boehm
+author: 'Frederick Joseph Boehm, III'
 date: last-modified
 phone: 715-252-3929
 address: 'University of Michigan · 419 Waymarket DR · Ann Arbor, Michigan 48103 · USA'
@@ -485,6 +485,7 @@ University of Wisconsin-Madison Molecular and Environmental Toxicology Center Re
 ::: {.cell execution_count=29}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
+\footnotesize Participant, ENAR Fostering Diversity in Biostatistics Virtual Workshop \hfill March 2021  
 \footnotesize [Associate Editor](https://joss.theoj.org/about), Journal of Open Source Software \hfill June 2020 to present  
 \footnotesize [Member](https://genetics-gsa.org/career-development/early-career-leadership/), Genetics Society of America Early Career Researchers Leadership Program \hfill February 2020 to February 2022  
 \footnotesize Peer Reviewer, Journal of Open Source Software, European Journal of Epidemiology, The R Journal, ROpenSci, Genetics, G3, PLoS Computational Biology, BMC Cancer, Journal of Statistics and Data Science Education \hfill January 2019 to present  
