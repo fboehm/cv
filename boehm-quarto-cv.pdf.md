@@ -12,7 +12,7 @@ format:
     keep-tex: true
     keep-md: true
     pdf-engine: lualatex
-author: Frederick J. Boehm
+author: 'Frederick Joseph Boehm, III'
 date: last-modified
 phone: 715-252-3929
 address: 'University of Michigan · 419 Waymarket DR · Ann Arbor, Michigan 48103 · USA'
@@ -366,9 +366,12 @@ Next position: Statistics graduate student at University of Washington
 
 # Awards & Honors
 
+\hrule
+
 ::: {.cell execution_count=22}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
+\footnotesize Conference Travel Award, University of Michigan Postdoc Association \hfill 2024  
 \footnotesize Best Poster Award, International Mammalian Genome Conference \hfill 2018  
 \footnotesize Conference Travel Scholarship, International Mammalian Genome Conference \hfill 2018  
 \footnotesize Integrating Research Ethics and Scholarship Fellowship, University of Wisconsin-Madison \hfill 2013  
@@ -391,6 +394,9 @@ Next position: Statistics graduate student at University of Washington
 
 
 # Presentations
+
+
+\hrule
 
 
 
@@ -443,6 +449,9 @@ University of Wisconsin-Madison Molecular and Environmental Toxicology Center Re
 
 
 # Service
+
+
+\hrule
 
 
 

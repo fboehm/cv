@@ -273,7 +273,7 @@ for person in data['people']:
 
 # Awards & Honors
 
-
+\hrule
 
 ```{python}
 # Read YAML file
@@ -293,6 +293,9 @@ display(Markdown(markdown_output))
 
 
 # Presentations
+
+
+\hrule
 
 ```{python}
 # Read YAML file
@@ -339,6 +342,9 @@ display(Markdown(markdown_output_posters))
 
 
 # Service
+
+
+\hrule
 
 
 ```{python}
