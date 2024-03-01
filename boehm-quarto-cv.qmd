@@ -74,7 +74,7 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 
 \hrule
 
-## Submitted Manuscripts 
+## Manuscripts in Preparation
 
 
 ```{python}
@@ -108,7 +108,6 @@ ref_type = "article-journal"
 # define ref_type to subset bib entries
 ref_type = "book"
 ```
-
 
 {{< include try-bib.qmd >}}
 

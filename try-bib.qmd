@@ -96,9 +96,9 @@ for ref_number in range(n_references):
             editors = assemble_names_from_yaml(editor_yaml)
         if ref_type == "paper-conference":
             date = ref["issued"]
-            publisher = ref["publisher"]
+            #publisher = ref["publisher"]
             proceedings = ref["container-title"]
-            formatted_text = f"{authors} ({date}). {title}. In *{proceedings}*, {publisher}."
+            formatted_text = f"{authors} ({date}). {title}. In *{proceedings}*."#, {publisher}."
 
             # ie, if the citation is of the type we want to print right now, here
         if ref_type == "article-journal":  # need to have correct keys for each type!!
@@ -124,7 +124,7 @@ for ref_number in range(n_references):
             url = ref["url"]
             formatted_text = f"{authors} ({date}). {title}. " + render_with_hyperlink(url) + f"."
         if ref_type == "manuscript":
-            date = "submitted"
+            date = "in preparation"
             formatted_text = f"{authors} ({date}). {title}."
         if ref_type == "thesis":
             date = ref["issued"]

@@ -69,7 +69,7 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 
 \hrule
 
-## Submitted Manuscripts 
+## Manuscripts in Preparation
 
 
 
@@ -77,7 +77,15 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 ::: {.cell execution_count=3}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-Sherry L. Kurtz, Richard Baker,  **Frederick Boehm**, Chelsea Lehman, Lara Mittereder, Hamda Khan, Amy Rossi, Daniel Gatti, Gillian Beamer, Christopher Sassetti, and Karen Elkins (submitted). Multiple genetic loci influence vaccine-induced protection against mycobacterium tuberculosis in genetically diverse mice.
+Sherry L. Kurtz, Richard Baker,  **Frederick Boehm**, Chelsea Lehman, Lara Mittereder, Hamda Khan, Amy Rossi, Daniel Gatti, Gillian Beamer, Christopher Sassetti, and Karen Elkins (in preparation). Multiple genetic loci influence vaccine-induced protection against mycobacterium tuberculosis in genetically diverse mice.
+:::
+
+::: {.cell-output .cell-output-display .cell-output-markdown}
+ **Frederick J. Boehm**, Xiang Zhou, and Santhi K. Ganesh (in preparation). Assessing evidence for causal relationships between fibromuscular dysplasia and chronic kidney disease: A two-sample mendelian randomization study.
+:::
+
+::: {.cell-output .cell-output-display .cell-output-markdown}
+Yu Wang,  **Frederick J. Boehm**, Andrea Murad, Min-Lee Yang, Kristina Hunker, Natalia Fendrikova-Mahlay, Dawn Coleman, Heather Gornik, James C. Stanley, Jun Z. Li, and Santhi K. Ganesh (in preparation). Whole-exome sequencing data of patients with fibromuscular dysplasia reveals novel gene associations.
 :::
 :::
 
@@ -157,7 +165,7 @@ Jason E Gestwicki, Laura E Strong, Christopher W Cairo,  **Frederick J Boehm**, 
 ::: {.cell execution_count=7}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
- A Vishnu Moorthy, Bryan Neil Becker,  **Frederick J Boehm III**, and Arjang Djamali, editors (2009). *Pathophysiology of kidney disease and hypertension*. Saunders/Elsevier.
+ A Vishnu Moorthy, Bryan Neil Becker,  **Frederick J Boehm III**, and Arjang Djamali, editors (2009). *Pathophysiology of kidney disease and hypertension*. Elsevier.
 :::
 :::
 
@@ -173,15 +181,15 @@ Ayellet Pelled, Josephine Lukito,  **Fred Boehm**, JungHwan Yang, and Dhavan Sha
 :::
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-Vishnu Moorthy and  **Frederick Boehm** (2009). Urinalysis and an approach to kidney diseases. In Vishnu Moorthy, Bryan Becker,  **Frederick Boehm**, and Arjang Djamali, editors *Pathophysiology of kidney disease and hypertension*. Saunders/Elsevier.
+Vishnu Moorthy and  **Frederick Boehm** (2009). Urinalysis and an approach to kidney diseases. In Vishnu Moorthy, Bryan Becker,  **Frederick Boehm**, and Arjang Djamali, editors *Pathophysiology of kidney disease and hypertension*. Elsevier.
 :::
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-Kelly Traeger,  **Frederick Boehm**, and Arjang Djamali (2009). Acid-base homeostasis and metabolic alkalosis. In Vishnu Moorthy, Bryan Becker,  **Frederick Boehm**, and Arjang Djamali, editors *Pathophysiology of kidney disease and hypertension*. Saunders/Elsevier.
+Kelly Traeger,  **Frederick Boehm**, and Arjang Djamali (2009). Acid-base homeostasis and metabolic alkalosis. In Vishnu Moorthy, Bryan Becker,  **Frederick Boehm**, and Arjang Djamali, editors *Pathophysiology of kidney disease and hypertension*. Elsevier.
 :::
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
- **Frederick Boehm**, Kelly Traeger, and Arjang Djamali (2009). Metabolic acidosis and approach to acid-base disorders. In Vishnu Moorthy, Bryan Becker,  **Frederick Boehm**, and Arjang Djamali, editors *Pathophysiology of kidney disease and hypertension*. Saunders/Elsevier.
+ **Frederick Boehm**, Kelly Traeger, and Arjang Djamali (2009). Metabolic acidosis and approach to acid-base disorders. In Vishnu Moorthy, Bryan Becker,  **Frederick Boehm**, and Arjang Djamali, editors *Pathophysiology of kidney disease and hypertension*. Elsevier.
 :::
 :::
 
@@ -193,11 +201,11 @@ Kelly Traeger,  **Frederick Boehm**, and Arjang Djamali (2009). Acid-base homeos
 ::: {.cell execution_count=11}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
- **Frederick Boehm** (2020-07-01). qtl2pleio r package. [https://github.com/fboehm/qtl2pleio](https://github.com/fboehm/qtl2pleio).
+ **Frederick Boehm** (2020-07-01). qtl2pleio R package. [https://github.com/fboehm/qtl2pleio](https://github.com/fboehm/qtl2pleio).
 :::
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
- **Frederick Boehm** (2019-10-01). gemma2 r package. [https://github.com/fboehm/gemma2](https://github.com/fboehm/gemma2).
+ **Frederick Boehm** (2019-10-01). gemma2 R package. [https://github.com/fboehm/gemma2](https://github.com/fboehm/gemma2).
 :::
 :::
 
@@ -209,15 +217,15 @@ Kelly Traeger,  **Frederick Boehm**, and Arjang Djamali (2009). Acid-base homeos
 ::: {.cell execution_count=13}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-J Mark, L Wesler, C Oswald, F Léandre, P Nevil, D Bertrand, J Bertrand,  **F Boehm**, and MC Smith Fawzi (2011). P2-S9. 07 economic risk factors for syphilis infection among pregnant women in rural haiti. In *Sexually Transmitted Infections*, BMJ Publishing Group Ltd.
+J Mark, L Wesler, C Oswald, F Léandre, P Nevil, D Bertrand, J Bertrand,  **F Boehm**, and MC Smith Fawzi (2011). P2-S9. 07 economic risk factors for syphilis infection among pregnant women in rural haiti. In *Sexually Transmitted Infections*.
 :::
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-JE Gestwicki, CW Cairo,  **FJ Boehm**, and LL Kiessling (2001). Mechanistic origins of the valency effect: Multivalent ligand binding studied by surface plasmon resonance and isothermal titration calorimetry.. In *ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY*, AMER CHEMICAL SOC 1155 16TH ST, NW, WASHINGTON, DC 20036 USA.
+JE Gestwicki, CW Cairo,  **FJ Boehm**, and LL Kiessling (2001). Mechanistic origins of the valency effect: Multivalent ligand binding studied by surface plasmon resonance and isothermal titration calorimetry.. In *ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY*.
 :::
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-E Fasella,  **FJ Boehm**, and LL Kiessling (2000). Synthesis of galactosyl-alpha (1-3)-galactosyl epitopes for use in immunological studies.. In *ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY*, AMER CHEMICAL SOC 1155 16TH ST, NW, WASHINGTON, DC 20036 USA.
+E Fasella,  **FJ Boehm**, and LL Kiessling (2000). Synthesis of galactosyl-alpha (1-3)-galactosyl epitopes for use in immunological studies.. In *ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY*.
 :::
 :::
 

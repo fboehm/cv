@@ -4,7 +4,7 @@
 # i may need to manually make the boehm-detail bibtex file, with outputs from 
 # zotero and google scholar
 bigbib=$1
-outfile=boehm.yaml
+outfile=$2
 pandoc ${bigbib} -s -f biblatex -t markdown > ${outfile}
 
 
