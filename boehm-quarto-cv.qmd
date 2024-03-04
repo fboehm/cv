@@ -267,6 +267,28 @@ for person in data['people']:
     display(Markdown(f"Research mentor to {person['name']}, {person['title']} \hfill {person['start']} to {person['end']}   \nProject: {person['project']}   \nNext position: {person['next_role']}"))
 ```
 
+## Leadership Training
+
+
+```{python} 
+
+# Read YAML file
+with open("data/leadership-training.yaml", "r") as file:
+    data = yaml.safe_load(file)
+```
+
+
+
+
+
+```{python}
+# maybe add more fields to output??? ie, in call to Markdown?
+# need to decide which fields matter when assembling my yaml file!
+
+for course in data['courses']:
+    display(Markdown(f"{course['title']} \hfill {course['term']}   \n{course['institution']}   "))
+
+```
 
 
 

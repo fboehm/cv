@@ -162,16 +162,6 @@ service:
     service_type: professional
     description: >
       *
-  - title: 'Member'
-    url: https://genetics-gsa.org/career-development/early-career-leadership/
-    organization: 
-        - 'Genetics Society of America Early Career Researchers Leadership Program'
-    date: 
-        - '2020-02'
-    end_date: '2022-02'
-    service_type: professional
-    description: >
-      *
   - title: 'Trainee'
     organization: 
         - 'Genetics Society of America Peer Review Training Program'
@@ -180,15 +170,6 @@ service:
     end_date: '2020-03'
     url: http://genestogenomes.org/learning-to-peer-review-program-update/
     service_type: professional
-    description: >
-      *
-  - title: 'Participant'
-    organization: 
-        - "American Statistical Association's Workshop on Communicating with the Media and the Public"
-    date: 
-        - '2016-11'
-    service_type: professional
-    location: Alexandria, Virginia, USA
     description: >
       *
   - title: 'Instructor'

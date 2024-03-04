@@ -14,4 +14,22 @@ courses:
     term: Fall 2021
     description: >
       * Molly Grisham course: hyperlink here
-  - title: 'ASA WOrkshop on Communicating with th emedia -- 2016'
+  - title: 'Participant'
+    organization: 
+        - "American Statistical Association's Workshop on Communicating with the Media and the Public"
+    date: 
+        - '2016-11'
+    service_type: professional
+    location: Alexandria, Virginia, USA
+    description: >
+      *
+  - title: 'Member'
+    url: https://genetics-gsa.org/career-development/early-career-leadership/
+    organization: 
+        - 'Genetics Society of America Early Career Researchers Leadership Program'
+    date: 
+        - '2020-02'
+    end_date: '2022-02'
+    service_type: professional
+    description: >
+      *
