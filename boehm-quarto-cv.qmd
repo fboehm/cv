@@ -185,47 +185,11 @@ ref_type = "other"
 
 ## Formal Courses
 
-How to teach inclusively for educating a diverse nation  \hfill Spring 2017 & Fall 2017  
-Role: Co-facilitator \hfill University of Wisconsin-Madison & CIRTL Network    
-
-
-Introductory statistics for biologists  \hfill Fall 2016   
-Role: Instructor  \hfill University of Wisconsin-Madison  
-
-Special Topics: Data Science  \hfill Fall 2016   
-Roles: Guest lecturer on topic models; Teaching assistant \hfill University of Wisconsin-Madison  
-
-Introductory statistics for engineers  \hfill Spring 2014, Fall 2014, Spring 2015, Summer 2015, Fall 2015, Spring 2016   
-Role: Instructor \hfill University of Wisconsin-Madison  
-
-Introduction to Biostatistics  \hfill Fall 2009 & Winter 2010   
-Role: Teaching assistant \hfill University of Washington  
-
-Introductory organic chemistry \hfill Fall 2001   
-Role: Teaching assistant \hfill University of California, Berkeley  
-
 
 
 
 ## Short Courses & Workshops
 
-Engaging students in the teaching of statistics \hfill March 2018 & July 2020   
-Role: Instructor  \hfill CIRTL Network  
-
-
-Data analysis with topic models for communications researchers \hfill July 2016 & October 2016  
-Role: Instructor  \hfill University of Wisconsin-Madison  
-
-
-Data Carpentry Workshop \hfill June 2017 & September 2018 (University of Wisconsin-Madison & Missouri S&T)    
-Role: Instructor  \hfill University of Wisconsin-Madison & Missouri S&T University  
-Website: https://uw-madison-aci.github.io/2017-06-19-uwmadison-dc/ & https://yeemey.github.io/2018-09-15-und-mbdh/  
-
-Topic modeling for non-statisticians \hfill October 2013   
-Role: Instructor \hfill University of Wisconsin-Madison  
-
-Statistical computing with R \hfill June 2012 & June 2013   
-Role: Instructor \hfill University of Wisconsin-Madison  
 
 
 ## Training in Teaching  
@@ -239,7 +203,7 @@ with open("data/teacher-training.yaml", "r") as file:
 
 ```{python}
 for course in data['courses']:
-    display(Markdown(f"{course['title']} \hfill {course['term']}   \n{course['institution']}   "))
+    display(Markdown(f"\\footnotesize {course['title']}, {course['institution']}  \hfill {course['term']}"))
 ```
 
 
@@ -255,7 +219,6 @@ with open("data/mentoring.yaml", "r") as file:
     data = yaml.safe_load(file)
 
 # Select elements
-first_person_name = data['people'][0]['name']
 ```
 
 
@@ -264,7 +227,7 @@ first_person_name = data['people'][0]['name']
 
 ```{python}
 for person in data['people']:
-    display(Markdown(f"Research mentor to {person['name']}, {person['title']} \hfill {person['start']} to {person['end']}   \nProject: {person['project']}   \nNext position: {person['next_role']}"))
+    display(Markdown(f"\\footnotesize Research mentor to {person['name']}, {person['title']} \hfill {person['start']} to {person['end']}   \nProject: {person['project']}   \nNext position: {person['next_role']}"))
 ```
 
 ## Leadership Training
@@ -286,7 +249,7 @@ with open("data/leadership-training.yaml", "r") as file:
 # need to decide which fields matter when assembling my yaml file!
 
 for course in data['courses']:
-    display(Markdown(f"{course['title']} \hfill {course['term']}   \n{course['institution']}   "))
+    display(Markdown(f"\\footnotesize {course['title']} \hfill {course['term']}   \n{course['institution']}   "))
 
 ```
 

@@ -1,0 +1,101 @@
+courses:
+  - title: 'Inclusive teaching for educating a diverse nation'  
+    institution: 
+      - 'University of Wisconsin-Madison Delta Program'
+      - 'CIRTL Network'
+    term: 
+      - Spring 2017
+      - Fall 2017
+    role: 'Co-facilitator'
+    type: 'formal'
+    description: >
+      *
+  - title: 'Introductory statistics'
+    institution: 'University of Wisconsin-Madison'
+    term: 
+      - Fall 2016
+      - Spring 2016
+      - Fall 2015
+      - Summer 2015
+      - Spring 2015
+      - Fall 2014
+      - Spring 2014
+    role: 'Instructor'
+    type: 'formal'
+    description: >
+      *
+  - title: 'Special Topics: Data Science'
+    institution: 'University of Wisconsin-Madison'
+    term: Fall 2016
+    role: 'Guest lecturer on topic models & Teaching assistant'
+    type: 'formal'
+    description: >
+      *
+  - title: "Introduction to Biostatistics"
+    institution: 'University of Washington'
+    term: 
+      - Fall 2009
+      - Winter 2010
+    role: 'Teaching assistant'
+    type: 'formal'
+    description: >
+      *
+  - title: 'Introductory organic chemistry'
+    institution: 'University of California, Berkeley'
+    term: Fall 2001
+    role: 'Teaching assistant'
+    type: 'formal'
+    description: >
+      *
+  - title: 'Engaging students in the teaching of statistics'
+    institution: 'CIRTL Network'
+    term: 
+      - March 2018
+      - July 2020
+    role: 'Instructor'
+    type: 'short'
+    description: >
+      *
+  - title: 'Data analysis with topic models for communications researchers'
+    institution: 'University of Wisconsin-Madison'
+    term: 
+      - July 2016
+      - October 2016
+    role: 'Instructor'
+    type: 'short'
+    description: >
+      *
+  - title: 'Data Carpentry Workshop'
+    institution: 
+      - 'University of Wisconsin-Madison'
+      - 'Missouri S&T'
+      - 'George Mason University'
+    term: 
+      - June 2017
+      - September 2018
+      - January 2019
+    role: 'Instructor'
+    type: 'short'
+    description: >
+      *
+    website: 
+      - 'https://uw-madison-aci.github.io/2017-06-19-uwmadison-dc/'
+      - 'https://fboehm.github.io/2019-01-25-gmu/'
+    - title: 'Topic modeling for non-statisticians'
+    institution: 'University of Wisconsin-Madison'
+    term: October 2013    
+    role: 'Instructor'
+    type: 'short'
+    description: >
+      *
+  - title: 'Statistical computing with R'
+    institution: 'University of Wisconsin-Madison'
+    term: 
+      - June 2012
+      - June 2013
+    role: 'Instructor'
+    type: 'short'
+    description: >
+      *
+
+
