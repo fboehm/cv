@@ -74,15 +74,17 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 
 \hrule
 
-## Manuscripts in Preparation
+{{< include try-bib.qmd >}}
+
+
+
+## Submitted Manuscripts
 
 
 ```{python}
-# define ref_type to subset bib entries
-ref_type = "manuscript"
+display(Markdown('\n'.join(fmo_manuscript)))
 ```
 
-{{< include try-bib.qmd >}}
 
 
 
@@ -91,12 +93,10 @@ ref_type = "manuscript"
 
 
 ```{python}
-# define ref_type to subset bib entries
-ref_type = "article-journal"
+display(Markdown('\n'.join(fmo_article)))
 ```
 
 
-{{< include try-bib.qmd >}}
 
 
 ## Edited Book  
@@ -105,23 +105,16 @@ ref_type = "article-journal"
 
 
 ```{python}
-# define ref_type to subset bib entries
-ref_type = "book"
+display(Markdown('\n'.join(fmo_book)))
 ```
-
-{{< include try-bib.qmd >}}
 
 
 ## Book Chapters
 
 
 ```{python}
-# define ref_type to subset bib entries
-ref_type = "chapter"
+display(Markdown('\n'.join(fmo_chapter)))
 ```
-
-
-{{< include try-bib.qmd >}}
 
 
 
@@ -130,13 +123,8 @@ ref_type = "chapter"
 
 
 ```{python}
-# define ref_type to subset bib entries
-ref_type = "software"
+display(Markdown('\n'.join(fmo_software)))
 ```
-
-
-{{< include try-bib.qmd >}}
-
 
 
 
@@ -146,22 +134,17 @@ ref_type = "software"
 
 
 ```{python}
-# define ref_type to subset bib entries
-ref_type = "paper-conference"
+display(Markdown('\n'.join(fmo_conference)))
 ```
 
-{{< include try-bib.qmd >}}
 
 ## Ph.D. Thesis
 
 
 
 ```{python}
-ref_type = "thesis"
+display(Markdown('\n'.join(fmo_thesis)))
 ```
-
-{{< include try-bib.qmd >}}
-
 
 
 ## Other Publications
@@ -170,12 +153,8 @@ ref_type = "thesis"
 
 
 ```{python}
-# define ref_type to subset bib entries
-ref_type = "other"
+display(Markdown('\n'.join(fmo_other)))
 ```
-
-
-{{< include try-bib.qmd >}}
 
 
 
@@ -183,12 +162,27 @@ ref_type = "other"
 
 \hrule
 
+{{< include teaching.qmd >}}
+
+
 ## Formal Courses
+
+
+```{python}
+display(Markdown(markdown_output_formal))
+```
+
 
 
 
 
 ## Short Courses & Workshops
+
+
+```{python}
+display(Markdown(markdown_output_short))
+```
+
 
 
 
@@ -202,8 +196,12 @@ with open("data/teacher-training.yaml", "r") as file:
 ```
 
 ```{python}
-for course in data['courses']:
-    display(Markdown(f"\\footnotesize {course['title']}, {course['institution']}  \hfill {course['term']}"))
+markdown_output = ""
+
+for tcourse in data['courses']:
+    foo = f"\\footnotesize {tcourse['title']}, {tcourse['institution']} \hfill {tcourse['term']}  \n"
+    markdown_output += foo
+display(Markdown(markdown_output))
 ```
 
 
@@ -226,11 +224,17 @@ with open("data/mentoring.yaml", "r") as file:
 
 
 ```{python}
+markdown_output = ""
+
 for person in data['people']:
-    display(Markdown(f"\\footnotesize Research mentor to {person['name']}, {person['title']} \hfill {person['start']} to {person['end']}   \nProject: {person['project']}   \nNext position: {person['next_role']}"))
+    foo = f"\\footnotesize Research mentor to {person['name']}, {person['title']} \hfill {person['start']} to {person['end']}   \nProject: {person['project']}   \nNext position: {person['next_role']}  \n"
+    markdown_output += foo
+display(Markdown(markdown_output))
 ```
 
-## Leadership Training
+# Leadership Training
+
+\hrule
 
 
 ```{python} 
@@ -247,10 +251,21 @@ with open("data/leadership-training.yaml", "r") as file:
 ```{python}
 # maybe add more fields to output??? ie, in call to Markdown?
 # need to decide which fields matter when assembling my yaml file!
-
-for course in data['courses']:
-    display(Markdown(f"\\footnotesize {course['title']} \hfill {course['term']}   \n{course['institution']}   "))
-
+markdown_output = ""
+for event in data['events']:
+    foo = ""
+    if event.get("date") is not None:
+        date_str = event.get("date")
+        date_obj = datetime.strptime(date_str, "%Y-%m")
+        date_formatted = date_obj.strftime("%B %Y")
+        event['term'] = date_formatted
+    if event.get("url") is not None:
+        url = event.get("url")
+        foo = f"\\footnotesize [{event['role']}, {event['event']}]({url}) \hfill {event['term']}  \n"
+    else:
+        foo = f"\\footnotesize {event['role']}, {event['event']} \hfill {event['term']}  \n"
+    markdown_output += foo
+display(Markdown(markdown_output))
 ```
 
 
@@ -277,7 +292,6 @@ display(Markdown(markdown_output))
 
 
 # Presentations
-
 
 \hrule
 

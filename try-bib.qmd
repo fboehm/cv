@@ -7,24 +7,23 @@ from IPython.display import display, Markdown, display_latex
 
 from datetime import datetime, date
 
+
 def date_constructor(loader, node):
     value = loader.construct_scalar(node)
-    
+
     # Adjust the format string based on your date format
     if isinstance(value, int):
         return date(value, 1, 1)
-    elif '-' in value:
+    elif "-" in value:
         if len(value) == 7:
-            return datetime.strptime(value + '-01', '%Y-%m-%d').date()
+            return datetime.strptime(value + "-01", "%Y-%m-%d").date()
         elif len(value) == 10:
-            return datetime.strptime(value, '%Y-%m-%d').date()
-    
+            return datetime.strptime(value, "%Y-%m-%d").date()
+
     raise ValueError(f"Invalid date format: {value}")
 
 
-yaml.add_constructor('tag:yaml.org,2002:date', date_constructor, yaml.SafeLoader)
-
-
+yaml.add_constructor("tag:yaml.org,2002:date", date_constructor, yaml.SafeLoader)
 
 
 with open("data/boehm-fixed.yaml", "r") as file:
@@ -35,118 +34,202 @@ bibs = data["references"]
 
 # define issued_formatted key for sorting
 for article in bibs:
-    if isinstance(article['issued'], int):
-        article['issued_formatted'] = date(article['issued'], 1, 1)
-    if isinstance(article['issued'], str):
-        if len(article['issued']) == 7:
-            article['issued_formatted'] = datetime.strptime(article['issued'] + '-01', '%Y-%m-%d').date()
-        elif len(article['issued']) == 10:
-            article['issued_formatted'] = datetime.strptime(article['issued'], '%Y-%m-%d').date()
-    if isinstance(article['issued'], date):
-        article['issued_formatted'] = article['issued']
+    if isinstance(article["issued"], int):
+        article["issued_formatted"] = date(article["issued"], 1, 1)
+    if isinstance(article["issued"], str):
+        if len(article["issued"]) == 7:
+            article["issued_formatted"] = datetime.strptime(
+                article["issued"] + "-01", "%Y-%m-%d"
+            ).date()
+        elif len(article["issued"]) == 10:
+            article["issued_formatted"] = datetime.strptime(
+                article["issued"], "%Y-%m-%d"
+            ).date()
+    if isinstance(article["issued"], date):
+        article["issued_formatted"] = article["issued"]
 
 
-sorted_bibs = sorted(bibs, key=lambda x: x['issued_formatted'], reverse=True)
+sorted_bibs = sorted(bibs, key=lambda x: x["issued_formatted"], reverse=True)
 
-def render_with_hyperlink(value, url = None):
+
+def render_with_hyperlink(value, url=None):
     if url is None:
         url = value
     markdown_text = f"[{value}]({url})"
     return markdown_text
 
+
 # define a function for taking a bunch of names, in yaml, and producing a single string for printing
 
-def assemble_names_from_yaml(names_yaml, my_name = ["Boehm", "Boehm, III", "Boehm III"]):
+
+def assemble_names_from_yaml(names_yaml, my_name=["Boehm", "Boehm, III", "Boehm III"]):
     # Function body
     n_names = len(names_yaml)
     for i in range(n_names):
         name_value = names_yaml[i]
         if "literal" in name_value:
             name = name_value["literal"]
+            if "Boehm" in name: #problematic only if other Boehms are in hte authors list
+                name = f"\\textbf{{\\footnotesize " + {name} + f"}}"
         else:
             name_last = name_value["family"]
             name_first = name_value["given"]
-            if name_last in my_name:
-                name_last = "{}**".format(name_last)
-                name_first = " **{}".format(name_first)
             name = name_first + " " + name_last
+            name = f"\\footnotesize " + name
+            if name_last in my_name:
+                name = f"\\textbf{{" + name + f"}}"
         if i == 0:
             names = name
         elif i == n_names - 1:
             if n_names == 2:
-                names = names + " and " + name
+                names = names + f"\\footnotesize and " + name
             else:
-                names = names + ", and " + name
+                names = names + f"\\footnotesize , and " + name
         else:
-            names = names + ", " + name
+            names = names + f"\\footnotesize , " + name
     # Code goes here
-    return names # You can return a value if needed
+    return names  # You can return a value if needed
+
+
+markdown_output = ""
+mo_article = ""
+mo_conference = ""
+mo_software = ""
+mo_manuscript = ""
+mo_thesis = ""
+mo_book = ""
+mo_chapter = ""
+mo_other = ""
+# define counters
+c_article = 0
+c_conference = 0
+c_software = 0
+c_manuscript = 0
+c_thesis = 0
+c_book = 0
+c_chapter = 0
+c_other = 0
+
+
 
 
 for ref_number in range(n_references):
     ref = sorted_bibs[ref_number]
-    if (ref["type"] == ref_type): 
-        title = ref["title"]
-        # organize authors for printing
-        author_yaml = ref["author"]
-        authors = assemble_names_from_yaml(author_yaml)
-        # check for editors in yaml
-        if "editor" in ref:
-            editor_yaml = ref["editor"]
-            editors = assemble_names_from_yaml(editor_yaml)
-        if ref_type == "paper-conference":
-            date = ref["issued"]
-            #publisher = ref["publisher"]
-            proceedings = ref["container-title"]
-            formatted_text = f"{authors} ({date}). {title}. In *{proceedings}*."#, {publisher}."
-
-            # ie, if the citation is of the type we want to print right now, here
-        if ref_type == "article-journal":  # need to have correct keys for each type!!
-            # organize other info for printing. 
-            # ADD DOI AND VOLUME & ISSUE TO JOURNAL CITATIONS
-            date = ref["issued"]
-            doi = ref["doi"] 
-            journal = ref["container-title"]
-            if "volume" in ref:
-                volume = ref["volume"]
-                if "issue" in ref:
-                    issue = ref["issue"]
-                    volume_issue = f"{volume}({issue})"
-                else: 
-                    volume_issue = f"{volume}"
+    ref_type = ref["type"]
+    # define formatted_text in this if statement
+    title = ref["title"]
+    # organize authors for printing
+    author_yaml = ref["author"]
+    authors = assemble_names_from_yaml(author_yaml)
+    # check for editors in yaml
+    if "editor" in ref:
+        editor_yaml = ref["editor"]
+        editors = assemble_names_from_yaml(editor_yaml)
+    if ref_type == "paper-conference":
+        c_conference += 1   
+        date = ref["issued"]
+        # publisher = ref["publisher"]
+        proceedings = ref["container-title"]
+        formatted_text = f"\\footnotesize {authors} ({date}). {title}. In *{proceedings}*.  \n"  # , {publisher}."
+        mo_conference += formatted_text
+        # ie, if the citation is of the type we want to print right now, here
+    if ref_type == "article-journal":  # need to have correct keys for each type!!
+        c_article += 1
+        # organize other info for printing.
+        # ADD DOI AND VOLUME & ISSUE TO JOURNAL CITATIONS
+        date = ref["issued"]
+        doi = ref["doi"]
+        journal = ref["container-title"]
+        if "volume" in ref:
+            volume = ref["volume"]
+            if "issue" in ref:
+                issue = ref["issue"]
+                volume_issue = f"{volume}({issue})"
             else:
-                volume_issue = ""
-            page = ref["page"]
-            formatted_text = f"{authors} ({date}). {title}. *{journal}* {volume_issue}:{page}. " + render_with_hyperlink("https://doi.org/" + doi) + f"."
-            # Print the formatted content as Markdown
-        if ref_type == "software":
-            date = ref["issued"]
-            url = ref["url"]
-            formatted_text = f"{authors} ({date}). {title}. " + render_with_hyperlink(url) + f"."
-        if ref_type == "manuscript":
-            date = "in preparation"
-            formatted_text = f"{authors} ({date}). {title}."
-        if ref_type == "thesis":
-            date = ref["issued"]
-            formatted_text = f"{authors} ({date}). {title}."
-        if ref_type == "book":
-            date = ref["issued"]
-            authors = authors + ", editors"
-            publisher = ref["publisher"]
-            formatted_text = f" {authors} ({date}). *{title}*. {publisher}."
-        if ref_type == "chapter":
-            date = ref["issued"]
-            book_title = ref["container-title"]
-            pages = ref["page"]
-            publisher = ref["publisher"]
-            editors = editors + ", editors"
-            formatted_text = f"{authors} ({date}). {title}. In {editors} *{book_title}*. {publisher}."
-        if ref_type == "other":
-            date = ref["issued"]
-            journal = ref["container-title"]
-            formatted_text = f"{authors} ({date}). {title}. *{journal}*."
-        display(Markdown(formatted_text)) # display an entry only if it is the type we want
-
+                volume_issue = f"{volume}"
+        else:
+            volume_issue = ""
+        page = ref["page"]
+        formatted_text = f"\\footnotesize {authors} ({date}). {title}. *{journal}* {volume_issue}:{page}. " + render_with_hyperlink("https://doi.org/" + doi) + ".  \n"
+        mo_article += formatted_text
+        # Print the formatted content as Markdown
+    if ref_type == "software":
+        c_software += 1
+        date = ref["issued"]
+        url = ref["url"]
+        formatted_text = f"\\footnotesize {authors} ({date}). {title}. " + render_with_hyperlink(url) + ".  \n"
+        mo_software += formatted_text
+    # discard manuscripts that are merely "in preparation"
+    # need to manually indicate in yaml file which manuscripts are submitted
+    if ref_type == "manuscript":
+        if ref["manuscript_type"] == "submitted":
+            c_manuscript += 1
+            date = "submitted"
+            formatted_text = f"\\footnotesize {authors} ({date}). {title}.  \n"
+            mo_manuscript += formatted_text
+    if ref_type == "thesis":
+        c_thesis += 1
+        date = ref["issued"]
+        formatted_text = f"\\footnotesize {authors} ({date}). {title}.  \n"
+        mo_thesis += formatted_text
+    if ref_type == "book":
+        c_book += 1
+        date = ref["issued"]
+        authors = authors + ", editors"
+        publisher = ref["publisher"]
+        formatted_text = f"\\footnotesize {authors} ({date}). *{title}*. {publisher}.  \n"
+        mo_book += formatted_text
+    if ref_type == "chapter":
+        c_chapter += 1
+        date = ref["issued"]
+        book_title = ref["container-title"]
+        pages = ref["page"]
+        publisher = ref["publisher"]
+        editors = editors + ", editors"
+        formatted_text = f"\\footnotesize {authors} ({date}). {title}. In {editors} *{book_title}*. {publisher}.  \n"
+        mo_chapter += formatted_text
+    if ref_type == "other":
+        c_other += 1
+        date = ref["issued"]
+        journal = ref["container-title"]
+        formatted_text = f"\\footnotesize {authors} ({date}). {title}. *{journal}*.  \n"
+        mo_other += formatted_text
 ```
 
+
+```{python}
+# order: manuscript, article, book, chapter, software, conference, thesis, other
+manuscript_r = range(1, c_manuscript + 1)
+article_r = range(1 + c_manuscript, 1 + c_manuscript + c_article)
+book_r = range(1 + c_manuscript + c_article, 1 + c_manuscript + c_article + c_book)
+chapter_r = range(1 + c_manuscript + c_article + c_book , 1 + c_manuscript + c_article + c_book + c_chapter)
+software_r =  range(1 + c_manuscript + c_article + c_book + c_chapter, 1 + c_manuscript + c_article + c_book + c_chapter + c_software)
+conference_r =  range(1 + c_manuscript + c_article + c_book + c_chapter + c_software + 0, 1 + c_manuscript + c_article + c_book + c_chapter + c_software + c_conference)
+thesis_r =  range(1 + c_manuscript + c_article + c_book + c_chapter + c_software + c_conference + 0, 1 + c_manuscript + c_article + c_book + c_chapter + c_software + c_conference + c_thesis)
+other_r = range(1 + c_manuscript + c_article + c_book + c_chapter + c_software + c_conference + c_thesis +  0, 1 + c_manuscript + c_article + c_book + c_chapter + c_software + c_conference + c_thesis + c_other)
+```
+
+```{python}
+### CHatGPT ###
+#myrange = range(1, 4)
+#mystring = "This is a multiline\nstring\nwith line breaks."
+
+# Convert the range to a list and add the numbers, period, and space
+#formatted_strings = [f"{num}. " + line for num, line in zip(myrange, mystring.split('\n'))]
+
+# Join the formatted strings with newline characters
+#result = '\n'.join(formatted_strings)
+
+#print(result)
+# insert numbers into strings!
+#mo_manuscript = f"\\footnotesize **" + mo_manuscript
+fmo_manuscript = [f"**{num}.** " + line for num, line in zip(manuscript_r, mo_manuscript.split('\n'))]
+fmo_article = [f"**{num}.** " + line for num, line in zip(article_r, mo_article.split('\n'))]
+fmo_conference = [f"**{num}.** " + line for num, line in zip(conference_r, mo_conference.split('\n'))]
+fmo_software = [f"**{num}.** " + line for num, line in zip(software_r, mo_software.split('\n'))]
+fmo_thesis = [f"**{num}.** " + line for num, line in zip(thesis_r, mo_thesis.split('\n'))]
+fmo_book = [f"**{num}.** " + line for num, line in zip(book_r, mo_book.split('\n'))]
+fmo_chapter = [f"**{num}.** " + line for num, line in zip(chapter_r, mo_chapter.split('\n'))]
+fmo_other = [f"**{num}.** " + line for num, line in zip(other_r, mo_other.split('\n'))]
+```
 

@@ -1,35 +1,31 @@
-courses:
-  - title: ''  
-    institution: 'University of Michigan'
+events:
+  - role: 'Participant'
+    event: "University of Michigan You3 Leadership Training Program"
     term: Spring 2024
+    url: 
     description: >
       *
-  - title: 'Designing Your Life'
-    institution: 'University of Michigan'
+  - role: 'Participant'
+    event: 'University of Michigan Designing Your Life Course'
     term: Fall 2022
     description: >
       *
-  - title: 'Leadership M'
-    institution: 'University of Michigan'
+  - role: Participant
+    event: 'Leadership and Management in Action Program'
     term: Fall 2021
+    url: https://drive.google.com/file/d/1xp9-gjLDxlrPtHyF4FqTf9_q0-aL47av/view
     description: >
-      * Molly Grisham course: hyperlink here
-  - title: 'Participant'
-    organization: 
-        - "American Statistical Association's Workshop on Communicating with the Media and the Public"
-    date: 
-        - '2016-11'
-    service_type: professional
+      * 
+  - role: 'Participant'
+    event: "American Statistical Association Workshop on Communicating with the Media and the Public"
+    date: '2016-11'
     location: Alexandria, Virginia, USA
     description: >
       *  
-  - title: 'Member'
+  - role: 'Committee Member'
     url: https://genetics-gsa.org/career-development/early-career-leadership/
-    organization: 
-        - 'Genetics Society of America Early Career Researchers Leadership Program'
-    date: 
-        - '2020-02'
+    event: 'Genetics Society of America Early Career Researchers Leadership Program'
+    date: '2020-02'
     end_date: '2022-02'
-    service_type: professional
     description: >
       *
