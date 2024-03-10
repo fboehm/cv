@@ -28,6 +28,22 @@ validate-yaml: false
 engine: jupyter
 ---
 
+
+```{python}
+#| tags: [parameters]
+
+#text_size_text = "\\footnotesize "
+#text_size_text = "\\small "
+text_size_text = "\\normalsize "
+```
+
+```{python}
+```
+
+```{python}
+```
+
+
 ```{python} 
 import yaml
 from IPython.display import display, Markdown, display_latex
@@ -199,7 +215,8 @@ with open("data/teacher-training.yaml", "r") as file:
 markdown_output = ""
 
 for tcourse in data['courses']:
-    foo = f"\\footnotesize {tcourse['title']}, {tcourse['institution']} \hfill {tcourse['term']}  \n"
+    #foo = f"\\footnotesize {tcourse['title']}, {tcourse['institution']} \hfill {tcourse['term']}  \n"
+    foo = text_size_text + f"{tcourse['title']}, {tcourse['institution']} \hfill {tcourse['term']}  \n"
     markdown_output += foo
 display(Markdown(markdown_output))
 ```
@@ -227,7 +244,8 @@ with open("data/mentoring.yaml", "r") as file:
 markdown_output = ""
 
 for person in data['people']:
-    foo = f"\\footnotesize Research mentor to {person['name']}, {person['title']} \hfill {person['start']} to {person['end']}   \nProject: {person['project']}   \nNext position: {person['next_role']}  \n"
+    #foo = f"\\footnotesize Research mentor to {person['name']}, {person['title']} \hfill {person['start']} to {person['end']}   \nProject: {person['project']}   \nNext position: {person['next_role']}  \n"
+    foo = text_size_text + f"Research mentor to {person['name']}, {person['title']} \hfill {person['start']} to {person['end']}   \nProject: {person['project']}   \nNext position: {person['next_role']}  \n"
     markdown_output += foo
 display(Markdown(markdown_output))
 ```
@@ -257,13 +275,22 @@ for event in data['events']:
     if event.get("date") is not None:
         date_str = event.get("date")
         date_obj = datetime.strptime(date_str, "%Y-%m")
-        date_formatted = date_obj.strftime("%B %Y")
-        event['term'] = date_formatted
+        formatted_date = date_obj.strftime("%B %Y")
+        event['term'] = formatted_date
+            # handle end_date
+    end_date_str =  event.get("end_date")
+    if end_date_str is not None:
+        end_date_obj = datetime.strptime(end_date_str, "%Y-%m")
+        end_date_formatted = end_date_obj.strftime("%B %Y")
+        formatted_date = f"{formatted_date} to {end_date_formatted}"
+        event['term'] = formatted_date
     if event.get("url") is not None:
         url = event.get("url")
-        foo = f"\\footnotesize [{event['role']}, {event['event']}]({url}) \hfill {event['term']}  \n"
+        #foo = f"\\footnotesize [{event['role']}, {event['event']}]({url}) \hfill {event['term']}  \n"
+        foo = text_size_text + f"[{event['role']}, {event['event']}]({url}) \hfill {event['term']}  \n"
     else:
-        foo = f"\\footnotesize {event['role']}, {event['event']} \hfill {event['term']}  \n"
+   #     foo = f"\\footnotesize {event['role']}, {event['event']} \hfill {event['term']}  \n"
+        foo = text_size_text + f"{event['role']}, {event['event']} \hfill {event['term']}  \n"
     markdown_output += foo
 display(Markdown(markdown_output))
 ```
@@ -285,7 +312,8 @@ for award in sorted_awards:
     end_year = award.get("end_year")
     if end_year is not None:
         year = f"{year} to {end_year}"
-    markdown_output += f"\\footnotesize {award['title']}, {award['institution']} \hfill {year}  \n"
+    #markdown_output += f"\\footnotesize {award['title']}, {award['institution']} \hfill {year}  \n"
+    markdown_output += text_size_text + f"{award['title']}, {award['institution']} \hfill {year}  \n"
 display(Markdown(markdown_output))
 ```
 
@@ -312,9 +340,11 @@ for presentation in sorted_presentations:
     date_formatted = date_obj.strftime("%B %d, %Y")
     url = presentation.get("url")
     if url is not None:
-        foo = f"\\footnotesize [{presentation['title']}]({url}) \hfill {date_formatted}  \n{presentation['venue']} \hfill {presentation['location']}  \n"
+#        foo = f"\\footnotesize [{presentation['title']}]({url}) \hfill {date_formatted}  \n{presentation['venue']} \hfill {presentation['location']}  \n"
+        foo = text_size_text + f"[{presentation['title']}]({url}) \hfill {date_formatted}  \n{presentation['venue']} \hfill {presentation['location']}  \n"
     else:
-        foo = f"\\footnotesize {presentation['title']} \hfill {date_formatted}  \n{presentation['venue']} \hfill {presentation['location']}  \n"
+        #foo = f"\\footnotesize {presentation['title']} \hfill {date_formatted}  \n{presentation['venue']} \hfill {presentation['location']}  \n"
+        foo = text_size_text + f"{presentation['title']} \hfill {date_formatted}  \n{presentation['venue']} \hfill {presentation['location']}  \n"
     if presentation.get("presentation_type") == "talk":
         markdown_output_talks += foo
     elif presentation.get("presentation_type") == "poster":
@@ -383,9 +413,11 @@ for service in sorted_service:
     # handle those entries with url values
     url = service.get("url")
     if url is not None:
-        foo = f"\\footnotesize [{service['title']}]({url}), {org_output} \hfill {fd}  \n"
+        #foo = f"\\footnotesize [{service['title']}]({url}), {org_output} \hfill {fd}  \n"
+        foo = text_size_text + f"[{service['title']}]({url}), {org_output} \hfill {fd}  \n"
     else:
-        foo = f"\\footnotesize {service['title']}, {org_output} \hfill {fd}  \n"
+        #foo = f"\\footnotesize {service['title']}, {org_output} \hfill {fd}  \n"
+        foo = text_size_text + f"{service['title']}, {org_output} \hfill {fd}  \n"
     if service.get("service_type") == "university":
         markdown_output_university += foo
     elif service.get("service_type") == "community":

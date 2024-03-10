@@ -70,23 +70,27 @@ def assemble_names_from_yaml(names_yaml, my_name=["Boehm", "Boehm, III", "Boehm 
         if "literal" in name_value:
             name = name_value["literal"]
             if "Boehm" in name: #problematic only if other Boehms are in hte authors list
-                name = f"\\textbf{{\\footnotesize " + {name} + f"}}"
+                name = f"\\textbf{{" + {text_size_text} + {name} + f"}}"
         else:
             name_last = name_value["family"]
             name_first = name_value["given"]
             name = name_first + " " + name_last
-            name = f"\\footnotesize " + name
+            #name = f"\\footnotesize " + name
+            name = text_size_text + name
             if name_last in my_name:
                 name = f"\\textbf{{" + name + f"}}"
         if i == 0:
             names = name
         elif i == n_names - 1:
             if n_names == 2:
-                names = names + f"\\footnotesize and " + name
+                #names = names + f"\\footnotesize \ and " + name
+                names = names + text_size_text + f"\ and " + name
             else:
-                names = names + f"\\footnotesize , and " + name
+                #names = names + f"\\footnotesize , and " + name
+                names = names + text_size_text + f", and " + name
         else:
-            names = names + f"\\footnotesize , " + name
+            #names = names + f"\\footnotesize , " + name
+            names = names + text_size_text + f", " + name
     # Code goes here
     return names  # You can return a value if needed
 
@@ -130,7 +134,8 @@ for ref_number in range(n_references):
         date = ref["issued"]
         # publisher = ref["publisher"]
         proceedings = ref["container-title"]
-        formatted_text = f"\\footnotesize {authors} ({date}). {title}. In *{proceedings}*.  \n"  # , {publisher}."
+        #formatted_text = f"\\footnotesize {authors} ({date}). {title}. In *{proceedings}*.  \n"  # , {publisher}."
+        formatted_text = text_size_text + f"{authors} ({date}). {title}. In *{proceedings}*.  \n"  # , {publisher}."
         mo_conference += formatted_text
         # ie, if the citation is of the type we want to print right now, here
     if ref_type == "article-journal":  # need to have correct keys for each type!!
@@ -150,14 +155,16 @@ for ref_number in range(n_references):
         else:
             volume_issue = ""
         page = ref["page"]
-        formatted_text = f"\\footnotesize {authors} ({date}). {title}. *{journal}* {volume_issue}:{page}. " + render_with_hyperlink("https://doi.org/" + doi) + ".  \n"
+        #formatted_text = f"\\footnotesize {authors} ({date}). {title}. *{journal}* {volume_issue}:{page}. " + render_with_hyperlink("https://doi.org/" + doi) + ".  \n"
+        formatted_text = text_size_text + f"{authors} ({date}). {title}. *{journal}* {volume_issue}:{page}. " + render_with_hyperlink("https://doi.org/" + doi) + ".  \n"
         mo_article += formatted_text
         # Print the formatted content as Markdown
     if ref_type == "software":
         c_software += 1
         date = ref["issued"]
         url = ref["url"]
-        formatted_text = f"\\footnotesize {authors} ({date}). {title}. " + render_with_hyperlink(url) + ".  \n"
+        #formatted_text = f"\\footnotesize {authors} ({date}). {title}. " + render_with_hyperlink(url) + ".  \n"
+        formatted_text = text_size_text + f"{authors} ({date}). {title}. " + render_with_hyperlink(url) + ".  \n"
         mo_software += formatted_text
     # discard manuscripts that are merely "in preparation"
     # need to manually indicate in yaml file which manuscripts are submitted
@@ -165,19 +172,22 @@ for ref_number in range(n_references):
         if ref["manuscript_type"] == "submitted":
             c_manuscript += 1
             date = "submitted"
-            formatted_text = f"\\footnotesize {authors} ({date}). {title}.  \n"
+            #formatted_text = f"\\footnotesize {authors} ({date}). {title}.  \n"
+            formatted_text = text_size_text + f"{authors} ({date}). {title}.  \n"
             mo_manuscript += formatted_text
     if ref_type == "thesis":
         c_thesis += 1
         date = ref["issued"]
-        formatted_text = f"\\footnotesize {authors} ({date}). {title}.  \n"
+        #formatted_text = f"\\footnotesize {authors} ({date}). {title}.  \n"
+        formatted_text = text_size_text + f"{authors} ({date}). {title}.  \n"
         mo_thesis += formatted_text
     if ref_type == "book":
         c_book += 1
         date = ref["issued"]
         authors = authors + ", editors"
         publisher = ref["publisher"]
-        formatted_text = f"\\footnotesize {authors} ({date}). *{title}*. {publisher}.  \n"
+        #formatted_text = f"\\footnotesize {authors} ({date}). *{title}*. {publisher}.  \n"
+        formatted_text = text_size_text + f"{authors} ({date}). *{title}*. {publisher}.  \n"
         mo_book += formatted_text
     if ref_type == "chapter":
         c_chapter += 1
@@ -186,13 +196,15 @@ for ref_number in range(n_references):
         pages = ref["page"]
         publisher = ref["publisher"]
         editors = editors + ", editors"
-        formatted_text = f"\\footnotesize {authors} ({date}). {title}. In {editors} *{book_title}*. {publisher}.  \n"
+        #formatted_text = f"\\footnotesize {authors} ({date}). {title}. In {editors} *{book_title}*. {publisher}.  \n"
+        formatted_text = text_size_text + f"{authors} ({date}). {title}. In {editors} *{book_title}*. {publisher}.  \n"
         mo_chapter += formatted_text
     if ref_type == "other":
         c_other += 1
         date = ref["issued"]
         journal = ref["container-title"]
-        formatted_text = f"\\footnotesize {authors} ({date}). {title}. *{journal}*.  \n"
+   #     formatted_text = f"\\footnotesize {authors} ({date}). {title}. *{journal}*.  \n"
+        formatted_text = text_size_text + f"{authors} ({date}). {title}. *{journal}*.  \n"
         mo_other += formatted_text
 ```
 

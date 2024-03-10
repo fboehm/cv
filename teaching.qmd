@@ -43,9 +43,11 @@ for course in sorted_courses:
     terms = course.get("term", [])
     t_formatted = ", ".join(terms) # join (possibly) multiple terms into a single string
     if course.get("url") is not None:
-        foo = f"\\footnotesize {course['role']}, [{course['title']}, {course['institution']}]({course['url']})  \hfill " + f"\\footnotesize {t_formatted}  \n"
+        #foo = f"\\footnotesize {course['role']}, [{course['title']}, {course['institution']}]({course['url']})  \hfill " + f"\\footnotesize {t_formatted}  \n"
+        foo = text_size_text + f"{course['role']}, [{course['title']}, {course['institution']}]({course['url']})  \hfill " + f"{t_formatted}  \n"
     else:
-        foo = f"\\footnotesize {course['role']}, {course['title']}, {course['institution']}  \hfill " + f"\\footnotesize {t_formatted}  \n"
+        #foo = f"\\footnotesize {course['role']}, {course['title']}, {course['institution']}  \hfill " + f"\\footnotesize {t_formatted}  \n"
+        foo = text_size_text + f"{course['role']}, {course['title']}, {course['institution']}  \hfill " + f"{t_formatted}  \n"
     if course.get("type") == "short":
         markdown_output_short += foo
     elif course.get("type") == "formal":
