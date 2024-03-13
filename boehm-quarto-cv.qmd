@@ -53,14 +53,14 @@ from datetime import datetime
 
 
 
-# Updated  
+# Updated  <!-- need to have this line due to issue with quarto-cv-pdf templating -->
 
 # Education and Training  
 
 \hrule
 
 **University of Michigan** \hfill Ann Arbor, Michigan, USA  
-Postdoctoral Research Fellow, Department of Internal Medicine (NIH T32 training grant) \hfill 2023 to present  
+Postdoctoral Research Fellow, Department of Internal Medicine ([NIH T32 HL007853](https://reporter.nih.gov/search/edYVbhxf0Uu_nQ9-JqHDJA/project-details/10576923)) \hfill 2023 to present  
 Postdoctoral Research Fellow, Department of Biostatistics \hfill 2021 to 2023  
 
 **University of Massachusetts Medical School** \hfill Worcester, Massachusetts, USA  
@@ -69,8 +69,8 @@ Postdoctoral Research Fellow, Department of Microbiology & Physiological Systems
 **University of Wisconsin-Madison** \hfill Madison, Wisconsin, USA  
 Postdoctoral Research Fellow, Department of Biostatistics and Medical Informatics \hfill 2019     
 Ph.D., Department of Statistics \hfill 2011 to 2019  
-Postdoctoral Research Fellow, Molecular and Environmental Toxicology Center \hfill 2012 to 2014  
-Assistant Researcher, Value-Added Research Center \hfill 2011  
+Postdoctoral Research Fellow ([NIH T32 ES007015](https://reporter.nih.gov/search/QFqt1UAzrUORCW6sbBz0qw/project-details/8296307)), Molecular and Environmental Toxicology Center \hfill 2012 to 2014  
+Assistant Researcher, [Value-Added Research Center](https://varc.wceruw.org/) \hfill 2011  
 
 
 **University of Washington** \hfill Seattle, Washington, USA   
@@ -79,6 +79,12 @@ Postdoctoral Research Fellow, Department of Biostatistics \hfill 2007 to 2009
 **University of Wisconsin-Madison** \hfill Madison, Wisconsin, USA  
 M.D., School of Medicine and Public Health \hfill 2003 to 2007  
 M.S., Department of Population Health Sciences \hfill 2003 to 2007  
+Graduate Project Assistant, Department of Population Health Sciences \hfill 2003   
+
+[**La Clinica de los Campesinos**](https://famhealth.org/) \hfill Wautoma, Wisconsin, USA  
+Spanish Language Medical Interpreter \hfill 2002   
+
+**University of Wisconsin-Madison** \hfill Madison, Wisconsin, USA
 B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 2001  
 
 
