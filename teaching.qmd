@@ -1,58 +1,69 @@
 
 ```{python}
-# we define ref_type in the main qmd file
-import yaml
+# define a "" for every course type: formal, short
+markdown_output_short = ""
+markdown_output_formal = ""
+```
+
+```{python}
+# use anthropic's claude chat bot
+import sys
+#print(sys.version)
+
 import datetime
+import yaml
 from IPython.display import display, Markdown, display_latex
-
-from datetime import datetime, date
-
 
 with open("data/teaching.yaml", "r") as file:
     data = yaml.load(file, Loader=yaml.SafeLoader)
 
 courses = data["courses"]
 
-# Custom sorting order
-order = {
-    "Spring": 0, "January": 1, "February": 2, "March": 3, "April": 4, "May": 5,
-    "Summer": 6, "June": 7, "July": 8, "August": 9,
-    "Fall": 10, "September": 11, "October": 12, "November": 13, "December": 14
-}
+def convert_term_to_datetime(term):
+    try:
+        # Try parsing the term as a month and year
+        return datetime.datetime.strptime(term, "%B %Y")
+    except ValueError:
+        # If it fails, try parsing as a season and year
+        month_mapping = {"Spring": 4, "Summer": 7, "Fall": 9, "Winter": 1}
+        season, year = term.split(" ")
+        month = month_mapping.get(season, 1)  # Default to January if not found
+        return datetime.datetime(int(year), month, 1)
 
-def custom_sort_key(course):
-    # Extract the most recent date from the terms
-    dates = course.get("term", [])
-    most_recent_date = max(dates) if dates else ""
-    # Use the ordering from the "order" object
-    month_or_season, _ = most_recent_date.split() if most_recent_date else ("", "")
-    ordering = order.get(month_or_season, float('inf'))
-    # Return a tuple for sorting: (ordering, most recent date, course title)
-    return (ordering, most_recent_date, course["title"])
+# Assuming your dictionary of courses is called 'courses'
+sorted_courses = []
 
-# Sorting the courses based on ordering, most recent date, and course title
-sorted_courses = sorted(courses, key=custom_sort_key, reverse=True)
+# Convert term strings to datetime objects and create tuples
+for course in courses:
+    terms = course['term']
+    sorted_terms = sorted([convert_term_to_datetime(term) for term in terms])
+    sorted_courses.append((sorted_terms[0], course))  
 
-# define a "" for every course type: formal, short
-markdown_output_short = ""
-markdown_output_formal = ""
+# Sort the tuples by the datetime objects in reverse order
+sorted_courses.sort(reverse=True, key=lambda x: x[0])
 
-
-for course in sorted_courses:
-    foo = ""
-    terms = course.get("term", [])
-    t_formatted = ", ".join(terms) # join (possibly) multiple terms into a single string
-    if course.get("url") is not None:
-        #foo = f"\\footnotesize {course['role']}, [{course['title']}, {course['institution']}]({course['url']})  \hfill " + f"\\footnotesize {t_formatted}  \n"
-        foo = text_size_text + f"{course['role']}, [{course['title']}, {course['institution']}]({course['url']})  \hfill " + f"{t_formatted}  \n"
-    else:
-        #foo = f"\\footnotesize {course['role']}, {course['title']}, {course['institution']}  \hfill " + f"\\footnotesize {t_formatted}  \n"
-        foo = text_size_text + f"{course['role']}, {course['title']}, {course['institution']}  \hfill " + f"{t_formatted}  \n"
-    if course.get("type") == "short":
-        markdown_output_short += foo
-    elif course.get("type") == "formal":
-        markdown_output_formal += foo
+# Now 'sorted_courses' contains your courses in reverse chronological order
+#for term_datetime, course in sorted_courses:
+#    print(", ".join(course['term']), course['title'])
 
 ```
 
+
+```{python}
+for course in sorted_courses:
+    cc = course[1]
+    foo = ""
+    terms = cc.get("term", [])
+    t_formatted = ", ".join(terms) # join (possibly) multiple terms into a single string
+    if cc.get("url") is not None:
+        #foo = f"\\footnotesize {course['role']}, [{course['title']}, {course['institution']}]({course['url']})  \hfill " + f"\\footnotesize {t_formatted}  \n"
+        foo = text_size_text + f"{cc['role']}, [{cc['title']}, {cc['institution']}]({cc['url']})  \hfill " + f"{t_formatted}  \n"
+    else:
+        #foo = f"\\footnotesize {course['role']}, {course['title']}, {course['institution']}  \hfill " + f"\\footnotesize {t_formatted}  \n"
+        foo = text_size_text + f"{cc['role']}, {cc['title']}, {cc['institution']}  \hfill " + f"{t_formatted}  \n"
+    if cc.get("type") == "short":
+        markdown_output_short += foo
+    elif cc.get("type") == "formal":
+        markdown_output_formal += foo
+```
 

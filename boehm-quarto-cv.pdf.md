@@ -24,7 +24,7 @@ web: fboehm.us
 fontawesome: 'yes'
 validate-yaml: false
 engine: jupyter
-title: Updated
+title: Updated  <!-- need to have this line due to issue with quarto-cv-pdf templating -->
 ---
 
 
@@ -41,7 +41,7 @@ title: Updated
 \hrule
 
 **University of Michigan** \hfill Ann Arbor, Michigan, USA  
-Postdoctoral Research Fellow, Department of Internal Medicine (NIH T32 training grant) \hfill 2023 to present  
+Postdoctoral Research Fellow, Department of Internal Medicine ([NIH T32 HL007853](https://reporter.nih.gov/search/edYVbhxf0Uu_nQ9-JqHDJA/project-details/10576923)) \hfill 2023 to present  
 Postdoctoral Research Fellow, Department of Biostatistics \hfill 2021 to 2023  
 
 **University of Massachusetts Medical School** \hfill Worcester, Massachusetts, USA  
@@ -50,8 +50,8 @@ Postdoctoral Research Fellow, Department of Microbiology & Physiological Systems
 **University of Wisconsin-Madison** \hfill Madison, Wisconsin, USA  
 Postdoctoral Research Fellow, Department of Biostatistics and Medical Informatics \hfill 2019     
 Ph.D., Department of Statistics \hfill 2011 to 2019  
-Postdoctoral Research Fellow, Molecular and Environmental Toxicology Center \hfill 2012 to 2014  
-Assistant Researcher, Value-Added Research Center \hfill 2011  
+Postdoctoral Research Fellow ([NIH T32 ES007015](https://reporter.nih.gov/search/QFqt1UAzrUORCW6sbBz0qw/project-details/8296307)), Molecular and Environmental Toxicology Center \hfill 2012 to 2014  
+Assistant Researcher, [Value-Added Research Center](https://varc.wceruw.org/) \hfill 2011  
 
 
 **University of Washington** \hfill Seattle, Washington, USA   
@@ -60,6 +60,12 @@ Postdoctoral Research Fellow, Department of Biostatistics \hfill 2007 to 2009
 **University of Wisconsin-Madison** \hfill Madison, Wisconsin, USA  
 M.D., School of Medicine and Public Health \hfill 2003 to 2007  
 M.S., Department of Population Health Sciences \hfill 2003 to 2007  
+Graduate Project Assistant, Department of Population Health Sciences \hfill 2003   
+
+[**La Clinica de los Campesinos**](https://famhealth.org/) \hfill Wautoma, Wisconsin, USA  
+Spanish Language Medical Interpreter \hfill 2002   
+
+**University of Wisconsin-Madison** \hfill Madison, Wisconsin, USA
 B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 2001  
 
 
@@ -185,16 +191,20 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 
 
 
+
+
+
+
 ## Formal Courses
 
-::: {.cell execution_count=15}
+::: {.cell execution_count=17}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-\normalsize Teaching assistant, Introduction to Biostatistics, University of Washington  \hfill Fall 2009, Winter 2010  
+\normalsize Co-facilitator, Inclusive teaching for educating a diverse nation, University of Wisconsin-Madison Delta Program & CIRTL Network  \hfill Spring 2017, Fall 2017  
 \normalsize Guest lecturer on topic models & Teaching assistant, Special Topics: Data Science, University of Wisconsin-Madison  \hfill Fall 2016  
-\normalsize Teaching assistant, Introductory organic chemistry, University of California, Berkeley  \hfill Fall 2001  
 \normalsize Instructor, Introductory statistics, University of Wisconsin-Madison  \hfill Fall 2016, Spring 2016, Fall 2015, Summer 2015, Spring 2015, Fall 2014, Spring 2014  
-\normalsize Co-facilitator, Inclusive teaching for educating a diverse nation, ['University of Wisconsin-Madison Delta Program', 'CIRTL Network']  \hfill Spring 2017, Fall 2017  
+\normalsize Teaching assistant, Introduction to Biostatistics, University of Washington  \hfill Fall 2009, Winter 2010  
+\normalsize Teaching assistant, Introductory organic chemistry, University of California, Berkeley  \hfill Fall 2001  
 
 :::
 :::
@@ -202,14 +212,14 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 
 ## Short Courses & Workshops
 
-::: {.cell execution_count=16}
+::: {.cell execution_count=18}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
+\normalsize Instructor, Engaging students in the teaching of statistics, CIRTL Network  \hfill March 2018, July 2020  
+\normalsize Instructor, [Data Carpentry Workshop, University of Wisconsin-Madison, Missouri S&T, George Mason University](https://uw-madison-aci.github.io/2017-06-19-uwmadison-dc/)  \hfill June 2017, September 2018, January 2019  
 \normalsize Instructor, Data analysis with topic models for communications researchers, University of Wisconsin-Madison  \hfill July 2016, October 2016  
 \normalsize Instructor, Topic modeling for non-statisticians, University of Wisconsin-Madison  \hfill October 2013  
-\normalsize Instructor, [Data Carpentry Workshop, University of Wisconsin-Madison, Missouri S&T, George Mason University](https://uw-madison-aci.github.io/2017-06-19-uwmadison-dc/)  \hfill June 2017, September 2018, January 2019  
 \normalsize Instructor, Statistical computing with R, University of Wisconsin-Madison  \hfill June 2012, June 2013  
-\normalsize Instructor, Engaging students in the teaching of statistics, CIRTL Network  \hfill March 2018, July 2020  
 
 :::
 :::
@@ -219,7 +229,7 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 
 
 
-::: {.cell execution_count=18}
+::: {.cell execution_count=20}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
 \normalsize Postdoctoral Short Course on College Teaching in STEM, University of Michigan Center for Research on Learning and Teaching \hfill Spring 2024  
@@ -241,7 +251,7 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 
 
 
-::: {.cell execution_count=20}
+::: {.cell execution_count=22}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
 \normalsize Research mentor to Robert Turner, undergraduate researcher \hfill 2015-05-01 to 2016-05-01   
@@ -261,7 +271,7 @@ Next position: Statistics graduate student at University of Washington
 
 
 
-::: {.cell execution_count=22}
+::: {.cell execution_count=24}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
 \normalsize Participant, University of Michigan You3 Leadership Training Program \hfill Spring 2024  
@@ -278,7 +288,7 @@ Next position: Statistics graduate student at University of Washington
 
 \hrule
 
-::: {.cell execution_count=23}
+::: {.cell execution_count=25}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
 \normalsize Conference Travel Award, University of Michigan Postdoc Association \hfill 2024  
@@ -311,7 +321,7 @@ Next position: Statistics graduate student at University of Washington
 
 ## Slide Presentations
 
-::: {.cell execution_count=25}
+::: {.cell execution_count=27}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
 \normalsize Distinguishing pleiotropy from separate QTL in multiparental populations \hfill July 30, 2018  
@@ -331,7 +341,7 @@ University of Wisconsin-Madison Molecular and Environmental Toxicology Center Se
 
 ## Poster Presentations
 
-::: {.cell execution_count=26}
+::: {.cell execution_count=28}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
 \normalsize [Testing pleiotropy vs. separate QTL in multiparental populations](https://github.com/fboehm/imgc2018poster) \hfill November 11, 2018  
@@ -366,7 +376,7 @@ University of Wisconsin-Madison Molecular and Environmental Toxicology Center Re
 
 ## University Service
 
-::: {.cell execution_count=28}
+::: {.cell execution_count=30}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
 \normalsize Co-coordinator, University of Wisconsin-Madison Computational Methods in Mass Communications Research Group \hfill September 2016 to December 2016  
@@ -383,7 +393,7 @@ University of Wisconsin-Madison Molecular and Environmental Toxicology Center Re
 
 ## Community Service
 
-::: {.cell execution_count=29}
+::: {.cell execution_count=31}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
 \normalsize Coach, Westborough Mathcounts Team \hfill September 2020 to April 2022  
@@ -400,7 +410,7 @@ University of Wisconsin-Madison Molecular and Environmental Toxicology Center Re
 
 ## Professional Service
 
-::: {.cell execution_count=30}
+::: {.cell execution_count=32}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
 \normalsize Participant, ENAR Fostering Diversity in Biostatistics Virtual Workshop \hfill March 2021  
