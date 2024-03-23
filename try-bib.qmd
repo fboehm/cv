@@ -173,8 +173,11 @@ for ref_number in range(n_references):
             c_manuscript += 1
             date = "submitted"
             #formatted_text = f"\\footnotesize {authors} ({date}). {title}.  \n"
-            formatted_text = text_size_text + f"{authors} ({date}). {title}.  \n"
-            mo_manuscript += formatted_text
+        if ref["manuscript_type"] == "in preparation":
+            c_manuscript += 1
+            date = "in preparation"
+        formatted_text = text_size_text + f"{authors} ({date}). {title}.  \n"
+        mo_manuscript += formatted_text
     if ref_type == "thesis":
         c_thesis += 1
         date = ref["issued"]

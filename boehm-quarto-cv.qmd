@@ -54,9 +54,11 @@ from datetime import datetime
 ```
 
 
-
+<!---
 
 # Updated  <!-- need to have this line due to issue with quarto-cv-pdf templating -->
+
+
 
 # Education and Training  
 
@@ -103,7 +105,7 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 
 
 
-## Submitted Manuscripts
+## Unpublished Manuscripts
 
 
 ```{python}
