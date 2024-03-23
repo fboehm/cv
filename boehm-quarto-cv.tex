@@ -6,24 +6,26 @@
 ]
 {article}
 
+
+% default font
 \usepackage{ebgaramond-maths}
-%\usepackage[T1]{fontenc}
-%\usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex}
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+
+\usepackage{iftex}
+\ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-\else % if luatex or xelatex
-  \ifxetex
-    \usepackage{mathspec}
-  \else
-    \usepackage{fontspec}
-  \fi
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
-
-% this is for pandoc <3.1.8
-
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
+
+% xetex/luatex font selection
+
+
+
+
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 % use microtype if available
@@ -101,9 +103,8 @@
 
 % Custom section fonts
 \usepackage{sectsty}
-% to change quarto-cv section heading text, edit these lines:
-\sectionfont{\rmfamily\bfseries\Large\scshape}
-\subsectionfont{\sffamily\bfseries\normalsize\scshape}
+\sectionfont{\rmfamily\mdseries\large\bf}
+\subsectionfont{\rmfamily\mdseries\normalsize\scshape}
 
 
 % Make lists without bullets
@@ -134,7 +135,7 @@
 \chead{}
 \rhead{}
 \lfoot{}
-\cfoot{\scriptsize  Frederick Joseph Boehm, III - Updated - \apstylekinda\today}
+\cfoot{\scriptsize  Frederick Joseph Boehm, III -  - \apstylekinda\today}
 \rfoot{\scriptsize \thepage/{\hypersetup{linkcolor=black}\pageref{LastPage}}}
 
 % Always load hyperref last.
@@ -142,7 +143,6 @@
 \PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
 
 \hypersetup{unicode=true,
-            pdftitle={Frederick Joseph Boehm, III:  Updated (Curriculum Vitae)},
             pdfauthor={Frederick Joseph Boehm, III},
             colorlinks=true,
             linkcolor=blue,
@@ -189,6 +189,8 @@
 
 
 
+\section{\texorpdfstring{Updated }{Updated }}\label{updated}
+
 \section{Education and Training}\label{education-and-training}
 
 \hrule
@@ -232,7 +234,8 @@ Graduate Project Assistant, Department of Population Health Sciences
 \hfill Wautoma, Wisconsin, USA\\
 Spanish Language Medical Interpreter \hfill 2002
 
-\textbf{University of Wisconsin-Madison} \hfill Madison, Wisconsin, USA
+\textbf{University of Wisconsin-Madison} \hfill Madison, Wisconsin,
+USA\\
 B.S., with Honors in Chemistry, Mathematics, and Biochemistry
 \hfill 1996 to 2001
 

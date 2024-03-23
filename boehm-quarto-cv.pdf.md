@@ -1,5 +1,5 @@
 ---
-subparagraph: 'yes'
+subparagraph: yes
 execute:
   echo: false
 geometry:
@@ -8,33 +8,34 @@ geometry:
   - right=20mm
   - bottom=20mm
 format:
-  quarto-cv-pdf:
-    keep-tex: true
-    keep-md: true
-    pdf-engine: lualatex
-author: 'Frederick Joseph Boehm, III'
+    quarto-cv-pdf: 
+        keep-tex: true
+        keep-md: true
+        pdf-engine: lualatex
+author: Frederick Joseph Boehm, III
 date: last-modified
 phone: 715-252-3929
-address: 'University of Michigan · 419 Waymarket DR · Ann Arbor, Michigan 48103 · USA'
+address: "University of Michigan · 419 Waymarket DR · Ann Arbor, Michigan 48103 · USA"
 email: frederick.boehm@gmail.com
 fontsize: 10pt
-github: fboehm
-orcid: 0000-0002-1644-5931
+github: fboehm # github account
+orcid: 0000-0002-1644-5931 # orcid identifier
+#osf: ymqui # osf five character id
+#twitter: twitter # twitter handle
 web: fboehm.us
-fontawesome: 'yes'
+fontawesome: yes
 validate-yaml: false
 engine: jupyter
-title: Updated  <!-- need to have this line due to issue with quarto-cv-pdf templating -->
 ---
 
 
+<!-- quarto cv template: https://github.com/mps9506/quarto-cv -->
 
 
 
 
 
-
-
+# Updated  <!-- need to have this line due to issue with quarto-cv-pdf templating -->
 
 # Education and Training  
 
@@ -65,8 +66,8 @@ Graduate Project Assistant, Department of Population Health Sciences \hfill 2003
 [**La Clinica de los Campesinos**](https://famhealth.org/) \hfill Wautoma, Wisconsin, USA  
 Spanish Language Medical Interpreter \hfill 2002   
 
-**University of Wisconsin-Madison** \hfill Madison, Wisconsin, USA
-B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 2001  
+**University of Wisconsin-Madison** \hfill Madison, Wisconsin, USA  
+B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 2001    
 
 
 
@@ -76,7 +77,6 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 # Written Works 
 
 \hrule
-
 
 
 
