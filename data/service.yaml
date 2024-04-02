@@ -199,3 +199,11 @@ service:
     description: >
       *
   
+  - title: 'DNA Day Essay Judge'  
+    organization: 
+        - 'American Society for Human Genetics'
+    date: 
+        - '2024-03'
+    service_type: professional
+    description: >
+      *

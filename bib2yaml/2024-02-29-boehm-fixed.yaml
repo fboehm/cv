@@ -34,33 +34,35 @@ references:
   - family: Kurtz
     given: Sherry L.
   - family: Baker
-    given: Richard
+    given: Richard E. 
   - family: Boehm
-    given: Frederick
+    given: Frederick J.
   - family: Lehman
-    given: Chelsea
+    given: Chelsea C.
   - family: Mittereder
-    given: Lara
+    given: Lara R. 
   - family: Khan
     given: Hamda
   - family: Rossi
-    given: Amy
+    given: Amy P. 
   - family: Gatti
-    given: Daniel
+    given: Daniel M. 
   - family: Beamer
     given: Gillian
   - family: Sassetti
-    given: Christopher
+    given: Christopher M. 
   - family: Elkins
-    given: Karen
+    given: Karen L. 
   container-title: PLoS Pathogens
   id: kurtz2024
-  issued: 2024
-  note: in press
+  issued: 2024-03-07
   title: Multiple genetic loci influence vaccine-induced protection
     against mycobacterium tuberculosis in genetically diverse mice
-  type: manuscript
-  manuscript_type: submitted 
+  type: article-journal 
+  doi: 10.1371/journal.ppat.1012069
+  volume: 20
+  issue: 3
+  page: e1012069
 - author: 
   - family: "Boehm, III"
     given: Frederick J.
