@@ -15,7 +15,7 @@ format:
 author: Frederick Joseph Boehm, III
 date: last-modified
 phone: 715-252-3929
-address: "University of Michigan · 419 Waymarket DR · Ann Arbor, Michigan 48103 · USA"
+address: "South Dakota State University · 136 E Bluebell Dr · Brookings, South Dakota 57006 · USA"
 email: frederick.boehm@gmail.com
 fontsize: 10pt
 github: fboehm # github account
@@ -65,7 +65,7 @@ from datetime import datetime
 \hrule
 
 **University of Michigan** \hfill Ann Arbor, Michigan, USA  
-Postdoctoral Research Fellow, Department of Internal Medicine ([NIH T32 HL007853](https://reporter.nih.gov/search/edYVbhxf0Uu_nQ9-JqHDJA/project-details/10576923)) \hfill 2023 to present  
+Postdoctoral Research Fellow, Department of Internal Medicine ([NIH T32 HL007853](https://reporter.nih.gov/search/edYVbhxf0Uu_nQ9-JqHDJA/project-details/10576923)) \hfill 2023 to 2024  
 Postdoctoral Research Fellow, Department of Biostatistics \hfill 2021 to 2023  
 
 **University of Massachusetts Medical School** \hfill Worcester, Massachusetts, USA  
@@ -227,7 +227,7 @@ markdown_output = ""
 
 for tcourse in data['courses']:
     #foo = f"\\footnotesize {tcourse['title']}, {tcourse['institution']} \hfill {tcourse['term']}  \n"
-    foo = text_size_text + f"{tcourse['title']}, {tcourse['institution']} \hfill {tcourse['term']}  \n"
+    foo = text_size_text + f"{tcourse['title']}, {tcourse['institution']} \\hfill {tcourse['term']}  \n"
     markdown_output += foo
 display(Markdown(markdown_output))
 ```
@@ -256,7 +256,7 @@ markdown_output = ""
 
 for person in data['people']:
     #foo = f"\\footnotesize Research mentor to {person['name']}, {person['title']} \hfill {person['start']} to {person['end']}   \nProject: {person['project']}   \nNext position: {person['next_role']}  \n"
-    foo = text_size_text + f"Research mentor to {person['name']}, {person['title']} \hfill {person['start']} to {person['end']}   \nProject: {person['project']}   \nNext position: {person['next_role']}  \n"
+    foo = text_size_text + f"Research mentor to {person['name']}, {person['title']} \\hfill {person['start']} to {person['end']}   \nProject: {person['project']}   \nNext position: {person['next_role']}  \n"
     markdown_output += foo
 display(Markdown(markdown_output))
 ```
@@ -298,10 +298,10 @@ for event in data['events']:
     if event.get("url") is not None:
         url = event.get("url")
         #foo = f"\\footnotesize [{event['role']}, {event['event']}]({url}) \hfill {event['term']}  \n"
-        foo = text_size_text + f"[{event['role']}, {event['event']}]({url}) \hfill {event['term']}  \n"
+        foo = text_size_text + f"[{event['role']}, {event['event']}]({url}) \\hfill {event['term']}  \n"
     else:
    #     foo = f"\\footnotesize {event['role']}, {event['event']} \hfill {event['term']}  \n"
-        foo = text_size_text + f"{event['role']}, {event['event']} \hfill {event['term']}  \n"
+        foo = text_size_text + f"{event['role']}, {event['event']} \\hfill {event['term']}  \n"
     markdown_output += foo
 display(Markdown(markdown_output))
 ```
@@ -324,7 +324,7 @@ for award in sorted_awards:
     if end_year is not None:
         year = f"{year} to {end_year}"
     #markdown_output += f"\\footnotesize {award['title']}, {award['institution']} \hfill {year}  \n"
-    markdown_output += text_size_text + f"{award['title']}, {award['institution']} \hfill {year}  \n"
+    markdown_output += text_size_text + f"{award['title']}, {award['institution']} \\hfill {year}  \n"
 display(Markdown(markdown_output))
 ```
 
@@ -352,10 +352,10 @@ for presentation in sorted_presentations:
     url = presentation.get("url")
     if url is not None:
 #        foo = f"\\footnotesize [{presentation['title']}]({url}) \hfill {date_formatted}  \n{presentation['venue']} \hfill {presentation['location']}  \n"
-        foo = text_size_text + f"[{presentation['title']}]({url}) \hfill {date_formatted}  \n{presentation['venue']} \hfill {presentation['location']}  \n"
+        foo = text_size_text + f"[{presentation['title']}]({url}) \\hfill {date_formatted}  \n{presentation['venue']} \\hfill {presentation['location']}  \n"
     else:
         #foo = f"\\footnotesize {presentation['title']} \hfill {date_formatted}  \n{presentation['venue']} \hfill {presentation['location']}  \n"
-        foo = text_size_text + f"{presentation['title']} \hfill {date_formatted}  \n{presentation['venue']} \hfill {presentation['location']}  \n"
+        foo = text_size_text + f"{presentation['title']} \\hfill {date_formatted}  \n{presentation['venue']} \\hfill {presentation['location']}  \n"
     if presentation.get("presentation_type") == "talk":
         markdown_output_talks += foo
     elif presentation.get("presentation_type") == "poster":
@@ -425,10 +425,10 @@ for service in sorted_service:
     url = service.get("url")
     if url is not None:
         #foo = f"\\footnotesize [{service['title']}]({url}), {org_output} \hfill {fd}  \n"
-        foo = text_size_text + f"[{service['title']}]({url}), {org_output} \hfill {fd}  \n"
+        foo = text_size_text + f"[{service['title']}]({url}), {org_output} \\hfill {fd}  \n"
     else:
         #foo = f"\\footnotesize {service['title']}, {org_output} \hfill {fd}  \n"
-        foo = text_size_text + f"{service['title']}, {org_output} \hfill {fd}  \n"
+        foo = text_size_text + f"{service['title']}, {org_output} \\hfill {fd}  \n"
     if service.get("service_type") == "university":
         markdown_output_university += foo
     elif service.get("service_type") == "community":

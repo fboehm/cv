@@ -84,7 +84,8 @@ def assemble_names_from_yaml(names_yaml, my_name=["Boehm", "Boehm, III", "Boehm 
         elif i == n_names - 1:
             if n_names == 2:
                 #names = names + f"\\footnotesize \ and " + name
-                names = names + text_size_text + f"\ and " + name
+                #names = names + text_size_text + f"\ and " + name
+                names = names + text_size_text + r"\ and " + name
             else:
                 #names = names + f"\\footnotesize , and " + name
                 names = names + text_size_text + f", and " + name

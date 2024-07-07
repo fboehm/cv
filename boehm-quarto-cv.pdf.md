@@ -15,7 +15,7 @@ format:
 author: Frederick Joseph Boehm, III
 date: last-modified
 phone: 715-252-3929
-address: "University of Michigan · 419 Waymarket DR · Ann Arbor, Michigan 48103 · USA"
+address: "South Dakota State University · 136 E Bluebell Dr · Brookings, South Dakota 57006 · USA"
 email: frederick.boehm@gmail.com
 fontsize: 10pt
 github: fboehm # github account
@@ -46,7 +46,7 @@ engine: jupyter
 \hrule
 
 **University of Michigan** \hfill Ann Arbor, Michigan, USA  
-Postdoctoral Research Fellow, Department of Internal Medicine ([NIH T32 HL007853](https://reporter.nih.gov/search/edYVbhxf0Uu_nQ9-JqHDJA/project-details/10576923)) \hfill 2023 to present  
+Postdoctoral Research Fellow, Department of Internal Medicine ([NIH T32 HL007853](https://reporter.nih.gov/search/edYVbhxf0Uu_nQ9-JqHDJA/project-details/10576923)) \hfill 2023 to 2024  
 Postdoctoral Research Fellow, Department of Biostatistics \hfill 2021 to 2023  
 
 **University of Massachusetts Medical School** \hfill Worcester, Massachusetts, USA  
