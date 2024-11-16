@@ -58,6 +58,12 @@ from datetime import datetime
 
 # Updated  <!-- need to have this line due to issue with quarto-cv-pdf templating -->
 
+# Academic Appointment
+
+\hrule
+
+**South Dakota State University** \hfill Brookings, South Dakota, USA  
+Assistant Professor, Department of Mathematics and Statistics \hfill 2024 to present  
 
 
 # Education and Training  
