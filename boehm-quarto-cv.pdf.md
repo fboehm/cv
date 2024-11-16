@@ -14,7 +14,7 @@ format:
         pdf-engine: lualatex
 author: Frederick Joseph Boehm, III
 date: last-modified
-phone: 715-252-3929
+phone: 734-260-0914 
 address: "South Dakota State University · 136 E Bluebell Dr · Brookings, South Dakota 57006 · USA"
 email: frederick.boehm@gmail.com
 fontsize: 10pt
@@ -39,6 +39,12 @@ engine: jupyter
 
 # Updated  <!-- need to have this line due to issue with quarto-cv-pdf templating -->
 
+# Academic Appointment
+
+\hrule
+
+**South Dakota State University** \hfill Brookings, South Dakota, USA  
+Assistant Professor, Department of Mathematics and Statistics \hfill 2024 to present  
 
 
 # Education and Training  
@@ -93,7 +99,7 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 ::: {.cell execution_count=6}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-**1.** \normalsize \normalsize Christina G. Hutten\normalsize , \textbf{\normalsize Frederick J. Boehm}\normalsize , \normalsize R Durazo-Arvizu\normalsize , \normalsize S Wassertheil-Smoller\normalsize , \normalsize CR Isasi\normalsize , \normalsize J Cai\normalsize , \normalsize JT Unkart\normalsize , \normalsize J Sun\normalsize , \normalsize V Persky\normalsize , \normalsize T Sofer\normalsize , \normalsize ML Daviglus\normalsize , and \normalsize M Argos (in preparation). Association of a genetic risk score with incident coronary heart disease in the Hispanic Community Health Study/Study of Latinos (HCHS/SOL) cohort.  
+**1.** \normalsize \normalsize Christina G. Hutten\normalsize , \textbf{\normalsize Frederick J. Boehm}\normalsize , \normalsize R Durazo-Arvizu\normalsize , \normalsize S Wassertheil-Smoller\normalsize , \normalsize CR Isasi\normalsize , \normalsize J Cai\normalsize , \normalsize JT Unkart\normalsize , \normalsize J Sun\normalsize , \normalsize V Persky\normalsize , \normalsize T Sofer\normalsize , \normalsize ML Daviglus\normalsize , and \normalsize M Argos (submitted). Association of a genetic risk score with incident coronary heart disease in the Hispanic Community Health Study/Study of Latinos (HCHS/SOL) cohort.  
 :::
 :::
 
