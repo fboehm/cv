@@ -207,3 +207,55 @@ service:
     service_type: professional
     description: >
       *
+
+  - title: 'Co-organizer'
+    organization:
+        - 'South Dakota State University Data Science Symposium'
+    date: 
+        - '2025-02'
+    service_type: university
+    description: >
+        '186 registrants, representing 16 universities and 19 companies.'   
+    
+  - title: 'Statistics Curriculum Revision Committee Member'
+    organization: 
+        - 'Department of Mathematics and Statistics, South Dakota State University'
+    start_date:
+        - '2024-09'
+    end_date:
+        - 'present'
+    service_type: university
+    description: >
+        'Revised course descriptions for upper level statistics courses, including Time series analysis (560) and Statistical methods II (541)'
+
+  - title: 'Data Science Curriculum Committee Member'
+    organization: 
+        - 'Department of Mathematics and Statistics, South Dakota State University'
+    start_date:
+        - '2024-09' 
+    end_date:
+        - 'present'
+    service_type: university  
+    description: >
+        'tbd'
+
+  - title: 'Senior Capstone Committee Member'
+    organization: 
+        - 'Department of Mathematics and Statistics, South Dakota State University'
+    start_date: 
+        - '2024-09'
+    end_date:
+        - 'present'
+    service_type: university
+    description: >
+        'Revised capstone course sequence for majors in our department'
+
+  - title: 'South Dakota State University College of Engineering Day Participant'
+    organization: 
+        - 'South Dakota State University College of Engineering'
+    date: 
+        - '2024-09'
+    service_type: university
+    description: >
+        'The event brings local middle school students to the Washington Pavilion in Sioux Falls. CoE staff set up tables with discipline-related activities for students. We had a computer game for learning basic genetics concepts.'
+

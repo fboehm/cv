@@ -1,4 +1,40 @@
 courses:
+  - title: 'Time series analysis'
+    institution: 'South Dakota State University'
+    number: 'Statistics 460'
+    term:
+      - Fall 2024
+    role: 'Instructor'
+    type: 'formal'
+    enrollment: NA
+    description: >
+      *'Drew heavily on materials from Hyndman text (FPP3). Emphasized analyses with R.'
+
+
+  - title: 'Statistical methods II'
+    institution: 'South Dakota State University'
+    number: 'Statistics 541'
+    term: 
+      - Spring 2025
+      - Spring 2026
+    role: 'Instructor'
+    type: 'formal'
+    enrollment: 
+      - Spring 2025: 52
+    description: >
+      * Used materials from Gemechis Djira to discuss ANOVA, linear regression, and design of experiments.  
+  
+  - title: 'Bioinformatics'
+    institution: 'South Dakota State University'
+    number: 'Statistics 736'
+    term:
+      - Fall 2025
+    enrollment:
+      - Fall 2025: NA
+    description: >
+      * Emphasized research questions in statistical methods for human genetics studies, including genome-wide association studies, polygenic risk scores, mendelian randomization, phenome-wide association studies, statistical modeling for gene-gene and gene-environment interactions  
+      
+
   - title: 'Inclusive teaching for educating a diverse nation'  
     institution: 'University of Wisconsin-Madison Delta Program & CIRTL Network'
     term: 
