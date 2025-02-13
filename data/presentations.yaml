@@ -102,4 +102,10 @@ presentations:
     presentation_type: poster
     description: >
       *
-  
+  - title: 'A Shiny App to Promote Rigor and Reproducibility in Mendelian Randomization Studies'
+    venue: South Dakota State University Data Science Symposium  
+    date: '2025-02-07'  
+    location: Brookings, South Dakota, United States of America  
+    presentation_type: invited 
+    description: >
+      *
