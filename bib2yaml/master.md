@@ -6,7 +6,7 @@
 
 
 ```{bash}
-bash convert_bib_to_yaml.bash boehm.bib 2024-02-29-boehm.yaml
+bash convert_bib_to_yaml.bash boehm.bib boehm.yaml
 ```
 
 4. manually remove first two lines and last line (ie, the `---` lines) from the yaml file

@@ -1,13 +1,12 @@
 
 ```{python}
 # we define ref_type in the main qmd file
-import yaml
-import datetime
-from IPython.display import display, Markdown, display_latex
 
 from datetime import datetime, date
 
+```
 
+```{python}
 def date_constructor(loader, node):
     value = loader.construct_scalar(node)
 
@@ -21,12 +20,16 @@ def date_constructor(loader, node):
             return datetime.strptime(value, "%Y-%m-%d").date()
 
     raise ValueError(f"Invalid date format: {value}")
+```
 
 
+```{python}
 yaml.add_constructor("tag:yaml.org,2002:date", date_constructor, yaml.SafeLoader)
+```
 
 
-with open("data/boehm-fixed.yaml", "r") as file:
+```{python}
+with open("bib2yaml/2024-02-29-boehm.yaml", "r") as file:
     data = yaml.load(file, Loader=yaml.SafeLoader)
 
 n_references = len(data["references"])
@@ -47,11 +50,14 @@ for article in bibs:
             ).date()
     if isinstance(article["issued"], date):
         article["issued_formatted"] = article["issued"]
+```
 
 
+```{python}
 sorted_bibs = sorted(bibs, key=lambda x: x["issued_formatted"], reverse=True)
+```
 
-
+```{python}
 def render_with_hyperlink(value, url=None):
     if url is None:
         url = value
@@ -60,8 +66,9 @@ def render_with_hyperlink(value, url=None):
 
 
 # define a function for taking a bunch of names, in yaml, and producing a single string for printing
+```
 
-
+```{python}
 def assemble_names_from_yaml(names_yaml, my_name=["Boehm", "Boehm, III", "Boehm III"]):
     # Function body
     n_names = len(names_yaml)
@@ -94,8 +101,10 @@ def assemble_names_from_yaml(names_yaml, my_name=["Boehm", "Boehm, III", "Boehm 
             names = names + text_size_text + f", " + name
     # Code goes here
     return names  # You can return a value if needed
+```
 
 
+```{python}
 markdown_output = ""
 mo_article = ""
 mo_conference = ""
@@ -114,10 +123,10 @@ c_thesis = 0
 c_book = 0
 c_chapter = 0
 c_other = 0
+```
 
 
-
-
+```{python}
 for ref_number in range(n_references):
     ref = sorted_bibs[ref_number]
     ref_type = ref["type"]

@@ -1,76 +1,77 @@
-- author:
-  - family: Kurtz
-    given: Sherry L.
-  - family: Baker
-    given: Richard
-  - family: Boehm
-    given: Frederick
-  - family: Lehman
-    given: Chelsea
-  - family: Mittereder
-    given: Lara
-  - family: Khan
-    given: Hamda
-  - family: Rossi
-    given: Amy
-  - family: Gatti
-    given: Daniel
-  - family: Beamer
-    given: Gillian
-  - family: Sassetti
-    given: Christopher
-  - family: Elkins
-    given: Karen
-  container-title: PLoS Pathogens
-  id: kurtz2024
-  issued: 2024
-  note: in press
-  title: Multiple genetic loci influence vaccine-induced protection
-    against mycobacterium tuberculosis in genetically diverse mice
-  type: article-journal
+references:
+  - author:
+    - family: Kurtz
+      given: Sherry L.
+    - family: Baker
+      given: Richard
+    - family: Boehm
+      given: Frederick
+    - family: Lehman
+      given: Chelsea
+    - family: Mittereder
+      given: Lara
+    - family: Khan
+      given: Hamda
+    - family: Rossi
+      given: Amy
+    - family: Gatti
+      given: Daniel
+    - family: Beamer
+      given: Gillian
+    - family: Sassetti
+      given: Christopher
+    - family: Elkins
+      given: Karen
+    container-title: PLoS Pathogens
+    id: kurtz2024
+    issued: 2024
+    note: in press
+    title: Multiple genetic loci influence vaccine-induced protection
+      against mycobacterium tuberculosis in genetically diverse mice
+    type: article-journal
 
 
-- author:
-  - family: Boehm
-    given: Frederick J.
-  - family: Zhou
-    given: Xiang
-  - family: Ganesh
-    given: Santhi K.
-  id: boehm_2024_fmdmr
-  title: "Assessing evidence for causal relationships between
-    fibromuscular dysplasia and chronic kidney disease: A two-sample
-    mendelian randomization study"
-  title-short: Assessing evidence for causal relationships between
-    fibromuscular dysplasia and chronic kidney disease
-  type: manuscript
-- author:
-  - family: Wang
-    given: Yu
-  - family: Boehm
-    given: Frederick J.
-  - family: Murad
-    given: Andrea
-  - family: Yang
-    given: Min-Lee
-  - family: Hunker
-    given: Kristina
-  - family: Fendrikova-Mahlay
-    given: Natalia
-  - family: Coleman
-    given: Dawn
-  - family: Gornik
-    given: Heather
-  - family: Stanley
-    given: James C.
-  - family: Li
-    given: Jun Z.
-  - family: Ganesh
-    given: Santhi K.
-  id: boehm_2024_fmdwes
-  title: Whole-exome sequencing data of patients with fibromuscular
-    dysplasia reveals novel gene associations
-  type: manuscript
+  - author:
+    - family: Boehm
+      given: Frederick J.
+    - family: Zhou
+      given: Xiang
+    - family: Ganesh
+      given: Santhi K.
+    id: boehm_2024_fmdmr
+    title: "Assessing evidence for causal relationships between
+      fibromuscular dysplasia and chronic kidney disease: A two-sample
+      mendelian randomization study"
+    title-short: Assessing evidence for causal relationships between
+      fibromuscular dysplasia and chronic kidney disease
+    type: manuscript
+  - author:
+    - family: Wang
+      given: Yu
+    - family: Boehm
+      given: Frederick J.
+    - family: Murad
+      given: Andrea
+    - family: Yang
+      given: Min-Lee
+    - family: Hunker
+      given: Kristina
+    - family: Fendrikova-Mahlay
+      given: Natalia
+    - family: Coleman
+      given: Dawn
+    - family: Gornik
+      given: Heather
+    - family: Stanley
+      given: James C.
+    - family: Li
+      given: Jun Z.
+    - family: Ganesh
+      given: Santhi K.
+    id: boehm_2024_fmdwes
+    title: Whole-exome sequencing data of patients with fibromuscular
+      dysplasia reveals novel gene associations
+    type: manuscript
 
 
 
