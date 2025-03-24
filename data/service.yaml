@@ -258,4 +258,11 @@ service:
     service_type: university
     description: >
         'The event brings local middle school students to the Washington Pavilion in Sioux Falls. CoE staff set up tables with discipline-related activities for students. We had a computer game for learning basic genetics concepts.'
-
+  - title: 'Session Chair'
+    organization: 
+        - ENAR
+    date: 
+        - '2025-03-24' 
+    service_type: professional  
+    description: >
+        'Session title: Pipelines, Processes, and Presentations: How to Manage a Collaborative Biostatistics Group. Four speakers: Gail Potter, Lorin Crawford, Joy Jia, and Alexandra Hanlon. ENAR annual meeting invited session.'
