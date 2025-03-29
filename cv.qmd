@@ -16,7 +16,7 @@ author: Frederick Joseph Boehm, III
 date: last-modified
 phone: 734-260-0914 
 address: "South Dakota State University · 136 E Blue Bell Dr · Brookings, South Dakota 57006 · USA"
-email: frederick.boehm@gmail.com
+email: frederick.boehm@sdstate.edu
 fontsize: 10pt
 github: fboehm # github account
 orcid: 0000-0002-1644-5931 # orcid identifier
