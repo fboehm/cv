@@ -55,12 +55,16 @@ for course in sorted_courses:
     foo = ""
     terms = cc.get("term", [])
     t_formatted = ", ".join(terms) # join (possibly) multiple terms into a single string
+    if "role" in cc:
+        role = cc['role']
+    else: 
+        role = "Instructor"
     if cc.get("url") is not None:
         #foo = f"\\footnotesize {course['role']}, [{course['title']}, {course['institution']}]({course['url']})  \hfill " + f"\\footnotesize {t_formatted}  \n"
-        foo = text_size_text + f"{cc['role']}, [{cc['title']}, {cc['institution']}]({cc['url']})  \\hfill " + f"{t_formatted}  \n"
+        foo = text_size_text + f"{role}, [{cc['title']}, {cc['institution']}]({cc['url']})  \\hfill " + f"{t_formatted}  \n"
     else:
         #foo = f"\\footnotesize {course['role']}, {course['title']}, {course['institution']}  \hfill " + f"\\footnotesize {t_formatted}  \n"
-        foo = text_size_text + f"{cc['role']}, {cc['title']}, {cc['institution']}  \\hfill " + f"{t_formatted}  \n"
+        foo = text_size_text + f"{role}, {cc['title']}, {cc['institution']}  \\hfill " + f"{t_formatted}  \n"
     if cc.get("type") == "short":
         markdown_output_short += foo
     elif cc.get("type") == "formal":

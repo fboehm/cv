@@ -396,7 +396,7 @@ display(Markdown(markdown_output_posters))
 # Read YAML file
 with open("data/service.yaml", "r") as file:
     data = yaml.safe_load(file)
-sorted_service = sorted(data.get("service", []), key=lambda x: max(x.get("date")), reverse=True)
+sorted_service = sorted(data.get("service", []), key=lambda x: max(x.get("start_date", x.get("date"))), reverse=True)
 
 markdown_output_university = ""
 markdown_output_community = ""
@@ -406,7 +406,8 @@ markdown_output_professional = ""
 for service in sorted_service:
     foo = ""
     # Accessing and formatting the dates as "Month Year"
-    dates = service.get("date", [])
+    
+    dates = service.get("start_date", service.get("date", []))
     formatted_dates = []
     for date_str in dates:
         date_obj = datetime.datetime.strptime(date_str, "%Y-%m")

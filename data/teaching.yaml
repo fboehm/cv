@@ -20,7 +20,7 @@ courses:
     role: 'Instructor'
     type: 'formal'
     enrollment: 
-      - Spring 2025: 52
+      - Spring 2025: 51
     description: >
       * Used materials from Gemechis Djira to discuss ANOVA, linear regression, and design of experiments.  
   

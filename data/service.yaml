@@ -222,8 +222,6 @@ service:
         - 'Department of Mathematics and Statistics, South Dakota State University'
     start_date:
         - '2024-09'
-    end_date:
-        - 'present'
     service_type: university
     description: >
         'Revised course descriptions for upper level statistics courses, including Time series analysis (560) and Statistical methods II (541)'
@@ -233,8 +231,6 @@ service:
         - 'Department of Mathematics and Statistics, South Dakota State University'
     start_date:
         - '2024-09' 
-    end_date:
-        - 'present'
     service_type: university  
     description: >
         'tbd'
@@ -244,8 +240,6 @@ service:
         - 'Department of Mathematics and Statistics, South Dakota State University'
     start_date: 
         - '2024-09'
-    end_date:
-        - 'present'
     service_type: university
     description: >
         'Revised capstone course sequence for majors in our department'
@@ -262,7 +256,7 @@ service:
     organization: 
         - ENAR
     date: 
-        - '2025-03-24' 
+        - '2025-03' 
     service_type: professional  
     description: >
         'Session title: Pipelines, Processes, and Presentations: How to Manage a Collaborative Biostatistics Group. Four speakers: Gail Potter, Lorin Crawford, Joy Jia, and Alexandra Hanlon. ENAR annual meeting invited session.'

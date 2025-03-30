@@ -37,19 +37,22 @@ bibs = data["references"]
 
 # define issued_formatted key for sorting
 for article in bibs:
-    if isinstance(article["issued"], int):
-        article["issued_formatted"] = date(article["issued"], 1, 1)
-    if isinstance(article["issued"], str):
-        if len(article["issued"]) == 7:
-            article["issued_formatted"] = datetime.strptime(
-                article["issued"] + "-01", "%Y-%m-%d"
-            ).date()
-        elif len(article["issued"]) == 10:
-            article["issued_formatted"] = datetime.strptime(
-                article["issued"], "%Y-%m-%d"
-            ).date()
-    if isinstance(article["issued"], date):
-        article["issued_formatted"] = article["issued"]
+    if "issued" in article:  
+        if isinstance(article["issued"], int):
+            article["issued_formatted"] = date(article["issued"], 1, 1)
+        if isinstance(article["issued"], str):
+            if len(article["issued"]) == 7:
+                article["issued_formatted"] = datetime.strptime(
+                    article["issued"] + "-01", "%Y-%m-%d"
+                ).date()
+            elif len(article["issued"]) == 10:
+                article["issued_formatted"] = datetime.strptime(
+                    article["issued"], "%Y-%m-%d"
+                ).date()
+        if isinstance(article["issued"], date):
+            article["issued_formatted"] = article["issued"]
+    if 'issued' not in article:
+        article['issued_formatted'] = datetime.today().date()
 ```
 
 
@@ -153,7 +156,10 @@ for ref_number in range(n_references):
         # organize other info for printing.
         # ADD DOI AND VOLUME & ISSUE TO JOURNAL CITATIONS
         date = ref["issued"]
-        doi = ref["doi"]
+        if "doi" in ref:
+            doi = ref["doi"]
+        else:
+            doi = ""
         journal = ref["container-title"]
         if "volume" in ref:
             volume = ref["volume"]
@@ -164,9 +170,16 @@ for ref_number in range(n_references):
                 volume_issue = f"{volume}"
         else:
             volume_issue = ""
-        page = ref["page"]
+        if "page" in ref:
+            page = ref["page"]
+        else:
+            page = ""
         #formatted_text = f"\\footnotesize {authors} ({date}). {title}. *{journal}* {volume_issue}:{page}. " + render_with_hyperlink("https://doi.org/" + doi) + ".  \n"
-        formatted_text = text_size_text + f"{authors} ({date}). {title}. *{journal}* {volume_issue}:{page}. " + render_with_hyperlink("https://doi.org/" + doi) + ".  \n"
+        if doi != "":
+            doi_text = render_with_hyperlink("https://doi.org/" + doi) + "."
+        else: 
+            doi_text = doi
+        formatted_text = text_size_text + f"{authors} ({date}). {title}. *{journal}* {volume_issue}:{page}. " + doi_text + "  \n"
         mo_article += formatted_text
         # Print the formatted content as Markdown
     if ref_type == "software":
@@ -179,12 +192,14 @@ for ref_number in range(n_references):
     # discard manuscripts that are merely "in preparation"
     # need to manually indicate in yaml file which manuscripts are submitted
     if ref_type == "manuscript":
-        if ref["manuscript_type"] == "submitted":
-            c_manuscript += 1
-            date = "submitted"
-            #formatted_text = f"\\footnotesize {authors} ({date}). {title}.  \n"
-        if ref["manuscript_type"] == "in preparation":
-            c_manuscript += 1
+        c_manuscript += 1    
+        if "manuscript_type" in ref:
+            if ref["manuscript_type"] == "submitted":
+                date = "submitted"
+                #formatted_text = f"\\footnotesize {authors} ({date}). {title}.  \n"
+            if ref["manuscript_type"] == "in preparation":
+                date = "in preparation"
+        if "manuscript_type" not in ref:
             date = "in preparation"
         formatted_text = text_size_text + f"{authors} ({date}). {title}.  \n"
         mo_manuscript += formatted_text
