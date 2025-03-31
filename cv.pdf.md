@@ -204,7 +204,8 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 ::: {.cell execution_count=21}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-
+**26.** \normalsize \normalsize Catherine DeRose\normalsize , \normalsize Carrie Roy\normalsize , and \textbf{\normalsize Fred Boehm} (2014-04-01). Victorian eyes: Literary, statistical, and artistic perspectives on victorian novels -- and dickens's unfinished murder mystery. *Significance*.  
+**27.** \normalsize \textbf{\normalsize Fred Boehm} (1997). The lone male wolf of the sandhill wildlife area. *International Wolf*.  
 :::
 :::
 
