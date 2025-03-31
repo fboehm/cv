@@ -595,8 +595,7 @@ references:
     given: David J
   - family: Keane
     given: Thomas M
-  container-title: G3
-    Genes`\textbar`{=latex}Genomes`\textbar`{=latex}Genetics
+  container-title: "G3: Genes, Genomes, Genetics"
   doi: 10.1534/g3.114.010595
   id: dove_strategy_2014
   issn: 2160-1836

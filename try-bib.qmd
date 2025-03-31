@@ -29,7 +29,7 @@ yaml.add_constructor("tag:yaml.org,2002:date", date_constructor, yaml.SafeLoader
 
 
 ```{python}
-with open("bib2yaml/boehm-fixed.yml", "r") as file:
+with open("bib2yaml/boehm-fixed.yaml", "r") as file:
     data = yaml.load(file, Loader=yaml.SafeLoader)
 
 n_references = len(data["references"])
@@ -132,7 +132,10 @@ c_other = 0
 ```{python}
 for ref_number in range(n_references):
     ref = sorted_bibs[ref_number]
-    ref_type = ref["type"]
+    if "type" in ref:
+        ref_type = ref["type"]
+    else:
+        ref_type = "none"
     # define formatted_text in this if statement
     title = ref["title"]
     # organize authors for printing
