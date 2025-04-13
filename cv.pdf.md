@@ -114,8 +114,7 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 ::: {.cell execution_count=14}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-**1.** \normalsize \textbf{\normalsize Frederick J. Boehm}\normalsize , \normalsize Xiang Zhou\normalsize , and \normalsize Santhi K. Ganesh (in preparation). Assessing evidence for causal relationships between fibromuscular dysplasia and chronic kidney disease: A two-sample mendelian randomization study.  
-**2.** \normalsize \normalsize Yu Wang\normalsize , \textbf{\normalsize Frederick J. Boehm}\normalsize , \normalsize Andrea Murad\normalsize , \normalsize Min-Lee Yang\normalsize , \normalsize Kristina Hunker\normalsize , \normalsize Natalia Fendrikova-Mahlay\normalsize , \normalsize Dawn Coleman\normalsize , \normalsize Heather Gornik\normalsize , \normalsize James C. Stanley\normalsize , \normalsize Jun Z. Li\normalsize , and \normalsize Santhi K. Ganesh (in preparation). Whole-exome sequencing data of patients with fibromuscular dysplasia reveals novel gene associations.  
+
 :::
 :::
 
@@ -125,7 +124,21 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 ::: {.cell execution_count=15}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-**3.** \normalsize \normalsize Sherry L. Kurtz\normalsize , \normalsize Richard Baker\normalsize , \textbf{\normalsize Frederick Boehm}\normalsize , \normalsize Chelsea Lehman\normalsize , \normalsize Lara Mittereder\normalsize , \normalsize Hamda Khan\normalsize , \normalsize Amy Rossi\normalsize , \normalsize Daniel Gatti\normalsize , \normalsize Gillian Beamer\normalsize , \normalsize Christopher Sassetti\normalsize , and \normalsize Karen Elkins (2024). Multiple genetic loci influence vaccine-induced protection against mycobacterium tuberculosis in genetically diverse mice. *PLoS Pathogens* :.   
+**1.** \normalsize \normalsize Clare M Smith\normalsize , \normalsize Richard E Baker\normalsize , \normalsize Megan K Proulx\normalsize , \normalsize Bibhuti B Mishra\normalsize , \normalsize Jarukit E Long\normalsize , \normalsize Sae Woong Park\normalsize , \normalsize Ha-Na Lee\normalsize , \normalsize Michael C Kiritsy\normalsize , \normalsize Michelle M Bellerose\normalsize , \normalsize Andrew J Olive\normalsize , \normalsize Kenan C Murphy\normalsize , \normalsize Kadamba Papavinasasundaram\normalsize , \textbf{\normalsize Frederick J Boehm}\normalsize , \normalsize Charlotte J Reames\normalsize , \normalsize Rachel K Meade\normalsize , \normalsize Brea K Hampton\normalsize , \normalsize Colton L Linnertz\normalsize , \normalsize Ginger D Shaw\normalsize , \normalsize Pablo Hock\normalsize , \normalsize Timothy A Bell\normalsize , \normalsize Sabine Ehrt\normalsize , \normalsize Dirk Schnappinger\normalsize , \normalsize Fernando Pardo-Manuel De Villena\normalsize , \normalsize Martin T Ferris\normalsize , \normalsize Thomas R Ioerger\normalsize , and \normalsize Christopher M Sassetti (2022-02-03). Host-pathogen genetic interactions underlie tuberculosis susceptibility in genetically diverse mice. *eLife* 11:e74419. [https://doi.org/10.7554/eLife.74419](https://doi.org/10.7554/eLife.74419).  
+**2.** \normalsize \textbf{\normalsize Frederick J. Boehm}\normalsize \ and \normalsize Xiang Zhou (2022). Statistical methods for mendelian randomization in genome-wide association studies: A review. *Computational and Structural Biotechnology Journal* 20:2338-2351. [https://doi.org/10.1016/j.csbj.2022.05.015](https://doi.org/10.1016/j.csbj.2022.05.015).  
+**3.** \normalsize \textbf{\normalsize Frederick J. Boehm}\normalsize \ and \normalsize Bret M. Hanlon (2021-01-01). What is happening on twitter? A framework for student research projects with tweets. *Journal of Statistics and Data Science Education* 29:S95-S102. [https://doi.org/10.1080/10691898.2020.1848486](https://doi.org/10.1080/10691898.2020.1848486).  
+**4.** \normalsize \normalsize Jorge L. Rodriguez-Gil\normalsize , \normalsize Dawn E. Watkins-Chow\normalsize , \normalsize Laura L. Baxter\normalsize , \normalsize Gene Elliot\normalsize , \normalsize Ursula L. Harper\normalsize , \normalsize Stephen M. Wincovitch\normalsize , \normalsize Julia C. Wedel\normalsize , \normalsize Arturo A. Incao\normalsize , \normalsize Mylene Huebecker\normalsize , \textbf{\normalsize Frederick J. Boehm}\normalsize , \normalsize William S. Garver\normalsize , \normalsize Forbes D. Porter\normalsize , \normalsize Karl W. Broman\normalsize , \normalsize Frances M. Platt\normalsize , and \normalsize William J. Pavan (2020-01-01). Genetic background modifies phenotypic severity and longevity in a mouse model of niemann-pick disease type C1. *Disease Models & Mechanisms* :dmm.042614. [https://doi.org/10.1242/dmm.042614](https://doi.org/10.1242/dmm.042614).  
+**5.** \normalsize \normalsize Julia H. Kemis\normalsize , \normalsize Vanessa Linke\normalsize , \normalsize Kelsey L. Barrett\normalsize , \textbf{\normalsize Frederick J. Boehm}\normalsize , \normalsize Lindsay L. Traeger\normalsize , \normalsize Mark P. Keller\normalsize , \normalsize Mary E. Rabaglia\normalsize , \normalsize Kathryn L. Schueler\normalsize , \normalsize Donald S. Stapleton\normalsize , \normalsize Daniel M. Gatti\normalsize , \normalsize Gary A. Churchill\normalsize , \normalsize Daniel Amador-Noguez\normalsize , \normalsize Jason D. Russell\normalsize , \normalsize Brian S. Yandell\normalsize , \normalsize Karl W. Broman\normalsize , \normalsize Joshua J. Coon\normalsize , \normalsize Alan D. Attie\normalsize , and \normalsize Federico E. Rey (2019-08-29). Genetic determinants of gut microbiota composition and bile acid profiles in mice. *PLOS Genetics* 15(8):e1008073. [https://doi.org/10.1371/journal.pgen.1008073](https://doi.org/10.1371/journal.pgen.1008073).  
+**6.** \normalsize \textbf{\normalsize Frederick Boehm}\normalsize , \normalsize Brian Yandell\normalsize , and \normalsize Karl Broman (2019-06-30). qtl2pleio: Testing pleiotropy vs. Separate QTL in multiparental populations. *Journal of Open Source Software* 4(38):1435. [https://doi.org/10.21105/joss.01435](https://doi.org/10.21105/joss.01435).  
+**7.** \normalsize \textbf{\normalsize Frederick Boehm}\normalsize , \normalsize Karl Broman\normalsize , \normalsize Elissa J. Chesler\normalsize , and \normalsize Brian S. Yandell (2019). Testing pleiotropy vs. Separate QTL in multiparental populations. *G3: Genes, Genomes, Genetics* 9(7):2317-2324. [https://doi.org/10.1534/g3.119.400098](https://doi.org/10.1534/g3.119.400098).  
+**8.** \normalsize \normalsize Chris Wells\normalsize , \normalsize Dhavan V. Shah\normalsize , \normalsize Jon C. Pevehouse\normalsize , \normalsize JungHwan Yang\normalsize , \normalsize Ayellet Pelled\normalsize , \textbf{\normalsize Frederick Boehm}\normalsize , \normalsize Josephine Lukito\normalsize , \normalsize Shreenita Ghosh\normalsize , and \normalsize Jessica L. Schmidt (2016-10). How trump drove coverage to the nomination: Hybrid media campaigning. *Political Communication* 33(4):669-676. [https://doi.org/10.1080/10584609.2016.1224416](https://doi.org/10.1080/10584609.2016.1224416).  
+**9.** \normalsize \normalsize Eric C. Tauchman\normalsize , \textbf{\normalsize Frederick J. Boehm}\normalsize , and \normalsize Jennifer G. DeLuca (2015-12-01). Stable kinetochore--microtubule attachment is sufficient to silence the spindle assembly checkpoint in human cells. *Nature Communications* 6(1):10036. [https://doi.org/10.1038/ncomms10036](https://doi.org/10.1038/ncomms10036).  
+**10.** \normalsize NCI DREAM Community\normalsize , \normalsize James C Costello\normalsize , \normalsize Laura M Heiser\normalsize , \normalsize Elisabeth Georgii\normalsize , \normalsize Mehmet Gönen\normalsize , \normalsize Michael P Menden\normalsize , \normalsize Nicholas J Wang\normalsize , \normalsize Mukesh Bansal\normalsize , \normalsize Muhammad Ammad-ud-din\normalsize , \normalsize Petteri Hintsanen\normalsize , \normalsize Suleiman A Khan\normalsize , \normalsize John-Patrick Mpindi\normalsize , \normalsize Olli Kallioniemi\normalsize , \normalsize Antti Honkela\normalsize , \normalsize Tero Aittokallio\normalsize , \normalsize Krister Wennerberg\normalsize , \normalsize James J Collins\normalsize , \normalsize Dan Gallahan\normalsize , \normalsize Dinah Singer\normalsize , \normalsize Julio Saez-Rodriguez\normalsize , \normalsize Samuel Kaski\normalsize , \normalsize Joe W Gray\normalsize , and \normalsize Gustavo Stolovitzky (2014-12). A community effort to assess and improve drug sensitivity prediction algorithms. *Nature Biotechnology* 32(12):1202-1212. [https://doi.org/10.1038/nbt.2877](https://doi.org/10.1038/nbt.2877).  
+**11.** \normalsize \normalsize William F Dove\normalsize , \normalsize Alexandra Shedlovsky\normalsize , \normalsize Linda Clipson\normalsize , \normalsize James M Amos-Landgraf\normalsize , \normalsize Richard B Halberg\normalsize , \normalsize Kathleen J Krentz\normalsize , \textbf{\normalsize Frederick J Boehm}\normalsize , \normalsize Michael A Newton\normalsize , \normalsize David J Adams\normalsize , and \normalsize Thomas M Keane (2014-06-01). A strategy to identify dominant point mutant modifiers of a quantitative trait. *G3: Genes, Genomes, Genetics* 4(6):1113-1121. [https://doi.org/10.1534/g3.114.010595](https://doi.org/10.1534/g3.114.010595).  
+**12.** \normalsize \normalsize Cathy C. Laurie\normalsize , \normalsize Kimberly F. Doheny\normalsize , \normalsize Daniel B. Mirel\normalsize , \normalsize Elizabeth W. Pugh\normalsize , \normalsize Laura J. Bierut\normalsize , \normalsize Tushar Bhangale\normalsize , \textbf{\normalsize Frederick Boehm}\normalsize , \normalsize Neil E. Caporaso\normalsize , \normalsize Marilyn C. Cornelis\normalsize , \normalsize Howard J. Edenberg\normalsize , \normalsize Stacy B. Gabriel\normalsize , \normalsize Emily L. Harris\normalsize , \normalsize Frank B. Hu\normalsize , \normalsize Kevin B. Jacobs\normalsize , \normalsize Peter Kraft\normalsize , \normalsize Maria Teresa Landi\normalsize , \normalsize Thomas Lumley\normalsize , \normalsize Teri A. Manolio\normalsize , \normalsize Caitlin McHugh\normalsize , \normalsize Ian Painter\normalsize , \normalsize Justin Paschall\normalsize , \normalsize John P. Rice\normalsize , \normalsize Kenneth M. Rice\normalsize , \normalsize Xiuwen Zheng\normalsize , \normalsize Bruce S. Weir\normalsize , and for the GENEVA Investigators (2010-09). Quality control and quality assurance in genotypic data for genome‐wide association studies. *Genetic Epidemiology* 34(6):591-602. [https://doi.org/10.1002/gepi.20516](https://doi.org/10.1002/gepi.20516).  
+**13.** \normalsize \normalsize M. C. Smith Fawzi\normalsize , \normalsize W. Lambert\normalsize , \textbf{\normalsize F. Boehm}\normalsize , \normalsize J. L. Finkelstein\normalsize , \normalsize J. M. Singler\normalsize , \normalsize F. Léandre\normalsize , \normalsize P. Nevil\normalsize , \normalsize D. Bertrand\normalsize , \normalsize M. S. Claude\normalsize , \normalsize J. Bertrand\normalsize , \normalsize M. Louissaint\normalsize , \normalsize L. Jeannis\normalsize , \normalsize P. E. Farmer\normalsize , \normalsize A. T. Yang\normalsize , and \normalsize J. S. Mukherjee (2010-05). Economic risk factors for HIV infection among women in rural haiti: Implications for HIV prevention policies and programs in resource-poor settings. *Journal of Women's Health* 19(5):885-892. [https://doi.org/10.1089/jwh.2008.1334](https://doi.org/10.1089/jwh.2008.1334).  
+**14.** \normalsize \normalsize Elizabeth E Marchani\normalsize , \normalsize Yanming Di\normalsize , \normalsize Yoonha Choi\normalsize , \normalsize Charles Cheung\normalsize , \normalsize Ming Su\normalsize , \textbf{\normalsize Frederick Boehm}\normalsize , \normalsize Elizabeth A Thompson\normalsize , and \normalsize Ellen M Wijsman (2009-12). Contrasting identity-by-descent estimators, association studies, and linkage analyses using the framingham heart study data. *BMC Proceedings* 3:S102. [https://doi.org/10.1186/1753-6561-3-S7-S102](https://doi.org/10.1186/1753-6561-3-S7-S102).  
+**15.** \normalsize \normalsize Jason E Gestwicki\normalsize , \normalsize Laura E Strong\normalsize , \normalsize Christopher W Cairo\normalsize , \textbf{\normalsize Frederick J Boehm}\normalsize , and \normalsize Laura L Kiessling (2002-02). Cell aggregation by scaffolded receptor clusters. *Chemistry & Biology* 9(2):163-169. [https://doi.org/10.1016/S1074-5521(02)00102-3](https://doi.org/10.1016/S1074-5521(02)00102-3).  
 :::
 :::
 
@@ -135,7 +148,7 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 ::: {.cell execution_count=16}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-
+**16.** \normalsize \normalsize A Vishnu Moorthy\normalsize , \normalsize Bryan Neil Becker\normalsize , \textbf{\normalsize Frederick J Boehm III}\normalsize , and \normalsize Arjang Djamali, editors (2009). *Pathophysiology of kidney disease and hypertension*. Saunders/Elsevier.  
 :::
 :::
 
@@ -145,7 +158,10 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 ::: {.cell execution_count=17}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-
+**17.** \normalsize \normalsize Ayellet Pelled\normalsize , \normalsize Josephine Lukito\normalsize , \textbf{\normalsize Fred Boehm}\normalsize , \normalsize JungHwan Yang\normalsize , and \normalsize Dhavan Shah (2018-11-09). "Little marco," "lyin' ted," "crooked hillary," and the "biased" media. In \normalsize Natalie Jomini Stroud\normalsize \ and \normalsize Shannon C. McGregor, editors *Digital discussions*. Routledge.  
+**18.** \normalsize \normalsize Vishnu Moorthy\normalsize \ and \textbf{\normalsize Frederick Boehm} (2009). Urinalysis and an approach to kidney diseases. In \normalsize Vishnu Moorthy\normalsize , \normalsize Bryan Becker\normalsize , \textbf{\normalsize Frederick Boehm}\normalsize , and \normalsize Arjang Djamali, editors *Pathophysiology of kidney disease and hypertension*. Saunders/Elsevier.  
+**19.** \normalsize \normalsize Kelly Traeger\normalsize , \textbf{\normalsize Frederick Boehm}\normalsize , and \normalsize Arjang Djamali (2009). Acid-base homeostasis and metabolic alkalosis. In \normalsize Vishnu Moorthy\normalsize , \normalsize Bryan Becker\normalsize , \textbf{\normalsize Frederick Boehm}\normalsize , and \normalsize Arjang Djamali, editors *Pathophysiology of kidney disease and hypertension*. Saunders/Elsevier.  
+**20.** \normalsize \textbf{\normalsize Frederick Boehm}\normalsize , \normalsize Kelly Traeger\normalsize , and \normalsize Arjang Djamali (2009). Metabolic acidosis and approach to acid-base disorders. In \normalsize Vishnu Moorthy\normalsize , \normalsize Bryan Becker\normalsize , \textbf{\normalsize Frederick Boehm}\normalsize , and \normalsize Arjang Djamali, editors *Pathophysiology of kidney disease and hypertension*. Saunders/Elsevier.  
 :::
 :::
 
@@ -155,7 +171,8 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 ::: {.cell execution_count=18}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-
+**21.** \normalsize \textbf{\normalsize Frederick Boehm} (2020-07-01). qtl2pleio r package. [https://github.com/fboehm/qtl2pleio](https://github.com/fboehm/qtl2pleio).  
+**22.** \normalsize \textbf{\normalsize Frederick Boehm} (2019-10-01). gemma2 r package. [https://github.com/fboehm/gemma2](https://github.com/fboehm/gemma2).  
 :::
 :::
 
@@ -165,7 +182,9 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 ::: {.cell execution_count=19}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-
+**23.** \normalsize \normalsize J Mark\normalsize , \normalsize L Wesler\normalsize , \normalsize C Oswald\normalsize , \normalsize F Léandre\normalsize , \normalsize P Nevil\normalsize , \normalsize D Bertrand\normalsize , \normalsize J Bertrand\normalsize , \textbf{\normalsize F Boehm}\normalsize , and \normalsize MC Smith Fawzi (2011). P2-S9. 07 economic risk factors for syphilis infection among pregnant women in rural haiti. In *Sexually Transmitted Infections*.  
+**24.** \normalsize \normalsize JE Gestwicki\normalsize , \normalsize CW Cairo\normalsize , \textbf{\normalsize FJ Boehm}\normalsize , and \normalsize LL Kiessling (2001). Mechanistic origins of the valency effect: Multivalent ligand binding studied by surface plasmon resonance and isothermal titration calorimetry.. In *ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY*.  
+**25.** \normalsize \normalsize E Fasella\normalsize , \textbf{\normalsize FJ Boehm}\normalsize , and \normalsize LL Kiessling (2000). Synthesis of galactosyl-alpha (1-3)-galactosyl epitopes for use in immunological studies.. In *ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY*.  
 :::
 :::
 
@@ -185,7 +204,8 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 ::: {.cell execution_count=21}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-
+**26.** \normalsize \normalsize Catherine DeRose\normalsize , \normalsize Carrie Roy\normalsize , and \textbf{\normalsize Fred Boehm} (2014-04-01). Victorian eyes: Literary, statistical, and artistic perspectives on victorian novels -- and dickens's unfinished murder mystery. *Significance*.  
+**27.** \normalsize \textbf{\normalsize Fred Boehm} (1997). The lone male wolf of the sandhill wildlife area. *International Wolf*.  
 :::
 :::
 
@@ -425,7 +445,7 @@ University of Wisconsin-Madison Molecular and Environmental Toxicology Center Re
 ::: {.cell execution_count=40}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-\normalsize Session Chair, ENAR \hfill March 2025  
+\normalsize Session Chair, ENAR Annual Meeting \hfill March 2025  
 \normalsize DNA Day Essay Judge, American Society for Human Genetics \hfill March 2024  
 \normalsize Participant, ENAR Fostering Diversity in Biostatistics Virtual Workshop \hfill March 2021  
 \normalsize [Associate Editor](https://joss.theoj.org/about), Journal of Open Source Software \hfill June 2020 to present  

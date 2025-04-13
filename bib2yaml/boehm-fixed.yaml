@@ -595,8 +595,7 @@ references:
     given: David J
   - family: Keane
     given: Thomas M
-  container-title: G3
-    Genes`\textbar`{=latex}Genomes`\textbar`{=latex}Genetics
+  container-title: "G3: Genes, Genomes, Genetics"
   doi: 10.1534/g3.114.010595
   id: dove_strategy_2014
   issn: 2160-1836
@@ -638,6 +637,7 @@ references:
   title-short: Victorian eyes
   url: "https://academic.oup.com/jrssig/article/11/2/40/7028988"
   volume: 11
+  type: other
 - abstract: "AbstractGenome‐wide scans of nucleotide variation in human
     subjects are providing an increasing number of replicated
     associations with complex disease traits. Most of the variants
@@ -936,6 +936,7 @@ references:
   id: boehm1997lone
   issued: 1997
   number: 3
+  type: other
   page: 7-9
   title: The lone male wolf of the sandhill wildlife area
   volume: 7
