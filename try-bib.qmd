@@ -29,7 +29,7 @@ yaml.add_constructor("tag:yaml.org,2002:date", date_constructor, yaml.SafeLoader
 
 
 ```{python}
-with open("bib2yaml/boehm-fixed.yaml", "r", encoding = 'utf-8') as file:
+with open("bib2yaml/2024-02-29-boehm-fixed.yaml", "r", encoding = 'utf-8') as file:
     data = yaml.load(file, Loader=yaml.SafeLoader)
 
 n_references = len(data["references"])
