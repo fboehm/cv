@@ -10,9 +10,9 @@ courses:
     description: >
       *'Drew heavily on materials from Hyndman text (FPP3). Emphasized analyses with R.'
 
-  - title: ''
+  - title: 'Career Seminar'
     institution: 'South Dakota State University'  
-    number: ''
+    number: 'Biology 290'
     term:
       - Spring 2025
     role: 'Guest lecturer'
@@ -29,7 +29,7 @@ courses:
     - Spring 2025
   role: 'Instructor'
   type: 'formal'
-  enrollment: NA
+  enrollment: 17
   description: >
     *'Taught with Donna Flint. I worked closely with teams of data science students on their capstone projects.'
 
@@ -40,7 +40,6 @@ courses:
     number: 'Statistics 541'
     term: 
       - Spring 2025
-      - Spring 2026
     role: 'Instructor'
     type: 'formal'
     enrollment: 
