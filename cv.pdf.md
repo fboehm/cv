@@ -225,7 +225,9 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 ::: {.cell execution_count=25}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-\normalsize Instructor, Statistical methods II, South Dakota State University  \hfill Spring 2025, Spring 2026  
+\normalsize Guest lecturer, Career Seminar, South Dakota State University  \hfill Spring 2025  
+\normalsize Instructor, Senior Capstone I, South Dakota State University  \hfill Spring 2025  
+\normalsize Instructor, Statistical methods II, South Dakota State University  \hfill Spring 2025  
 \normalsize Instructor, Time series analysis, South Dakota State University  \hfill Fall 2024  
 \normalsize Co-facilitator, Inclusive teaching for educating a diverse nation, University of Wisconsin-Madison Delta Program & CIRTL Network  \hfill Spring 2017, Fall 2017  
 \normalsize Guest lecturer on topic models & Teaching assistant, Special Topics: Data Science, University of Wisconsin-Madison  \hfill Fall 2016  

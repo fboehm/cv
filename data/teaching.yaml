@@ -22,16 +22,16 @@ courses:
     description: >
       *'Presented slides about my research training and trajectory. Ashley McConnell is the official instructor of record.'
 
-- title: 'Senior Capstone I'
-  institution: 'South Dakota State University'
-  number: 'Mathematics 401'
-  term:
-    - Spring 2025
-  role: 'Instructor'
-  type: 'formal'
-  enrollment: 17
-  description: >
-    *'Taught with Donna Flint. I worked closely with teams of data science students on their capstone projects.'
+  - title: 'Senior Capstone I'
+    institution: 'South Dakota State University'
+    number: 'Mathematics 401'
+    term:
+      - Spring 2025
+    role: 'Instructor'
+    type: 'formal'
+    enrollment: 17
+    description: >
+      *'Taught with Donna Flint. I worked closely with teams of data science students on their capstone projects.'
 
 
 

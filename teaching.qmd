@@ -14,7 +14,7 @@ import datetime
 import yaml
 from IPython.display import display, Markdown, display_latex
 
-with open("data/teaching.yaml", "r") as file:
+with open("data/teaching.yaml", "r", encoding = 'utf-8') as file:
     data = yaml.load(file, Loader=yaml.SafeLoader)
 
 courses = data["courses"]
