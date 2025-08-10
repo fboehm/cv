@@ -1067,5 +1067,40 @@ references:
   publisher: Saunders/Elsevier
   title: Metabolic acidosis and approach to acid-base disorders
   type: chapter
+- author:
+  - family: Hutten
+    given: Christina G
+  - family: Boehm
+    given: Frederick J
+  - family: Smith
+    given: Jennifer A
+  - family: Spitzer
+    given: Brian W
+  - family: Wassertheil-Smoller
+    given: Sylvia
+  - family: Isasi
+    given: Carmen R
+  - family: Cai
+    given: Jianwen
+  - family: Unkart
+    given: Jonathan T
+  - family: Sun
+    given: Jiehuan
+  - family: Persky
+    given: Victoria
+  - family: Daviglus
+    given: Martha L.
+  - family: Sofer
+    given: Tamar
+  - family: Argos
+    given: Maria
+  container-title: Human Genetics and Genomics Advances
+  id: hutten2025differential
+  issued: 2025
+  publisher: Elsevier
+  title: "[Differential performance of polygenic risk scores for
+    coronary heart disease in Hispanic/Latino subgroups: Findings of the
+    Hispanic Community Health Study/Study of Latinos]{.nocase}"
+  type: article-journal
 ---
 

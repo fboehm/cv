@@ -109,3 +109,39 @@ presentations:
     presentation_type: invited 
     description: >
       *
+  - title: 'shinyMR: An App to Promote Rigor and Reproducibility in Mendelian Randomization Studies'
+    venue: Human Genetics and Genomics Gordon Conference  
+    date: '2025-07-07'  
+    location: Portland, Maine, United States of America  
+    presentation_type: poster
+    description: >
+      *
+  - title: 'shinyMR: An App to Promote Rigor and Reproducibility in Mendelian Randomization Studies'
+    venue: STATGEN2025 Conference  
+    date: '2025-05-21'  
+    location: Minneapolis, Minnesota, United States of America  
+    presentation_type: speed talk
+    description: >
+      *
+  - title: 'shinyMR: An App to Promote Rigor and Reproducibility in Mendelian Randomization Studies'
+    venue: Institute for Mathematical Statistics New Researchers Conference 2025 
+    date: '2025-07-31'  
+    location: Nashville, Tennessee, United States of America  
+    presentation_type: lightning talk 
+    description: >
+      *
+  - title: 'shinyMR: An App to Promote Rigor and Reproducibility in Mendelian Randomization Studies'
+    venue: Institute for Mathematical Statistics New Researchers Conference 2025 
+    date: '2025-07-31'  
+    location: Nashville, Tennessee, United States of America  
+    presentation_type: poster 
+    description: >
+      *
+  - title: 'shinyMR: An App to Promote Rigor and Reproducibility in Mendelian Randomization Studies'
+    venue: Joint Statistical Meetings 2025 
+    date: '2025-08-04'  
+    location: Nashville, Tennessee, United States of America  
+    presentation_type: talk
+    description: >
+      *
+  
