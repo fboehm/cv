@@ -1,12 +1,15 @@
 courses:
   - title: 'Time series analysis'
     institution: 'South Dakota State University'
-    number: 'Statistics 460'
+    number: 'Statistics 560'
     term:
       - Fall 2024
+      - Fall 2025
     role: 'Instructor'
     type: 'formal'
-    enrollment: NA
+    enrollment: 
+      - Fall 2024: NA
+      - Fall 2025: 34
     description: >
       *'Drew heavily on materials from Hyndman text (FPP3). Emphasized analyses with R.'
 
