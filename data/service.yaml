@@ -273,3 +273,20 @@ service:
     service_type: professional
     description: >
         'Session title: Advanced Statistical and Machine Learning based methods for Spatial Biology. Four speakers: Jessica Li, Satwik Acharyya, Raphael Gottardo, Ronglai Shen. JSM Invited session'
+  - title: 'Outreach & Recruitment Committee Member'
+    organization:
+        - 'Department of Mathematics and Statistics, South Dakota State University'
+    start_date:
+        - '2025-09'
+    service_type: university
+    description: >
+        ''
+  - title: 'Seminar Committee Member'
+    organization:
+        - 'Department of Mathematics and Statistics, South Dakota State University'
+    start_date:
+        - '2025-09'
+    service_type: university
+    description: >
+        'Organized weekly department seminar series'
+    
