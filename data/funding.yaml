@@ -1,7 +1,35 @@
 funding:
-  - title: ''
+  - title: 'CONFERENCE: '
     institution: 'South Dakota State University'
     funder: 'Division of Mathematical Sciences, National Science Foundation'
     date: '2025'
+    start_date: 
+    end_date: 
+    total_requested_dollars: 7502
+    award_number: 
+    status: 'funded'
     description: >
       *
+  - title: ''  
+    institution: 'South Dakota State University'  
+    funder: 'Healthy Americas Research Consortium'  
+    application_date: '2025-11-03'
+    start_date: 
+    end_date: 
+    total_requested_dollars: 10000
+    status: 'declined'
+  - title: ''
+    institution: 'South Dakota State University'  
+    funder: 'BioSNTRii'  
+    application_date: '2025-11-03'
+    start_date: 
+    end_date:
+    total_requested_dollars: 75000
+    status: 'declined'
+  - title: ''
+    funder: 'USDA NIFA' 
+    application_date: '2025-11-16'
+    start_date: 
+    end_date: 
+    total_requested_dollars: 640000
+    status: 
