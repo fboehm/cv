@@ -289,4 +289,11 @@ service:
     service_type: university
     description: >
         'Organized weekly department seminar series'
-    
+  - title: 'Ad hoc Reviewer'
+    organization: 'National Science Foundation'
+    date: 
+        - '2024-12'
+    service_type: professional 
+    description: >
+        'Reviewed submissions for Smart Connected Health (SCH) program at NSF.'
+
