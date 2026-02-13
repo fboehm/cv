@@ -9,6 +9,10 @@ Goal is to read a bib file with my published works & convert it to yaml for subs
 
 I don't need to create one file for each type of publication, I think...
 
+I can export a bib file from Zotero, and then use that as input to create a yaml file.
+
+
+
 ## Using pandoc
 
 

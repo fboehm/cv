@@ -227,23 +227,21 @@ service:
         'Revised course descriptions for upper level statistics courses, including Time series analysis (560) and Statistical methods II (541)'
 
   - title: 'Data Science Curriculum Committee Member'
-    organization: 
+    organization:
         - 'Department of Mathematics and Statistics, South Dakota State University'
     start_date:
-        - '2024-09' 
-    end_date:
-        - '2025-05'
+        - '2024-09'
+    end_date: '2025-05'
     service_type: university  
     description: >
         'tbd'
 
   - title: 'Senior Capstone Committee Member'
-    organization: 
+    organization:
         - 'Department of Mathematics and Statistics, South Dakota State University'
-    start_date: 
+    start_date:
         - '2024-09'
-    end_date:
-        - '2025-05'
+    end_date: '2025-05'
     service_type: university
     description: >
         'Revised capstone course sequence for majors in our department'
@@ -269,7 +267,7 @@ service:
     organization: 
         - 'Joint Statistical Meetings'
     date: 
-        - '2025-08-03'
+        - '2025-08'
     service_type: professional
     description: >
         'Session title: Advanced Statistical and Machine Learning based methods for Spatial Biology. Four speakers: Jessica Li, Satwik Acharyya, Raphael Gottardo, Ronglai Shen. JSM Invited session'
@@ -280,7 +278,7 @@ service:
         - '2025-09'
     service_type: university
     description: >
-        ''
+        'Reviewed applications for two vacant faculty positions in our department'
   - title: 'Seminar Committee Member'
     organization:
         - 'Department of Mathematics and Statistics, South Dakota State University'
@@ -290,10 +288,19 @@ service:
     description: >
         'Organized weekly department seminar series'
   - title: 'Ad hoc Reviewer'
-    organization: 'National Science Foundation'
+    organization:
+        - 'National Science Foundation'
     date: 
         - '2024-12'
     service_type: professional 
     description: >
         'Reviewed submissions for Smart Connected Health (SCH) program at NSF.'
-
+  - title: 'Co-Secretary'
+    current: 'true'
+    organization:
+        - 'American Statistical Association JEDI Outreach Group'
+    start_date: 
+        - '2026-01'
+    service_type: professional
+    description: >
+        'The JEDI Outreach Group is a committee of the American Statistical Association that focuses on outreach efforts to promote justice, equity, diversity, and inclusion in the field of statistics. As Co-Secretary, I assist with organizing meetings, taking minutes, and coordinating communication among members.'

@@ -111,11 +111,9 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 
 
 
-## Unpublished Manuscripts
-
-
 ```{python}
-display(Markdown('\n'.join(fmo_manuscript)))
+if fmo_manuscript:
+    display(Markdown("## Unpublished Manuscripts\n\n" + '\n'.join(fmo_manuscript)))
 ```
 
 
@@ -260,9 +258,21 @@ with open("data/mentoring.yaml", "r") as file:
 ```{python}
 markdown_output = ""
 
-for person in data['people']:
+sorted_people = sorted(data['people'], key=lambda x: str(x['start']))
+for person in sorted_people:
     #foo = f"\\footnotesize Research mentor to {person['name']}, {person['title']} \hfill {person['start']} to {person['end']}   \nProject: {person['project']}   \nNext position: {person['next_role']}  \n"
-    foo = text_size_text + f"Research mentor to {person['name']}, {person['title']} \\hfill {person['start']} to {person['end']}   \nProject: {person['project']}   \nNext position: {person['next_role']}  \n"
+    start_str = str(person['start'])
+    start_fmt = "%Y-%m-%d" if len(start_str) == 10 else "%Y-%m"
+    start_formatted = datetime.datetime.strptime(start_str, start_fmt).strftime("%B %Y")
+    if person.get('end') is not None:
+        end_str = str(person['end'])
+        end_fmt = "%Y-%m-%d" if len(end_str) == 10 else "%Y-%m"
+        end_formatted = datetime.datetime.strptime(end_str, end_fmt).strftime("%B %Y")
+    else:
+        end_formatted = "present"
+    next_role = person.get('next_role')
+    next_role_line = f"   \nNext position: {next_role}" if next_role is not None else ""
+    foo = "\\textbullet\\ " + text_size_text + f"Research mentor to {person['name']}, {person['title']} \\hfill {start_formatted} to {end_formatted}   \nProject: {person['project']}{next_role_line}  \n"
     markdown_output += foo
 display(Markdown(markdown_output))
 ```
@@ -287,7 +297,18 @@ with open("data/leadership-training.yaml", "r") as file:
 # maybe add more fields to output??? ie, in call to Markdown?
 # need to decide which fields matter when assembling my yaml file!
 markdown_output = ""
-for event in data['events']:
+semester_to_month = {"Spring": "01", "Summer": "06", "Fall": "09", "Winter": "12"}
+def leadership_sort_key(x):
+    if x.get("date") is not None:
+        return x["date"]
+    term = x.get("term", "")
+    for sem, month in semester_to_month.items():
+        if sem in term:
+            year = term.split()[-1]
+            return f"{year}-{month}"
+    return ""
+sorted_events = sorted(data['events'], key=leadership_sort_key, reverse=True)
+for event in sorted_events:
     foo = ""
     if event.get("date") is not None:
         date_str = event.get("date")
@@ -418,8 +439,10 @@ for service in sorted_service:
             end_date_obj = datetime.datetime.strptime(end_date_str, "%Y-%m")
             end_date_formatted = end_date_obj.strftime("%B %Y")
             formatted_date = f"{formatted_date} to {end_date_formatted}"
+        elif service.get("start_date") is not None:
+            formatted_date = f"{formatted_date} to present"
         # handle current values
-        if service.get("current") == 'true':
+        if service.get("current") == 'true' and "to present" not in formatted_date:
             formatted_date = f"{formatted_date} to present"
         formatted_dates.append(formatted_date)
 

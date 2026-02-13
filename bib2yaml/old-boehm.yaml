@@ -1,0 +1,216 @@
+references:
+  - author:
+    - family: Mark
+      given: J
+    - family: Wesler
+      given: L
+    - family: Oswald
+      given: C
+    - family: Léandre
+      given: F
+    - family: Nevil
+      given: P
+    - family: Bertrand
+      given: D
+    - family: Bertrand
+      given: J
+    - family: Boehm
+      given: F
+    - family: Fawzi
+      given: MC Smith
+    container-title: Sexually Transmitted Infections
+    id: mark2011p2
+    issued: 2011
+    page: A263
+    publisher: BMJ Publishing Group Ltd
+    title: P2-S9. 07 economic risk factors for syphilis infection among
+      pregnant women in rural haiti
+    type: paper-conference
+    volume: 87
+  - author:
+    - family: Moorthy
+      given: A Vishnu
+    - family: Becker
+      given: Bryan Neil
+    - family: Boehm III
+      given: Frederick J
+    - family: Djamali
+      given: Arjang
+    id: moorthy2009pathophysiology
+    issued: 2009
+    publisher: Elsevier
+    title: Pathophysiology of kidney disease and hypertension
+    type: book
+  - author:
+    - family: Boehm
+      given: Fred
+    container-title: International Wolf
+    id: boehm1997lone
+    issued: 1997
+    number: 3
+    type: other
+    page: 7-9
+    title: The lone male wolf of the sandhill wildlife area
+    volume: 7
+  - author:
+    - family: Fasella
+      given: E
+    - family: Boehm
+      given: FJ
+    - family: Kiessling
+      given: LL
+    container-title: ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY
+    id: fasella2000synthesis
+    issued: 2000
+    page: U108-U108
+    publisher: AMER CHEMICAL SOC 1155 16TH ST, NW, WASHINGTON, DC 20036
+      USA
+    title: Synthesis of galactosyl-alpha (1-3)-galactosyl epitopes for use
+      in immunological studies.
+    type: paper-conference
+    volume: 219
+  - author:
+    - family: Gestwicki
+      given: JE
+    - family: Cairo
+      given: CW
+    - family: Boehm
+      given: FJ
+    - family: Kiessling
+      given: LL
+    container-title: ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY
+    id: gestwicki2001mechanistic
+    issued: 2001
+    page: U56-U56
+    publisher: AMER CHEMICAL SOC 1155 16TH ST, NW, WASHINGTON, DC 20036
+      USA
+    title: "Mechanistic origins of the valency effect: Multivalent ligand
+      binding studied by surface plasmon resonance and isothermal
+      titration calorimetry."
+    title-short: Mechanistic origins of the valency effect
+    type: paper-conference
+    volume: 221
+  - author:
+    - family: Boehm
+      given: Frederick
+    id: qtl2pleio
+    issued: 2020-07-01
+    title: qtl2pleio R package
+    type: software
+    url: "https://github.com/fboehm/qtl2pleio"
+    version: 1.3.0
+  - author:
+    - family: Boehm
+      given: Frederick
+    id: gemma2
+    issued: 2019-10-01
+    title: gemma2 R package
+    type: software
+    url: "https://github.com/fboehm/gemma2"
+    version: 0.1.1
+  - author:
+    - family: Moorthy
+      given: Vishnu
+    - family: Boehm
+      given: Frederick
+    chapter-number: 10
+    container-title: Pathophysiology of kidney disease and hypertension
+    editor:
+    - family: Moorthy
+      given: Vishnu
+    - family: Becker
+      given: Bryan
+    - family: Boehm
+      given: Frederick
+    - family: Djamali
+      given: Arjang
+    id: moorthy2009urinalysis
+    issued: 2009
+    page: 121-130
+    publisher: Elsevier
+    title: Urinalysis and an approach to kidney diseases
+    type: chapter
+  - author:
+    - family: Traeger
+      given: Kelly
+    - family: Boehm
+      given: Frederick
+    - family: Djamali
+      given: Arjang
+    chapter-number: 6
+    container-title: Pathophysiology of kidney disease and hypertension
+    editor:
+    - family: Moorthy
+      given: Vishnu
+    - family: Becker
+      given: Bryan
+    - family: Boehm
+      given: Frederick
+    - family: Djamali
+      given: Arjang
+    id: traeger2009acid
+    issued: 2009
+    page: 63-78
+    publisher: Elsevier
+    title: Acid-base homeostasis and metabolic alkalosis
+    type: chapter
+  - author:
+    - family: Boehm
+      given: Frederick
+    - family: Traeger
+      given: Kelly
+    - family: Djamali
+      given: Arjang
+    chapter-number: 7
+    container-title: Pathophysiology of kidney disease and hypertension
+    editor:
+    - family: Moorthy
+      given: Vishnu
+    - family: Becker
+      given: Bryan
+    - family: Boehm
+      given: Frederick
+    - family: Djamali
+      given: Arjang
+    id: boehm2009metabolic
+    issued: 2009
+    page: 79-88
+    publisher: Elsevier
+    title: Metabolic acidosis and approach to acid-base disorders
+    type: chapter
+  - author: 
+    - family: "Boehm, III"
+      given: Frederick J.
+    title: "Testing pleiotropy vs. separate QTL in multiparental populations"
+    issued: 2019
+    type: thesis
+    id: boehm_thesis
+  - abstract: Abstract Visualisations are usually statistics made to look
+      pretty. Here, the artists take over -- but the statistics of read
+      and unread novels are the inspiration. Catherine DeRose, Carrie Roy
+      and Fred Boehm walk the blurry line between art and representing
+      data.
+    accessed: 2024-01-07
+    type: other
+    author:
+    - family: DeRose
+      given: Catherine
+    - family: Roy
+      given: Carrie
+    - family: Boehm
+      given: Fred
+    container-title: Significance
+    doi: 10.1111/j.1740-9713.2014.00740.x
+    id: derose_victorian_2014
+    issn: 1740-9705, 1740-9713
+    issued: 2014-04-01
+    keyword: /unread
+    language: en-US
+    number: 2
+    page: 40-43
+    title: "Victorian eyes: Literary, statistical, and artistic
+      perspectives on Victorian novels -- and Dickens's unfinished murder
+      mystery"
+    title-short: Victorian eyes
+    url: "https://academic.oup.com/jrssig/article/11/2/40/7028988"
+    volume: 11

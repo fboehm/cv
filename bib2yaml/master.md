@@ -15,4 +15,8 @@ bash convert_bib_to_yaml.bash boehm.bib boehm.yaml
 7. manually add phd thesis
 
 
+## Update 2026-02-12
+
+I now have a old-boehm.yaml file with entries that aren't in my Zotero library. I amended try-bib.qmd to accommodate both yaml files: boehm.yaml and old-boehm.yaml.
+
 

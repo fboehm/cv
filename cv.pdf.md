@@ -109,14 +109,6 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 
 
 
-## Unpublished Manuscripts
-
-::: {.cell execution_count=14}
-
-::: {.cell-output .cell-output-display .cell-output-markdown}
-**1.** \normalsize \normalsize Christina G. Hutten\normalsize , \textbf{\normalsize Frederick J. Boehm}\normalsize , \normalsize R Durazo-Arvizu\normalsize , \normalsize S Wassertheil-Smoller\normalsize , \normalsize CR Isasi\normalsize , \normalsize J Cai\normalsize , \normalsize JT Unkart\normalsize , \normalsize J Sun\normalsize , \normalsize V Persky\normalsize , \normalsize T Sofer\normalsize , \normalsize ML Daviglus\normalsize , and \normalsize M Argos (submitted). Association of a genetic risk score with incident coronary heart disease in the Hispanic Community Health Study/Study of Latinos (HCHS/SOL) cohort.  
-:::
-:::
 
 
 ## Journal Articles 
@@ -124,18 +116,19 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 ::: {.cell execution_count=15}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-**2.** \normalsize \normalsize Sherry L. Kurtz\normalsize , \normalsize Richard E. Baker\normalsize , \textbf{\normalsize Frederick J. Boehm}\normalsize , \normalsize Chelsea C. Lehman\normalsize , \normalsize Lara R. Mittereder\normalsize , \normalsize Hamda Khan\normalsize , \normalsize Amy P. Rossi\normalsize , \normalsize Daniel M. Gatti\normalsize , \normalsize Gillian Beamer\normalsize , \normalsize Christopher M. Sassetti\normalsize , and \normalsize Karen L. Elkins (2024-03-07). Multiple genetic loci influence vaccine-induced protection against mycobacterium tuberculosis in genetically diverse mice. *PLoS Pathogens* 20(3):e1012069. [https://doi.org/10.1371/journal.ppat.1012069](https://doi.org/10.1371/journal.ppat.1012069).  
+**1.** \normalsize \normalsize Christina G. Hutten\normalsize , \textbf{\normalsize Frederick J. Boehm}\normalsize , \normalsize Jennifer A. Smith\normalsize , \normalsize Brian W. Spitzer\normalsize , \normalsize Sylvia Wassertheil-Smoller\normalsize , \normalsize Carmen R. Isasi\normalsize , \normalsize Jianwen Cai\normalsize , \normalsize Jonathan T. Unkart\normalsize , \normalsize Jiehuan Sun\normalsize , \normalsize Victoria Persky\normalsize , \normalsize Martha L. Daviglus\normalsize , \normalsize Tamar Sofer\normalsize , and \normalsize Maria Argos (2025-10). Differential performance of polygenic risk scores for heart disease in hispanic/latino subgroups: Findings of the hispanic community health study/study of latinos. *Human Genetics and Genomics Advances* 6(4):100486. [https://doi.org/10.1016/j.xhgg.2025.100486](https://doi.org/10.1016/j.xhgg.2025.100486).  
+**2.** \normalsize \normalsize Sherry L. Kurtz\normalsize , \normalsize Richard E. Baker\normalsize , \textbf{\normalsize Frederick J. Boehm}\normalsize , \normalsize Chelsea C. Lehman\normalsize , \normalsize Lara R. Mittereder\normalsize , \normalsize Hamda Khan\normalsize , \normalsize Amy P. Rossi\normalsize , \normalsize Daniel M. Gatti\normalsize , \normalsize Gillian Beamer\normalsize , \normalsize Christopher M. Sassetti\normalsize , and \normalsize Karen L. Elkins (2024-03-07). Multiple genetic loci influence vaccine-induced protection against mycobacterium tuberculosis in genetically diverse mice. *PLOS Pathogens* 20(3):e1012069. [https://doi.org/10.1371/journal.ppat.1012069](https://doi.org/10.1371/journal.ppat.1012069).  
 **3.** \normalsize \normalsize Clare M Smith\normalsize , \normalsize Richard E Baker\normalsize , \normalsize Megan K Proulx\normalsize , \normalsize Bibhuti B Mishra\normalsize , \normalsize Jarukit E Long\normalsize , \normalsize Sae Woong Park\normalsize , \normalsize Ha-Na Lee\normalsize , \normalsize Michael C Kiritsy\normalsize , \normalsize Michelle M Bellerose\normalsize , \normalsize Andrew J Olive\normalsize , \normalsize Kenan C Murphy\normalsize , \normalsize Kadamba Papavinasasundaram\normalsize , \textbf{\normalsize Frederick J Boehm}\normalsize , \normalsize Charlotte J Reames\normalsize , \normalsize Rachel K Meade\normalsize , \normalsize Brea K Hampton\normalsize , \normalsize Colton L Linnertz\normalsize , \normalsize Ginger D Shaw\normalsize , \normalsize Pablo Hock\normalsize , \normalsize Timothy A Bell\normalsize , \normalsize Sabine Ehrt\normalsize , \normalsize Dirk Schnappinger\normalsize , \normalsize Fernando Pardo-Manuel De Villena\normalsize , \normalsize Martin T Ferris\normalsize , \normalsize Thomas R Ioerger\normalsize , and \normalsize Christopher M Sassetti (2022-02-03). Host-pathogen genetic interactions underlie tuberculosis susceptibility in genetically diverse mice. *eLife* 11:e74419. [https://doi.org/10.7554/eLife.74419](https://doi.org/10.7554/eLife.74419).  
 **4.** \normalsize \textbf{\normalsize Frederick J. Boehm}\normalsize \ and \normalsize Xiang Zhou (2022). Statistical methods for mendelian randomization in genome-wide association studies: A review. *Computational and Structural Biotechnology Journal* 20:2338-2351. [https://doi.org/10.1016/j.csbj.2022.05.015](https://doi.org/10.1016/j.csbj.2022.05.015).  
-**5.** \normalsize \textbf{\normalsize Frederick J. Boehm}\normalsize \ and \normalsize Bret M. Hanlon (2021-01-01). What is happening on Twitter? A framework for student research projects with tweets. *Journal of Statistics and Data Science Education* 29:S95-S102. [https://doi.org/10.1080/10691898.2020.1848486](https://doi.org/10.1080/10691898.2020.1848486).  
-**6.** \normalsize \normalsize Jorge L. Rodriguez-Gil\normalsize , \normalsize Dawn E. Watkins-Chow\normalsize , \normalsize Laura L. Baxter\normalsize , \normalsize Gene Elliot\normalsize , \normalsize Ursula L. Harper\normalsize , \normalsize Stephen M. Wincovitch\normalsize , \normalsize Julia C. Wedel\normalsize , \normalsize Arturo A. Incao\normalsize , \normalsize Mylene Huebecker\normalsize , \textbf{\normalsize Frederick J. Boehm}\normalsize , \normalsize William S. Garver\normalsize , \normalsize Forbes D. Porter\normalsize , \normalsize Karl W. Broman\normalsize , \normalsize Frances M. Platt\normalsize , and \normalsize William J. Pavan (2020-01-01). Genetic background modifies phenotypic severity and longevity in a mouse model of niemann-pick disease type C1. *Disease Models & Mechanisms* 13(3):dmm.042614. [https://doi.org/10.1242/dmm.042614](https://doi.org/10.1242/dmm.042614).  
+**5.** \normalsize \textbf{\normalsize Frederick J. Boehm}\normalsize \ and \normalsize Bret M. Hanlon (2021-01-01). What is happening on twitter? A framework for student research projects with tweets. *Journal of Statistics and Data Science Education* 29:S95-S102. [https://doi.org/10.1080/10691898.2020.1848486](https://doi.org/10.1080/10691898.2020.1848486).  
+**6.** \normalsize \normalsize Jorge L. Rodriguez-Gil\normalsize , \normalsize Dawn E. Watkins-Chow\normalsize , \normalsize Laura L. Baxter\normalsize , \normalsize Gene Elliot\normalsize , \normalsize Ursula L. Harper\normalsize , \normalsize Stephen M. Wincovitch\normalsize , \normalsize Julia C. Wedel\normalsize , \normalsize Arturo A. Incao\normalsize , \normalsize Mylene Huebecker\normalsize , \textbf{\normalsize Frederick J. Boehm}\normalsize , \normalsize William S. Garver\normalsize , \normalsize Forbes D. Porter\normalsize , \normalsize Karl W. Broman\normalsize , \normalsize Frances M. Platt\normalsize , and \normalsize William J. Pavan (2020-01-01). Genetic background modifies phenotypic severity and longevity in a mouse model of niemann-pick disease type C1. *Disease Models & Mechanisms* :dmm.042614. [https://doi.org/10.1242/dmm.042614](https://doi.org/10.1242/dmm.042614).  
 **7.** \normalsize \normalsize Julia H. Kemis\normalsize , \normalsize Vanessa Linke\normalsize , \normalsize Kelsey L. Barrett\normalsize , \textbf{\normalsize Frederick J. Boehm}\normalsize , \normalsize Lindsay L. Traeger\normalsize , \normalsize Mark P. Keller\normalsize , \normalsize Mary E. Rabaglia\normalsize , \normalsize Kathryn L. Schueler\normalsize , \normalsize Donald S. Stapleton\normalsize , \normalsize Daniel M. Gatti\normalsize , \normalsize Gary A. Churchill\normalsize , \normalsize Daniel Amador-Noguez\normalsize , \normalsize Jason D. Russell\normalsize , \normalsize Brian S. Yandell\normalsize , \normalsize Karl W. Broman\normalsize , \normalsize Joshua J. Coon\normalsize , \normalsize Alan D. Attie\normalsize , and \normalsize Federico E. Rey (2019-08-29). Genetic determinants of gut microbiota composition and bile acid profiles in mice. *PLOS Genetics* 15(8):e1008073. [https://doi.org/10.1371/journal.pgen.1008073](https://doi.org/10.1371/journal.pgen.1008073).  
 **8.** \normalsize \textbf{\normalsize Frederick Boehm}\normalsize , \normalsize Brian Yandell\normalsize , and \normalsize Karl Broman (2019-06-30). qtl2pleio: Testing pleiotropy vs. Separate QTL in multiparental populations. *Journal of Open Source Software* 4(38):1435. [https://doi.org/10.21105/joss.01435](https://doi.org/10.21105/joss.01435).  
-**9.** \normalsize \textbf{\normalsize Frederick Boehm}\normalsize , \normalsize Karl Broman\normalsize , \normalsize Elissa J. Chesler\normalsize , and \normalsize Brian S. Yandell (2019). Testing pleiotropy vs. Separate QTL in multiparental populations. *G3: Genes, Genomes, Genetics* 9(7):2317-2324. [https://doi.org/10.1534/g3.119.400098](https://doi.org/10.1534/g3.119.400098).  
-**10.** \normalsize \normalsize Chris Wells\normalsize , \normalsize Dhavan V. Shah\normalsize , \normalsize Jon C. Pevehouse\normalsize , \normalsize JungHwan Yang\normalsize , \normalsize Ayellet Pelled\normalsize , \textbf{\normalsize Frederick Boehm}\normalsize , \normalsize Josephine Lukito\normalsize , \normalsize Shreenita Ghosh\normalsize , and \normalsize Jessica L. Schmidt (2016-10). How trump drove coverage to the nomination: Hybrid media campaigning. *Political Communication* 33(4):669-676. [https://doi.org/10.1080/10584609.2016.1224416](https://doi.org/10.1080/10584609.2016.1224416).  
-**11.** \normalsize \normalsize Eric C. Tauchman\normalsize , \textbf{\normalsize Frederick J. Boehm}\normalsize , and \normalsize Jennifer G. DeLuca (2015-12-01). Stable kinetochore--microtubule attachment is sufficient to silence the spindle assembly checkpoint in human cells. *Nature Communications* 6(1):10036. [https://doi.org/10.1038/ncomms10036](https://doi.org/10.1038/ncomms10036).  
-**12.** \normalsize NCI DREAM Community\normalsize , \normalsize James C Costello\normalsize , \normalsize Laura M Heiser\normalsize , \normalsize Elisabeth Georgii\normalsize , \normalsize Mehmet Gönen\normalsize , \normalsize Michael P Menden\normalsize , \normalsize Nicholas J Wang\normalsize , \normalsize Mukesh Bansal\normalsize , \normalsize Muhammad Ammad-ud-din\normalsize , \normalsize Petteri Hintsanen\normalsize , \normalsize Suleiman A Khan\normalsize , \normalsize John-Patrick Mpindi\normalsize , \normalsize Olli Kallioniemi\normalsize , \normalsize Antti Honkela\normalsize , \normalsize Tero Aittokallio\normalsize , \normalsize Krister Wennerberg\normalsize , \normalsize James J Collins\normalsize , \normalsize Dan Gallahan\normalsize , \normalsize Dinah Singer\normalsize , \normalsize Julio Saez-Rodriguez\normalsize , \normalsize Samuel Kaski\normalsize , \normalsize Joe W Gray\normalsize , and \normalsize Gustavo Stolovitzky (2014-12). A community effort to assess and improve drug sensitivity prediction algorithms. *Nature Biotechnology* 32(12):1202-1212. [https://doi.org/10.1038/nbt.2877](https://doi.org/10.1038/nbt.2877).  
-**13.** \normalsize \normalsize William F Dove\normalsize , \normalsize Alexandra Shedlovsky\normalsize , \normalsize Linda Clipson\normalsize , \normalsize James M Amos-Landgraf\normalsize , \normalsize Richard B Halberg\normalsize , \normalsize Kathleen J Krentz\normalsize , \textbf{\normalsize Frederick J Boehm}\normalsize , \normalsize Michael A Newton\normalsize , \normalsize David J Adams\normalsize , and \normalsize Thomas M Keane (2014-06-01). A strategy to identify dominant point mutant modifiers of a quantitative trait. *G3: Genes, Genomes, Genetics* 4(6):1113-1121. [https://doi.org/10.1534/g3.114.010595](https://doi.org/10.1534/g3.114.010595).  
+**9.** \normalsize \normalsize Chris Wells\normalsize , \normalsize Dhavan V. Shah\normalsize , \normalsize Jon C. Pevehouse\normalsize , \normalsize JungHwan Yang\normalsize , \normalsize Ayellet Pelled\normalsize , \textbf{\normalsize Frederick Boehm}\normalsize , \normalsize Josephine Lukito\normalsize , \normalsize Shreenita Ghosh\normalsize , and \normalsize Jessica L. Schmidt (2016-10). How trump drove coverage to the nomination: Hybrid media campaigning. *Political Communication* 33(4):669-676. [https://doi.org/10.1080/10584609.2016.1224416](https://doi.org/10.1080/10584609.2016.1224416).  
+**10.** \normalsize \normalsize Eric C. Tauchman\normalsize , \textbf{\normalsize Frederick J. Boehm}\normalsize , and \normalsize Jennifer G. DeLuca (2015-12-01). Stable kinetochore--microtubule attachment is sufficient to silence the spindle assembly checkpoint in human cells. *Nature Communications* 6(1):10036. [https://doi.org/10.1038/ncomms10036](https://doi.org/10.1038/ncomms10036).  
+**11.** \normalsize NCI DREAM Community\normalsize , \normalsize James C Costello\normalsize , \normalsize Laura M Heiser\normalsize , \normalsize Elisabeth Georgii\normalsize , \normalsize Mehmet Gönen\normalsize , \normalsize Michael P Menden\normalsize , \normalsize Nicholas J Wang\normalsize , \normalsize Mukesh Bansal\normalsize , \normalsize Muhammad Ammad-ud-din\normalsize , \normalsize Petteri Hintsanen\normalsize , \normalsize Suleiman A Khan\normalsize , \normalsize John-Patrick Mpindi\normalsize , \normalsize Olli Kallioniemi\normalsize , \normalsize Antti Honkela\normalsize , \normalsize Tero Aittokallio\normalsize , \normalsize Krister Wennerberg\normalsize , \normalsize James J Collins\normalsize , \normalsize Dan Gallahan\normalsize , \normalsize Dinah Singer\normalsize , \normalsize Julio Saez-Rodriguez\normalsize , \normalsize Samuel Kaski\normalsize , \normalsize Joe W Gray\normalsize , and \normalsize Gustavo Stolovitzky (2014-12). A community effort to assess and improve drug sensitivity prediction algorithms. *Nature Biotechnology* 32(12):1202-1212. [https://doi.org/10.1038/nbt.2877](https://doi.org/10.1038/nbt.2877).  
+**12.** \normalsize \normalsize William F Dove\normalsize , \normalsize Alexandra Shedlovsky\normalsize , \normalsize Linda Clipson\normalsize , \normalsize James M Amos-Landgraf\normalsize , \normalsize Richard B Halberg\normalsize , \normalsize Kathleen J Krentz\normalsize , \textbf{\normalsize Frederick J Boehm}\normalsize , \normalsize Michael A Newton\normalsize , \normalsize David J Adams\normalsize , and \normalsize Thomas M Keane (2014-06-01). A strategy to identify dominant point mutant modifiers of a quantitative trait. *G3* 4(6):1113-1121. [https://doi.org/10.1534/g3.114.010595](https://doi.org/10.1534/g3.114.010595).  
+**13.** \normalsize \normalsize Catherine DeRose\normalsize , \normalsize Carrie Roy\normalsize , and \textbf{\normalsize Fred Boehm} (2014-04-01). Victorian eyes: Literary, statistical, and artistic perspectives on victorian novels -- and dickens's unfinished murder mystery. *Significance* 11(2):40-43. [https://doi.org/10.1111/j.1740-9713.2014.00740.x](https://doi.org/10.1111/j.1740-9713.2014.00740.x).  
 **14.** \normalsize \normalsize Cathy C. Laurie\normalsize , \normalsize Kimberly F. Doheny\normalsize , \normalsize Daniel B. Mirel\normalsize , \normalsize Elizabeth W. Pugh\normalsize , \normalsize Laura J. Bierut\normalsize , \normalsize Tushar Bhangale\normalsize , \textbf{\normalsize Frederick Boehm}\normalsize , \normalsize Neil E. Caporaso\normalsize , \normalsize Marilyn C. Cornelis\normalsize , \normalsize Howard J. Edenberg\normalsize , \normalsize Stacy B. Gabriel\normalsize , \normalsize Emily L. Harris\normalsize , \normalsize Frank B. Hu\normalsize , \normalsize Kevin B. Jacobs\normalsize , \normalsize Peter Kraft\normalsize , \normalsize Maria Teresa Landi\normalsize , \normalsize Thomas Lumley\normalsize , \normalsize Teri A. Manolio\normalsize , \normalsize Caitlin McHugh\normalsize , \normalsize Ian Painter\normalsize , \normalsize Justin Paschall\normalsize , \normalsize John P. Rice\normalsize , \normalsize Kenneth M. Rice\normalsize , \normalsize Xiuwen Zheng\normalsize , \normalsize Bruce S. Weir\normalsize , and for the GENEVA Investigators (2010-09). Quality control and quality assurance in genotypic data for genome‐wide association studies. *Genetic Epidemiology* 34(6):591-602. [https://doi.org/10.1002/gepi.20516](https://doi.org/10.1002/gepi.20516).  
 **15.** \normalsize \normalsize M. C. Smith Fawzi\normalsize , \normalsize W. Lambert\normalsize , \textbf{\normalsize F. Boehm}\normalsize , \normalsize J. L. Finkelstein\normalsize , \normalsize J. M. Singler\normalsize , \normalsize F. Léandre\normalsize , \normalsize P. Nevil\normalsize , \normalsize D. Bertrand\normalsize , \normalsize M. S. Claude\normalsize , \normalsize J. Bertrand\normalsize , \normalsize M. Louissaint\normalsize , \normalsize L. Jeannis\normalsize , \normalsize P. E. Farmer\normalsize , \normalsize A. T. Yang\normalsize , and \normalsize J. S. Mukherjee (2010-05). Economic risk factors for HIV infection among women in rural haiti: Implications for HIV prevention policies and programs in resource-poor settings. *Journal of Women's Health* 19(5):885-892. [https://doi.org/10.1089/jwh.2008.1334](https://doi.org/10.1089/jwh.2008.1334).  
 **16.** \normalsize \normalsize Elizabeth E Marchani\normalsize , \normalsize Yanming Di\normalsize , \normalsize Yoonha Choi\normalsize , \normalsize Charles Cheung\normalsize , \normalsize Ming Su\normalsize , \textbf{\normalsize Frederick Boehm}\normalsize , \normalsize Elizabeth A Thompson\normalsize , and \normalsize Ellen M Wijsman (2009-12). Contrasting identity-by-descent estimators, association studies, and linkage analyses using the framingham heart study data. *BMC Proceedings* 3:S102. [https://doi.org/10.1186/1753-6561-3-S7-S102](https://doi.org/10.1186/1753-6561-3-S7-S102).  
@@ -228,8 +221,8 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 ::: {.cell-output .cell-output-display .cell-output-markdown}
 \normalsize Guest lecturer, Career Seminar, South Dakota State University  \hfill Spring 2025  
 \normalsize Instructor, Senior Capstone I, South Dakota State University  \hfill Spring 2025  
-\normalsize Instructor, Statistical methods II, South Dakota State University  \hfill Spring 2025  
-\normalsize Instructor, Time series analysis, South Dakota State University  \hfill Fall 2024  
+\normalsize Instructor, Statistical methods II, South Dakota State University  \hfill Spring 2025, Spring 2026  
+\normalsize Instructor, Time series analysis, South Dakota State University  \hfill Fall 2024, Fall 2025  
 \normalsize Co-facilitator, Inclusive teaching for educating a diverse nation, University of Wisconsin-Madison Delta Program & CIRTL Network  \hfill Spring 2017, Fall 2017  
 \normalsize Guest lecturer on topic models & Teaching assistant, Special Topics: Data Science, University of Wisconsin-Madison  \hfill Fall 2016  
 \normalsize Instructor, Introductory statistics, University of Wisconsin-Madison  \hfill Fall 2016, Spring 2016, Fall 2015, Summer 2015, Spring 2015, Fall 2014, Spring 2014  
@@ -284,12 +277,23 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 ::: {.cell execution_count=30}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-\normalsize Research mentor to Robert Turner, undergraduate researcher \hfill 2015-05-01 to 2016-05-01   
+\textbullet\ \normalsize Research mentor to Robert Turner, undergraduate researcher \hfill May 2015 to May 2016   
 Project: Topic Modeling of Tweets to Detect Social Media Events   
 Next position: Software Engineer at Epic Systems  
-\normalsize Research mentor to Jinyu Xia, undergraduate researcher \hfill 2015-09-01 to 2016-08-01   
+\textbullet\ \normalsize Research mentor to Jinyu Xia, undergraduate researcher \hfill September 2015 to August 2016   
 Project: Tweet Sentiments and Stock Market Index Trends   
 Next position: Statistics graduate student at University of Washington  
+\textbullet\ \normalsize Research mentor to Ji Hoon Park, graduate researcher \hfill November 2024 to May 2025   
+Project: Building a Shiny App for Mendelian Randomization Analysis   
+Next position: Graduate student researcher  
+\textbullet\ \normalsize Research mentor to Emma Brookman, graduate researcher \hfill June 2025 to present   
+Project: Causal Inference Methods in Environmental Epidemiology  
+\textbullet\ \normalsize Research mentor to Etornam Kunu, graduate researcher \hfill September 2025 to present   
+Project: Polygenic Scores in Diverse Populations  
+\textbullet\ \normalsize Research mentor to Shree Nyaupane, graduate researcher \hfill September 2025 to present   
+Project: Rare Variants in Complex Traits and Diseases  
+\textbullet\ \normalsize Research mentor to Henrietta Kotey, graduate researcher \hfill September 2025 to present   
+Project: Multivariable Mendelian Randomization Methods  
 
 :::
 :::
@@ -307,8 +311,8 @@ Next position: Statistics graduate student at University of Washington
 \normalsize Participant, University of Michigan You3 Leadership Training Program \hfill Spring 2024  
 \normalsize Participant, University of Michigan Designing Your Life Course \hfill Fall 2022  
 \normalsize [Participant, Leadership and Management in Action Program](https://drive.google.com/file/d/1xp9-gjLDxlrPtHyF4FqTf9_q0-aL47av/view) \hfill Fall 2021  
-\normalsize Participant, American Statistical Association Workshop on Communicating with the Media and the Public \hfill November 2016  
 \normalsize [Committee Member, Genetics Society of America Early Career Researchers Leadership Program](https://genetics-gsa.org/career-development/early-career-leadership/) \hfill February 2020 to February 2022  
+\normalsize Participant, American Statistical Association Workshop on Communicating with the Media and the Public \hfill November 2016  
 
 :::
 :::
@@ -354,6 +358,8 @@ Next position: Statistics graduate student at University of Washington
 ::: {.cell execution_count=35}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
+\normalsize shinyMR: An App to Promote Rigor and Reproducibility in Mendelian Randomization Studies \hfill August 04, 2025  
+Joint Statistical Meetings 2025 \hfill Nashville, Tennessee, United States of America  
 \normalsize Distinguishing pleiotropy from separate QTL in multiparental populations \hfill July 30, 2018  
 Joint Statistical Meetings \hfill Vancouver, British Columbia, Canada  
 \normalsize Distinguishing pleiotropy from separate QTL in multiparental populations \hfill June 20, 2018  
@@ -374,6 +380,10 @@ University of Wisconsin-Madison Molecular and Environmental Toxicology Center Se
 ::: {.cell execution_count=36}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
+\normalsize shinyMR: An App to Promote Rigor and Reproducibility in Mendelian Randomization Studies \hfill July 31, 2025  
+Institute for Mathematical Statistics New Researchers Conference 2025 \hfill Nashville, Tennessee, United States of America  
+\normalsize shinyMR: An App to Promote Rigor and Reproducibility in Mendelian Randomization Studies \hfill July 07, 2025  
+Human Genetics and Genomics Gordon Conference \hfill Portland, Maine, United States of America  
 \normalsize [Testing pleiotropy vs. separate QTL in multiparental populations](https://github.com/fboehm/imgc2018poster) \hfill November 11, 2018  
 International Mammalian Genome Conference \hfill Rio Mar, Puerto Rico, United States of America  
 \normalsize Testing pleiotropy vs. separate QTL in multiparental populations \hfill October 26, 2018  
@@ -409,11 +419,13 @@ University of Wisconsin-Madison Molecular and Environmental Toxicology Center Re
 ::: {.cell execution_count=38}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
+\normalsize South Dakota State University College of Engineering Day Participant, South Dakota State University College of Engineering \hfill September 2024, October 2025  
+\normalsize Outreach & Recruitment Committee Member, Department of Mathematics and Statistics, South Dakota State University \hfill September 2025 to present  
+\normalsize Seminar Committee Member, Department of Mathematics and Statistics, South Dakota State University \hfill September 2025 to present  
 \normalsize Co-organizer, South Dakota State University Data Science Symposium \hfill February 2025  
-\normalsize Statistics Curriculum Revision Committee Member, Department of Mathematics and Statistics, South Dakota State University \hfill September 2024  
-\normalsize Data Science Curriculum Committee Member, Department of Mathematics and Statistics, South Dakota State University \hfill September 2024  
-\normalsize Senior Capstone Committee Member, Department of Mathematics and Statistics, South Dakota State University \hfill September 2024  
-\normalsize South Dakota State University College of Engineering Day Participant, South Dakota State University College of Engineering \hfill September 2024  
+\normalsize Statistics Curriculum Revision Committee Member, Department of Mathematics and Statistics, South Dakota State University \hfill September 2024 to present  
+\normalsize Data Science Curriculum Committee Member, Department of Mathematics and Statistics, South Dakota State University \hfill September 2024 to May 2025  
+\normalsize Senior Capstone Committee Member, Department of Mathematics and Statistics, South Dakota State University \hfill September 2024 to May 2025  
 \normalsize Co-coordinator, University of Wisconsin-Madison Computational Methods in Mass Communications Research Group \hfill September 2016 to December 2016  
 \normalsize Coordinator, University of Wisconsin-Madison WISCIENCE Graduate Student Book Group \hfill June 2015 to May 2016  
 \normalsize Organizer, University of Wisconsin-Madison Data, Humanities, and Art (DH + A) Symposium \hfill September 2013 to November 2013  
@@ -448,7 +460,10 @@ University of Wisconsin-Madison Molecular and Environmental Toxicology Center Re
 ::: {.cell execution_count=40}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
+\normalsize Co-Secretary, American Statistical Association JEDI Outreach Group \hfill January 2026 to present  
+\normalsize Session Chair, Joint Statistical Meetings \hfill August 2025  
 \normalsize Session Chair, ENAR Annual Meeting \hfill March 2025  
+\normalsize Ad hoc Reviewer, National Science Foundation \hfill December 2024  
 \normalsize DNA Day Essay Judge, American Society for Human Genetics \hfill March 2024  
 \normalsize Participant, ENAR Fostering Diversity in Biostatistics Virtual Workshop \hfill March 2021  
 \normalsize [Associate Editor](https://joss.theoj.org/about), Journal of Open Source Software \hfill June 2020 to present  

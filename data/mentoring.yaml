@@ -22,4 +22,35 @@ people:
       the S&P 500 Index and the sentiment of tweets about the stock market.
       She found that daily tweet sentiment score is correlated with the daily closing
       prices of the Dow Jones Industrial Average and the S&P 500 Index.
-      
+  - name: Emma Brookman
+    title: graduate researcher
+    project: Causal Inference Methods in Environmental Epidemiology
+    start: 2025-06
+    description: >
+      ''
+  - name: Etornam Kunu
+    title: graduate researcher
+    project: Polygenic Scores in Diverse Populations
+    start: 2025-09
+    description: >
+      ''
+  - name: Shree Nyaupane
+    title: graduate researcher
+    project: Rare Variants in Complex Traits and Diseases  
+    start: 2025-09
+    description: >
+      ''
+  - name: Henrietta Kotey
+    title: graduate researcher
+    project: Multivariable Mendelian Randomization Methods
+    start: 2025-09
+    description: >
+      ''
+  - name: Ji Hoon Park
+    title: graduate researcher
+    project: Building a Shiny App for Mendelian Randomization Analysis
+    start: 2024-11
+    end: 2025-05
+    next_role: Graduate student researcher 
+    description: >
+      ''
