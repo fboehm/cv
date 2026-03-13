@@ -14,16 +14,16 @@ funding:
     institution: 'South Dakota State University'  
     funder: 'Healthy Americas Research Consortium'  
     application_date: '2025-11-03'
-    start_date: 
-    end_date: 
+    start_date: NA
+    end_date: NA
     total_requested_dollars: 10000
     status: 'declined'
   - title: ''
     institution: 'South Dakota State University'  
     funder: 'BioSNTRii'  
     application_date: '2025-11-03'
-    start_date: 
-    end_date:
+    start_date: NA
+    end_date: NA
     total_requested_dollars: 75000
     status: 'declined'
   - title: ''
@@ -31,5 +31,22 @@ funding:
     application_date: '2025-11-16'
     start_date: 
     end_date: 
-    total_requested_dollars: 640000
+    total_requested_dollars: 640000 - check this!
+    status: 
+  - title: 'Measuring the accuracy of multi-trait, multi-ancestry polygenic scores'
+    institution: 'South Dakota State University'
+    funder: 'South Dakota Board of Regents'
+    mechanism: 'Competitive Research Grant'
+    total_requested_dollars: 86959
+    start_date:
+    end_date:
+    status:
+    application_date: 'March 13, 2026'
+  - title: 'FEC...'
+    funder: 'National Science Foundation'
+    mechanism: 'EPSCoR FEC'
+    application_date:
+    total_requested_collars: 
+    start_date:
+    end_date:
     status: 
