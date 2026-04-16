@@ -63,40 +63,40 @@ from datetime import datetime
 \hrule
 
 **South Dakota State University** \hfill Brookings, South Dakota, USA  
-Assistant Professor, Department of Mathematics and Statistics \hfill 2024 to present  
+Assistant Professor, Department of Mathematics and Statistics \hfill 08/2024 to present  
 
 
-# Education and Training  
+# Education and Training
 
 \hrule
 
 **University of Michigan** \hfill Ann Arbor, Michigan, USA  
-Postdoctoral Research Fellow, Department of Internal Medicine ([NIH T32 HL007853](https://reporter.nih.gov/search/edYVbhxf0Uu_nQ9-JqHDJA/project-details/10576923)) \hfill 2023 to 2024  
-Postdoctoral Research Fellow, Department of Biostatistics \hfill 2021 to 2023  
+Postdoctoral Research Fellow, Department of Internal Medicine ([NIH T32 HL007853](https://reporter.nih.gov/search/edYVbhxf0Uu_nQ9-JqHDJA/project-details/10576923)) \hfill 07/2023 to 06/2024  
+Postdoctoral Research Fellow, Department of Biostatistics \hfill 06/2021 to 05/2023  
 
 **University of Massachusetts Medical School** \hfill Worcester, Massachusetts, USA  
-Postdoctoral Research Fellow, Department of Microbiology & Physiological Systems \hfill 2019 to 2021  
+Postdoctoral Research Fellow, Department of Microbiology & Physiological Systems \hfill 09/2019 to 05/2021  
 
 **University of Wisconsin-Madison** \hfill Madison, Wisconsin, USA  
-Postdoctoral Research Fellow, Department of Biostatistics and Medical Informatics \hfill 2019     
-Ph.D., Department of Statistics \hfill 2011 to 2019  
-Postdoctoral Research Fellow ([NIH T32 ES007015](https://reporter.nih.gov/search/QFqt1UAzrUORCW6sbBz0qw/project-details/8296307)), Molecular and Environmental Toxicology Center \hfill 2012 to 2014  
-Assistant Researcher, [Value-Added Research Center](https://varc.wceruw.org/) \hfill 2011  
+Postdoctoral Research Fellow, Department of Biostatistics and Medical Informatics \hfill 06/2019 to 08/2019  
+Ph.D., Department of Statistics \hfill 09/2011 to 05/2019  
+Postdoctoral Research Fellow ([NIH T32 ES007015](https://reporter.nih.gov/search/QFqt1UAzrUORCW6sbBz0qw/project-details/8296307)), Molecular and Environmental Toxicology Center \hfill 02/2012 to 01/2014  
+Assistant Researcher, [Value-Added Research Center](https://varc.wceruw.org/) \hfill 01/2011 to 07/2011  
 
 
-**University of Washington** \hfill Seattle, Washington, USA   
-Postdoctoral Research Fellow, Department of Biostatistics \hfill 2007 to 2009   
+**University of Washington** \hfill Seattle, Washington, USA  
+Postdoctoral Research Fellow, Department of Biostatistics \hfill 11/2007 to 09/2009  
 
 **University of Wisconsin-Madison** \hfill Madison, Wisconsin, USA  
-M.D., School of Medicine and Public Health \hfill 2003 to 2007  
-M.S., Department of Population Health Sciences \hfill 2003 to 2007  
-Graduate Project Assistant, Department of Population Health Sciences \hfill 2003   
+M.D., School of Medicine and Public Health \hfill 08/2003 to 08/2007  
+M.S., Department of Population Health Sciences \hfill 01/2003 to 08/2007  
+Graduate Project Assistant, Department of Population Health Sciences \hfill 01/2003 to 05/2003  
 
 [**La Clinica de los Campesinos**](https://famhealth.org/) \hfill Wautoma, Wisconsin, USA  
-Spanish Language Medical Interpreter \hfill 2002   
+Spanish Language Medical Interpreter \hfill 06/2002 to 08/2002  
 
 **University of Wisconsin-Madison** \hfill Madison, Wisconsin, USA  
-B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 2001    
+B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 09/1996 to 05/2001  
 
 
 
@@ -271,8 +271,8 @@ for person in sorted_people:
     else:
         end_formatted = "present"
     next_role = person.get('next_role')
-    next_role_line = f"   \nNext position: {next_role}" if next_role is not None else ""
-    foo = "\\textbullet\\ " + text_size_text + f"Research mentor to {person['name']}, {person['title']} \\hfill {start_formatted} to {end_formatted}   \nProject: {person['project']}{next_role_line}  \n"
+    next_role_line = f"   \n\\ \\ \\ \\ Next position: {next_role}" if next_role is not None else ""
+    foo = text_size_text + f"\\textbf{{Research mentor}} to {person['name']}, {person['title']} \\hfill {start_formatted} to {end_formatted}   \n\\ \\ \\ \\ Project: {person['project']}{next_role_line}  \n"
     markdown_output += foo
 display(Markdown(markdown_output))
 ```
@@ -378,15 +378,14 @@ for presentation in sorted_presentations:
     date_formatted = date_obj.strftime("%B %d, %Y")
     url = presentation.get("url")
     if url is not None:
-#        foo = f"\\footnotesize [{presentation['title']}]({url}) \hfill {date_formatted}  \n{presentation['venue']} \hfill {presentation['location']}  \n"
-        foo = text_size_text + f"[{presentation['title']}]({url}) \\hfill {date_formatted}  \n{presentation['venue']} \\hfill {presentation['location']}  \n"
+        foo = text_size_text + f"[\\textit{{{presentation['title']}}}]({url}) \\hfill {date_formatted}  \n\\ \\ \\ \\ {presentation['venue']}  \n\\ \\ \\ \\ {presentation['location']}  \n"
     else:
-        #foo = f"\\footnotesize {presentation['title']} \hfill {date_formatted}  \n{presentation['venue']} \hfill {presentation['location']}  \n"
-        foo = text_size_text + f"{presentation['title']} \\hfill {date_formatted}  \n{presentation['venue']} \\hfill {presentation['location']}  \n"
-    if presentation.get("presentation_type") == "talk":
-        markdown_output_talks += foo
-    elif presentation.get("presentation_type") == "poster":
+        foo = text_size_text + f"\\textit{{{presentation['title']}}} \\hfill {date_formatted}  \n\\ \\ \\ \\ {presentation['venue']}  \n\\ \\ \\ \\ {presentation['location']}  \n"
+    ptype = presentation.get("presentation_type", "")
+    if "poster" in ptype:
         markdown_output_posters += foo
+    elif "talk" in ptype or ptype == "invited":
+        markdown_output_talks += foo
 ```      
       
 

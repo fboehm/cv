@@ -308,7 +308,7 @@ service:
     organization:
         - 'South Dakota State University'
     date: 
-        - '2026'
+        - '2026-05'
     service_type: university
     description: >
         'Served as graduate school representative on M.S. thesis committee for Wilberforce Arthur (Department of Economics, South Dakota State University).'

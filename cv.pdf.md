@@ -43,40 +43,40 @@ engine: jupyter
 \hrule
 
 **South Dakota State University** \hfill Brookings, South Dakota, USA  
-Assistant Professor, Department of Mathematics and Statistics \hfill 2024 to present  
+Assistant Professor, Department of Mathematics and Statistics \hfill 08/2024 to present  
 
 
-# Education and Training  
+# Education and Training
 
 \hrule
 
 **University of Michigan** \hfill Ann Arbor, Michigan, USA  
-Postdoctoral Research Fellow, Department of Internal Medicine ([NIH T32 HL007853](https://reporter.nih.gov/search/edYVbhxf0Uu_nQ9-JqHDJA/project-details/10576923)) \hfill 2023 to 2024  
-Postdoctoral Research Fellow, Department of Biostatistics \hfill 2021 to 2023  
+Postdoctoral Research Fellow, Department of Internal Medicine ([NIH T32 HL007853](https://reporter.nih.gov/search/edYVbhxf0Uu_nQ9-JqHDJA/project-details/10576923)) \hfill 07/2023 to 06/2024  
+Postdoctoral Research Fellow, Department of Biostatistics \hfill 06/2021 to 05/2023  
 
 **University of Massachusetts Medical School** \hfill Worcester, Massachusetts, USA  
-Postdoctoral Research Fellow, Department of Microbiology & Physiological Systems \hfill 2019 to 2021  
+Postdoctoral Research Fellow, Department of Microbiology & Physiological Systems \hfill 09/2019 to 05/2021  
 
 **University of Wisconsin-Madison** \hfill Madison, Wisconsin, USA  
-Postdoctoral Research Fellow, Department of Biostatistics and Medical Informatics \hfill 2019     
-Ph.D., Department of Statistics \hfill 2011 to 2019  
-Postdoctoral Research Fellow ([NIH T32 ES007015](https://reporter.nih.gov/search/QFqt1UAzrUORCW6sbBz0qw/project-details/8296307)), Molecular and Environmental Toxicology Center \hfill 2012 to 2014  
-Assistant Researcher, [Value-Added Research Center](https://varc.wceruw.org/) \hfill 2011  
+Postdoctoral Research Fellow, Department of Biostatistics and Medical Informatics \hfill 06/2019 to 08/2019  
+Ph.D., Department of Statistics \hfill 09/2011 to 05/2019  
+Postdoctoral Research Fellow ([NIH T32 ES007015](https://reporter.nih.gov/search/QFqt1UAzrUORCW6sbBz0qw/project-details/8296307)), Molecular and Environmental Toxicology Center \hfill 02/2012 to 01/2014  
+Assistant Researcher, [Value-Added Research Center](https://varc.wceruw.org/) \hfill 01/2011 to 07/2011  
 
 
-**University of Washington** \hfill Seattle, Washington, USA   
-Postdoctoral Research Fellow, Department of Biostatistics \hfill 2007 to 2009   
+**University of Washington** \hfill Seattle, Washington, USA  
+Postdoctoral Research Fellow, Department of Biostatistics \hfill 11/2007 to 09/2009  
 
 **University of Wisconsin-Madison** \hfill Madison, Wisconsin, USA  
-M.D., School of Medicine and Public Health \hfill 2003 to 2007  
-M.S., Department of Population Health Sciences \hfill 2003 to 2007  
-Graduate Project Assistant, Department of Population Health Sciences \hfill 2003   
+M.D., School of Medicine and Public Health \hfill 08/2003 to 08/2007  
+M.S., Department of Population Health Sciences \hfill 01/2003 to 08/2007  
+Graduate Project Assistant, Department of Population Health Sciences \hfill 01/2003 to 05/2003  
 
 [**La Clinica de los Campesinos**](https://famhealth.org/) \hfill Wautoma, Wisconsin, USA  
-Spanish Language Medical Interpreter \hfill 2002   
+Spanish Language Medical Interpreter \hfill 06/2002 to 08/2002  
 
 **University of Wisconsin-Madison** \hfill Madison, Wisconsin, USA  
-B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 2001    
+B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 09/1996 to 05/2001  
 
 
 
@@ -277,23 +277,23 @@ B.S., with Honors in Chemistry, Mathematics, and Biochemistry \hfill 1996 to 200
 ::: {.cell execution_count=30}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-\textbullet\ \normalsize Research mentor to Robert Turner, undergraduate researcher \hfill May 2015 to May 2016   
-Project: Topic Modeling of Tweets to Detect Social Media Events   
-Next position: Software Engineer at Epic Systems  
-\textbullet\ \normalsize Research mentor to Jinyu Xia, undergraduate researcher \hfill September 2015 to August 2016   
-Project: Tweet Sentiments and Stock Market Index Trends   
-Next position: Statistics graduate student at University of Washington  
-\textbullet\ \normalsize Research mentor to Ji Hoon Park, graduate researcher \hfill November 2024 to May 2025   
-Project: Building a Shiny App for Mendelian Randomization Analysis   
-Next position: Graduate student researcher  
-\textbullet\ \normalsize Research mentor to Emma Brookman, graduate researcher \hfill June 2025 to present   
-Project: Causal Inference Methods in Environmental Epidemiology  
-\textbullet\ \normalsize Research mentor to Etornam Kunu, graduate researcher \hfill September 2025 to present   
-Project: Polygenic Scores in Diverse Populations  
-\textbullet\ \normalsize Research mentor to Shree Nyaupane, graduate researcher \hfill September 2025 to present   
-Project: Rare Variants in Complex Traits and Diseases  
-\textbullet\ \normalsize Research mentor to Henrietta Kotey, graduate researcher \hfill September 2025 to present   
-Project: Multivariable Mendelian Randomization Methods  
+\normalsize \textbf{Research mentor} to Robert Turner, undergraduate researcher \hfill May 2015 to May 2016   
+\ \ \ \ Project: Topic Modeling of Tweets to Detect Social Media Events   
+\ \ \ \ Next position: Software Engineer at Epic Systems  
+\normalsize \textbf{Research mentor} to Jinyu Xia, undergraduate researcher \hfill September 2015 to August 2016   
+\ \ \ \ Project: Tweet Sentiments and Stock Market Index Trends   
+\ \ \ \ Next position: Statistics graduate student at University of Washington  
+\normalsize \textbf{Research mentor} to Ji Hoon Park, undergraduate researcher \hfill November 2024 to May 2025   
+\ \ \ \ Project: Building a Shiny App for Mendelian Randomization Analysis   
+\ \ \ \ Next position: Graduate student researcher  
+\normalsize \textbf{Research mentor} to Emma Brookman, graduate researcher \hfill June 2025 to present   
+\ \ \ \ Project: Causal Inference Methods in Environmental Epidemiology  
+\normalsize \textbf{Research mentor} to Etornam Kunu, graduate researcher \hfill September 2025 to present   
+\ \ \ \ Project: Polygenic Scores in Diverse Populations  
+\normalsize \textbf{Research mentor} to Shree Nyaupane, graduate researcher \hfill September 2025 to present   
+\ \ \ \ Project: Rare Variants in Complex Traits and Diseases  
+\normalsize \textbf{Research mentor} to Henrietta Kotey, graduate researcher \hfill September 2025 to present   
+\ \ \ \ Project: Multivariable Mendelian Randomization Methods  
 
 :::
 :::
@@ -358,18 +358,45 @@ Project: Multivariable Mendelian Randomization Methods
 ::: {.cell execution_count=35}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-\normalsize shinyMR: An App to Promote Rigor and Reproducibility in Mendelian Randomization Studies \hfill August 04, 2025  
-Joint Statistical Meetings 2025 \hfill Nashville, Tennessee, United States of America  
-\normalsize Distinguishing pleiotropy from separate QTL in multiparental populations \hfill July 30, 2018  
-Joint Statistical Meetings \hfill Vancouver, British Columbia, Canada  
-\normalsize Distinguishing pleiotropy from separate QTL in multiparental populations \hfill June 20, 2018  
-Complex Trait Community Meeting \hfill Glasgow, Scotland, United Kingdom  
-\normalsize [Event Detection with Social Media Data](https://figshare.com/articles/Event_Detection_with_Social_Media_Data/3545477) \hfill June 30, 2016  
-UseR! 2016 Meeting \hfill Stanford, California, United States of America  
-\normalsize Post-GWAS characterization of breast cancer-associated SNPs \hfill November 28, 2012  
-University of Wisconsin-Madison Department of Statistics Student Seminar \hfill Madison, Wisconsin, United States of America  
-\normalsize Identification of Expression Quantitative Trait Loci among breast cancer-associated SNPs \hfill September 20, 2012  
-University of Wisconsin-Madison Molecular and Environmental Toxicology Center Seminar \hfill Madison, Wisconsin, United States of America  
+\normalsize \textit{Exploring Human Biology with Genome-Wide Association Studies} \hfill December 03, 2025  
+\ \ \ \ Sanford Research Seminar Series  
+\ \ \ \ Sioux Falls, South Dakota, United States of America  
+\normalsize \textit{Exploring Human Biology with Genome-Wide Association Studies} \hfill October 31, 2025  
+\ \ \ \ South Dakota State University Corothers Lecture  
+\ \ \ \ Brookings, South Dakota, United States of America  
+\normalsize \textit{My Research Goals} \hfill September 15, 2025  
+\ \ \ \ South Dakota State University New Faculty Forum  
+\ \ \ \ Brookings, South Dakota, United States of America  
+\normalsize \textit{Introduction to our Research Team} \hfill August 19, 2025  
+\ \ \ \ South Dakota State University Graduate Student Orientation  
+\ \ \ \ Brookings, South Dakota, United States of America  
+\normalsize \textit{shinyMR: An App to Promote Rigor and Reproducibility in Mendelian Randomization Studies} \hfill August 04, 2025  
+\ \ \ \ Joint Statistical Meetings 2025  
+\ \ \ \ Nashville, Tennessee, United States of America  
+\normalsize \textit{shinyMR: An App to Promote Rigor and Reproducibility in Mendelian Randomization Studies} \hfill July 31, 2025  
+\ \ \ \ Institute for Mathematical Statistics New Researchers Conference 2025  
+\ \ \ \ Nashville, Tennessee, United States of America  
+\normalsize \textit{shinyMR: An App to Promote Rigor and Reproducibility in Mendelian Randomization Studies} \hfill May 21, 2025  
+\ \ \ \ STATGEN2025 Conference  
+\ \ \ \ Minneapolis, Minnesota, United States of America  
+\normalsize \textit{A Shiny App to Promote Rigor and Reproducibility in Mendelian Randomization Studies} \hfill February 07, 2025  
+\ \ \ \ South Dakota State University Data Science Symposium  
+\ \ \ \ Brookings, South Dakota, United States of America  
+\normalsize \textit{Distinguishing pleiotropy from separate QTL in multiparental populations} \hfill July 30, 2018  
+\ \ \ \ Joint Statistical Meetings  
+\ \ \ \ Vancouver, British Columbia, Canada  
+\normalsize \textit{Distinguishing pleiotropy from separate QTL in multiparental populations} \hfill June 20, 2018  
+\ \ \ \ Complex Trait Community Meeting  
+\ \ \ \ Glasgow, Scotland, United Kingdom  
+\normalsize [\textit{Event Detection with Social Media Data}](https://figshare.com/articles/Event_Detection_with_Social_Media_Data/3545477) \hfill June 30, 2016  
+\ \ \ \ UseR! 2016 Meeting  
+\ \ \ \ Stanford, California, United States of America  
+\normalsize \textit{Post-GWAS characterization of breast cancer-associated SNPs} \hfill November 28, 2012  
+\ \ \ \ University of Wisconsin-Madison Department of Statistics Student Seminar  
+\ \ \ \ Madison, Wisconsin, United States of America  
+\normalsize \textit{Identification of Expression Quantitative Trait Loci among breast cancer-associated SNPs} \hfill September 20, 2012  
+\ \ \ \ University of Wisconsin-Madison Molecular and Environmental Toxicology Center Seminar  
+\ \ \ \ Madison, Wisconsin, United States of America  
 
 :::
 :::
@@ -380,28 +407,39 @@ University of Wisconsin-Madison Molecular and Environmental Toxicology Center Se
 ::: {.cell execution_count=36}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
-\normalsize shinyMR: An App to Promote Rigor and Reproducibility in Mendelian Randomization Studies \hfill July 31, 2025  
-Institute for Mathematical Statistics New Researchers Conference 2025 \hfill Nashville, Tennessee, United States of America  
-\normalsize shinyMR: An App to Promote Rigor and Reproducibility in Mendelian Randomization Studies \hfill July 07, 2025  
-Human Genetics and Genomics Gordon Conference \hfill Portland, Maine, United States of America  
-\normalsize [Testing pleiotropy vs. separate QTL in multiparental populations](https://github.com/fboehm/imgc2018poster) \hfill November 11, 2018  
-International Mammalian Genome Conference \hfill Rio Mar, Puerto Rico, United States of America  
-\normalsize Testing pleiotropy vs. separate QTL in multiparental populations \hfill October 26, 2018  
-University of Wisconsin-Madison Computation and Informatics in Biology and Medicine Training Program Retreat \hfill Madison, Wisconsin, United States of America  
-\normalsize Event Detection with Topic Modeling of Tweets \hfill July 13, 2017  
-Society for Political Methodology's Annual Summer Conference (PolMeth XXXIV) \hfill Madison, Wisconsin, United States of America  
-\normalsize [Pleiotropy vs. Close Linkage in the Diversity Outbred Mouse Population](https://figshare.com/articles/Pleiotropy_vs_Close_Linkage_in_the_Diversity_Outbred_Mouse_Population/4284338) \hfill October 22, 2016  
-The Jackson Laboratory Systems Genetics Short Course \hfill Bar Harbor, Maine, United States of America  
-\normalsize Pleiotropy vs. Close Linkage in the Diversity Outbred Mouse Population \hfill October 07, 2016  
-University of Wisconsin-Madison Computation and Informatics in Biology and Medicine Training Program Retreat \hfill Madison, Wisconsin, United States of America  
-\normalsize [Data Analysis with Topic Models for Communications Researchers](https://figshare.com/articles/Data_Analysis_with_Topic_Models_for_Communications_Researchers/3545462) \hfill August 06, 2016  
-Association for Education in Journalism and Mass Communication Annual Meeting \hfill Minneapolis, Minnesota, United States of America  
-\normalsize [Event Detection with Topic Modeling of Tweets](https://figshare.com/articles/Event_Detection_with_Topic_Modeling_of_Tweets/3545468) \hfill April 06, 2016  
-University of Wisconsin-Madison WARF Discovery Challenge Symposium \hfill Madison, Wisconsin, United States of America  
-\normalsize Identification of Expression Quantitative Trait Loci among breast cancer-associated SNPs \hfill October 12, 2012  
-University of Wisconsin-Madison Computation and Informatics in Biology and Medicine Retreat \hfill Madison, Wisconsin, United States of America  
-\normalsize Identification of Expression Quantitative Trait Loci among breast cancer-associated SNPs \hfill May 22, 2012  
-University of Wisconsin-Madison Molecular and Environmental Toxicology Center Retreat \hfill Madison, Wisconsin, United States of America  
+\normalsize \textit{shinyMR: An App to Promote Rigor and Reproducibility in Mendelian Randomization Studies} \hfill July 31, 2025  
+\ \ \ \ Institute for Mathematical Statistics New Researchers Conference 2025  
+\ \ \ \ Nashville, Tennessee, United States of America  
+\normalsize \textit{shinyMR: An App to Promote Rigor and Reproducibility in Mendelian Randomization Studies} \hfill July 07, 2025  
+\ \ \ \ Human Genetics and Genomics Gordon Conference  
+\ \ \ \ Portland, Maine, United States of America  
+\normalsize [\textit{Testing pleiotropy vs. separate QTL in multiparental populations}](https://github.com/fboehm/imgc2018poster) \hfill November 11, 2018  
+\ \ \ \ International Mammalian Genome Conference  
+\ \ \ \ Rio Mar, Puerto Rico, United States of America  
+\normalsize \textit{Testing pleiotropy vs. separate QTL in multiparental populations} \hfill October 26, 2018  
+\ \ \ \ University of Wisconsin-Madison Computation and Informatics in Biology and Medicine Training Program Retreat  
+\ \ \ \ Madison, Wisconsin, United States of America  
+\normalsize \textit{Event Detection with Topic Modeling of Tweets} \hfill July 13, 2017  
+\ \ \ \ Society for Political Methodology's Annual Summer Conference (PolMeth XXXIV)  
+\ \ \ \ Madison, Wisconsin, United States of America  
+\normalsize [\textit{Pleiotropy vs. Close Linkage in the Diversity Outbred Mouse Population}](https://figshare.com/articles/Pleiotropy_vs_Close_Linkage_in_the_Diversity_Outbred_Mouse_Population/4284338) \hfill October 22, 2016  
+\ \ \ \ The Jackson Laboratory Systems Genetics Short Course  
+\ \ \ \ Bar Harbor, Maine, United States of America  
+\normalsize \textit{Pleiotropy vs. Close Linkage in the Diversity Outbred Mouse Population} \hfill October 07, 2016  
+\ \ \ \ University of Wisconsin-Madison Computation and Informatics in Biology and Medicine Training Program Retreat  
+\ \ \ \ Madison, Wisconsin, United States of America  
+\normalsize [\textit{Data Analysis with Topic Models for Communications Researchers}](https://figshare.com/articles/Data_Analysis_with_Topic_Models_for_Communications_Researchers/3545462) \hfill August 06, 2016  
+\ \ \ \ Association for Education in Journalism and Mass Communication Annual Meeting  
+\ \ \ \ Minneapolis, Minnesota, United States of America  
+\normalsize [\textit{Event Detection with Topic Modeling of Tweets}](https://figshare.com/articles/Event_Detection_with_Topic_Modeling_of_Tweets/3545468) \hfill April 06, 2016  
+\ \ \ \ University of Wisconsin-Madison WARF Discovery Challenge Symposium  
+\ \ \ \ Madison, Wisconsin, United States of America  
+\normalsize \textit{Identification of Expression Quantitative Trait Loci among breast cancer-associated SNPs} \hfill October 12, 2012  
+\ \ \ \ University of Wisconsin-Madison Computation and Informatics in Biology and Medicine Retreat  
+\ \ \ \ Madison, Wisconsin, United States of America  
+\normalsize \textit{Identification of Expression Quantitative Trait Loci among breast cancer-associated SNPs} \hfill May 22, 2012  
+\ \ \ \ University of Wisconsin-Madison Molecular and Environmental Toxicology Center Retreat  
+\ \ \ \ Madison, Wisconsin, United States of America  
 
 :::
 :::
@@ -419,6 +457,7 @@ University of Wisconsin-Madison Molecular and Environmental Toxicology Center Re
 ::: {.cell execution_count=38}
 
 ::: {.cell-output .cell-output-display .cell-output-markdown}
+\normalsize Thesis Committee Member, South Dakota State University \hfill May 2026  
 \normalsize South Dakota State University College of Engineering Day Participant, South Dakota State University College of Engineering \hfill September 2024, October 2025  
 \normalsize Outreach & Recruitment Committee Member, Department of Mathematics and Statistics, South Dakota State University \hfill September 2025 to present  
 \normalsize Seminar Committee Member, Department of Mathematics and Statistics, South Dakota State University \hfill September 2025 to present  

@@ -144,4 +144,31 @@ presentations:
     presentation_type: talk
     description: >
       *
-  
+  - title: 'Introduction to our Research Team'  
+    venue: South Dakota State University Graduate Student Orientation
+    date: '2025-08-19'
+    location: Brookings, South Dakota, United States of America
+    presentation_type: talk
+    description: >
+      *
+  - title: 'My Research Goals'  
+    venue: South Dakota State University New Faculty Forum
+    date: '2025-09-15'
+    location: Brookings, South Dakota, United States of America
+    presentation_type: talk
+    description: >
+      *
+  - title: 'Exploring Human Biology with Genome-Wide Association Studies'  
+    venue: South Dakota State University Corothers Lecture
+    date: '2025-10-31'
+    location: Brookings, South Dakota, United States of America
+    presentation_type: invited talk
+    description: >
+      *
+  - title: 'Exploring Human Biology with Genome-Wide Association Studies'  
+    venue: Sanford Research Seminar Series
+    date: '2025-12-03'
+    location: Sioux Falls, South Dakota, United States of America
+    presentation_type: talk
+    description: >
+      *
