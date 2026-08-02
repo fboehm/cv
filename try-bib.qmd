@@ -29,16 +29,15 @@ yaml.add_constructor("tag:yaml.org,2002:date", date_constructor, yaml.SafeLoader
 
 
 ```{python}
-with open("bib2yaml/boehm.yaml", "r", encoding = 'utf-8') as file:
-    data = yaml.load(file, Loader=yaml.SafeLoader)
+# Read the BibTeX files directly -- no intermediate bib->yaml conversion.
+# scripts/cvbib.py parses .bib with the standard library only.
+import sys
+sys.path.insert(0, "scripts")
+import cvbib
 
-with open("bib2yaml/old-boehm.yaml", "r", encoding = 'utf-8') as file:
-    old_data = yaml.load(file, Loader=yaml.SafeLoader)
-
-data["references"].extend(old_data["references"])
-
-n_references = len(data["references"])
-bibs = data["references"]
+bibs = cvbib.load_references(["boehm.bib", "boehm-wip.bib"])
+data = {"references": bibs}
+n_references = len(bibs)
 
 # define issued_formatted key for sorting
 for article in bibs:
@@ -200,14 +199,13 @@ for ref_number in range(n_references):
     # discard manuscripts that are merely "in preparation"
     # need to manually indicate in yaml file which manuscripts are submitted
     if ref_type == "manuscript":
-        c_manuscript += 1    
-        if "manuscript_type" in ref:
-            if ref["manuscript_type"] == "submitted":
-                date = "submitted"
-                #formatted_text = f"\\footnotesize {authors} ({date}). {title}.  \n"
-            if ref["manuscript_type"] == "in preparation":
-                date = "in preparation"
-        if "manuscript_type" not in ref:
+        c_manuscript += 1
+        # status comes from an explicit manuscript_type, else the bib `note`
+        # field (pandoc maps biblatex note -> note), else defaults to prep
+        status = ref.get("manuscript_type", ref.get("note", "in preparation"))
+        if str(status).strip().lower() == "submitted":
+            date = "submitted"
+        else:
             date = "in preparation"
         formatted_text = text_size_text + f"{authors} ({date}). {title}.  \n"
         mo_manuscript += formatted_text

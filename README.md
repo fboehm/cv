@@ -1,5 +1,48 @@
 # README.md
 
+## Building the CV
+
+`cv.pdf` is built from `cv.qmd` with Quarto (the `quarto-cv` extension, LaTeX
+via lualatex). Build it with Snakemake:
+
+```bash
+# first time only -- pick the file for your platform:
+conda env create -f environment.yml        # Windows
+conda env create -f environment-linux.yml  # Linux / WSL
+conda activate cv2
+snakemake --cores 1                   # -> cv.pdf
+snakemake --cores 1 clean             # remove build artifacts
+```
+
+On Linux/WSL, Quarto's jupyter engine needs to use the env's Python; if the
+render can't find a kernel, run:
+
+```bash
+QUARTO_PYTHON=$(conda run -n cv2 which python) snakemake --cores 1
+```
+
+`snakemake` just wraps `quarto render cv.qmd --to quarto-cv-pdf`, but tracks the
+inputs (`cv.qmd`, `try-bib.qmd`, `teaching.qmd`, the `.bib` files, `data/*.yaml`,
+`scripts/cvbib.py`, and the extension) so the PDF only rebuilds when something
+changes.
+
+### Publications are read directly from the `.bib` files
+
+The publication list comes straight from the BibTeX files — there is **no**
+bib→yaml conversion step anymore. `scripts/cvbib.py` parses the `.bib` files
+(standard library only, so it runs in the Quarto jupyter kernel) and
+`try-bib.qmd` formats the entries.
+
+- `boehm.bib` — published works (articles, chapters, book, conference
+  proceedings, software, thesis, etc.).
+- `boehm-wip.bib` — in-progress / unpublished manuscripts (`@unpublished`);
+  the `note` field (`Submitted` / `In preparation`) sets how each is labelled.
+
+To add or edit a publication, edit the relevant `.bib` file and rebuild. Entry
+types map to CV sections as documented at the top of `scripts/cvbib.py`. The
+old `bib2yaml/` directory (pandoc-based conversion) is no longer part of the
+build.
+
 
 ## January 20
 

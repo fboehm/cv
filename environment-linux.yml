@@ -1,0 +1,17 @@
+# Linux/WSL counterpart to environment.yml (which is a Windows conda export
+# and will not solve on linux-64). This is a minimal, cross-platform spec of
+# the packages needed to render cv.pdf; Quarto and lualatex/TinyTeX are
+# expected to be installed separately (system-wide).
+#
+#   conda env create -f environment-linux.yml
+#   conda activate cv2
+#   QUARTO_PYTHON=$(conda run -n cv2 which python) snakemake --cores 1
+name: cv2
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pyyaml
+  - ipykernel
+  - nbclient
+  - jupyter_client

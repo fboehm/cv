@@ -5,7 +5,8 @@ service:
     url: https://www.prescientist.org/
     date: 
         - '2018-09'
-    current: 'true'
+    end_date: '2024-05'
+    current: 'false'
     service_type: community
     description: >
       * Wrote letters to a middle school student (one student per academic year)
