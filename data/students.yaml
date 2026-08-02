@@ -4,16 +4,12 @@
         department: 'Department of Economics'
         date: '2026'
         role: 'Graduate School Representative'
+        title: 'Import Tariffs and Firm-Level Efficiency'
         description: >
             'Served as graduate school representative on M.S. thesis committee for Wilberforce Arthur (Department of Economics, South Dakota State University).'
         
 
 - Ph.D. Committee Member
-    - name: 'Isaac Gbene'
-      organization: 'South Dakota State University'
-      department: 'Department of Mathematics and Statistics'
-      date: '2026'
-      role: 'Committee Member'
     - name: 'Emma Brookman'
         organization: 'South Dakota State University'
         department: 'Department of Mathematics and Statistics'
@@ -34,3 +30,4 @@
         department: 'Department of Mathematics and Statistics'
         date: '2026'
         role: 'Committee Member'
+        title: 'Robust Methods for Likelihood-Based Decisions with Application to the Forensic Identification of Source Problems'

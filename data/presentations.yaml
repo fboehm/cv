@@ -169,6 +169,13 @@ presentations:
     venue: Sanford Research Seminar Series
     date: '2025-12-03'
     location: Sioux Falls, South Dakota, United States of America
-    presentation_type: talk
+    presentation_type: invited talk
+    description: >
+      *
+  - title: ''
+    venue: American Statistical Association Midwest Regional Conference
+    date: ''
+    location: Minneapolis, Minnesota, United States of America
+    presentation_type: invited talk
     description: >
       *
