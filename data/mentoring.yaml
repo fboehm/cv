@@ -44,6 +44,7 @@ people:
     title: graduate researcher
     project: Multivariable Mendelian Randomization Methods
     start: 2025-09
+    end: 2026-05
     description: >
       ''
   - name: Ji Hoon Park
@@ -54,3 +55,8 @@ people:
     next_role: Graduate student researcher 
     description: >
       ''
+  - name: Peng Zhou
+    title: Gradaute researcher
+    project: 'ShinyMR: A web application to promote rigor and reproducibility in Mendelian randomization studies'
+    start: 2026-06
+    

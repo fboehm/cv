@@ -9,13 +9,11 @@ geometry:
   - bottom=20mm
 format:
     quarto-cv-pdf: 
-        keep-tex: true
-        keep-md: true
         pdf-engine: lualatex
 author: Frederick Joseph Boehm, III
 date: last-modified
 phone: 734-260-0914 
-address: "South Dakota State University · 136 E Blue Bell Dr · Brookings, South Dakota 57006 · USA"
+address: "136 E Blue Bell Dr · Brookings, South Dakota 57006 · USA"
 email: frederick.boehm@sdstate.edu
 fontsize: 10pt
 github: fboehm # github account
@@ -185,6 +183,118 @@ display(Markdown('\n'.join(fmo_thesis)))
 
 ```{python}
 display(Markdown('\n'.join(fmo_other)))
+```
+
+
+
+# Research Funding
+
+\hrule
+
+```{python}
+import datetime as dt
+
+# Read YAML file
+with open("data/funding.yaml", "r") as file:
+    funding_data = yaml.safe_load(file)
+
+
+def funding_date_obj(entry):
+    """Return a date for sorting/display, preferring award date over application date."""
+    d = entry.get("date") or entry.get("application_date")
+    if d is None or (isinstance(d, str) and not d.strip()):
+        return None
+    if isinstance(d, dt.date):  # datetime.datetime is also a dt.date
+        return d
+    for fmt in ("%Y-%m-%d", "%Y-%m"):
+        try:
+            return dt.datetime.strptime(str(d).strip(), fmt).date()
+        except ValueError:
+            continue
+    return None
+
+
+def funding_amount(entry):
+    tdc = entry.get("total_direct_costs")
+    if tdc in (None, ""):
+        return None
+    try:
+        return f"\\${int(tdc):,}"
+    except (ValueError, TypeError):
+        return None
+
+
+def format_funding_entry(entry):
+    dobj = funding_date_obj(entry)
+    date_fmt = dobj.strftime("%B %Y") if dobj else ""
+
+    raw_title = (entry.get("title") or "").strip()
+    funder = (entry.get("funder") or "").strip()
+    if raw_title:
+        title = raw_title
+        show_funder = True
+    else:
+        title = funder
+        show_funder = False
+
+    line = text_size_text + f"\\textbf{{{title}}} \\hfill {date_fmt}  \n"
+
+    details = []
+    role = (entry.get("role") or "").strip()
+    if role:
+        details.append(role)
+    mechanism = (entry.get("mechanism") or "").strip()
+    if show_funder and funder:
+        details.append(f"{funder} ({mechanism})" if mechanism else funder)
+    elif mechanism:
+        details.append(mechanism)
+    amt = funding_amount(entry)
+    if amt:
+        details.append(f"Total direct costs: {amt}")
+    award_number = entry.get("award_number")
+    if award_number:
+        details.append(f"Award No.\\ {award_number}")
+    if details:
+        line += text_size_text + "\\ \\ \\ \\ " + " · ".join(str(d) for d in details) + "  \n"
+    return line
+
+
+# Group by status; blank/unknown status is treated as under review.
+funding_groups = {"funded": [], "pending": [], "declined": []}
+for entry in funding_data.get("funding", []):
+    status = (entry.get("status") or "").strip().lower()
+    if status == "funded":
+        funding_groups["funded"].append(entry)
+    elif status == "declined":
+        funding_groups["declined"].append(entry)
+    else:
+        funding_groups["pending"].append(entry)
+
+markdown_funding = {}
+for key, entries in funding_groups.items():
+    entries.sort(key=lambda e: funding_date_obj(e) or dt.date.min, reverse=True)
+    markdown_funding[key] = "".join(format_funding_entry(e) for e in entries)
+```
+
+
+## Funded
+
+```{python}
+display(Markdown(markdown_funding["funded"]))
+```
+
+
+## Under Review
+
+```{python}
+display(Markdown(markdown_funding["pending"]))
+```
+
+
+## Not Funded
+
+```{python}
+display(Markdown(markdown_funding["declined"]))
 ```
 
 

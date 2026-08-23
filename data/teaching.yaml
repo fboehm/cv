@@ -5,6 +5,7 @@ courses:
     term:
       - Fall 2024
       - Fall 2025
+      - Fall 2026
     role: 'Instructor'
     type: 'formal'
     enrollment: 
@@ -57,6 +58,8 @@ courses:
     number: 'Statistics 736'
     term:
       - Fall 2026
+    role: 'Instructor'
+    type: 'formal'
     enrollment:
       - Fall 2026: NA
     description: >

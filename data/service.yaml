@@ -305,7 +305,7 @@ service:
     service_type: professional
     description: >
         'The JEDI Outreach Group is a committee of the American Statistical Association that focuses on outreach efforts to promote justice, equity, diversity, and inclusion in the field of statistics. As Co-Secretary, I assist with organizing meetings, taking minutes, and coordinating communication among members.'
-  - title: 'Thesis Committee Member'
+  - title: 'Thesis Committee Member for Wilberforce Arthur'
     organization:
         - 'South Dakota State University'
     date: 
@@ -313,3 +313,11 @@ service:
     service_type: university
     description: >
         'Served as graduate school representative on M.S. thesis committee for Wilberforce Arthur (Department of Economics, South Dakota State University).'
+  - title: 'Peer reviewer for abstracts submitted to the ASHG Annual Meeting'
+    organization: 
+        - 'American Society for Human Genetics'
+    date: 
+        - '2026-06'
+    service_type: professional
+    description: >
+        'Reviewed and scored 110 scientific abstracts submitted for the 2026 ASHG Annual meeting'
