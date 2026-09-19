@@ -37,7 +37,7 @@ funding:
     start_date: 
     end_date: 
     total_direct_costs: 454970
-    status: 'pending'
+    status: 'declined'
   - title: 'Measuring the accuracy of multi-trait, multi-ancestry polygenic scores'
     institution: 'South Dakota State University'
     funder: 'South Dakota Board of Regents'
@@ -56,7 +56,7 @@ funding:
     total_direct_costs: 3130401
     start_date:
     end_date:
-    status: 'pending'
+    status: 'declined'
   - title: 'Bayesian Hierarchical Modeling for Multi-trait, Multi-ancestry Polygenic Scores'
     institution: 'South Dakota State University'
     funder: 'National Institutes of Health' 
