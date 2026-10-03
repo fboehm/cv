@@ -77,3 +77,12 @@ funding:
     start_date:
     end_date: 
     status: 'pending'
+  - title: 'Ultra-processed Food Exposure in the USA: Advancing Biological and Behavioral Evidence to Inform Dietary Practice'
+    institution: 'South Dakota State University'
+    funder: 'USDA NIFA'
+    role: 'Co-investigator (PD: Moul Dey; Co-PD: J. Roberts)'
+    application_date: '2025-11'
+    start_date: '2026'
+    end_date: '2030'
+    total_costs: 649215
+    status: 'declined'

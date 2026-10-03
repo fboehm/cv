@@ -15,7 +15,7 @@ date: last-modified
 phone: 734-260-0914 
 address: "136 E Blue Bell Dr · Brookings, South Dakota 57006 · USA"
 email: frederick.boehm@sdstate.edu
-fontsize: 10pt
+fontsize: 12pt
 github: fboehm # github account
 orcid: 0000-0002-1644-5931 # orcid identifier
 #osf: ymqui # osf five character id
@@ -215,13 +215,17 @@ def funding_date_obj(entry):
 
 
 def funding_amount(entry):
-    tdc = entry.get("total_direct_costs")
-    if tdc in (None, ""):
-        return None
-    try:
-        return f"\\${int(tdc):,}"
-    except (ValueError, TypeError):
-        return None
+    """Return (label, amount); prefers total costs when given, else direct costs."""
+    for key, label in (("total_costs", "Total costs"),
+                       ("total_direct_costs", "Total direct costs")):
+        val = entry.get(key)
+        if val in (None, ""):
+            continue
+        try:
+            return label, f"\\${int(val):,}"
+        except (ValueError, TypeError):
+            continue
+    return None
 
 
 def format_funding_entry(entry):
@@ -250,7 +254,8 @@ def format_funding_entry(entry):
         details.append(mechanism)
     amt = funding_amount(entry)
     if amt:
-        details.append(f"Total direct costs: {amt}")
+        amt_label, amt_text = amt
+        details.append(f"{amt_label}: {amt_text}")
     award_number = entry.get("award_number")
     if award_number:
         details.append(f"Award No.\\ {award_number}")
