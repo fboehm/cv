@@ -494,12 +494,16 @@ for presentation in sorted_presentations:
         continue
     date_obj = datetime.datetime.strptime(date_str, "%Y-%m-%d")
     date_formatted = date_obj.strftime("%B %d, %Y")
+    ptype = presentation.get("presentation_type", "")
+    # mark invited presentations after the venue name
+    venue = presentation['venue']
+    if "invited" in ptype:
+        venue = f"{venue} (Invited)"
     url = presentation.get("url")
     if url is not None:
-        foo = text_size_text + f"[\\textit{{{presentation['title']}}}]({url}) \\hfill {date_formatted}  \n\\ \\ \\ \\ {presentation['venue']}  \n\\ \\ \\ \\ {presentation['location']}  \n"
+        foo = text_size_text + f"[\\textit{{{presentation['title']}}}]({url}) \\hfill {date_formatted}  \n\\ \\ \\ \\ {venue}  \n\\ \\ \\ \\ {presentation['location']}  \n"
     else:
-        foo = text_size_text + f"\\textit{{{presentation['title']}}} \\hfill {date_formatted}  \n\\ \\ \\ \\ {presentation['venue']}  \n\\ \\ \\ \\ {presentation['location']}  \n"
-    ptype = presentation.get("presentation_type", "")
+        foo = text_size_text + f"\\textit{{{presentation['title']}}} \\hfill {date_formatted}  \n\\ \\ \\ \\ {venue}  \n\\ \\ \\ \\ {presentation['location']}  \n"
     if "poster" in ptype:
         markdown_output_posters += foo
     elif "talk" in ptype or ptype == "invited":

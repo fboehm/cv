@@ -321,3 +321,11 @@ service:
     service_type: professional
     description: >
         'Reviewed and scored 110 scientific abstracts submitted for the 2026 ASHG Annual meeting'
+  - title: 'Peer reviewer for Research Experiences for Undergraduates (REU) grant proposals'
+    organization:
+        - 'National Science Foundation'
+    date: 
+        - '2026-05'
+    service_type: professional
+    description: >
+        'Served as a peer reviewer for Research Experiences for Undergraduates (REU) site grant proposals submitted to NSF.'
