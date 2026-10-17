@@ -77,37 +77,38 @@ def render_with_hyperlink(value, url=None):
 
 ```{python}
 def assemble_names_from_yaml(names_yaml, my_name=["Boehm", "Boehm, III", "Boehm III"]):
-    # Function body
-    n_names = len(names_yaml)
-    for i in range(n_names):
-        name_value = names_yaml[i]
+    # A trailing "others" (bibtex's `and others`) marks a deliberately
+    # truncated author list; print it as "et al." rather than as a name.
+    # Every other entry lists all of its authors.
+    truncated = bool(names_yaml) and str(
+        names_yaml[-1].get("literal", "")
+    ).strip().lower() == "others"
+    if truncated:
+        names_yaml = names_yaml[:-1]
+    formatted = []
+    for name_value in names_yaml:
         if "literal" in name_value:
-            name = name_value["literal"]
-            if "Boehm" in name: #problematic only if other Boehms are in hte authors list
-                name = f"\\textbf{{" + {text_size_text} + {name} + f"}}"
+            name = text_size_text + name_value["literal"]
+            if "Boehm" in name_value["literal"]: #problematic only if other Boehms are in hte authors list
+                name = f"\\textbf{{" + name + f"}}"
         else:
             name_last = name_value["family"]
             name_first = name_value["given"]
-            name = name_first + " " + name_last
-            #name = f"\\footnotesize " + name
-            name = text_size_text + name
+            name = text_size_text + name_first + " " + name_last
             if name_last in my_name:
                 name = f"\\textbf{{" + name + f"}}"
-        if i == 0:
-            names = name
-        elif i == n_names - 1:
-            if n_names == 2:
-                #names = names + f"\\footnotesize \ and " + name
-                #names = names + text_size_text + f"\ and " + name
-                names = names + text_size_text + r"\ and " + name
-            else:
-                #names = names + f"\\footnotesize , and " + name
-                names = names + text_size_text + f", and " + name
-        else:
-            #names = names + f"\\footnotesize , " + name
-            names = names + text_size_text + f", " + name
-    # Code goes here
-    return names  # You can return a value if needed
+        formatted.append(name)
+    n_names = len(formatted)
+    separator = text_size_text + ", "
+    if truncated:
+        names = separator.join(formatted) + text_size_text + ", et al."
+    elif n_names == 1:
+        names = formatted[0]
+    elif n_names == 2:
+        names = formatted[0] + text_size_text + r"\ and " + formatted[1]
+    else:
+        names = separator.join(formatted[:-1]) + text_size_text + ", and " + formatted[-1]
+    return names
 ```
 
 
